@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="" />
+    <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/practice/Base_Test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Pandas_Training.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/Practice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/class_Training.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/fortune1000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/ftu_data_analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/ftu_data_visulization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/json_Training.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/library.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/mailid.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/matplot_lib_training.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytestpackage/Pages/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytestpackage/Pages/basepage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytestpackage/Pages/loginpage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytestpackage/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytestpackage/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytestpackage/seleniumwrappers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytestpackage/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytestpackage/tests/test_case_01.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytestpackage/tests/test_case_02.py" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
