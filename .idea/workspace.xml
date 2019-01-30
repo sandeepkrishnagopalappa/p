@@ -2,29 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/practice/Base_Test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/Pandas_Training.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/Practice.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/class_Training.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/conftest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/fortune1000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/ftu_data_analysis.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/ftu_data_visulization.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/json_Training.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/library.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/mailid.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/matplot_lib_training.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice/user.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytestpackage/Pages/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytestpackage/Pages/basepage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytestpackage/Pages/loginpage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytestpackage/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytestpackage/conftest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytestpackage/seleniumwrappers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytestpackage/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytestpackage/tests/test_case_01.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytestpackage/tests/test_case_02.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Working_With_JSON/json_dump.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Working_With_JSON/_working_with_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/Working_With_JSON/_working_with_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Working_With_JSON/json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Working_With_JSON/json.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_comprehensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_conditionals_and_looping.py" beforeDir="false" afterPath="$PROJECT_DIR$/Conditional_And_Looping/_conditionals_and_looping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_datetime.py" beforeDir="false" afterPath="$PROJECT_DIR$/Date_Time_Module/_datetime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decorators/_decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/_dictionary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_exception_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exception_Handling/_exception_handling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_integers_and_floats.py" beforeDir="false" afterPath="$PROJECT_DIR$/Numbers/_integers_and_floats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_iterables_iterators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_magic_dunder_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/Magic_Methods_Dunders/_magic_dunder_methods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_main__name__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_mutable_and_immutable_objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mutable_And_Immutable/_mutable_and_immutable_objects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_oop.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_random_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/Random_Module/_random_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_regular_expressions.py" beforeDir="false" afterPath="$PROJECT_DIR$/RegularExpressions/_regular_expressions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_slicing_lists_strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_slicing_lists_strings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sorting_part-I.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting/_sorting_part-I.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sorting_part-II.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting/_sorting_part-II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_variable_scope.py" beforeDir="false" afterPath="$PROJECT_DIR$/Variable_Scope/_variable_scope.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +39,7 @@
     <session id="206300637">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="112" />
+          <entry key="project.closed" value="113" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.107" value="1" />
@@ -50,7 +53,7 @@
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="3" />
           <entry key="project.open.time.27" value="2" />
-          <entry key="project.open.time.28" value="3" />
+          <entry key="project.open.time.28" value="4" />
           <entry key="project.open.time.29" value="5" />
           <entry key="project.open.time.30" value="2" />
           <entry key="project.open.time.31" value="3" />
@@ -89,7 +92,7 @@
           <entry key="project.open.time.9" value="4" />
           <entry key="project.open.time.91" value="1" />
           <entry key="project.open.time.93" value="1" />
-          <entry key="project.opened" value="113" />
+          <entry key="project.opened" value="114" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -98,42 +101,42 @@
           <entry key="Python Console" value="42" />
           <entry key="dummy" value="288" />
           <entry key="from_file" value="4" />
-          <entry key="py" value="137898" />
+          <entry key="py" value="138554" />
           <entry key="python_notes" value="2096" />
           <entry key="regex_notes" value="38" />
-          <entry key="txt" value="247" />
+          <entry key="txt" value="351" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="4338" />
-          <entry key="Python" value="137940" />
+          <entry key="PLAIN_TEXT" value="4442" />
+          <entry key="Python" value="138596" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="GIT_Notes" value="5" />
+          <entry key="GIT_Notes" value="8" />
           <entry key="csv" value="10" />
           <entry key="from_file" value="1" />
           <entry key="html" value="2" />
-          <entry key="json" value="1" />
+          <entry key="json" value="5" />
           <entry key="md" value="2" />
-          <entry key="py" value="685" />
+          <entry key="py" value="688" />
           <entry key="pyi" value="3" />
-          <entry key="python_notes" value="13" />
+          <entry key="python_notes" value="14" />
           <entry key="regex_notes" value="9" />
           <entry key="to_file" value="1" />
-          <entry key="txt" value="66" />
+          <entry key="txt" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSV" value="4" />
           <entry key="HTML" value="2" />
-          <entry key="JSON" value="1" />
+          <entry key="JSON" value="5" />
           <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="101" />
-          <entry key="Python" value="685" />
+          <entry key="PLAIN_TEXT" value="107" />
+          <entry key="Python" value="688" />
           <entry key="PythonStub" value="3" />
         </counts>
       </usages-collector>
@@ -175,6 +178,7 @@
       <find>r</find>
       <find>pop</find>
       <find>test.txt</find>
+      <find>del</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,9 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Pack/10_regular_expressions.py" />
-        <option value="$PROJECT_DIR$/Pack/12_exception_handling.py" />
-        <option value="$PROJECT_DIR$/Pack/10_main__name__.py" />
         <option value="$PROJECT_DIR$/pytestpackage/Pages/basepage.py" />
         <option value="$PROJECT_DIR$/pytestpackage/seleniumwrappers.py" />
         <option value="$PROJECT_DIR$/Pack/9_sorting_part-II.py" />
@@ -234,6 +235,9 @@
         <option value="$PROJECT_DIR$/Pack/json.txt" />
         <option value="$PROJECT_DIR$/Pack/_working_with_json.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/Dictionary/_dictionary.py" />
+        <option value="$PROJECT_DIR$/Working_With_JSON/json.txt" />
+        <option value="$PROJECT_DIR$/Working_With_JSON/_working_with_json.py" />
       </list>
     </option>
   </component>
@@ -266,7 +270,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -278,6 +281,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -285,11 +289,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Working_With_JSON" />
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Python_Coding_Exercise" />
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Handling_Files" />
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice" />
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\test" />
+      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Exception_Handling" />
+      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Variable_Scope" />
+      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Random_Module" />
+      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Magic_Methods_Dunders" />
+      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Mutable_And_Immutable" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\py_test_practice" />
@@ -307,7 +311,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python._working_with_json (1)">
+  <component name="RunManager" selected="Python._working_with_json (2)">
     <configuration name="TC01" type="PythonConfigurationType" factoryName="Python">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -371,27 +375,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_variable_scope" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Practice" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pack" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\ssuryaprasad\PycharmProjects\Practice\_variable_scope.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="_working_with_json (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -405,6 +388,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\Users\ssuryaprasad\PycharmProjects\Practice\Working_With_JSON\_working_with_json.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="_working_with_json (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Working_With_JSON" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Working_With_JSON/_working_with_json.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -436,19 +440,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.TC01" />
-      <item itemvalue="Python._variable_scope" />
       <item itemvalue="Python._python_coding_problems" />
       <item itemvalue="Python._file_handling" />
       <item itemvalue="Python._working_with_json" />
       <item itemvalue="Python._working_with_json (1)" />
+      <item itemvalue="Python._working_with_json (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python._working_with_json (2)" />
         <item itemvalue="Python._working_with_json (1)" />
         <item itemvalue="Python._working_with_json" />
         <item itemvalue="Python._file_handling" />
         <item itemvalue="Python._python_coding_problems" />
-        <item itemvalue="Python._variable_scope" />
       </list>
     </recent_temporary>
   </component>
@@ -510,12 +514,12 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49663526" visible="true" weight="0.20278834" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49663526" visible="true" weight="0.20278834" />
       <window_info id="Structure" order="1" sideWeight="0.50336474" side_tool="true" weight="0.19518378" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49873257" weight="0.33512786" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49873257" weight="0.39165545" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4064603" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -523,7 +527,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.46971735" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.39030954" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50126743" side_tool="true" weight="0.34724092" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.50126743" side_tool="true" visible="true" weight="0.34724092" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -563,42 +567,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/practice/ftu_data_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="63" column="10" lean-forward="true" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/ftu_data_visulization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
-          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GIT_Notes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/ftu_data_visulization.py" />
     <entry file="file://$PROJECT_DIR$/Pack/helloworld.html" />
-    <entry file="file://$PROJECT_DIR$/practice/mailid.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="2184" selection-start-line="3" selection-start-column="2184" selection-end-line="3" selection-end-column="2184" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/mailid.txt" />
+    <entry file="file://$PROJECT_DIR$/practice/user.py" />
     <entry file="file://$PROJECT_DIR$/Pack/Data/AA_Resources.txt" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/datetime.pyi">
       <provider selected="true" editor-type-id="text-editor">
@@ -607,16 +579,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pack/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/library.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Pack/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/practice/library.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -639,13 +603,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/Practice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/Practice.py" />
     <entry file="file://C:/Python/Lib/datetime.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -660,143 +618,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_conditionals_and_looping.py">
+    <entry file="file://$PROJECT_DIR$/Conditional_And_Looping/_conditionals_and_looping.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_datetime.py">
+    <entry file="file://$PROJECT_DIR$/Date_Time_Module/_datetime.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1760">
           <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_dictionary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_exception_handling.py">
+    <entry file="file://$PROJECT_DIR$/Exception_Handling/_exception_handling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_functions.py">
+    <entry file="file://$PROJECT_DIR$/Functions/_functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1672">
           <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_integers_and_floats.py">
+    <entry file="file://$PROJECT_DIR$/Numbers/_integers_and_floats.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_lists.py">
+    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_magic_dunder_methods.py">
+    <entry file="file://$PROJECT_DIR$/Magic_Methods_Dunders/_magic_dunder_methods.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_main__name__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_oop.py">
+    <entry file="file://$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sorting_part-II.py">
+    <entry file="file://$PROJECT_DIR$/Sorting/_sorting_part-II.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_strings.py">
+    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_variable_scope.py">
+    <entry file="file://$PROJECT_DIR$/Variable_Scope/_variable_scope.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sorting_part-I.py">
+    <entry file="file://$PROJECT_DIR$/Sorting/_sorting_part-I.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_iterables_iterators.py">
+    <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="740">
           <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_comprehensions.py">
+    <entry file="file://$PROJECT_DIR$/Comprehensions/_comprehensions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1210">
           <caret line="55" column="36" lean-forward="true" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_slicing_lists_strings.py">
+    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_slicing_lists_strings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-75">
           <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_generators.py">
+    <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
           <caret line="82" selection-start-line="82" selection-end-line="83" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_decorators.py">
+    <entry file="file://$PROJECT_DIR$/Decorators/_decorators.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_mutable_and_immutable_objects.py">
+    <entry file="file://$PROJECT_DIR$/Mutable_And_Immutable/_mutable_and_immutable_objects.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="43" column="32" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="32" />
@@ -817,14 +758,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_regular_expressions.py">
+    <entry file="file://$PROJECT_DIR$/RegularExpressions/_regular_expressions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_random_module.py">
+    <entry file="file://$PROJECT_DIR$/Random_Module/_random_module.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="25" column="11" lean-forward="true" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
@@ -845,13 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python_notes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Handling_Files/to_file.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -869,26 +803,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Working_With_JSON/json.txt">
+    <entry file="file://$PROJECT_DIR$/Pack/Python_Coding_Exercise/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/Pack/Handling_Files/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/test/test.py" />
+    <entry file="file://$PROJECT_DIR$/_main__name__.py" />
+    <entry file="file://$PROJECT_DIR$/GIT_Notes">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        <state relative-caret-position="242">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pack/Python_Coding_Exercise/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/python_notes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pack/Handling_Files/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Dictionary/_dictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Working_With_JSON/json_dump.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Working_With_JSON/json.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Working_With_JSON/_working_with_json.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="176">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
