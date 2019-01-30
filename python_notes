@@ -1,0 +1,20 @@
+Sequences are very common type of iterables in Python. Below are the examples of Sequences in python
+String's, List's and Tuple's are sequences in python.
+Dictionaries, sets are iterables but not Sequences.
+All Iterables are not Sequences
+names = ['apple', 'google', 'yahoo', 'facebook']
+cordinates = (1, 2)
+words = 'Hello World!'
+
+Sets can not be indexed
+
+Generators are iterators, enumerate objects are iterators, zip function is an iterator, reversed() objects are iterators,
+
+'apple' < 'animal'  Returns True because apple comes first in the dictionary before animal
+
+'Apple' < 'apple'   Returns False because upper case 'A' comes first before lower case 'a'
+
+when you need index, you use enumerate.
+when you need to loop through two list at a time, you use zip function.
+
+in keyword is used only for checking values in an iterable
