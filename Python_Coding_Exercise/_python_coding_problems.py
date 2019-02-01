@@ -33,3 +33,12 @@ while counter < f_num:
     print(a, end=',')
     a, b = a + b, a
     counter += 1
+    
+# Print el ppan as is ihTfI
+s = 'If This is an apple'
+r = s[::-1].replace(' ', '')
+for index, c in enumerate(s):
+    if c == ' ':
+        r = r[:index] + ' ' + r[index:]
+print(r)
+

@@ -23,6 +23,13 @@ print(td.weekday())     # Monday =0 and Sunday = 6
 t_delta = datetime.timedelta(days=7)
 print(td + t_delta)     # Prints 7 Day's from today
 print(td - t_delta)     # Prints Date 7 Day's before from today's date
+
+td_hour = datetime.datetime.today()
+t_delta = datetime.timedelta(hours=2)
+print(td_hour + t_delta)    # Adds two hours to the current hour
+
+td_days_hour = datetime.timedelta(days=2, hours=4)
+print(datetime.datetime.today() + td_days_hour)     # Prints two days and 4hrs from today
 # =================================================
 # TO know how many days are there for my Birthday
 bday = datetime.date(2019, 7, 26)

@@ -4,6 +4,12 @@
 employee = {}
 employee = dict()   # Using Constructor
 
+# Adding elements to an empty dictionary
+employee['name'] = 'steve'
+employee['salary'] = 60000
+
+print(employee)
+
 employee = {'name': 'steve', 'salary': 60000, 'languages': ['java', 'python']}
 
 print(len(employee))    # Prints the length of the dictionary
@@ -24,7 +30,7 @@ employee.update({'age': 35, 'phone': '111-1111'})
 # Deleting the key and value
 employee.popitem()      # Returns and deletes the last key/value pair in the dictionary
 print(employee.pop('age'))    # Returns and Deletes the mentioned key from the dictionary
-del employee['age']     # Deletes the Key 'age' and its value
+# del employee['age']     # Deletes the Key 'age' and its value
 
 # Looping through Key's and Value's of the Dictionary
 employee = {'name': 'steve', 'salary': 60000, 'languages': ['java', 'python']}

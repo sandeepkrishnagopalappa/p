@@ -5,9 +5,4 @@ import json
 with open('json.txt') as file:
     data = json.load(file)
     for state in data:
-        print(state)
-
-
-
-
-
+        print(state['name'], state['abbreviation'])

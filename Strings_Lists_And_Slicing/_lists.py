@@ -48,3 +48,7 @@ for index, item in enumerate(names):    # enumerate returns a tuple of index, it
 print('-'.join(names))  # Prints yahoo-netflix-microsoft-instagram-google-gmail-facebook-apple-amazon
 print('|'.join(names))  # Prints yahoo|netflix|microsoft|instagram|google|gmail|facebook|apple|amazon
 print(','.join(names))  # Prints yahoo,netflix,microsoft,instagram,google,gmail,facebook,apple,amazon
+
+# Converting String to List
+my_string = 'Hello World'
+print(list(my_string))  # Prints ['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']

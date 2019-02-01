@@ -30,6 +30,11 @@ dict_word_count = {
 }
 print(dict_word_count)
 
+# Counting the number of each character in a String
+my_string = 'guido van rossum'
+dict_char_count = {c: my_string.count(c) for c in my_string}
+print(dict_char_count)
+
 # Dictionary of character and ascii value pairs
 s = 'abcABC'
 dict_ascii = {
