@@ -8,7 +8,7 @@ f_contents = file.read()
 print(f_contents)
 file.close()
 
-# Reading file Using Context Manager
+# Reading file Using Context Manager (No need to close the file explicitly when file is opened using contex manager)
 with open('read.txt') as file:
     f_contents = file.readlines()   # Returns a List
     for line in f_contents:
@@ -20,13 +20,13 @@ with open('read.txt') as file:
     print(f_contents, end='')
 
 with open('read.txt') as file:
-    for line in file:           # Loads only one line at a time and prints the line
-        print(line, end='')
-
-# with open('read.txt') as file:
     print(file.readline(), end='')  # Reads one line at a time
     print(file.readline(), end='')
     print(file.readline(), end='')
+
+with open('read.txt') as file:
+    for line in file:           # Loads only one line at a time and prints the line
+        print(line, end='')
 
 # Reading 10 characters at a time
 size_to_read = 10

@@ -1,3 +1,6 @@
+
+# Conditional statement
+
 _month = 'January'
 
 if _month == 'January':
@@ -8,6 +11,20 @@ elif _month == 'July':
     print('You are in Jul')
 else:
     print('Unknown month')
+    
+# Inline If statement
+ios_latest_version = '12.2.1'
+ios_current_version = '12.1.1'
+
+msg = 'Update Available' if ios_latest_version.split('.') > ios_current_version.split('.') else 'Software is upto date'
+print(msg)
+
+# Below code is same as the above inline if statement
+if ios_latest_version.split('.') > ios_current_version.split('.'):
+    print('Update Available')
+else:
+    print('Software is upto date')
+
 # =================================================
 # Looping
 for num in range(5):

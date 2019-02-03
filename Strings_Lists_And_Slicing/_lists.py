@@ -52,3 +52,9 @@ print(','.join(names))  # Prints yahoo,netflix,microsoft,instagram,google,gmail,
 # Converting String to List
 my_string = 'Hello World'
 print(list(my_string))  # Prints ['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']
+
+# Unpacking List
+least, *rest, maximum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(least)    # Prints first item in the list
+print(maximum)  # Prints last item in the list
+print(rest)     # Prints all the item in between 1st and last item of the list

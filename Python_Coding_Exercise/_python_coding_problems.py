@@ -42,3 +42,11 @@ for index, c in enumerate(s):
         r = r[:index] + ' ' + r[index:]
 print(r)
 
+# Reverse difference
+nums = [1, 2, 3, 4, 5]
+reverse_difference = [
+    n1 - n2
+    for n1, n2 in zip(nums, nums[::-1])
+]
+print(reverse_difference)
+

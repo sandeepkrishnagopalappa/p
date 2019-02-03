@@ -1,10 +1,5 @@
-1. This is Line number one
-2. This is Line number two
-3. This is Line number three
-4. This is Line number four
-5. This is Line number five
-6. This is Line number six
-7. This is Line number seven
-8. This is Line number eight
-9. This is Line number nine
-10. This is Line number ten
+Python is an interpreted, high-level, general-purpose programming language.
+Created by Guido van Rossum and first released in 1991.
+Python has a design philosophy that emphasizes code readability.notably using significant whitespace.
+It provides constructs that enable clear programming on both small and large scales.
+Van Rossum led the language community until stepping down as leader in July 2018

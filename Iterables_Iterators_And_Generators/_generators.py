@@ -1,5 +1,11 @@
 from itertools import count
 
+'''
+A Generator is a function that returns an iterator. It generates values using the 'yield' keyword.
+when called on next() function a raises StopIteration exception when there are no more values to generate.
+'yield' keyword suspends or pauses the execution of the function. But 'return' statement ends the function.
+'''
+
 # Looping
 fruits = ['apple', 'orange', 'banana', 'strawberry']
 
@@ -30,7 +36,7 @@ def get_even_numbers(stream):
     return list_even
 
 
-list_evens = get_even_numbers(count())    # Infinite Loop [0, 1, 2, 3, 4..............]
+# list_evens = get_even_numbers(count())    # Infinite Loop [0, 1, 2, 3, 4..............]
 
 
 # Using Generators (PYTHONIC approach)
@@ -67,6 +73,23 @@ print(next(n))
 # Using for loop
 for n in square_numbers(nums):
     print(n, end=',')
+    
+
+# Check if the Number is Prime or Not Traditional approach
+def isprime(number):
+    # return all(iterable % i for i in range(2, iterable))
+    for i in range(2, number):
+        if number % i == 0:
+            return False
+        return True
+
+
+# Check if the Number is Prime or Not Using Generator expression
+def isprime_gen(number):
+    return all(number % i for i in range(2, number))
+
+
+print(isprime_gen(100))
 
 
 def actual_lines(any_iterable):

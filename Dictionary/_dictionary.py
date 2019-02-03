@@ -54,3 +54,25 @@ d1 = {'fname': 'steve', 'lname': 'jobs'}
 d2 = {'age': 56, 'company': 'apple'}
 
 d3 = {**d1, **d2}
+
+# Creating Dictionary using List's
+cities = ['Tokyo',
+          'Delhi',
+          'Shanghai',
+          'Sao Paulo',
+          'Mumbai'
+          ]
+
+population = ['38,001,000',
+              '25,703,168',
+              '23,740,778',
+              '21,066,245',
+              '21,042,538'
+              ]
+
+pairs = dict(zip(cities, population))
+
+print(pairs)    # Prints dictionary of city and population pairs
+
+# Prints default value zero if the key is not found in the dictionary
+print(pairs.get('Bangalore', 0))
