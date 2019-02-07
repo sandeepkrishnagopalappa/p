@@ -4,7 +4,7 @@ import heapq
 names = ['apple', 'google', 'yahoo', 'amazon', 'facebook', 'instagram', 'microsoft']
 
 # Sorting the list based on the number of characters of the list item
-print(sorted(names, key=lambda name: len(name)))
+print(sorted(names, key=len))
 
 # Sorting the list based on the last character of the list item
 print(sorted(names, key=lambda name: name[-1]))

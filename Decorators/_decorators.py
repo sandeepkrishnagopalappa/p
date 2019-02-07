@@ -24,7 +24,6 @@ def show():
 
 
 show()
-
 # =======================================================
 
 
@@ -68,78 +67,53 @@ def to_upper(s):
     return s.upper()
 
 
-names = ['sandeep', 'steve', 'jack']
+names = ['rob', 'steve', 'jack']
 print(to_upper(names))
 
 print(random_choice())
 print(random_choice_1('Hi'))
 
 
-# Class Decorator
-class Wait_Element_Visibility:
-    def __init__(self, original_function):
-        self.orignal_function = original_function
-
-    def __call__(self, *args, **kwargs):
-        print(kwargs)
-        if self.orignal_function.__name__ == 'click_element':
-            if not kwargs.get('timeout'):
-                default_timeout = self.orignal_function.__defaults__[-1]
-                print(f'Waiting for Element to be clickable for {default_timeout} seconds')
-            else:
-                print('Waiting for Element to be editable for seconds', kwargs.get('timeout'))
-        elif self.orignal_function.__name__ == 'enter_text':
-            if not kwargs.get('timeout'):
-                default_timeout = self.orignal_function.__defaults__[-1]
-                print(f'Waiting for Element to be editable for {default_timeout} seconds')
-        elif self.orignal_function.__name__ == 'select_item':
-            print('Waiting for element to be selectable')
-            if not kwargs.get('timeout'):
-                default_timeout = self.orignal_function.__defaults__[-1]
-                print(f'Waiting for Element to be selectable for {default_timeout} seconds')
-        self.orignal_function(self, *args, **kwargs)
-
-
 # Function Decorator
-def dec_wait_element_visibility(orignal_function):
+def _wait(orignal_function):
     def wrapper(*args, **kwargs):
-        if not kwargs.get('timeout'):
-            wait_element_visibility(args, orignal_function.__defaults__[-1])
+        timeout = kwargs.get('timeout', orignal_function.__defaults__[0])
+        print(f'Waiting for element visibility for {timeout} seconds')
         return orignal_function(*args, **kwargs)
     return wrapper
 
 
-def wait_element_visibility(webelement, timeout):
-    print(f'Waiting for element visibility {webelement} for {timeout}')
-
-
-@dec_wait_element_visibility
-def click_element(webelement, timeout=60):
-    print('Clicking on Element')
-
-
-click_element('Login')
-
-
-class framework_utility:
+class FrameworkUtility:
     def __init__(self, driver):
         self.driver = driver
 
-    @Wait_Element_Visibility
-    def click_element(self, webelement=None, timeout=60):
-        pass
+    @_wait
+    def click_element(self, webelement, timeout=60):
+        print(f'Clicked on element {webelement}')
 
-    @Wait_Element_Visibility
-    def enter_text(self, webelement=None, value=None, timeout=60):
-        pass
+    @_wait
+    def enter_text(self, webelement, value, timeout=60):
+        print(f'Entered text {value} in {webelement}')
 
-    @Wait_Element_Visibility
-    def select_item(self, webelement=None, item=None, timeout=60):
-        pass
+    @_wait
+    def select_item(self, webelement, item, timeout=60):
+        print(f'Selected item {item} from {webelement} list box')
 
 
-f = framework_utility('driver')
+f = FrameworkUtility('driver')
+f.click_element('Submit')
 f.click_element('Login', timeout=100)
 f.select_item('City', 'Bangalore', timeout=20)
 f.enter_text('Username', 'user1')
+
+
+# # Class Decorator
+# class Wait_Element_Visibility:
+#     def __init__(self, original_function):
+#         self.orignal_function = original_function
+#
+#     def __call__(self, *args, **kwargs):
+#         print(kwargs)
+#         timeout = kwargs.get('timeout', self.orignal_function.__defaults__[-1])
+#         self.orignal_function(self, *args, **kwargs)
 

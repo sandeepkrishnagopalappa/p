@@ -49,4 +49,5 @@ reverse_difference = [
     for n1, n2 in zip(nums, nums[::-1])
 ]
 print(reverse_difference)
+    
 

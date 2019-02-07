@@ -22,6 +22,13 @@ names.pop()     # By default this will remove the last item in the List
 # pop method returns the item that it has removed from the List
 names.pop(3)    # Removes the item in the 3rd index of the List
 
+# Making copy of the list
+a = [1, 2, 3, 4, 5]
+b = a.copy()
+  # OR
+b = a[:]
+print(a)
+
 # Sorting List's
 names.sort()    # Sorts the List in Alphabetical Order
 # sort method modifies the list inplace.

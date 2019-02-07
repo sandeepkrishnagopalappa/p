@@ -62,6 +62,7 @@ print_each(my_tuple)
 
 # Custom Iterator Class
 class MyRange:
+    """Iterator for looping over in forward direction"""
     def __init__(self, start, end):
         self.value = start
         self.end = end
@@ -79,26 +80,74 @@ class MyRange:
 
 nums = MyRange(0, 100)
 
+
 for num in nums:
     print(num)
 
 
 # Custom Iterator
 class MyItr:
+    """Iterator for looping over a sequence in forward direction."""
     def __init__(self, iterable):
-        self.start = 0
-        self.end = len(iterable)-1
-        self.iterable = iterable
+        self.index = 0
+        # self.end = len(iterable)-1
+        self.data = iterable
 
     def __iter__(self):
         return self
 
     def __next__(self):
 
-        if self.start > self.end:
+        if self.index > len(self.data)-1:
             raise StopIteration
         else:
-            item = self.iterable[self.start]
-            self.start += 1
+            item = self.data[self.index]
+            self.index += 1
             return item
 
+
+num = MyItr([1, 2, 3, 4, 5])
+_list = MyItr(['apple', 'google', 'yahoo', 'facebook'])
+string = MyItr('spam')
+
+for n in num:
+    print(n)
+
+for l in _list:
+    print(l)
+
+for s in string:
+    print(s)
+
+
+# Reverse Iterator
+class Reverse:
+    """Iterator for looping over a sequence backwards."""
+    def __init__(self, iterable):
+        self.index = len(iterable) - 1
+        self.data = iterable
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.index < 0:
+            raise StopIteration
+        else:
+            item = self.data[self.index]
+            self.index -= 1
+            return item
+
+        
+rev_num = Reverse([1, 2, 3, 4, 5])
+rev_list = Reverse(['apple', 'google', 'yahoo', 'facebook'])
+rev_string = Reverse('spam')
+
+for n in rev_num:
+    print(n)
+
+for l in rev_list:
+    print(l)
+
+for s in rev_string:
+    print(s)

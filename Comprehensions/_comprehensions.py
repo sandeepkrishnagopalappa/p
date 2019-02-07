@@ -1,5 +1,6 @@
 import heapq
 import string
+import math
 
 '''
 Comprehensions in Python is a way to build an iterable object in one expression witout the need of traditional
@@ -28,6 +29,15 @@ print(even_numbers)
 # List of even numbers between range 1-50 using List Comprehensions
 even_numbers = [num for num in range(1, 50) if num % 2 == 0]
 print(even_numbers)
+
+# Generating List of PI values
+pi_list = [round(math.pi, n) for n in range(1, 6)]
+print(pi_list)
+
+# Removing Duplicate items from the list
+l = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+[l.remove(item) for item in reversed(l) if l.count(item) > 1]
+print(l)
 
 # Prints the names if the first char of the item starts with any letter in the first half of the alphabet character
 names = ['apple', 'yahoo', 'google', 'facebook', 'dropbox', 'instagram', 'twitter', 'microsoft', 'next']
@@ -119,6 +129,12 @@ pairs = {city: population for city, population in zip(cities, population)}
 
 print(pairs)
 
+# Removing duplicates from the list (using Dictionary and List Comprehension)
+l = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+d = {item: l.count(item) for item in l}
+[l.remove(key) for key, value in d.items() if value > 1]
+print(l)
+
 # Counts the occurance of each word in the text file and prints the most and least repeated words
 with open('read.txt', 'r') as f:
     text = f.read()
@@ -137,4 +153,12 @@ print(heapq.nsmallest(3, d.items(), key=lambda name: name[-1]))
 least, *rest, maximum = sorted(d.items(), key=lambda name: name[-1])
 print(least)    # Prints the word with least occurance
 print(maximum)  # Prints the word with maximum occurance
-print(rest)     # Prints
+print(rest)     # Prints all elements between 1st and last element
+
+# Set Comprehension
+# The difference between Dictionaty Comprehension and Set Comprehension is that the set Comprehension does not
+# have key value pair
+
+nums = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4]
+s = {num ** 2 for num in nums}
+print(s)
