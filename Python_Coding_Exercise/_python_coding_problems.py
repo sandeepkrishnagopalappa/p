@@ -1,3 +1,4 @@
+from itertools import groupby
 
 # Coding Problem-1
 lst1 = [42, 3, 9, 42, 42, 0, 9, 42, 42, 17, 8, 222, 4, 9, 0, 1]
@@ -34,14 +35,6 @@ while counter < f_num:
     a, b = a + b, a
     counter += 1
     
-# Print el ppan as is ihTfI
-s = 'If This is an apple'
-r = s[::-1].replace(' ', '')
-for index, c in enumerate(s):
-    if c == ' ':
-        r = r[:index] + ' ' + r[index:]
-print(r)
-
 # Reverse difference
 nums = [1, 2, 3, 4, 5]
 reverse_difference = [
@@ -49,5 +42,39 @@ reverse_difference = [
     for n1, n2 in zip(nums, nums[::-1])
 ]
 print(reverse_difference)
-    
 
+# Deleting Sequence
+sequence = [1, 2, 1, 1, 1, 2, 3, 4, 2, 2]
+non_dup = []
+for index, item in enumerate(sequence):
+    if index == 0 or item != sequence[index - 1]:
+        non_dup.append(item)
+print(non_dup)
+
+# OR
+
+
+def compact(iterable):
+    return (item for item, group in groupby(iterable))    # Generator expression
+
+
+a = compact(sequence)
+print(next(a))
+
+# Removing Duplicate items from the list
+numbers = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+
+for num in compact(sorted(numbers)):
+    print(num)
+
+
+# is_anagram
+def is_anagram(word1: str, word2: str) -> bool:
+    is_same_words = word1.lower() != word2.lower()
+    has_same_letters = sorted(word1.lower()) == sorted(word2.lower())
+    return has_same_letters and is_same_words
+
+
+print(is_anagram('Listen', 'Silent'))   # Prints True
+print(is_anagram('tea', 'eat'))     # Prints True
+print(is_anagram('Bat', 'Pat'))     # Prints False

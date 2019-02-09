@@ -143,6 +143,7 @@ rev_num = Reverse([1, 2, 3, 4, 5])
 rev_list = Reverse(['apple', 'google', 'yahoo', 'facebook'])
 rev_string = Reverse('spam')
 
+
 for n in rev_num:
     print(n)
 
@@ -151,3 +152,12 @@ for l in rev_list:
 
 for s in rev_string:
     print(s)
+    
+with open('words.txt') as file:
+    text = file.readlines()
+
+# Prints all the lines in text file in reverse order
+rev_line = Reverse(text)
+
+for line in rev_line:
+    print(line, end='')

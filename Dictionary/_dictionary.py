@@ -26,6 +26,7 @@ print(employee.get('age', 'The Key not found in the dictionary'))   # Throws exc
 
 # Adding / Updating the dictionary
 employee.update({'age': 35, 'phone': '111-1111'})
+employee = {**employee, 'address': '2200, Valley View Lane'}
 
 # Deleting the key and value
 employee.popitem()      # Returns and deletes the last key/value pair in the dictionary
@@ -37,6 +38,12 @@ employee = {'name': 'steve', 'salary': 60000, 'languages': ['java', 'python']}
 
 print(employee.items())     # Returns a tuple of key,value pairs
 
+for item in employee:      # Prints only key's of the dictionary
+    print(item)
+    
+for item in employee:
+    print(employee[item])   # Prints Values of the dictionary
+
 for key, value in employee.items():     # Tuple un-packing
     print(key, value)
 
@@ -46,8 +53,8 @@ for key in employee.keys():
 for value in employee.values():
     print(value)
 
-for key, value in enumerate(employee.items()):
-    print(key, value)
+for index, items in enumerate(employee.items()):
+    print(index, items)
 
 # Merging Dictionaries
 d1 = {'fname': 'steve', 'lname': 'jobs'}

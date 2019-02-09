@@ -60,8 +60,11 @@ print(add(1000, 46273, 84545, 9834958, 4587583))
 
 
 # Unpacking arguments
-def display_info(name, age, salary):    # Name of the arguments should be same as the key's of the dictionary
-    print(name, age, salary)
+# def display_info(name, age, salary):    # Name of the arguments should be same as the key's of the dictionary
+#     print(name, age, salary)
+
+def display_info(*args, **kwargs):    # Name of the arguments should be same as the key's of the dictionary
+    print(args, kwargs)
 
 
 # * is used for unpacking list and tuple (positional arguments)

@@ -15,6 +15,8 @@ print(names[0])     # Prints the item present in the 0th index of the List.
 names.append('gmail')   # Adding element to the list
 names.insert(3, 'watsapp')      # Inserts the item at 3rd index.
 names.extend(['netflix', 'walmart', 'kroger'])    # Adds the new list to the existing list
+names = [*names, 'dxc']
+print(names)
 
 # Removing Items from the List
 names.remove('kroger')  # Removes the item 'kroger' from the List

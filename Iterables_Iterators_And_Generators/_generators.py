@@ -89,7 +89,7 @@ def isprime_gen(number):
     return all(number % i for i in range(2, number))
 
 
-print(isprime_gen(100))
+print(isprime_gen(5))
 
 
 def actual_lines(any_iterable):

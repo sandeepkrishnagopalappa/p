@@ -19,6 +19,28 @@ print(squares)
 list_evens = [num ** 2 for num in nums]
 print(list_evens)
 
+# Returns a list containing all vowels in the given string
+my_string = 'Hello world'
+person_names = ['Laura', 'Steve', 'Bill', 'James', 'Bob', 'Greig', 'Scott', 'Alex', 'Ive']
+
+
+# Names starting with Vowels
+def get_vowel_names(iterable):
+    return [name for name in iterable if name[0].lower() in ['a', 'e', 'i', 'o', 'u']]
+
+
+print(get_vowel_names(person_names))
+print(get_vowel_names(my_string))
+
+
+# Raise to the power of list index
+def raise_to_index(iterable):
+    return [value ** index for index, value in enumerate(iterable)]
+
+
+nums = [1, 2, 3, 4, 5]
+print(raise_to_index(nums))
+
 # List of even numbers between range 1-50 using for loop
 even_numbers = []
 for num in range(1, 50):
@@ -35,9 +57,10 @@ pi_list = [round(math.pi, n) for n in range(1, 6)]
 print(pi_list)
 
 # Removing Duplicate items from the list
-l = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
-[l.remove(item) for item in reversed(l) if l.count(item) > 1]
-print(l)
+numbers = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+numbers = sorted(numbers)
+dedup = [number for index, number in enumerate(numbers) if index == 0 or number != numbers[index-1]]
+print(dedup)
 
 # Prints the names if the first char of the item starts with any letter in the first half of the alphabet character
 names = ['apple', 'yahoo', 'google', 'facebook', 'dropbox', 'instagram', 'twitter', 'microsoft', 'next']
@@ -79,15 +102,6 @@ dict_ascii = {
     for c in s
 }
 print(dict_ascii)
-
-# Returns a list containing all vowels in the given string
-my_string = 'Hello world'
-vowels = [
-    c
-    for c in my_string
-    if c in ['a', 'e', 'i', 'o', 'u']
-]
-print(vowels)
 
 # Tallest Buildings
 tall_buildings = {

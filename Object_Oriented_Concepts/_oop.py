@@ -43,6 +43,7 @@ class Employee:
     def __repr__(self):
         return f'{self.age}'
 
+
 e1 = Employee('sa', 25)
 e2 = Employee('a', 30)
 
@@ -53,5 +54,5 @@ print(sorted(e_list, key= lambda emp : emp.age))
 print(e1.__cmp__(e2))
 
 
-
-
+name, age = e1
+print(name, age)
