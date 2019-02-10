@@ -12,6 +12,19 @@ elif _month == 'July':
 else:
     print('Unknown month')
     
+# Good and Bad Emotions
+good_emotions = ['good', 'great', 'happy', 'awesome']
+bad_emotions = ['sad', 'angry', 'upset', 'tired']
+
+user_feeling = input('How are you today?').lower()
+
+if user_feeling in good_emotions:
+    print(f'I am glad you are feeling {user_feeling} today')
+elif user_feeling in bad_emotions:
+    print(f'I am sorry you are feeling {user_feeling} today')
+else:
+    print('I dont know how you are feeling today')
+
 # Inline If statement
 ios_latest_version = '12.2.1'
 ios_current_version = '12.1.1'

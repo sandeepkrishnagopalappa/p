@@ -1,5 +1,7 @@
 # Simple Function with no arguments
 def greet():
+    # Doc String
+    """greet function prints hello world to the console"""
     print('Hello world')
 
 
@@ -44,6 +46,13 @@ hello(name='Steve', company='DXC')
 hello(company='DXC', name='Steve')
 
 
+# Function Annotations:
+# Function annotations are usually used for type hints:
+# for example, this function is expected to take two int arguments and is also expected to have an int return value:
+def sum_two_numbers(a: int, b: int) -> int:
+    return a + b
+
+
 # Variable number of Arguments
 def add(*args):
     total = 0
@@ -57,6 +66,8 @@ print(add(1))
 print(add(1, 2))
 print(add(10, 30, 45))
 print(add(1000, 46273, 84545, 9834958, 4587583))
+nums = [1, 2, 3, 4]
+print(add(*nums))
 
 
 # Unpacking arguments

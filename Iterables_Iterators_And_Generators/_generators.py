@@ -84,7 +84,7 @@ def isprime(number):
         return True
 
 
-# Check if the Number is Prime or Not Using Generator expression
+# Check if the Number is Prime Using Generator expression
 def isprime_gen(number):
     return all(number % i for i in range(2, number))
 

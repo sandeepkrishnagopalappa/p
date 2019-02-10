@@ -1,4 +1,5 @@
 # SORTING LIST's
+
 names = ['apple', 'google', 'yahoo', 'amazon', 'facebook', 'instagram', 'microsoft']
 sorted_names = sorted(names)    # sorted method returns a new list in sorted order
 print('Sorted List', sorted_names)

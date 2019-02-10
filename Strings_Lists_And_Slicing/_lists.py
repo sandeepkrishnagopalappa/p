@@ -49,6 +49,9 @@ print('yahoo' in names)    # Returns True if the item present in the List
 for item in names:
     print(item)
 
+for item in names[:4]:
+    print(item)
+
 # Prints the item and its corresponding index in the list
 for index, item in enumerate(names):    # enumerate returns a tuple of index, item pair
     print(index, item)

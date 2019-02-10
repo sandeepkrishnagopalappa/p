@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/_dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/_dictionary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conditional_And_Looping/_conditionals_and_looping.py" beforeDir="false" afterPath="$PROJECT_DIR$/Conditional_And_Looping/_conditionals_and_looping.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Functions/_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegularExpressions/_regular_expressions.py" beforeDir="false" afterPath="$PROJECT_DIR$/RegularExpressions/_regular_expressions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting/_sorting_part-I.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting/_sorting_part-I.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +21,7 @@
     <session id="206300637">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="135" />
+          <entry key="project.closed" value="137" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.107" value="1" />
@@ -53,7 +52,7 @@
           <entry key="project.open.time.39" value="4" />
           <entry key="project.open.time.40" value="3" />
           <entry key="project.open.time.41" value="2" />
-          <entry key="project.open.time.42" value="2" />
+          <entry key="project.open.time.42" value="3" />
           <entry key="project.open.time.45" value="2" />
           <entry key="project.open.time.47" value="2" />
           <entry key="project.open.time.49" value="1" />
@@ -79,7 +78,7 @@
           <entry key="project.open.time.9" value="6" />
           <entry key="project.open.time.91" value="1" />
           <entry key="project.open.time.93" value="1" />
-          <entry key="project.opened" value="136" />
+          <entry key="project.opened" value="137" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -88,7 +87,7 @@
           <entry key="Python Console" value="42" />
           <entry key="dummy" value="288" />
           <entry key="from_file" value="4" />
-          <entry key="py" value="153579" />
+          <entry key="py" value="155624" />
           <entry key="python_notes" value="2096" />
           <entry key="regex_notes" value="38" />
           <entry key="txt" value="358" />
@@ -97,7 +96,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="4449" />
-          <entry key="Python" value="153621" />
+          <entry key="Python" value="155666" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -108,12 +107,12 @@
           <entry key="html" value="2" />
           <entry key="json" value="6" />
           <entry key="md" value="3" />
-          <entry key="py" value="810" />
+          <entry key="py" value="833" />
           <entry key="pyi" value="3" />
           <entry key="python_notes" value="16" />
           <entry key="regex_notes" value="9" />
           <entry key="to_file" value="1" />
-          <entry key="txt" value="86" />
+          <entry key="txt" value="88" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -122,8 +121,8 @@
           <entry key="HTML" value="2" />
           <entry key="JSON" value="6" />
           <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="129" />
-          <entry key="Python" value="810" />
+          <entry key="PLAIN_TEXT" value="131" />
+          <entry key="Python" value="833" />
           <entry key="PythonStub" value="3" />
         </counts>
       </usages-collector>
@@ -132,15 +131,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py">
+        <entry file="file://$PROJECT_DIR$/RegularExpressions/_regular_expressions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
-              <folding>
-                <marker date="1549731374495" expanded="true" signature="1255:1260" ph="..." />
-                <marker date="1549731374495" expanded="true" signature="1255:1338" ph="..." />
-                <marker date="1549731374495" expanded="true" signature="1625:1899" ph="..." />
-              </folding>
+            <state relative-caret-position="-137">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RegularExpressions/reg.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -181,11 +184,11 @@
       <find>Vo</find>
       <find>dxc</find>
       <find>get_v</find>
-      <find>expre</find>
       <find>reversed</find>
       <find>reves</find>
       <find>prime</find>
       <find>set</find>
+      <find>expre</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -194,9 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Pack/GIT_Notes" />
-        <option value="$PROJECT_DIR$/Pack/Practice.py" />
-        <option value="$PROJECT_DIR$/Pack/_oop.py" />
         <option value="$PROJECT_DIR$/Pack/_magic_dunder_methods.py" />
         <option value="$PROJECT_DIR$/Pack/_decorators.py" />
         <option value="$PROJECT_DIR$/Pack/_slicing_lists_strings.py" />
@@ -232,23 +232,26 @@
         <option value="$PROJECT_DIR$/Date_Time_Module/_datetime.py" />
         <option value="$PROJECT_DIR$/Handling_Files/_file_handling.py" />
         <option value="$PROJECT_DIR$/Exception_Handling/_exception_handling.py" />
-        <option value="$PROJECT_DIR$/Conditional_And_Looping/_conditionals_and_looping.py" />
         <option value="$PROJECT_DIR$/Comprehensions/read.txt" />
         <option value="$PROJECT_DIR$/Decorators/_decorators.py" />
         <option value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_slicing_lists_strings.py" />
         <option value="$PROJECT_DIR$/Sorting/_sorting_part-II.py" />
-        <option value="$PROJECT_DIR$/Functions/_functions.py" />
         <option value="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py" />
         <option value="$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py" />
-        <option value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" />
         <option value="$PROJECT_DIR$/Comprehensions/_comprehensions.py" />
-        <option value="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" />
         <option value="$PROJECT_DIR$/Dictionary/_dictionary.py" />
         <option value="$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py" />
+        <option value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" />
+        <option value="$PROJECT_DIR$/Conditional_And_Looping/_conditionals_and_looping.py" />
+        <option value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" />
+        <option value="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" />
+        <option value="$PROJECT_DIR$/Sorting/_sorting_part-I.py" />
+        <option value="$PROJECT_DIR$/Functions/_functions.py" />
+        <option value="$PROJECT_DIR$/RegularExpressions/_regular_expressions.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="100" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -285,16 +288,6 @@
             <path>
               <item name="Practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="Practice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="Comprehensions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="Python_Coding_Exercise" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Practice" type="b2602c69:ProjectViewProjectNode" />
@@ -338,7 +331,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python._python_coding_problems">
+  <component name="RunManager" selected="Python._regular_expressions">
     <configuration name="TC01" type="PythonConfigurationType" factoryName="Python">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -360,7 +353,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_comprehensions" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="_conditionals_and_looping" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -368,11 +361,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Comprehensions" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Conditional_And_Looping" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Comprehensions/_comprehensions.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Conditional_And_Looping/_conditionals_and_looping.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -381,7 +374,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_dictionary" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="_functions" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -389,32 +382,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Dictionary" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Functions" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Dictionary/_dictionary.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="_generators" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Practice" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Iterables_Iterators_And_Generators" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Functions/_functions.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -444,7 +416,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_python_coding_problems" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="_regular_expressions" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -452,11 +424,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Coding_Exercise" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RegularExpressions" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RegularExpressions/_regular_expressions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="_strings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Strings_Lists_And_Slicing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -467,19 +460,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.TC01" />
-      <item itemvalue="Python._python_coding_problems" />
-      <item itemvalue="Python._comprehensions" />
-      <item itemvalue="Python._dictionary" />
+      <item itemvalue="Python._strings" />
+      <item itemvalue="Python._conditionals_and_looping" />
+      <item itemvalue="Python._functions" />
       <item itemvalue="Python._lists" />
-      <item itemvalue="Python._generators" />
+      <item itemvalue="Python._regular_expressions" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python._python_coding_problems" />
-        <item itemvalue="Python._dictionary" />
-        <item itemvalue="Python._generators" />
-        <item itemvalue="Python._comprehensions" />
+        <item itemvalue="Python._regular_expressions" />
+        <item itemvalue="Python._functions" />
         <item itemvalue="Python._lists" />
+        <item itemvalue="Python._conditionals_and_looping" />
+        <item itemvalue="Python._strings" />
       </list>
     </recent_temporary>
   </component>
@@ -540,7 +533,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49663526" visible="true" weight="0.20278834" />
       <window_info id="Structure" order="1" sideWeight="0.50336474" side_tool="true" weight="0.19518378" />
@@ -596,7 +588,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Pack/__init__.py" />
     <entry file="file://$PROJECT_DIR$/practice/library.py" />
     <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-234514117/itertools.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -620,24 +611,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Numbers/_integers_and_floats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mutable_And_Immutable/_mutable_and_immutable_objects.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="43" column="32" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Random_Module/_random_module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="11" lean-forward="true" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -721,13 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Variable_Scope/_variable_scope.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Exception_Handling/read.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -742,13 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Conditional_And_Looping/_conditionals_and_looping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-177">
-          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -787,34 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sorting/_sorting_part-I.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sorting/_sorting_part-II.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_slicing_lists_strings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Handling_Files/_file_handling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -822,28 +757,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-493">
-          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Comprehensions/_comprehensions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-            <marker date="1549710738652" expanded="true" signature="949:1072" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RegularExpressions/_regular_expressions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="37" column="6" selection-start-line="37" selection-end-line="37" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -851,27 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Functions/_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -891,13 +787,106 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <marker date="1549731374495" expanded="true" signature="1255:1260" ph="..." />
-            <marker date="1549731374495" expanded="true" signature="1255:1338" ph="..." />
-            <marker date="1549731374495" expanded="true" signature="1625:1899" ph="..." />
-          </folding>
+        <state relative-caret-position="22">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conditional_And_Looping/_conditionals_and_looping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2037">
+          <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Numbers/_integers_and_floats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Random_Module/_random_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sorting/_sorting_part-I.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sorting/_sorting_part-II.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_slicing_lists_strings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="51" column="22" lean-forward="true" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="58" column="25" lean-forward="true" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Variable_Scope/_variable_scope.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Functions/_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RegularExpressions/_regular_expressions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-137">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RegularExpressions/reg.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="3" />
         </state>
       </provider>
     </entry>
