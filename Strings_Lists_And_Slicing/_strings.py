@@ -49,6 +49,7 @@ print(my_message.find('l'))     # Prints the index of first occurance of the let
 print(my_message.find('World'))     # Prints the index of first occurance of the word 'World'
 print(my_message.find('Universe'))      # Prints -1.
 print(my_message.replace('World', 'Universe'))  # Prints 'Hello Universe'
+print(my_message.split())   # Splits the string based on white space and returns a list
 
 # String Concatination
 greeting = 'Hello'
