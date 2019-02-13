@@ -6,7 +6,7 @@ import re
 # \d - Digit [0-9]
 # \D - Not a Digit [^0-9]
 # \w - Word Character [a-zA-Z0-9_]
-# \W - Not a word character
+# \W - Not a word character [^a-zA-Z0-9_]
 # \s - White Space (space, tab, new line)
 # \S - Not White Space
 
@@ -16,6 +16,8 @@ import re
 # $ - End of the String
 # \b -  Word Boundry
 # \B - Not a word Boundry
+# [] - Matches characters in square brackets
+# [^ ] - Matches characters Not in square brackets
 
 # Meta Characters that needs to be Escaped (But need not be escaped when inside square brackets)
 # . ^ $ * + ? { } [ ] \ | ( )
@@ -79,16 +81,11 @@ def search_pattern(_search_pattern, _search_string):
     _matches = _pattern.findall(_search_string)
     return _matches
 
-
-# email_pattern = '[\w.-]+@[\w.]+'
-# phone_pattern = '\d{3}[-*.]\d{3}[-.*]\d{4}'
-# phone_pattern_toll_free = '1800[-*.]\d{3}[-.*]\d{4}'
-# phone_pattern_not_800_900 = '[^89]00[-*.]\d{3}[-.*]\d{4}'
 # url_pattern = 'https?://[\w.]+'
 # person_pattern = '(Mr|Mrs|Ms)\.?\s[\w]+'
 # Hours_24_time_format = '[0-2][0-4]:[0-5]\d:[0-5]\d'
 # id_address_format = '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'
-url_pattern_2 = 'https?://(www)?([\w.]+)(com|edu|gov)'
+# url_pattern_2 = 'https?://(www)?([\w.]+)(com|edu|gov)'
 
 # with open('mailid.txt') as file:
 #     str_text = file.read()
@@ -133,7 +130,7 @@ url_pattern_2 = 'https?://(www)?([\w.]+)(com|edu|gov)'
 # '+999' - Should Not Match
 # '00' - Should Match
 # '0.0' - Should Not Match
-match_integer = '^[-]?([1-9]\d*|0)$'
+# match_integer = '^[-]?([1-9]\d*|0)$'
 # matches = search_pattern(match_integer, '')
 # matches = search_pattern(match_integer, ' 5')
 # matches = search_pattern(match_integer, '5000')
@@ -158,7 +155,7 @@ match_integer = '^[-]?([1-9]\d*|0)$'
 
 # ===================================================
 # Regular expression - VOWELS
-match_vowels = '[aeiou]'
+match_vowels = r'[aeiou]'
 words = ['hello', 'exit', 'entry', 'auspicious']
 for word in words:
     print(word, '--> ', end='')
@@ -169,7 +166,7 @@ for word in words:
 # ===================================================
 # Regular Expression - File extensions
 # ===================================================
-match_file_extension = '\.[a-zA-Z]+$'
+match_file_extension = r'\.[a-zA-Z]+$'
 files = ['archive.zip', 'image.jpeg', 'index.xhtml', 'archive.tar.gz']
 for file in files:
     print(file, '-->', end='')
@@ -209,8 +206,13 @@ for date in _dates:
         print(match)
 # ===================================================
 
-# Regular Expression -
-_links = ['https://www.python.org', 'https://www.google.com', 'https://www.fecebook.com']
+# Regular Expression - Website names
+_links = ['https://www.python.org',
+          'https://www.google.com',
+          'https://www.facebook.com',
+          'https://www.youtube.com',
+          'http://www.amazon.com.us'
+          ]
 match_links = r'\.[a-z]+\.'
 
 for link in _links:
@@ -218,3 +220,53 @@ for link in _links:
     for match in matches:
         print(match[1:-1])
 
+# Regular Expression - Phone Number pattern
+phone_numbers = ['123-345-0987', '456-9832-098', '800-987-4756', '080-1029384725', '123-345-12', '900-938-0987']
+match_phone_numbers = r'\d{3}[-.]\d{3}[-.]\d{4}'
+
+for phone_number in phone_numbers:
+    matches = search_pattern(match_phone_numbers, phone_number)
+    for match in matches:
+        print(match)
+
+# Regular Expression - IP Addresses
+id_address_format = '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'
+ips = ['10.1.2.3', '127.0.0.0', '199.99.9.9', '199.9.9999.9', '127-0-0-0']
+
+for ip in ips:
+    matches = search_pattern(id_address_format, ip)
+    for match in matches:
+        print(match)
+
+# Regular Expression - Email format
+email_pattern = r'[\w.-]+@[\w]+\.com'
+emails = ['test.user@company.com',
+          'test.user2@company.com',
+          'test_user@company.com',
+          'testing@company.com',
+          'test-T.user@company.com',
+          'testing@company',
+          'testingcompany.com'
+          ]
+
+for email in emails:
+    matches = search_pattern(email_pattern, email)
+    for match in matches:
+        print(match)
+
+
+# Regular Expression - URL Pattern
+url_pattern = r'https?://[\w.]+'
+
+urls = ['http://youtube.com',
+        'https://google.com',
+        'http://amazon.in',
+        'https://mail.yahoo.com',
+        'ftp://test.com'
+        'https://facebook.com/'
+        ]
+
+for url in urls:
+    matches = search_pattern(url_pattern, url)
+    for match in matches:
+        print(match)

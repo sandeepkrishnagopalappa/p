@@ -1,6 +1,5 @@
 
 # Handling exception while reading from file
-
 try:
     file = open('read.txt')
 except FileNotFoundError as e:
@@ -9,7 +8,7 @@ else:           # Else Block Runs only if there is no exception in try block
     print(file.read())
 finally:        # Finally Block Runs regardless of what happens in try and except block
     print('Running finally')
-    
+
 
 # Handling divide by zero exception
 def divide(number):
@@ -40,3 +39,20 @@ def factorial(n):
 
 
 print(factorial(5))
+
+
+def div(a, b):
+    return a / b
+
+
+try:
+    print(div(1, 0))
+    print('Running Try Block')      # Never executes if there is any exception in div function
+except FileNotFoundError as e:
+    print(e)
+else:           # Else Block Runs only if there is no exception in try block
+    print('Running Else Block')
+finally:        # Finally Block Runs regardless of what happens in try and except block
+    print('Running finally')    # Always executes no matter what happens in try/except/else block
+
+print('Hello world')    # Never executes if there is any exception in try block

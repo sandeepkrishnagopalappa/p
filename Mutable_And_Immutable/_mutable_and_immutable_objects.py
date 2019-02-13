@@ -6,6 +6,12 @@ print(f'Memory Address of {name} is {id(name)}')
 name = 'b'      # A new String gets returned when the name variable is re-assigned with value 'b'
 print(name)
 print(f'Memory Address of {name} is {id(name)}')
+
+other_name = name
+
+name = 'c'
+print(name)
+print(other_name)   # other_name still holds the value 'b' even though name variable is changed to 'c'
 # ====================================================
 
 # Lists are Mutable Objects
@@ -29,14 +35,15 @@ output = []     # Let's declare the variable 'output' as List object
 for employee in employees:
     output.append(employee)
     print(id(output))
+print(output)
 
 # The output of the above code is
-# ['instagram', 'yahoo', 'google']
 # 6539544
 # 6539544
 # 6539544
 # 6539544
 # 6539544
+# ['steve', 'mark', 'rick', 'bill', 'laura']
 
 output = ''     # Let's declare the variable 'output' as String object
 

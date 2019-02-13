@@ -1,4 +1,5 @@
 from itertools import groupby
+import datetime
 
 # Coding Problem-1
 lst1 = [42, 3, 9, 42, 42, 0, 9, 42, 42, 17, 8, 222, 4, 9, 0, 1]
@@ -78,3 +79,15 @@ def is_anagram(word1: str, word2: str) -> bool:
 print(is_anagram('Listen', 'Silent'))   # Prints True
 print(is_anagram('tea', 'eat'))     # Prints True
 print(is_anagram('Bat', 'Pat'))     # Prints False
+
+
+# Print earlist date
+m, d, y = "01/27/1832".split('/')
+d_d1 = datetime.date(int(y), int(m), int(d))
+m, d, y = "01/27/1756".split('/')
+d_d2 = datetime.date(int(y), int(m), int(d))
+
+if d_d1 > d_d2:
+    print('earlist date ', d_d2)
+else:
+    print('earlist date ', d_d1)
