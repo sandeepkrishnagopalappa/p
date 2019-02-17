@@ -1,5 +1,6 @@
 from itertools import groupby
 import datetime
+import collections
 
 # Coding Problem-1
 lst1 = [42, 3, 9, 42, 42, 0, 9, 42, 42, 17, 8, 222, 4, 9, 0, 1]
@@ -91,3 +92,14 @@ if d_d1 > d_d2:
     print('earlist date ', d_d2)
 else:
     print('earlist date ', d_d1)
+
+# Most common words
+words = [
+        'look', 'into', 'my', 'eyes', 'look', 'into', 'my', 'eyes',
+        'the', 'eyes', 'the', 'eyes', 'the', 'eyes', 'not', 'around', 'the',
+        'eyes', "don't", 'look', 'around', 'the', 'eyes', 'look', 'into',
+        'my', 'eyes', "you're", 'under'
+        ]
+words_count = collections.Counter(words)
+top_three = words_count.most_common(3)
+print(top_three)

@@ -19,10 +19,16 @@ os.chdir(r'C:\Users\ssuryaprasad\Desktop\hello_testing')
 
 files = os.listdir()
 
-
 for file in files:
     temp_file_name, file_ext = os.path.splitext(file)
     file_name, file_number = temp_file_name.split('#')
     new_file_name = f'{file_number.zfill(2)}-{file_name}.{file_ext}'
     os.rename(file, new_file_name)
 
+# Determine if any .py files exist in a directory
+my_dir = os.getcwd()
+files = os.listdir(my_dir)
+if any(name.endswith('.py') for name in files):
+    print('There is a python!')
+else:
+    print('Sorry, no python.')

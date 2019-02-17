@@ -90,7 +90,6 @@ class MyItr:
     """Iterator for looping over a sequence in forward direction."""
     def __init__(self, iterable):
         self.index = 0
-        # self.end = len(iterable)-1
         self.data = iterable
 
     def __iter__(self):

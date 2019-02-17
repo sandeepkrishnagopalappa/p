@@ -9,6 +9,42 @@ print(sorted(names, key=len))
 # Sorting the list based on the last character of the list item
 print(sorted(names, key=lambda name: name[-1]))
 
+portfolio = [
+                {'name': 'IBM', 'shares': 100, 'price': 91.1},
+                {'name': 'AAPL', 'shares': 50, 'price': 543.22},
+                {'name': 'FB', 'shares': 200, 'price': 21.09},
+                {'name': 'HPQ', 'shares': 35, 'price': 31.75},
+                {'name': 'YHOO', 'shares': 45, 'price': 16.35},
+                {'name': 'ACME', 'shares': 75, 'price': 115.65}
+            ]
+  
+print(sorted(portfolio, key=lambda d: d.get('name')))   # Sorts on the key 'name'
+print(sorted(portfolio, key=lambda d: d.get('shares')))   # Sorts on the key 'shares'
+print(sorted(portfolio, key=lambda d: d.get('price')))   # Sorts on the key 'price'
+
+prices = {
+        'ACME': 45.23,
+        'AAPL': 612.78,
+        'IBM': 205.55,
+        'HPQ': 37.20,
+        'FB': 10.75
+        }
+
+print(sorted(prices.items(), key=lambda d: d[-1]))
+min_p, *_, max_p = sorted(prices.items(), key=lambda d: d[-1])
+
+print(min_p)
+print(max_p)
+
+# OR
+
+min_price = min(zip(prices.values(), prices.keys()))
+max_price = max(zip(prices.values(), prices.keys()))
+
+# OR
+
+print(sorted(zip(prices.values(), prices.keys())))
+
 
 # Sorting Employee Class
 class Employee:
