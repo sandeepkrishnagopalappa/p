@@ -30,7 +30,7 @@ names[:2] = ['unknown', 'Unknown']  # Replacing Multiple items in the list
 print(names)
 
 # Print the extension of each file name in the list
-files = ['youtube.txt', 'facebook.json', 'yahoo.pdf', 'microsoft.doc', 'apple.xls', 'amazon.xml']
+files = ['youtube.txt', 'yahoo.pdf', 'microsoft.doc', 'apple.xls', 'amazon.xml']
 for file in files:
     print(file[-3:])
 

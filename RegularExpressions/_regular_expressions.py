@@ -31,64 +31,18 @@ import re
 # {3, } - Match expression 3 or more times
 # {, 3} - Match expression 0 to 3 times
 
-text = '''
-Apple Inc.
-654-123-4570
-1, Infinite Loop, Cupertino, CA, USA
-https://www.apple.com
-
-Microsoft.
-567-897-0987
-Redmond, Washington, USA
-http://microsoft.com
-
-Google Inc.
-009-013-1084
-Mountain View, CA, USA
-http://www.google.com
-https://www.gst.gov
-https://www.harvard.edu
-http://facebook.com
-
-123*456*1234
-123.456.1234
-
-600-098-9864
-1800-123-1245
-900-098-9864
-
-(080)-123-0987
-Mr. Steve
-Mr Jobs
-Ms Steve
-Mrs. Steve
-Mr. S
-
-Hello_world! Welcome to Python Training !wow!
-
-Hello !world How are you d$oing
-
-10.1.2.1
-199.199.199.199
-1.1.1.1
-12.122.1.222
-127-0-0-0
-'''
-
-
 def search_pattern(_search_pattern, _search_string):
     _pattern = re.compile(_search_pattern)
     _matches = _pattern.findall(_search_string)
     return _matches
 
-# url_pattern = 'https?://[\w.]+'
+# If findall matches the group, then it returns only the group. If there are no groups, it just returns a list
+# of matches as strings
+
 # person_pattern = '(Mr|Mrs|Ms)\.?\s[\w]+'
 # Hours_24_time_format = '[0-2][0-4]:[0-5]\d:[0-5]\d'
-# id_address_format = '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'
 # url_pattern_2 = 'https?://(www)?([\w.]+)(com|edu|gov)'
 
-# with open('mailid.txt') as file:
-#     str_text = file.read()
 # matches = search_pattern('[0123456789]', '$100 and $200')
 # matches = search_pattern('[0-9]', '$100 and $200')
 # matches = search_pattern('[a-z]', '$100 and $200')
@@ -104,8 +58,7 @@ def search_pattern(_search_pattern, _search_string):
 # matches = search_pattern('^a.{1,}a$', 'ana')   # Match
 # matches = search_pattern('colou?r', 'what a nice color')   # Match
 
-# Matches Vowels
-# matches = search_pattern('[AEIOUaeiou]', 'exit')
+
 # t1 = '1.1 Hello there i turned 35 years 10 months back and i am now 35.10'
 # t2 = '12/0'
 # sentence = 'I am flying out of SFO today evening and landing in LAX international'
@@ -205,7 +158,6 @@ for date in _dates:
     for match in matches:
         print(match)
 # ===================================================
-
 # Regular Expression - Website names
 _links = ['https://www.python.org',
           'https://www.google.com',
@@ -219,8 +171,9 @@ for link in _links:
     matches = search_pattern(match_links, link)
     for match in matches:
         print(match[1:-1])
-
+# ===================================================
 # Regular Expression - Phone Number pattern
+# ===================================================
 phone_numbers = ['123-345-0987', '456-9832-098', '800-987-4756', '080-1029384725', '123-345-12', '900-938-0987']
 match_phone_numbers = r'\d{3}[-.]\d{3}[-.]\d{4}'
 
@@ -228,8 +181,9 @@ for phone_number in phone_numbers:
     matches = search_pattern(match_phone_numbers, phone_number)
     for match in matches:
         print(match)
-
+# ===================================================
 # Regular Expression - IP Addresses
+# ===================================================
 id_address_format = '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'
 ips = ['10.1.2.3', '127.0.0.0', '199.99.9.9', '199.9.9999.9', '127-0-0-0']
 
@@ -237,8 +191,9 @@ for ip in ips:
     matches = search_pattern(id_address_format, ip)
     for match in matches:
         print(match)
-
+# ===================================================
 # Regular Expression - Email format
+# ===================================================
 email_pattern = r'[\w.-]+@[\w]+\.com'
 emails = ['test.user@company.com',
           'test.user2@company.com',
@@ -253,11 +208,10 @@ for email in emails:
     matches = search_pattern(email_pattern, email)
     for match in matches:
         print(match)
-
-
+# ===================================================
 # Regular Expression - URL Pattern
+# ===================================================
 url_pattern = r'https?://[\w.]+'
-
 urls = ['http://youtube.com',
         'https://google.com',
         'http://amazon.in',
@@ -270,3 +224,4 @@ for url in urls:
     matches = search_pattern(url_pattern, url)
     for match in matches:
         print(match)
+# ===================================================
