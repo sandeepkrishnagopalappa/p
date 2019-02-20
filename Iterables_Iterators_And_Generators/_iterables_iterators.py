@@ -29,7 +29,7 @@ my_tuple = iter((0, 1, 2, 3, 4, 5))
 print(type(my_tuple))   # Iterator object
 
 
-# Creating Custom iterators. The standar 'for' loop in Python, uses below logic for looping
+# Creating Custom iterators. The standard 'for' loop in Python, uses below logic for looping
 def print_each(iterable):
     iterator = iter(iterable)
     while True:
