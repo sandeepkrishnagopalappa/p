@@ -7,7 +7,7 @@ Comprehensions in Python is a way to build an iterable object in one expression 
 for loop.
 '''
 # List Comprehensions are used for building a new list
-# Square Numbers in the list. Using 'for' loop
+# Square Numbers_And_Booleans in the list. Using 'for' loop
 nums = [1, 2, 3, 4, 5]
 squares = []
 for num in nums:
@@ -15,7 +15,7 @@ for num in nums:
 
 print(squares)
 
-# Square Numbers in the list. Using List Comprehensions
+# Square Numbers_And_Booleans in the list. Using List Comprehensions
 list_evens = [num ** 2 for num in nums]
 print(list_evens)
 

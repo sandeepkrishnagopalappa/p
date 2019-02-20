@@ -1,4 +1,14 @@
 # Strings are Immutable Objects
+name = 'hello'
+name[0] = 'y'   # Assignment not possible
+
+nums = [1, 2, 3, 4, 5]
+nums[0] = 100   # Assignment possible
+
+my_tuple = (1, 2, ['a', 'b', 'c'], 3)
+my_tuple[0] = 10    # Assignment not possible
+my_tuple[2][0] = 'x'    # Assignemnt possible
+
 name = 'a'
 print(name)
 print(f'Memory Address of {name} is {id(name)}')

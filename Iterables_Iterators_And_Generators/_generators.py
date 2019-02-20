@@ -6,26 +6,6 @@ when called on next() function a raises StopIteration exception when there are n
 'yield' keyword suspends or pauses the execution of the function. But 'return' statement ends the function.
 '''
 
-# Looping
-fruits = ['apple', 'orange', 'banana', 'strawberry']
-
-# Traditional way of Looping..
-for i in range(len(fruits)):
-    print(fruits[i])
-
-# Looping to get both the index and item
-for index in range(len(fruits)):
-    print(index, fruits[index])
-
-# PYTHONIC approach
-for fruit in fruits:
-    print(fruit)
-
-# To get both index and item (PYTHONIC approach)
-for index, fruit in enumerate(fruits):
-    print(index, fruit)
-# ============================================
-
 
 # Traditional way of getting even numbers
 def get_even_numbers(stream):
@@ -77,7 +57,6 @@ for n in square_numbers(nums):
 
 # Check if the Number is Prime or Not Traditional approach
 def isprime(number):
-    # return all(iterable % i for i in range(2, iterable))
     for i in range(2, number):
         if number % i == 0:
             return False

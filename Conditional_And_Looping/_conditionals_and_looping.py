@@ -40,6 +40,24 @@ else:
 
 # =================================================
 # Looping
+fruits = ['apple', 'orange', 'banana', 'strawberry']
+
+# Traditional way of Looping..
+for index in range(len(fruits)):
+    print(fruits[index])
+
+# Looping to get both the index and item
+for index in range(len(fruits)):
+    print(index, fruits[index])
+
+# PYTHONIC approach
+for fruit in fruits:
+    print(fruit)
+
+# To get both index and item (PYTHONIC approach)
+for index, fruit in enumerate(fruits):
+    print(index, fruit)
+# ============================================
 for num in range(5):
     print(num)
 
@@ -52,7 +70,6 @@ for num in range(0, 10, 2):
 months = ['january', 'march', 'may', 'july']
 for month in months:
     print(len(month), month)
-
 
 counter = 0
 while counter < 5:

@@ -42,3 +42,16 @@ print(min(rest))
 *trailing, current = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(trailing)
 print(current)
+
+
+# Unpacking list
+def add(items):
+    head, *tail = items
+    if any(tail):
+        return head + sum(tail)
+    else:
+        return head
+
+
+print(add([1]))
+print(add([1, 2, 3, 4, 5]))

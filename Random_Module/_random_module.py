@@ -29,5 +29,4 @@ ABEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0987654321!@#$%^()CD_?><&*
 password = ''
 for _ in range(8):
     password = password + random.choice(random_string)
-
 print(password)

@@ -24,9 +24,9 @@ def show():
 
 
 show()
+
+
 # =======================================================
-
-
 # Calculates the execution time of the function
 def timer(orig_func):
     def wrapper_func():
@@ -105,15 +105,3 @@ f.click_element('Submit')
 f.click_element('Login', timeout=100)
 f.select_item('City', 'Bangalore', timeout=20)
 f.enter_text('Username', 'user1')
-
-
-# # Class Decorator
-# class Wait_Element_Visibility:
-#     def __init__(self, original_function):
-#         self.orignal_function = original_function
-#
-#     def __call__(self, *args, **kwargs):
-#         print(kwargs)
-#         timeout = kwargs.get('timeout', self.orignal_function.__defaults__[-1])
-#         self.orignal_function(self, *args, **kwargs)
-
