@@ -27,8 +27,14 @@ for file in files:
 
 # Determine if any .py files exist in a directory
 my_dir = os.getcwd()
-files = os.listdir(my_dir)
-if any(name.endswith('.py') for name in files):
-    print('There is a python!')
-else:
-    print('Sorry, no python.')
+names = os.listdir(my_dir)
+
+pyfiles = [name for name in os.listdir(my_dir) if name.endswith('.py')]
+others = [name for name in os.listdir(my_dir) if not name.endswith('.py')]
+
+# Testing the existance of files and directories
+print(os.path.exists('testing.txt'))    # Prints True if the file exists.
+
+print(os.path.isfile('testing.txt'))    # Prints True if it is file
+
+print(os.path.isdir(r'C:\Users\ssuryaprasad\Desktop\hello_testing'))    # Prints True if it is a Directory
