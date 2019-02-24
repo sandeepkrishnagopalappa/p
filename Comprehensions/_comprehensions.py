@@ -1,6 +1,7 @@
 import heapq
 import string
 import math
+import random
 
 '''
 Comprehensions in Python is a way to build an iterable object in one expression witout the need of traditional
