@@ -67,9 +67,17 @@ for x in range(5):
 for num in range(0, 10, 2):
     print(num)
 
+# Prints numbers from 9 through 0
+for num in reversed(range(10)):
+    print(num)
+
 months = ['january', 'march', 'may', 'july']
 for month in months:
     print(len(month), month)
+
+# Iterates through the list in reversed order
+for month in reversed(months):
+    print(month)
 
 counter = 0
 while counter < 5:

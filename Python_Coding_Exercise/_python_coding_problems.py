@@ -103,3 +103,7 @@ words = [
 words_count = collections.Counter(words)
 top_three = words_count.most_common(3)
 print(top_three)
+
+
+# Function that takes a sequence (like a list, string, or tuple)
+# and a number n and returns the last n elements from the given sequence, as a list.

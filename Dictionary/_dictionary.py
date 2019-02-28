@@ -83,3 +83,20 @@ print(pairs)    # Prints dictionary of city and population pairs
 
 # Prints default value zero if the key is not found in the dictionary
 print(pairs.get('Bangalore', 0))
+
+# Count number of words in a sentence
+sentence = '''
+Python is an interpreted, high-level, general-purpose programming language.
+Created by Guido van Rossum and first released in 1991, Python has a design philosophy that emphasizes code readability,
+notably using significant whitespace. It provides constructs that enable clear programming on both small and large scales.
+Van Rossum led the language community until stepping down as leader in July 2018.
+'''
+words = sentence.split()
+
+words_count = {}
+
+for word in words:
+    word_count = words.count(word)
+    words_count.update({word: word_count})
+
+print(words_count)

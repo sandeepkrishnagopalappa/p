@@ -50,6 +50,8 @@ print(my_message.find('World'))     # Prints the index of first occurance of the
 print(my_message.find('Universe'))      # Prints -1.
 print(my_message.replace('World', 'Universe'))  # Prints 'Hello Universe'
 print(my_message.split())   # Splits the string based on white space and returns a list
+print(my_message.startswith('Hello'))
+print(my_message.endswith('World'))
 
 # String Concatination
 greeting = 'Hello'

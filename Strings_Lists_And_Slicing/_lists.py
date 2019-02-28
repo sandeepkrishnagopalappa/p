@@ -26,6 +26,9 @@ names.pop()     # By default this will remove the last item in the List
 # pop method returns the item that it has removed from the List
 names.pop(3)    # Removes the item in the 3rd index of the List
 
+del names[0]    # Deletes 0th item in the list
+del names       # Deletes the entire list
+
 # Making copy of the list
 a = [1, 2, 3, 4, 5]
 b = a.copy()
@@ -57,6 +60,18 @@ for item in names[:4]:
 # Prints the item and its corresponding index in the list
 for index, item in enumerate(names):    # enumerate returns a tuple of index, item pair
     print(index, item)
+
+# Iterating over multiple lists simultaniously
+cities = ['Tokyo', 'Delhi', 'Shanghai', 'Sao Paulo', 'Mumbai']
+population = ['38,001,000', '25,703,168', '23,740,778', '21,066,245', '21,042,538']
+
+for city, population in zip(cities, population):
+    print(city, population)
+
+filenames = ['youtube.txt', 'amazon.pdf', 'facebook.pdf', 'google.pdf', 'apple.doc']
+for file in filenames:
+    if file.endswith('pdf'):
+        print(file)
 
 # Converting Lists to String
 print('-'.join(names))  # Prints yahoo-netflix-microsoft-instagram-google-gmail-facebook-apple-amazon
