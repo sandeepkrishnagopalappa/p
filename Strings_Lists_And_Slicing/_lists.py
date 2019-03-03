@@ -68,10 +68,17 @@ population = ['38,001,000', '25,703,168', '23,740,778', '21,066,245', '21,042,53
 for city, population in zip(cities, population):
     print(city, population)
 
-filenames = ['youtube.txt', 'amazon.pdf', 'facebook.pdf', 'google.pdf', 'apple.doc']
-for file in filenames:
+files = ['youtube.txt', 'amazon.pdf', 'facebook.pdf', 'google.pdf', 'apple.doc']
+for file in files:
     if file.endswith('pdf'):
         print(file)
+
+files = ['youtube.txt', 'amazon.pdf', 'facebook.pdf', 'google.py', 'apple.doc']
+for file in files:
+    if not file.endswith('.py'):
+        continue
+    else:
+        print('Python is present!!!!')
 
 # Converting Lists to String
 print('-'.join(names))  # Prints yahoo-netflix-microsoft-instagram-google-gmail-facebook-apple-amazon
