@@ -84,7 +84,8 @@ def actual_lines(any_iterable):
 # Passing a file object to Generator
 with open('words.txt') as file:
     for line in actual_lines(file):
-        print(line, end='')
+        with open('actual_lines.txt', 'a') as al:
+            al.write(line)
 
 # Passing a List to Generator
 names = ['apple', 'yahoo', '#google', 'gmail', '#facebook']

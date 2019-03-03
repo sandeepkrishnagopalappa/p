@@ -37,23 +37,8 @@ while counter < f_num:
     a, b = a + b, a
     counter += 1
     
-# Reverse difference
-nums = [1, 2, 3, 4, 5]
-reverse_difference = [
-    n1 - n2
-    for n1, n2 in zip(nums, nums[::-1])
-]
-print(reverse_difference)
-
 # Deleting Sequence
 sequence = [1, 2, 1, 1, 1, 2, 3, 4, 2, 2]
-non_dup = []
-for index, item in enumerate(sequence):
-    if index == 0 or item != sequence[index - 1]:
-        non_dup.append(item)
-print(non_dup)
-
-# OR
 
 
 def compact(iterable):

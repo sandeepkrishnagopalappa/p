@@ -77,11 +77,15 @@ population = ['38,001,000',
               '21,042,538'
               ]
 
-pairs = dict(zip(cities, population))
+dict_city_pairs = dict(zip(cities, population))
 
-print(pairs)    # Prints dictionary of city and population pairs
+print(dict_city_pairs)    # Prints dictionary of city and population pairs
 # {'Tokyo': '38,001,000', 'Delhi': '25,703,168', 'Shanghai': '23,740,778',
 # 'Sao Paulo': '21,066,245', 'Mumbai': '21,042,538'}
+
+# Print max and min values in dict_city_pairs
+print(max(dict_city_pairs))
+print(min(dict_city_pairs))
 
 # Prints {'Bangalore': 26, 'Delhi': 35, 'Chennai': 37, 'Kolkata': 32}
 temperatures = [('Bangalore', 26), ('Delhi', 35), ('Chennai', 37), ('Kolkata', 32)]
@@ -89,7 +93,11 @@ dict_temp = dict(temperatures)
 print(dict_temp)
 
 # Prints default value zero if the key is not found in the dictionary
-print(pairs.get('Bangalore', 0))
+print(dict_city_pairs.get('Bangalore', 0))
+
+# Print max and min temperatures in dict_temp
+print(max(dict_temp))
+print(min(dict_temp))
 
 # Count number of words in a sentence
 sentence = '''

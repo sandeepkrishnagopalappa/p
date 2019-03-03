@@ -61,12 +61,19 @@ for item in names[:4]:
 for index, item in enumerate(names):    # enumerate returns a tuple of index, item pair
     print(index, item)
 
+# ================================================================================
 # Iterating over multiple lists simultaniously
 cities = ['Tokyo', 'Delhi', 'Shanghai', 'Sao Paulo', 'Mumbai']
 population = ['38,001,000', '25,703,168', '23,740,778', '21,066,245', '21,042,538']
 
+# Iterating through multiple list Non-Pythonic approach
+for i in range(len(cities)):
+    print(cities[i], population[i])
+
+# Iterating through multiple list using zip function
 for city, population in zip(cities, population):
     print(city, population)
+# ================================================================================
 
 files = ['youtube.txt', 'amazon.pdf', 'facebook.pdf', 'google.pdf', 'apple.doc']
 for file in files:

@@ -9,13 +9,8 @@ for loop.
 # List Comprehensions are used for building a new list
 # Square Numbers_And_Booleans in the list. Using 'for' loop
 nums = [1, 2, 3, 4, 5]
-squares = []
-for num in nums:
-    squares.append(num ** 2)
 
-print(squares)
-
-# Square Numbers_And_Booleans in the list. Using List Comprehensions
+# Square Numbers in the list. Using List Comprehensions
 list_evens = [num ** 2 for num in nums]
 print(list_evens)
 
@@ -41,14 +36,7 @@ def raise_to_index(iterable):
 nums = [1, 2, 3, 4, 5]
 print(raise_to_index(nums))
 
-# List of even numbers between range 1-50 using for loop
-even_numbers = []
-for num in range(1, 50):
-    if num % 2 == 0:
-        even_numbers.append(num)
-print(even_numbers)
-
-# List of even numbers between range 1-50 using List Comprehensions
+# List of even numbers between range 1-50
 even_numbers = [num for num in range(1, 50) if num % 2 == 0]
 print(even_numbers)
 
@@ -78,6 +66,16 @@ def reverse_names(name):
 fullnames = ['steve jobs', 'bill gates', 'tim cook', 'johny ive']
 rev_fname_lname = [reverse_names(name) for name in fullnames]
 print(rev_fname_lname)
+
+# Reverse difference
+nums = [1, 2, 3, 4, 5]
+reverse_difference = [n1 - n2 for n1, n2 in zip(nums, nums[::-1])]
+print(reverse_difference)
+
+# Deleting Sequence
+sequence = [1, 2, 1, 1, 1, 2, 3, 4, 2, 2]
+seq = [item for index, item in enumerate(sequence) if index == 0 or item != sequence[index - 1]]
+print(seq)  # Prints [1, 2, 1, 2, 3, 4, 2]
 
 # Dictionary Comprehension
 sentence = '''Python is an easy to learn, powerful programming language. 

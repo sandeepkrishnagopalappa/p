@@ -46,3 +46,8 @@ with open('from_file.txt', 'r') as wf:
     with open('to_file.txt', 'w') as wt:
         for line in wf:
             wt.write(line)
+
+# Printing the line's with line numbers
+with open('from_file.txt') as f:
+    for linenumber, line in enumerate(f, start=1):
+        print(linenumber, line, end='')
