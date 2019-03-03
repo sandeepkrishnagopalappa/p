@@ -1,4 +1,5 @@
 """
+A sequence is the one which can be indexed.
 Sequences are very common type of iterables in Python.
 String's, List's and Tuple's are sequences in python.
 Dictionaries, sets are iterables but not Sequences.

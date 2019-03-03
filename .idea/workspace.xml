@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/_dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/_dictionary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Handling_Files/_file_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/Handling_Files/_file_handling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Handling_Files/write.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Handling_Files/write.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/words.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unpacking_Sequences/_unpacking_sequences.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unpacking_Sequences/_unpacking_sequences.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +16,7 @@
     <session id="206300637">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="171" />
+          <entry key="project.closed" value="172" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.107" value="1" />
@@ -37,7 +31,7 @@
           <entry key="project.open.time.22" value="3" />
           <entry key="project.open.time.23" value="5" />
           <entry key="project.open.time.24" value="2" />
-          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.25" value="2" />
           <entry key="project.open.time.26" value="5" />
           <entry key="project.open.time.27" value="4" />
           <entry key="project.open.time.28" value="4" />
@@ -85,7 +79,7 @@
           <entry key="project.open.time.9" value="6" />
           <entry key="project.open.time.91" value="1" />
           <entry key="project.open.time.93" value="1" />
-          <entry key="project.opened" value="172" />
+          <entry key="project.opened" value="173" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -94,7 +88,7 @@
           <entry key="Python Console" value="110" />
           <entry key="dummy" value="288" />
           <entry key="from_file" value="4" />
-          <entry key="py" value="172250" />
+          <entry key="py" value="172405" />
           <entry key="python_notes" value="2102" />
           <entry key="regex_notes" value="38" />
           <entry key="txt" value="423" />
@@ -103,7 +97,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="4520" />
-          <entry key="Python" value="172360" />
+          <entry key="Python" value="172515" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -115,7 +109,7 @@
           <entry key="json" value="6" />
           <entry key="log" value="2" />
           <entry key="md" value="3" />
-          <entry key="py" value="1036" />
+          <entry key="py" value="1041" />
           <entry key="pyi" value="4" />
           <entry key="python_notes" value="20" />
           <entry key="regex_notes" value="9" />
@@ -130,67 +124,28 @@
           <entry key="JSON" value="6" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="164" />
-          <entry key="Python" value="1036" />
+          <entry key="Python" value="1041" />
           <entry key="PythonStub" value="4" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Comprehensions/_comprehensions.py">
+        <entry file="file://$PROJECT_DIR$/Unpacking_Sequences/_unpacking_sequences.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Handling_Files/_file_handling.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            <state relative-caret-position="100">
+              <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py">
+        <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sorting/_sorting_part-II.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="925">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="275">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -274,7 +229,6 @@
         <option value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_slicing_lists_strings.py" />
         <option value="$PROJECT_DIR$/Reading_Writing_CSV_Files/_csv_read_write.py" />
         <option value="$PROJECT_DIR$/Sorting/_sorting_part-II.py" />
-        <option value="$PROJECT_DIR$/Unpacking_Sequences/_unpacking_sequences.py" />
         <option value="$PROJECT_DIR$/python_notes" />
         <option value="$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py" />
         <option value="$PROJECT_DIR$/Numbers_And_Booleans/_integers_and_floats.py" />
@@ -285,7 +239,6 @@
         <option value="$PROJECT_DIR$/OS_Module/_OS_module.py" />
         <option value="$PROJECT_DIR$/Conditional_And_Looping/_conditionals_and_looping.py" />
         <option value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" />
-        <option value="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py" />
         <option value="$PROJECT_DIR$/Itertools_Module/_itertools_module.py" />
         <option value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" />
         <option value="$PROJECT_DIR$/Dictionary/_dictionary.py" />
@@ -295,6 +248,8 @@
         <option value="$PROJECT_DIR$/Comprehensions/_comprehensions.py" />
         <option value="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" />
         <option value="$PROJECT_DIR$/Iterables_Iterators_And_Generators/actual_lines.txt" />
+        <option value="$PROJECT_DIR$/Unpacking_Sequences/_unpacking_sequences.py" />
+        <option value="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py" />
       </list>
     </option>
   </component>
@@ -328,6 +283,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,48 +294,17 @@
             <path>
               <item name="Practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="Comprehensions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="Dictionary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="Exception_Handling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="Handling_Files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
               <item name="Iterables_Iterators_And_Generators" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="Python_Coding_Exercise" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="Sorting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="Strings_Lists_And_Slicing" type="462c0819:PsiDirectoryNode" />
+              <item name="Unpacking_Sequences" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -614,10 +539,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49663526" visible="true" weight="0.17490494" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49663526" visible="true" weight="0.17490494" />
       <window_info id="Structure" order="1" sideWeight="0.50336474" side_tool="true" weight="0.19518378" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -853,13 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Unpacking_Sequences/_unpacking_sequences.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Numbers_And_Booleans/_integers_and_floats.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -954,20 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dictionary/_dictionary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="73" column="24" lean-forward="true" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sorting/_sorting_part-II.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="925">
@@ -986,9 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -997,8 +898,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        <state relative-caret-position="100">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dictionary/_dictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Unpacking_Sequences/_unpacking_sequences.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
         </state>
       </provider>
     </entry>
