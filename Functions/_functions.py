@@ -35,6 +35,15 @@ get_gender('F')
 get_gender()
 
 
+def to_fahrenheit(temp):
+    return round((temp * 1.8) + 32)
+
+
+temperatures = [('Bangalore', 25), ('Chennai', 35), ('Delhi', 40), ('kolkata', 37)]
+d_temp = {city: to_fahrenheit(temperature) for city, temperature in temperatures}
+print(d_temp)
+
+
 # Function with Default as well as Mandatory arguments
 def hello(name, company='Unknown'):
     print(f'Hello {name} you work for {company} company')
@@ -53,6 +62,7 @@ def sum_two_numbers(a: int, b: int) -> int:
     return a + b
 
 
+# ================================================================================================
 # Variable number of Arguments
 def add(*args):
     total = 0
@@ -76,18 +86,6 @@ print(add(*nums))
 
 def display_info(*args, **kwargs):    # Name of the arguments should be same as the key's of the dictionary
     print(args, kwargs)
-
-
-# * is used for unpacking list and tuple (positional arguments)
-l_data = ['Mark', 26, 10000]
-for item in l_data:
-    display_info(*l_data)
-    # display_info(l_data[0], l_data[1], l_data[2])
-
-t_data = ('Mark', 26, 10000)
-for item in t_data:
-    display_info(*t_data)
-    # display_info(t_data[0], t_data[1], t_data[2])
 
 
 # ** is used for unpacking a dictionary (Keyword arguments)
