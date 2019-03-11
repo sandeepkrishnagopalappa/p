@@ -26,6 +26,14 @@ sorted_dict = sorted(profile)
 
 print(sorted_dict)      # Sorts the keys of the dictionary in ascending order
 
+temperatures = [('Bangalore', 25), ('Delhi', 35), ('Chennai', 37), ('Mumbai', 32)]
+
+# Prints [('Bangalore', 25), ('Chennai', 37), ('Delhi', 35), ('Mumbai', 32)]
+print(sorted(temperatures))
+
+# Prints [('Bangalore', 25), ('Mumbai', 32), ('Delhi', 35), ('Chennai', 37)]
+sorted(temperatures, key=lambda item: item[-1])
+
 my_dict = {'a': 4, 'b': 3, 'c': 2, 'd': 1}
 
 print(sorted(my_dict.items(), key=lambda item: item[1]))  # Sorts the values of the dictionary in ascending order
