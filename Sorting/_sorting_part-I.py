@@ -37,3 +37,26 @@ sorted(temperatures, key=lambda item: item[-1])
 my_dict = {'a': 4, 'b': 3, 'c': 2, 'd': 1}
 
 print(sorted(my_dict.items(), key=lambda item: item[1]))  # Sorts the values of the dictionary in ascending order
+
+prices = {
+        'ACME': 45.23,
+        'AAPL': 612.78,
+        'IBM': 205.55,
+        'HPQ': 37.20,
+        'FB': 10.75
+        }
+
+print(sorted(prices.items(), key=lambda d: d[-1]))
+min_p, *_, max_p = sorted(prices.items(), key=lambda d: d[-1])
+
+print(min_p)
+print(max_p)
+
+# OR
+
+min_price = min(zip(prices.values(), prices.keys()))
+max_price = max(zip(prices.values(), prices.keys()))
+
+# OR
+
+print(sorted(zip(prices.values(), prices.keys())))

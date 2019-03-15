@@ -3,16 +3,15 @@
 '''
 1. Anything that can be iterated or looped over is called iterable in Python.
 2. All iterables have a special method call __iter__
-3. String's, List's, Tuple's, Set's, Dictionary's, file's, generator's are iterables.
+3. String's, List's, Tuple's, Set's, Dictionary's, file objects and generator's are iterables.
 4. All iterables can be passed to the built-in iter() function to get an iterator from them.
 5. Any iterator can be passed to next() function to get the next item.
 6. Iterators does not have length. They do not know how long they are.
 7. Iterators can not be indexed. You can only call next() method to get the next item.
-8. Generators are iterators, enumerate objects are iterators, zip function is an iterator,
-9. reversed(), file objects are iterators.
+8. Generators are iterators, enumerate objects are iterators, zip function is an iterator file objects are iterators,
 '''
 
-# Iterators are Lazy. i.e. they dont determine what their next item is until you ask them for it
+# Iterators are Lazy Iterables. i.e. they dont determine what their next item is until you ask them for it
 
 my_list = iter([1, 2, 3, 4])
 print(type(my_list))    # Iterator object

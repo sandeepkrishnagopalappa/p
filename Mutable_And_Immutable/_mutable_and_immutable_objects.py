@@ -1,5 +1,4 @@
-# Strings are Immutable Objects
-# ints, floats, strings and tuples are im-mutable objects
+# String, ints, floats, strings and tuples are im-mutable objects
 name = 'hello'
 name[0] = 'y'   # Assignment not possible
 
@@ -46,39 +45,3 @@ print(other_names)      # 'other_names' will also get the modified copy of 'name
 names = names + ['microsoft']
 
 # ====================================================
-
-# Example:
-
-employees = ['steve', 'mark', 'rick', 'bill', 'laura']
-
-output = []     # Let's declare the variable 'output' as List object
-
-for employee in employees:
-    output.append(employee)
-    print(id(output))
-print(output)
-
-# The output of the above code is
-# 6539544
-# 6539544
-# 6539544
-# 6539544
-# 6539544
-# ['steve', 'mark', 'rick', 'bill', 'laura']
-
-output = ''     # Let's declare the variable 'output' as String object
-
-for employee in employees:
-    output = employee+','+output
-    print(id(output))
-print(output)
-
-# The output of the above code is
-# 15621984
-# 13312632
-# 15570608
-# 15570512
-# 13147736
-# laura,bill,rick,mark,steve,
-
-# The Usage of Memory is more in case of Strings and less in case of List

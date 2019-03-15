@@ -22,29 +22,6 @@ print(sorted(portfolio, key=lambda d: d.get('name')))   # Sorts on the key 'name
 print(sorted(portfolio, key=lambda d: d.get('shares')))   # Sorts on the key 'shares'
 print(sorted(portfolio, key=lambda d: d.get('price')))   # Sorts on the key 'price'
 
-prices = {
-        'ACME': 45.23,
-        'AAPL': 612.78,
-        'IBM': 205.55,
-        'HPQ': 37.20,
-        'FB': 10.75
-        }
-
-print(sorted(prices.items(), key=lambda d: d[-1]))
-min_p, *_, max_p = sorted(prices.items(), key=lambda d: d[-1])
-
-print(min_p)
-print(max_p)
-
-# OR
-
-min_price = min(zip(prices.values(), prices.keys()))
-max_price = max(zip(prices.values(), prices.keys()))
-
-# OR
-
-print(sorted(zip(prices.values(), prices.keys())))
-
 
 # Sorting Employee Class
 class Employee:
