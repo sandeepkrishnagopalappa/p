@@ -7,7 +7,7 @@
 4. All iterables can be passed to the built-in iter() function to get an iterator from them.
 5. Any iterator can be passed to next() function to get the next item.
 6. Iterators does not have length. They do not know how long they are.
-7. Iterators can not be indexed. You can only call next() method to get the next item.
+7. Iterators do not have length can not be indexed. You can only call next() method to get the next item.
 8. Generators are iterators, enumerate objects are iterators, zip function is an iterator file objects are iterators,
 '''
 

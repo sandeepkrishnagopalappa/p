@@ -2,6 +2,7 @@ from itertools import count
 
 '''
 A Generator is a function that returns an iterator. It generates values using the 'yield' keyword.
+They don't take memory of a list. They are LAZY Iterables. Generators are used for saving memory.
 when called on next() function a raises StopIteration exception when there are no more values to generate.
 'yield' keyword suspends or pauses the execution of the function. But 'return' statement ends the function.
 '''
@@ -24,6 +25,9 @@ def even_numbers(stream):
     for num in stream:
         if num % 2 == 0:
             yield num
+
+# Generator expression
+# even_numbers = (num for num in stream if num % 2 == 0)
 
 
 my_nums = list(range(0, 10))
@@ -78,6 +82,7 @@ def actual_lines(any_iterable):
         if line.startswith('#'):
             continue
         yield line
+# actual_lines = (line for line in lines if not line.startswith('#') and line.strip())
 # =========================================================
 
 

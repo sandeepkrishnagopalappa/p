@@ -71,4 +71,3 @@ print()
 mg2 = Manager('Steve', 'Jobs', 80000, [dev3, dev4])
 # mg2.add_employee([dev3, dev4])
 mg2.print_emp()
-
