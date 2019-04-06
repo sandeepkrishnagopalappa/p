@@ -44,7 +44,6 @@ class Manager(Employee):
         for emp in employees:
             if emp not in self.employees:
                 self.employees.append(emp)
-                # print('Employee Added')
     
     def remove_emp(self, emp):
         if emp in self.employees:
