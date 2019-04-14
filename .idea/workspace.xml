@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py" beforeDir="false" afterPath="$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GIT_Notes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegularExpressions/_regular_expressions.py" beforeDir="false" afterPath="$PROJECT_DIR$/RegularExpressions/_regular_expressions.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +16,8 @@
     <session id="206300637">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="196" />
-          <entry key="project.open.time.1" value="9" />
+          <entry key="project.closed" value="199" />
+          <entry key="project.open.time.1" value="10" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.107" value="1" />
           <entry key="project.open.time.11" value="2" />
@@ -25,7 +25,7 @@
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="2" />
-          <entry key="project.open.time.2" value="10" />
+          <entry key="project.open.time.2" value="11" />
           <entry key="project.open.time.20" value="3" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="5" />
@@ -41,7 +41,7 @@
           <entry key="project.open.time.31" value="3" />
           <entry key="project.open.time.32" value="6" />
           <entry key="project.open.time.33" value="7" />
-          <entry key="project.open.time.34" value="6" />
+          <entry key="project.open.time.34" value="7" />
           <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.36" value="8" />
           <entry key="project.open.time.37" value="3" />
@@ -79,7 +79,7 @@
           <entry key="project.open.time.9" value="6" />
           <entry key="project.open.time.91" value="1" />
           <entry key="project.open.time.93" value="1" />
-          <entry key="project.opened" value="197" />
+          <entry key="project.opened" value="200" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -88,7 +88,7 @@
           <entry key="Python Console" value="110" />
           <entry key="dummy" value="288" />
           <entry key="from_file" value="4" />
-          <entry key="py" value="174922" />
+          <entry key="py" value="174931" />
           <entry key="python_notes" value="2102" />
           <entry key="regex_notes" value="38" />
           <entry key="txt" value="423" />
@@ -97,19 +97,19 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="4520" />
-          <entry key="Python" value="175032" />
+          <entry key="Python" value="175041" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="GIT_Notes" value="15" />
+          <entry key="GIT_Notes" value="16" />
           <entry key="csv" value="30" />
           <entry key="from_file" value="1" />
           <entry key="html" value="2" />
           <entry key="json" value="7" />
           <entry key="log" value="2" />
           <entry key="md" value="3" />
-          <entry key="py" value="1081" />
+          <entry key="py" value="1089" />
           <entry key="pyi" value="4" />
           <entry key="python_notes" value="20" />
           <entry key="regex_notes" value="9" />
@@ -123,33 +123,30 @@
           <entry key="HTML" value="2" />
           <entry key="JSON" value="7" />
           <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="167" />
-          <entry key="Python" value="1081" />
+          <entry key="PLAIN_TEXT" value="168" />
+          <entry key="Python" value="1089" />
           <entry key="PythonStub" value="4" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Exception_Handling/_exception_handling.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="-25">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Working_With_CSV_Files/babynames.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state>
-              <caret selection-end-column="29" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
             </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" rowLines="3" />
           </provider>
         </entry>
       </file>
@@ -224,8 +221,6 @@
         <option value="$PROJECT_DIR$/Date_Time_Module/_datetime.py" />
         <option value="$PROJECT_DIR$/Comprehensions/read.txt" />
         <option value="$PROJECT_DIR$/RegularExpressions/apache.log" />
-        <option value="$PROJECT_DIR$/Exception_Handling/_exception_handling.py" />
-        <option value="$PROJECT_DIR$/RegularExpressions/_regular_expressions.py" />
         <option value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_slicing_lists_strings.py" />
         <option value="$PROJECT_DIR$/Reading_Writing_CSV_Files/_csv_read_write.py" />
         <option value="$PROJECT_DIR$/python_notes" />
@@ -253,6 +248,8 @@
         <option value="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" />
         <option value="$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py" />
         <option value="$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py" />
+        <option value="$PROJECT_DIR$/Exception_Handling/_exception_handling.py" />
+        <option value="$PROJECT_DIR$/RegularExpressions/_regular_expressions.py" />
       </list>
     </option>
   </component>
@@ -286,6 +283,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -296,18 +294,17 @@
             <path>
               <item name="Practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="Working_With_CSV_Files" type="462c0819:PsiDirectoryNode" />
+              <item name="Exception_Handling" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="Working_With_JSON" type="462c0819:PsiDirectoryNode" />
+              <item name="Working_With_CSV_Files" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -341,7 +338,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python._csv_read_write">
+  <component name="RunManager" selected="Python._exception_handling">
     <configuration name="TC01" type="PythonConfigurationType" factoryName="Python">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -405,6 +402,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="_exception_handling" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Exception_Handling" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Exception_Handling/_exception_handling.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="_functions" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -418,27 +436,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Functions/_functions.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="_generators" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Practice" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Iterables_Iterators_And_Generators" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -470,19 +467,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.TC01" />
-      <item itemvalue="Python._generators" />
       <item itemvalue="Python._functions" />
       <item itemvalue="Python._iterables_iterators" />
       <item itemvalue="Python._decorators" />
       <item itemvalue="Python._csv_read_write" />
+      <item itemvalue="Python._exception_handling" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python._exception_handling" />
         <item itemvalue="Python._csv_read_write" />
         <item itemvalue="Python._decorators" />
         <item itemvalue="Python._iterables_iterators" />
         <item itemvalue="Python._functions" />
-        <item itemvalue="Python._generators" />
       </list>
     </recent_temporary>
   </component>
@@ -654,13 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Exception_Handling/_exception_handling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Magic_Methods_Dunders/_magic_dunder_methods.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -672,20 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Variable_Scope/_variable_scope.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GIT_Notes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -839,27 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RegularExpressions/_regular_expressions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Random_Module/_random_module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OS_Module/_OS_module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -903,10 +858,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Working_With_CSV_Files/new_baby_names.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Working_With_JSON/_working_with_json.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -915,30 +870,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Working_With_CSV_Files/babynames.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret selection-end-column="29" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Working_With_CSV_Files/test.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Working_With_CSV_Files/test.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="25">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Working_With_CSV_Files/babynames.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Variable_Scope/_variable_scope.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Random_Module/_random_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OS_Module/_OS_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GIT_Notes" />
+    <entry file="file://$PROJECT_DIR$/RegularExpressions/_regular_expressions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Exception_Handling/_exception_handling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="400">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
         </state>
       </provider>
     </entry>
