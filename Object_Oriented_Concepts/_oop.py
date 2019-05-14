@@ -1,3 +1,7 @@
+import datetime
+import time
+
+
 # Object oriented programing
 class Employee:
     no_emps = 0     # Class Variable
@@ -36,9 +40,10 @@ class Developer(Employee):
 
 
 class Manager(Employee):
-    def __init__(self, fname, lname, pay, employees):
+    def __init__(self, fname, lname, pay, employees=None):
         super().__init__(fname, lname, pay)
-        self.employees = employees
+        self.employees = list(employees) if employees else []
+        # By Casting employees to list, the user has flexibility to pass any iterable.
     
     def add_employee(self, employees):
         for emp in employees:
@@ -56,7 +61,7 @@ class Manager(Employee):
 
 dev1 = Developer('test', 'user', 70000, 'Python')
 dev2 = Developer('david', 'bob', 60000, 'Java')
-dev3 = Developer('dave', 'laurs', 50000, 'Oracle')
+dev3 = Developer('dave', 'laura', 50000, 'Oracle')
 dev4 = Developer('steve', 'williams', 80000, 'C++')
 print(dev1.full_name())
 print(dev1.emp_email())
@@ -67,6 +72,23 @@ mg1 = Manager('Sue', 'Smith', 90000, [dev1, dev2])
 # mg1.add_employee([dev1, dev2, dev3, dev4])
 mg1.print_emp()
 print()
-mg2 = Manager('Steve', 'Jobs', 80000, [dev3, dev4])
+mg2 = Manager('Steve', 'Jobs', 80000, (dev3, dev4))
 # mg2.add_employee([dev3, dev4])
 mg2.print_emp()
+
+# Prints all the instance attributes of an object instance
+print(mg1.__dict__)
+
+
+# ================================================================
+# Default Parameter is evaluated only once
+class TestClass:
+    def __init__(self, employees=[], dt=datetime.datetime.now()):
+        print(employees, dt)
+        time.sleep(1)
+
+
+t1 = TestClass()
+t2 = TestClass(['e1'], '2019, 5, 26, 11, 22')
+t3 = TestClass()
+# ================================================================

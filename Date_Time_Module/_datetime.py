@@ -1,5 +1,17 @@
 import datetime
 
+# Datetime object is Immutable
+my_dt = datetime.datetime(2019, 5, 26, 8)
+
+# Below code Throws exception "attribute 'year' of 'datetime.date' objects is not writable"
+try:
+    my_dt.year = 2020
+except Exception as e:
+    print(e)
+
+# Use replace to get new datetime object
+my_dt.replace(year=2020, minute=30)
+
 # Converting String to Python DateTime format
 dt = '1/1/2014  12:38:00 PM'   # The Data Type of dt is String
 m, d, y = dt.split('/')

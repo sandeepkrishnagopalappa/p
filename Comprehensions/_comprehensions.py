@@ -24,6 +24,15 @@ def get_vowel_names(iterable):
     return [name for name in iterable if name[0].lower() in ['a', 'e', 'i', 'o', 'u']]
 
 
+# Names starting with Vowels
+def get_vowel_names2(iterable):
+    return [name for name in iterable if name[0].startswith(tuple(['a', 'e', 'i', 'o', 'u']))]
+
+
+def get_vowel_names3(iterable):
+    return [name for name in iterable if name[0] in 'aeiou']
+
+
 print(get_vowel_names(person_names))
 print(get_vowel_names(my_string))
 
