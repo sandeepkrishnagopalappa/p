@@ -94,3 +94,9 @@ d_data = [{'name': 'Mark', 'age': 26, 'salary': 10000},
 for d in d_data:
     display_info(**d)
     # display_info(d['name'], d['age'], d['salary'])
+
+
+names = ['Steve', 'Mark']
+info = {'age': 26, 'company': 'Apple'}
+
+display_info(*names, **info)
