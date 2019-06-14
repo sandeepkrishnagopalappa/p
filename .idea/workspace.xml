@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Comprehensions/read.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Comprehensions/read.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_encapsulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Practice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,10 +16,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Comprehensions/read.txt">
+        <entry file="file://$PROJECT_DIR$/Object_Oriented_Concepts/_encapsulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="81" selection-start-line="4" selection-start-column="81" selection-end-line="4" selection-end-column="81" />
+            <state relative-caret-position="479">
+              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
             </state>
           </provider>
         </entry>
@@ -70,7 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Pack/_integers_and_floats.py" />
         <option value="$PROJECT_DIR$/Pack/_sorting_part-II.py" />
         <option value="$PROJECT_DIR$/Pack/_variable_scope.py" />
         <option value="$PROJECT_DIR$/Pack/_comprehensions.py" />
@@ -121,6 +123,7 @@
         <option value="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py" />
         <option value="$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py" />
         <option value="$PROJECT_DIR$/Comprehensions/read.txt" />
+        <option value="$PROJECT_DIR$/Object_Oriented_Concepts/_encapsulation.py" />
       </list>
     </option>
   </component>
@@ -165,7 +168,7 @@
             <path>
               <item name="python_tutorials" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_tutorials" type="462c0819:PsiDirectoryNode" />
-              <item name="Comprehensions" type="462c0819:PsiDirectoryNode" />
+              <item name="Object_Oriented_Concepts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -206,7 +209,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python._itertools_module">
+  <component name="RunManager" selected="Python._encapsulation">
     <configuration name="TC01" type="PythonConfigurationType" factoryName="Python">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -228,7 +231,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_csv_read_write" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="_encapsulation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -236,11 +239,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Working_With_CSV_Files" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Object_Oriented_Concepts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Object_Oriented_Concepts/_encapsulation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -335,19 +338,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.TC01" />
-      <item itemvalue="Python._csv_read_write" />
       <item itemvalue="Python._exception_handling" />
       <item itemvalue="Python._working_with_json" />
       <item itemvalue="Python._oop" />
       <item itemvalue="Python._itertools_module" />
+      <item itemvalue="Python._encapsulation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python._encapsulation" />
         <item itemvalue="Python._itertools_module" />
         <item itemvalue="Python._oop" />
         <item itemvalue="Python._working_with_json" />
         <item itemvalue="Python._exception_handling" />
-        <item itemvalue="Python._csv_read_write" />
       </list>
     </recent_temporary>
   </component>
@@ -407,15 +410,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="19" width="1093" height="698" extended-state="0" />
+    <frame x="57" y="17" width="1223" height="782" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49663526" visible="true" weight="0.27102804" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49663526" visible="true" weight="0.24166666" />
       <window_info id="Structure" order="1" sideWeight="0.50336474" side_tool="true" weight="0.19518378" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49873257" weight="0.36339167" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49873257" weight="0.3627907" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4064603" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -487,14 +490,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/builtins.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="930" column="11" selection-start-line="930" selection-start-column="11" selection-end-line="930" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-234514117/builtins.py" />
     <entry file="file://$PROJECT_DIR$/python_notes" />
     <entry file="file://$PROJECT_DIR$/Magic_Methods_Dunders/_magic_dunder_methods.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -656,13 +651,6 @@
       </provider>
     </entry>
     <entry file="file://C:/Python/Lib/datetime.py" />
-    <entry file="file://$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1850">
-          <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Comprehensions/testing.py" />
     <entry file="file://C:/Python/Lib/site-packages/Selenium-Framework.egg-link" />
     <entry file="file://$PROJECT_DIR$/Dictionary/_dictionary.py">
@@ -700,13 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="725">
           <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Comprehensions/_comprehensions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="28" column="91" selection-start-line="28" selection-start-column="91" selection-end-line="28" selection-end-column="91" />
         </state>
       </provider>
     </entry>
@@ -776,6 +757,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="81" selection-start-line="4" selection-start-column="81" selection-end-line="4" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Comprehensions/_comprehensions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Object_Oriented_Concepts/_encapsulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
         </state>
       </provider>
     </entry>
