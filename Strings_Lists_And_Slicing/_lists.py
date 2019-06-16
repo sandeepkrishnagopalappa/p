@@ -27,7 +27,7 @@ names.pop()     # By default this will remove the last item in the List
 names.pop(3)    # Removes the item in the 3rd index of the List
 
 del names[0]    # Deletes 0th item in the list
-del names       # Deletes the entire list
+# del names       # Deletes the entire list
 
 # Making copy of the list
 a = [1, 2, 3, 4, 5]
@@ -80,12 +80,23 @@ for file in files:
     if file.endswith('pdf'):
         print(file)
 
-files = ['youtube.txt', 'amazon.pdf', 'facebook.pdf', 'google.py', 'apple.doc']
-for file in files:
-    if not file.endswith('.py'):
+filenames = ['youtube.txt', 'amazon.pdf', 'facebook.pdf', 'google.py', 'apple.doc']
+for filename in filenames:
+    if not filename.endswith('.py'):
         continue
     else:
         print('Python is present!!!!')
+
+# Multiple conditions in startswith and endswith function
+for filename in filenames:
+    if filename.endswith(('txt', 'pdf')):   # filename either endswith txt or pdf
+        # startswith and endswith can take tuple as an argument
+        print(filename)
+
+choices = ['http', 'https']
+url = 'http://www.python.org'
+print(url.startswith(tuple(choices)))
+
 
 # Converting Lists to String
 print('-'.join(names))  # Prints yahoo-netflix-microsoft-instagram-google-gmail-facebook-apple-amazon

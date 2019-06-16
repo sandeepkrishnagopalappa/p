@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/_dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/_dictionary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/actual_lines.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/actual_lines.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorting/_sorting_part-II.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting/_sorting_part-II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +12,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -26,7 +33,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lege</find>
       <find>Sclicing</find>
       <find>Slicing</find>
       <find>sort</find>
@@ -56,6 +62,7 @@
       <find>del</find>
       <find>zip</find>
       <find>removing</find>
+      <find>starts</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,7 +97,6 @@
         <option value="$PROJECT_DIR$/Random_Module/_random_module.py" />
         <option value="$PROJECT_DIR$/Conditional_And_Looping/_conditionals_and_looping.py" />
         <option value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" />
-        <option value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" />
         <option value="$PROJECT_DIR$/Iterables_Iterators_And_Generators/words.txt" />
         <option value="$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py" />
         <option value="$PROJECT_DIR$/Handling_Files/_file_handling.py" />
@@ -115,10 +121,11 @@
         <option value="$PROJECT_DIR$/Sorting/_sorting_part-II.py" />
         <option value="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" />
         <option value="$PROJECT_DIR$/Dictionary/_dictionary.py" />
+        <option value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="100" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -159,7 +166,7 @@
             <path>
               <item name="python_tutorials" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_tutorials" type="462c0819:PsiDirectoryNode" />
-              <item name="Itertools_Module" type="462c0819:PsiDirectoryNode" />
+              <item name="Strings_Lists_And_Slicing" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -200,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python._generators">
+  <component name="RunManager" selected="Python._lists">
     <configuration name="TC01" type="PythonConfigurationType" factoryName="Python">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -285,7 +292,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_itertools_module" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="_lists" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -293,11 +300,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Itertools_Module" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Strings_Lists_And_Slicing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Itertools_Module/_itertools_module.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -330,18 +337,18 @@
     <list>
       <item itemvalue="Python.TC01" />
       <item itemvalue="Python._encapsulation" />
-      <item itemvalue="Python._itertools_module" />
       <item itemvalue="Python._dictionary" />
       <item itemvalue="Python._generators" />
       <item itemvalue="Python._sorting_part-II" />
+      <item itemvalue="Python._lists" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python._lists" />
         <item itemvalue="Python._generators" />
         <item itemvalue="Python._sorting_part-II" />
         <item itemvalue="Python._dictionary" />
         <item itemvalue="Python._encapsulation" />
-        <item itemvalue="Python._itertools_module" />
       </list>
     </recent_temporary>
   </component>
@@ -401,9 +408,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="17" width="1223" height="782" extended-state="7" />
+    <frame x="57" y="17" width="1223" height="782" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49663526" visible="true" weight="0.23666666" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49663526" visible="true" weight="0.23666666" />
       <window_info id="Structure" order="1" sideWeight="0.50336474" side_tool="true" weight="0.19518378" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -547,13 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Handling_Files/_file_handling.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -636,13 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -779,6 +773,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="56" column="18" lean-forward="true" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
         </state>
       </provider>
     </entry>
