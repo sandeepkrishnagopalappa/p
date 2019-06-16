@@ -109,15 +109,54 @@ for d in actual_lines(my_dict):
 # =========================================================
 
 
-# Custom Generator  # Generates Integers. One value at a time
-def my_generator():
-    item = 0
-    while True:
-        item += 1
-        yield item
+# Removing Duplicates form the sequence
+def dedupe(iterable):
+    seen = set()
+    for item in iterable:
+        if item not in seen:
+            yield item
+            seen.add(item)
 
 
-my_nums = my_generator()
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
+names = ['apple', 'google', 'apple', 'yahoo', 'gmail', 'google']
+
+# Passing a List object to the Generator
+print(list(dedupe(names)))
+
+
+my_string = 'abcdabcdefgh'
+
+# Passing a String object to the Generator
+print(list(dedupe(my_string)))
+
+# Passing a file object to the Generator
+with open('words.txt') as f:
+    for line in dedupe(f):
+        print(line, end='')
+
+
+# For sequences which are not hashable like dicts
+def dedupe(items, key=None):
+    seen = set()
+    for item in items:
+        val = item if key is None else key(item)
+        if val not in seen:
+            yield item
+            seen.add(val)
+
+
+a = [{'x': 1, 'y': 2}, {'x': 1, 'y': 3}, {'x': 1, 'y': 2}, {'x': 2, 'y': 4}]
+
+print(list(dedupe(a, key=lambda item: (item['x'], item['y']))))
+
+# Using itemgetter
+from operator import itemgetter
+print(list(dedupe(a, key=itemgetter('x', 'y'))))
+
+
+# OR without using Lambda expression
+def get_values(d_item):
+    return d_item['x'], d_item['y']
+
+
+print(list(dedupe(a, key=get_values)))

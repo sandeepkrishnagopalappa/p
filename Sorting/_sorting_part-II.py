@@ -22,6 +22,13 @@ print(sorted(portfolio, key=lambda d: d.get('name')))   # Sorts on the key 'name
 print(sorted(portfolio, key=lambda d: d.get('shares')))   # Sorts on the key 'shares'
 print(sorted(portfolio, key=lambda d: d.get('price')))   # Sorts on the key 'price'
 
+# Sorting using itemgetter
+from operator import itemgetter
+
+print(sorted(portfolio, key=itemgetter('name')))
+
+print(sorted(portfolio, key=itemgetter('name', 'shares')))
+
 
 # Sorting Employee Class
 class Employee:
@@ -50,3 +57,7 @@ print(sorted(li_emp, key=lambda emp: emp.salary))
 
 print(heapq.nlargest(2, [(emp.salary, emp.full_name()) for emp in li_emp]))
 print(heapq.nsmallest(2, [(emp.salary, emp.full_name()) for emp in li_emp]))
+
+# Sorting using attgetter
+from operator import attrgetter
+print(sorted(li_emp, key=attrgetter('salary')))

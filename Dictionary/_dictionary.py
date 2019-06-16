@@ -115,3 +115,35 @@ for word in words:
     words_count.update({word: word_count})
 
 print(words_count)
+
+
+# Finding Commonalities in Two Dictionaries
+a = {'x': 1, 'y': 2, 'z': 3}
+
+b = {'w': 10, 'x': 11, 'y': 2}
+
+# Find keys in common
+print(a.keys() & b.keys())     # Prints { 'x', 'y' }
+
+
+# Find keys in a that are not in b
+print(a.keys() - b.keys())  # prints { 'z' }
+
+# Find (key,value) pairs in common
+print(a.items() & b.items())   # prints { ('y', 2) }
+
+
+# Make a new dictionary with certain keys removed
+c = {key: a[key] for key in a.keys() - {'z', 'w'}} # prints c is {'x': 1, 'y': 2}
+
+# The values() method of a dictionary does not support the set opearations described
+# in above example. this is due to the fact that unlike keys, the items
+# contained in a values view aren’t guaranteed to be unique
+
+
+# However, if you must perform such calculations, they
+# can be accomplished by simply converting the values to a set first.
+
+
+print([value for value in set(a.values()) - {1}])   # Prints [2, 3]
+
