@@ -53,6 +53,18 @@ print(my_message.split())   # Splits the string based on white space and returns
 print(my_message.startswith('Hello'))
 print(my_message.endswith('World'))
 
+my_string = '***************Hello world==================='
+print(my_string.rstrip('='))    # prints ***************Hello world
+print(my_string.lstrip('*'))    # prints Hello world===================
+print(my_string.strip('=*'))    # Prints Hello world
+
+# Aligning the Strings
+
+filename = 'youtube.txt'
+print(filename.ljust(10))
+print(filename.rjust(10))
+print(filename.center(20))
+
 # String Concatination
 greeting = 'Hello'
 name = 'Steve'

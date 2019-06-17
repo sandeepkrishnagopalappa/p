@@ -20,6 +20,17 @@ for _ in range(10):
     full_name = f'{random.choice(fname)} {random.choice(lname)}'
     print(full_name)
 
+values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+print(random.sample(values, 3))     # Prints random subset of the list
+
+# Shuffles the list
+random.shuffle(values)
+print(values)
+
+# Shuffles the list
+random.shuffle(values)
+print(values)
+
 
 # Generating 8 Character random password
 random_string = '''

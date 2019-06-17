@@ -11,6 +11,12 @@ print(abs(-8))      # Prints 8
 print(round(3.75))  # Prints 4
 print(round(3.75, 1))   # Prints 3.8
 
+# formatting numbers
+
+x = 1.2345
+print(format(x, '0.2f'))    # Prints 1.23
+print(format(x, '0.3f'))    # Prints 1.234
+
 # Comparision operators
 # Equal:            3 == 2
 # Not Equal:        3 != 2
