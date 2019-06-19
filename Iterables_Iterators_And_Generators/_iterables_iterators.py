@@ -48,6 +48,16 @@ print_each(my_dict)
 print_each(my_tuple)
 
 
+# if you’re using next() manually,
+# you can also instruct it to return a terminating value, such as None
+def print_each2(iterable):
+    while True:
+        my_line = next(iterable, None)
+        if line is None:
+            break
+        print(my_line)
+
+
 def print_each(iterable):
     for item in iterable:     # This for loop is equivallent to the above custom iterator logic
         print(item)

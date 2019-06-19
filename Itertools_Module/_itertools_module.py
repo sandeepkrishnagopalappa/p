@@ -48,9 +48,28 @@ my_comb = itertools.combinations(letters, 2)
 for item in my_comb:
     print(item)
 
+
 # ================================================================
 # PERMUTATION
+my_permutation = itertools.permutations(letters)
+# The above code Prints
+# ('a', 'b', 'c')
+# ('a', 'c', 'b')
+# ('b', 'a', 'c')
+# ('b', 'c', 'a')
+# ('c', 'a', 'b')
+# ('c', 'b', 'a')
+
 my_permutation = itertools.permutations(letters, 2)
+
+# The above code prints
+# ('a', 'b')
+# ('a', 'c')
+# ('b', 'a')
+# ('b', 'c')
+# ('c', 'a')
+# ('c', 'b')
+
 
 # iSlice
 
@@ -64,4 +83,11 @@ for item in my_slice:
 for item in my_permutation:
     print(item)
 
+# Reading first 5 lines of the file
+with open('read.txt') as f:
+    lines = f.readlines()
+    from itertools import islice
+    first_five_lines = islice(lines, 5)
+    for line in first_five_lines:
+        print(line, end='')
 # ================================================================

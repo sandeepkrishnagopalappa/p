@@ -41,6 +41,28 @@ print(next(gen_even))
 print(next(gen_even))
 
 
+# Generates a range of floating point numbers
+def frange(start, stop, step):
+    while start <= stop:
+        yield start
+        start += step
+
+
+print(list(frange(0, 5, 0.5)))  # [0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0]
+
+
+# Countdown Generator
+def countdown(start):
+    print('Starting countdown from ', start)
+    while start > 0:
+        yield start
+        start -= 1
+    print('Done!')
+
+
+print(list(countdown(10)))
+
+
 # Produces squares of the number (Using Generators)
 def square_numbers(stream):
     for num in stream:

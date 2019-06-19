@@ -51,3 +51,9 @@ with open('from_file.txt', 'r') as wf:
 with open('from_file.txt') as f:
     for linenumber, line in enumerate(f, start=1):
         print(linenumber, line, end='')
+
+# Reading the file in reversed order
+with open('read.txt') as f:
+    for line in reversed(list(f)):
+        print(line, end='')
+

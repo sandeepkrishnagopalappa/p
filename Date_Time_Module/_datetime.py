@@ -97,3 +97,5 @@ print(datetime.date.strftime(td, '%Y %B, %d'))      # Prints 2019 January, 08
 print(datetime.date.strftime(td, '%b %d, %Y'))      # Prints Jan 08, 2019
 print(datetime.date.strftime(td, '%d %b, %Y'))      # Prints 08 Jan, 2019
 print(datetime.date.strftime(td, '%Y %b, %d'))      # Prints 2019 Jan, 08
+
+print(datetime.date.strftime(td, '%A %B %d, %Y'))      # Tuesday June 18, 2019
