@@ -1,5 +1,6 @@
-# PYTHON LISTS
+from itertools import zip_longest
 
+# PYTHON LISTS
 # Creating an empty List
 my_list = []
 my_list = list()    # Using list constructor
@@ -73,6 +74,27 @@ for i in range(len(cities)):
 # Iterating through multiple list using zip function
 for city, population in zip(cities, population):
     print(city, population)
+
+# Iterating through multiple list with un-equal lengths using zip function
+a = [1, 2, 3]
+b = ['v', 'w', 'x', 'y', 'z']
+
+for i in zip(a, b):
+    print(i)    # Prints (1, 'v'), (2, 'w'), (3, 'x')
+    # zip function stops at the shortest list
+
+for i in zip_longest(a, b):
+    print(i)    # Prints (1, 'v'), (2, 'w'), (3, 'x'), (None, y), (None, z)
+
+for i in zip_longest(a, b, fillvalue='NA'):
+    print(i)    # Prints (1, 'v'), (2, 'w'), (3, 'x'), ('NA', y), ('NA', z)
+
+a = [1, 2, 3]
+b = ['x', 'y', 'z']
+c = ['alpha', 'beta', 'gamma']
+
+for i in zip(a, b, c):
+    print(i)    # Prints (1, 'x', 'alpha'), (2, 'y', 'beta'), (3, 'y', 'gamma')
 # ================================================================================
 
 files = ['youtube.txt', 'amazon.pdf', 'facebook.pdf', 'google.pdf', 'apple.doc']
