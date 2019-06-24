@@ -2,9 +2,11 @@ import os
 
 print(os.getcwd())  # Prints current working directory
 
-os.chdir(r'C:\Users\ssuryaprasad\Desktop')     # Changes the working directory
+os.chdir('/home/user/Desktop')     # Changes the working directory
 
 print(os.listdir)     # Lists all available files and folders in the current working directory
+
+print(os.listdir('/home/user/Desktop'))  # Lists all the available files and folders in the directory path mentioned
 
 try:
     os.makedirs(r'hello_testing')     # Creates directories (Multiple directories)
@@ -15,9 +17,9 @@ os.removedirs(r'hello_testing')     # Removes directories
 
 os.rename('test.txt', 'testing.txt')    # Renames the file
 
-os.chdir(r'C:\Users\ssuryaprasad\Desktop\hello_testing')
+os.chdir('/home/user/Desktop/')
 
-files = os.listdir()
+files = os.listdir
 
 for file in files:
     temp_file_name, file_ext = os.path.splitext(file)
@@ -37,4 +39,19 @@ print(os.path.exists('testing.txt'))    # Prints True if the file exists.
 
 print(os.path.isfile('testing.txt'))    # Prints True if it is file
 
-print(os.path.isdir(r'C:\Users\ssuryaprasad\Desktop\hello_testing'))    # Prints True if it is a Directory
+print(os.path.isdir('/usr/bin'))    # Prints True if it is a Directory
+
+
+# Joining file path's using join
+file_dir = '/usr/bin/'
+file_name = 'test.txt'
+
+print(os.path.join(file_dir, file_name))            # Prints /usr/bin/test.txt
+
+print(os.path.basename('/usr/bin/python.txt'))      # Prints the file name which is python.txt
+
+print(os.path.dirname('/usr/bin/python.txt'))       # Prints directory name which is /usr/bin
+
+print(os.path.split('/usr/bin/python.txt'))         # Prints ('/usr/bin', 'python.txt')
+
+print(os.path.splitext('/user/bin/python.txt'))     # Prints ('/usr/bin/python', '.txt')
