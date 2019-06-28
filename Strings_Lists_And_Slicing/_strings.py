@@ -50,6 +50,18 @@ print(my_message.find('World'))     # Prints the index of first occurance of the
 print(my_message.find('Universe'))      # Prints -1.
 print(my_message.replace('World', 'Universe'))  # Prints 'Hello Universe'
 print(my_message.split())   # Splits the string based on white space and returns a list
+
+s = 'This is my string'
+print(s.split('s'))
+
+s = ' This is my string '   # There is a leading and trailing space
+print(s.split(' '))     # Prints ['', 'This', 'is', 'a', 'string', '']
+
+info = '560100, Bangalore, KA'
+pin_code, city, state = info.split(',')
+
+print(info.split(',', maxsplit=1))     # Prints ['560100', ' Bangalore, KA']
+
 print(my_message.startswith('Hello'))
 print(my_message.endswith('World'))
 

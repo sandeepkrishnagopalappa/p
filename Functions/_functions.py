@@ -64,6 +64,14 @@ def sum_two_numbers(a: int, b: int) -> int:
 
 # ================================================================================================
 # Variable number of Arguments
+def anyargs(*args, **kwargs):
+    print(args)     # Tuple
+    print(kwargs)   # Dictionary
+
+
+anyargs(1, 2, 3, fname='steve', lname='jobs')
+
+
 def add(*args):
     total = 0
     for num in args:
@@ -100,3 +108,30 @@ names = ['Steve', 'Mark']
 info = {'age': 26, 'company': 'Apple'}
 
 display_info(*names, **info)
+
+
+# Attaching Informational Metadata to Function Arguments
+def add(x: int, y: int) -> int:
+    return x + y
+
+
+# Returning Multiple Values from a Function
+def myfunc():
+    return 1, 2, 3
+
+
+a, b, c = myfunc()
+
+
+# Default values are evaluated only once
+age = 10
+
+
+def myinfo(my_name, my_age=age):
+    print(my_name, my_age)
+
+
+print(myinfo('steve', my_age=50))      # Prints (steve, 50)
+print(myinfo('steve'))      # Prints(steve, 10)
+age = 20
+print(myinfo('steve'))      # Prints (steve, 10)

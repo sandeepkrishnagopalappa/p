@@ -82,12 +82,14 @@ def lstrip(iterable, strip_value):
 print(lstrip(numbers, 0))
 
 
+# ===============================================================
+# Removing duplicates from the list
 def uniques_only(iterable):
     seen = set()
     i_nums = iter(iterable)
     for item in i_nums:
-        if not item in seen:
-            seen.append(item)
+        if item not in seen:
+            seen.add(item)
     return seen
 
 
@@ -96,3 +98,28 @@ print(uniques_only(numbers))
 squares = (number ** 2 for number in numbers)
 
 print(uniques_only(squares))
+
+# ===============================================================
+
+
+# Sorting the iterable if it is unhashable
+def uniques_only(iterable, key=None):
+    seen = set()
+    for item in iterable:
+        val = item if key is None else key(item)
+        if val not in seen:
+            seen.add(val)
+            yield item
+
+
+d = [{'fname': 'steve', 'lname': 'jobs'},
+     {'fname': 'bill', 'lname': 'gates'},
+     {'fname': 'steve', 'lname': 'jobs'}
+    ]
+
+print(list(uniques_only(d, key=lambda dt: dt.get('fname'))))
+
+
+# Sorting names list based on lastname
+names = ['steve jobs', 'bill gates', 'larry ellison', 'john doe']
+print(sorted(names, key=lambda name: name.split()[1]))
