@@ -135,3 +135,4 @@ print(myinfo('steve', my_age=50))      # Prints (steve, 50)
 print(myinfo('steve'))      # Prints(steve, 10)
 age = 20
 print(myinfo('steve'))      # Prints (steve, 10)
+# Default arguments are evaluated only ONCE

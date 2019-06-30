@@ -1,3 +1,4 @@
+from fnmatch import fnmatch
 # Working with Strings or Textaul Data
 
 # All Variables should in Lower Case. If there are more than one word in the Variable,
@@ -91,3 +92,17 @@ print(greeting+', '+name)
 
 # Repeats the string 5 times
 print('Hello ' * 5)
+
+names = ['Dat1.csv', 'Dat2.csv', 'config.ini', 'foo.py']
+dat_files = [name for name in names if fnmatch(name, 'Dat*.csv')]
+print(dat_files)
+
+
+addresses = ['5412 N CLARK ST',
+             '1060 W ADDISON ST',
+             '1039 W GRANVILLE AVE',
+             '2122 N CLARK ST',
+             '4802 N BROADWAY',
+        ]
+
+print([add for add in addresses if fnmatch(add, '* ST')])

@@ -70,6 +70,8 @@ my_permutation = itertools.permutations(letters, 2)
 # ('c', 'a')
 # ('c', 'b')
 
+for item in my_permutation:
+    print(item)
 
 # iSlice
 
@@ -80,8 +82,6 @@ my_slice = itertools.islice(names, 2, 5)
 for item in my_slice:
     print(item)
 
-for item in my_permutation:
-    print(item)
 
 # Reading first 5 lines of the file
 with open('read.txt') as f:
