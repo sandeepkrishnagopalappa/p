@@ -24,7 +24,8 @@ values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 print(random.sample(values, 3))     # Prints random subset of the list
 
 # Shuffles the list
-random.shuffle(values)
+random.shuffle(values)      # Only Mutable data can be passed to shfulle method
+# Shufulle does not return new list, insted it mutates the existing list
 print(values)
 
 # Shuffles the list
