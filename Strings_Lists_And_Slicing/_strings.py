@@ -72,7 +72,6 @@ print(my_string.lstrip('*'))    # prints Hello world===================
 print(my_string.strip('=*'))    # Prints Hello world
 
 # Aligning the Strings
-
 filename = 'youtube.txt'
 print(filename.ljust(10))
 print(filename.rjust(10))

@@ -1,4 +1,5 @@
 import heapq
+from operator import itemgetter
 
 # Custom Sorting
 names = ['apple', 'google', 'yahoo', 'amazon', 'facebook', 'instagram', 'microsoft']
@@ -23,11 +24,19 @@ print(sorted(portfolio, key=lambda d: d.get('shares')))   # Sorts on the key 'sh
 print(sorted(portfolio, key=lambda d: d.get('price')))   # Sorts on the key 'price'
 
 # Sorting using itemgetter
-from operator import itemgetter
-
 print(sorted(portfolio, key=itemgetter('name')))
 
 print(sorted(portfolio, key=itemgetter('name', 'shares')))
+
+data = [
+    {'fname': 'Brian', 'uid': 1003, 'lname': 'Jones'},
+    {'fname': 'David', 'uid': 1002, 'lname': 'Beazley'},
+    {'fname': 'John', 'uid': 1001, 'lname': 'Cleese'},
+    {'fname': 'Big', 'uid': 1004, 'lname': 'Jones'},
+]
+
+print(sorted(data, key=itemgetter('fname', 'lname')))
+print(sorted(data, key=itemgetter('lname', 'fname')))
 
 
 # Sorting Employee Class
@@ -41,7 +50,7 @@ class Employee:
         return f'({self.fname}, {self.lname}, {self.salary})'
 
     def full_name(self):
-        return self.fname + ' '+ self.lname
+        return self.fname + ' '+self.lname
 
     def email(self):
         return f'{self.fname}.{self.lname}@company.com'

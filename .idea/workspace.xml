@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Itertools_Module/_itertools_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/Itertools_Module/_itertools_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting/_sorting_part-II.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting/_sorting_part-II.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,26 +17,7 @@
     <favorites_list name="python_tutorials" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Itertools_Module/_itertools_module.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -115,13 +96,11 @@
         <option value="$PROJECT_DIR$/Decorators/_decorators.py" />
         <option value="$PROJECT_DIR$/Exception_Handling/_exception_handling.py" />
         <option value="$PROJECT_DIR$/RegularExpressions/_regular_expressions.py" />
-        <option value="$PROJECT_DIR$/Comprehensions/_comprehensions.py" />
         <option value="$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py" />
         <option value="$PROJECT_DIR$/Comprehensions/testing.py" />
         <option value="$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py" />
         <option value="$PROJECT_DIR$/Comprehensions/read.txt" />
         <option value="$PROJECT_DIR$/Object_Oriented_Concepts/_encapsulation.py" />
-        <option value="$PROJECT_DIR$/Sorting/_sorting_part-II.py" />
         <option value="$PROJECT_DIR$/Dictionary/_dictionary.py" />
         <option value="$PROJECT_DIR$/Numbers_And_Booleans/_integers_and_floats.py" />
         <option value="$PROJECT_DIR$/Date_Time_Module/_datetime.py" />
@@ -130,16 +109,18 @@
         <option value="$PROJECT_DIR$/Handling_Files/_file_handling.py" />
         <option value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" />
         <option value="$PROJECT_DIR$/OS_Module/_OS_module.py" />
-        <option value="$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py" />
         <option value="$PROJECT_DIR$/Random_Module/_random_module.py" />
         <option value="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance.py" />
         <option value="$PROJECT_DIR$/Functions/_functions.py" />
-        <option value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" />
         <option value="$PROJECT_DIR$/Itertools_Module/_itertools_module.py" />
+        <option value="$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py" />
+        <option value="$PROJECT_DIR$/Sorting/_sorting_part-II.py" />
+        <option value="$PROJECT_DIR$/Comprehensions/_comprehensions.py" />
+        <option value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="100" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -169,7 +150,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,20 +157,11 @@
               <item name="python_tutorials" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_tutorials" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="python_tutorials" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_tutorials" type="462c0819:PsiDirectoryNode" />
-              <item name="Itertools_Module" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_tutorials" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_tutorials" type="462c0819:PsiDirectoryNode" />
-              <item name="Strings_Lists_And_Slicing" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -428,14 +399,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="17" width="1223" height="782" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49663526" visible="true" weight="0.23666666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49663526" visible="true" weight="0.23666666" />
       <window_info id="Structure" order="1" sideWeight="0.50336474" side_tool="true" weight="0.19416666" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49873257" visible="true" weight="0.3627907" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49873257" weight="0.3627907" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4064603" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -500,20 +470,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Handling_Files/words.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Handling_Files/write.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Handling_Files/to_file.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -521,13 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mutable_And_Immutable/_mutable_and_immutable_objects.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -613,20 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sorting/_sorting_part-II.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Numbers_And_Booleans/_integers_and_floats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Unpacking_Sequences/_unpacking_sequences.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -644,13 +579,6 @@
     <entry file="file://$PROJECT_DIR$/Itertools_Module/read.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="107" column="59" lean-forward="true" selection-start-line="107" selection-start-column="59" selection-end-line="107" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Handling_Files/read.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -658,34 +586,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OS_Module/_OS_module.py">
+    <entry file="file://$PROJECT_DIR$/Random_Module/_random_module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="503">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Comprehensions/_comprehensions.py">
+    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_slicing_lists_strings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        <state relative-caret-position="1083">
+          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-1247971763/itertools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-385">
+          <caret line="425" column="32" selection-start-line="425" selection-start-column="28" selection-end-line="425" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sorting/_sorting_part-II.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Comprehensions/_comprehensions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Conditional_And_Looping/_conditionals_and_looping.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="266">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Date_Time_Module/_datetime.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1691">
-          <caret line="89" column="23" lean-forward="true" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+        <state relative-caret-position="38">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -698,8 +668,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dictionary/_dictionary.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="76">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -710,24 +680,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Functions/_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Handling_Files/_file_handling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        <state relative-caret-position="38">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py">
+    <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="78" column="10" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="10" />
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Random_Module/_random_module.py">
+    <entry file="file://$PROJECT_DIR$/Itertools_Module/_itertools_module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state>
+          <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Magic_Methods_Dunders/_magic_dunder_methods.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mutable_And_Immutable/_mutable_and_immutable_objects.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Numbers_And_Booleans/_booleans.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Numbers_And_Booleans/_integers_and_floats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Object_Oriented_Concepts/_encapsulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -738,66 +742,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Object_Oriented_Concepts/_encapsulation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-338">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="19">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Functions/_functions.py">
+    <entry file="file://$PROJECT_DIR$/OS_Module/_OS_module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_slicing_lists_strings.py">
+    <entry file="file://$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-1247971763/itertools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-385">
-          <caret line="425" column="32" selection-start-line="425" selection-start-column="28" selection-end-line="425" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Itertools_Module/_itertools_module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
+        <state relative-caret-position="19">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

@@ -150,6 +150,17 @@ pairs = {city: population for city, population in zip(cities, population)}
 
 print(pairs)
 
+# Building a dictionary whose price value is more than 200
+prices = {
+    'ACME': 45.23,
+    'AAPL': 612.78,
+    'IBM': 205.55,
+    'HPQ': 37.20,
+    'FB': 10.75
+}
+
+p = {company: price for company, price in prices.items() if price > 200}
+
 # Removing duplicates from the list (using Dictionary and List Comprehension)
 l = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
 d = {item: l.count(item) for item in l}
