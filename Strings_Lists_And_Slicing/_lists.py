@@ -102,6 +102,11 @@ for file in files:
     if file.endswith('pdf'):
         print(file)
 
+# ===========OR==========
+for file in files:
+    if file[-3:] == 'pdf':
+        print(file)
+
 filenames = ['youtube.txt', 'amazon.pdf', 'facebook.pdf', 'google.py', 'apple.doc']
 for filename in filenames:
     if not filename.endswith('.py'):
