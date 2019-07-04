@@ -3,7 +3,7 @@ import string
 import math
 
 '''
-Comprehensions in Python is a way to build an iterable object in one expression witout the need of traditional
+Comprehensions in Python is a way to build an iterable object in one expression without the need of traditional
 for loop.
 '''
 # List Comprehensions are used for building a new list

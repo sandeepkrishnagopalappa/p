@@ -100,11 +100,8 @@ print(max(dict_temp))
 print(min(dict_temp))
 
 # Count number of words in a sentence
-sentence = '''
-Python is an interpreted, high-level, general-purpose programming language.
-Created by Guido van Rossum and first released in 1991, Python has a design philosophy that emphasizes code readability,
-notably using significant whitespace. It provides constructs that enable clear programming on both small and large scales.
-Van Rossum led the language community until stepping down as leader in July 2018.
+sentence = ''' look into my eyes look into my eyes the eyes the eyes the eyes not around the eyes look around
+the eyes look into my eyes under
 '''
 words = sentence.split()
 
