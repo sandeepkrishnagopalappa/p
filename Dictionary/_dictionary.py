@@ -26,7 +26,9 @@ print(employee.get('age', 'The Key not found in the dictionary'))   # Throws exc
 
 # Adding / Updating the dictionary
 employee.update({'age': 35, 'phone': '111-1111'})
+employee['age'] = 45  # Upadting the dictionary key with new value
 employee = {**employee, 'address': '2200, Valley View Lane'}
+
 
 # Deleting the key and value
 employee.popitem()      # Returns and deletes the last key/value pair in the dictionary
@@ -112,7 +114,6 @@ for word in words:
     words_count.update({word: word_count})
 
 print(words_count)
-
 
 # Finding Commonalities in Two Dictionaries
 a = {'x': 1, 'y': 2, 'z': 3}

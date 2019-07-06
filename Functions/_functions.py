@@ -72,6 +72,13 @@ def anyargs(*args, **kwargs):
 anyargs(1, 2, 3, fname='steve', lname='jobs')
 
 
+def test_key(name, *, _age):    # after * all the arguments should be keyword args only
+    print(name, _age)
+
+
+test_key('Steve', _age=30)
+
+
 def add(*args):
     total = 0
     for num in args:

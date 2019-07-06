@@ -5,6 +5,7 @@ import time
 # Object oriented programing
 class Employee:
     no_emps = 0     # Class Variable
+    company_name = 'Apple.Inc'
 
     def __init__(self, fname, lname, pay):
         self.fname = fname.title()
@@ -22,6 +23,14 @@ class Employee:
     @classmethod
     def empid(cls):
         return cls.no_emps
+
+    @classmethod
+    def get_company_name(cls):
+        return Employee.company_name
+
+    @staticmethod
+    def just_function_inside_class():
+        print('Hello world')
 
 
 e1 = Employee('robert', 'hunter', 90000)

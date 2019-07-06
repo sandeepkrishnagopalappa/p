@@ -62,6 +62,9 @@ for item in names[:4]:
 for index, item in enumerate(names):    # enumerate returns a tuple of index, item pair
     print(index, item)
 
+for index, item in enumerate(names, start=1):   # Index starts from 1
+    print(index, item)
+
 # ================================================================================
 # Iterating over multiple lists simultaniously
 cities = ['Tokyo', 'Delhi', 'Shanghai', 'Sao Paulo', 'Mumbai']

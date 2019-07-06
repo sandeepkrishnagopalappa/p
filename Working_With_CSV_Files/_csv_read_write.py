@@ -34,4 +34,28 @@ with open('babynames.csv', 'r') as csv_file:
 data = [('apple', 'google', 'yahoo'), ('microsoft', 'netflix', 'gmail')]
 with open('company.csv', 'w') as csv_file:
     csv_writer = csv.writer(csv_file)
-    csv_writer.writerows()  # Write rows takes a list of iterables
+    csv_writer.writerows(data)  # Write rows takes a list of iterables
+
+
+# Reading csv file into a data structure
+_portfoilo = []
+with open('portfolio.csv', 'r') as csv_file:
+    csv_reader = csv.reader(csv_file)
+    next(csv_reader)
+    for row in csv_reader:
+        record = {'name': row[0],
+                  'shares': row[1],
+                  'price': row[2]
+                  }
+        _portfoilo.append(record)
+
+print(_portfoilo)   # List of Dictionaries
+
+# Manuplating the dictionary
+for holding in _portfoilo:
+    if int(holding.get('shares')) > 100:
+        print(holding)
+
+for holding in _portfoilo:
+    if float(holding.get('price')) > 100:
+        print(holding)
