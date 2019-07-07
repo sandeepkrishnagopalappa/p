@@ -1,25 +1,34 @@
-class Base:
-    def __init__(self):
-        print('Base.__init__')
+class Parent:
+    def __init__(self, name):
+        print('Parent.name')
+        self.name = name
+
+    def speak(self):
+        print('Parent.Speak')
+
+    def sing(self):
+        print('parent.sing')
+        self.speak()
 
 
-class A(Base):
-    def __init__(self):
-        super().__init__()
-        print('A.__init__')
+class Child(Parent):
+    def __init__(self, name):
+        super().__init__(name)
+        print('Child.name')
+
+    def speak(self):        # Overriding parent class speak method
+        print('child.speak')    # Adding extra functionality to speak method
+        super().speak()     # Invoking parent class (original) speak method
 
 
-class B(Base):
-    def __init__(self):
-        super().__init__()
-        print('B.__init__')
+class Child2(Parent):
+    def __init__(self, name, play):
+        super().__init__(name)
+        self.play = play
 
 
-class C(A, B):
-    def __init__(self):
-        super().__init__()
-        print('C.__init__')
+c1 = Child('Steve')
+c1.speak()
 
-
-c = C()
-print(C.mro())
+c2 = Child2('Steve', 'Hop')
+c2.speak()

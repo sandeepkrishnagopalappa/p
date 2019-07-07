@@ -115,6 +115,11 @@ for word in words:
 
 print(words_count)
 
+# Nested Dictionary
+prices = {'IBM': {'current': 90.1, 'low': 88.3, 'high': 92.7}}
+print(prices['IBM']['current'])
+print(prices['IBM']['high'])
+
 # Finding Commonalities in Two Dictionaries
 a = {'x': 1, 'y': 2, 'z': 3}
 
