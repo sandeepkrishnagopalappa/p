@@ -1,4 +1,4 @@
-
+import csv
 # Handling exception while reading from file
 try:
     file = open('read.txt')
@@ -24,6 +24,19 @@ def divide(number):
 
 print(divide(0))    # Raises divide by zero exception
 print(divide(2))  # Raises Type error
+
+total = 0
+with open('portfolio.csv', 'r') as f:
+    next(f)     # Skip the header
+    rows = csv.reader(f)
+    for lineno, row in enumerate(rows):
+        try:
+            total += float(row[2])
+        except ValueError as err:
+            print('Line:', lineno, ':', err, ':', row[2])
+            continue
+
+print('Total value of stock is :', total)
 
 
 # Raising exceptions
