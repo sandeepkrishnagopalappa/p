@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exception_Handling/_exception_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exception_Handling/_exception_handling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py" beforeDir="false" afterPath="$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Working_With_CSV_Files/portfolio.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Working_With_CSV_Files/portfolio.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,10 +18,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Exception_Handling/_exception_handling.py">
+        <entry file="file://$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+            <state relative-caret-position="114">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -119,16 +120,16 @@
         <option value="$PROJECT_DIR$/Functions/_functions.py" />
         <option value="$PROJECT_DIR$/Decorators/_decorators.py" />
         <option value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" />
-        <option value="$PROJECT_DIR$/Working_With_CSV_Files/portfolio.csv" />
         <option value="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance.py" />
         <option value="$PROJECT_DIR$/Dictionary/_dictionary.py" />
-        <option value="$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py" />
         <option value="$PROJECT_DIR$/Exception_Handling/portfolio.csv" />
         <option value="$PROJECT_DIR$/Exception_Handling/_exception_handling.py" />
+        <option value="$PROJECT_DIR$/Working_With_CSV_Files/portfolio.csv" />
+        <option value="$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="57" />
     <option name="y" value="17" />
     <option name="width" value="611" />
@@ -158,6 +159,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,13 +170,12 @@
             <path>
               <item name="python_tutorials" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_tutorials" type="462c0819:PsiDirectoryNode" />
-              <item name="Exception_Handling" type="462c0819:PsiDirectoryNode" />
+              <item name="Working_With_CSV_Files" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,7 +211,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python._exception_handling">
+  <component name="RunManager" selected="Python._csv_read_write">
     <configuration name="TC01" type="PythonConfigurationType" factoryName="Python">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -380,13 +381,13 @@
       <item itemvalue="Python._inheritance" />
       <item itemvalue="Python._lists" />
       <item itemvalue="Python._oop" />
-      <item itemvalue="Python tests.pytest in _decorators.py" />
       <item itemvalue="Python._exception_handling" />
+      <item itemvalue="Python tests.pytest in _decorators.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python._exception_handling" />
         <item itemvalue="Python._csv_read_write" />
+        <item itemvalue="Python._exception_handling" />
         <item itemvalue="Python._inheritance" />
         <item itemvalue="Python._lists" />
         <item itemvalue="Python._oop" />
@@ -449,10 +450,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="17" width="1223" height="782" extended-state="6" />
+    <frame x="57" y="17" width="1223" height="782" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49663526" visible="true" weight="0.23666666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49663526" visible="true" weight="0.23666666" />
       <window_info id="Structure" order="1" sideWeight="0.50336474" side_tool="true" weight="0.19416666" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -525,13 +526,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Variable_Scope/_variable_scope.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GIT_Notes" />
     <entry file="file://$PROJECT_DIR$/RegularExpressions/_regular_expressions.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -793,20 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Working_With_CSV_Files/portfolio.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-129">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Functions/_functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -833,8 +813,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Exception_Handling/_exception_handling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
+        <state relative-caret-position="817">
           <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Working_With_CSV_Files/new_portfolio.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Working_With_CSV_Files/portfolio.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>

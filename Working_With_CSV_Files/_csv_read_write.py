@@ -21,14 +21,12 @@ with open('portfolio.csv', 'r') as csv_file:
 with open('new_portfolio.csv', 'w') as csv_file:
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(['name', 'shares', 'price'])
-    
-with open('portfolio.csv', 'r') as csv_file:
-    csv_reader = csv.DictReader(csv_file)
-    with open('test.csv', 'w', newline='') as csv_write:
-        csv_writer = csv.DictWriter(csv_write, fieldnames=["name","shares","price"])
-        csv_writer.writeheader()
-        for line in csv_reader:
-            csv_writer.writerow(line)
+
+
+with open('portfolio.csv', 'w') as csv_file:
+    csv_writer = csv.DictWriter(csv_file, ['name', 'shares', 'price'])
+    csv_writer.writeheader()
+    csv_writer.writerow({'name': 'IBM', 'shares': 100, 'price': 65.3})
 
 
 data = [('apple', 'google', 'yahoo'), ('microsoft', 'netflix', 'gmail')]
@@ -44,18 +42,35 @@ with open('portfolio.csv', 'r') as csv_file:
     next(csv_reader)
     for row in csv_reader:
         record = {'name': row[0],
-                  'shares': row[1],
-                  'price': row[2]
+                  'shares': int(row[1]),
+                  'price': float(row[2])
                   }
         _portfoilo.append(record)
 
 print(_portfoilo)   # List of Dictionaries
 
-# Manuplating the dictionary
+
+# Finding the total
+total = 0.00
 for holding in _portfoilo:
-    if int(holding.get('shares')) > 100:
+    total += holding.get('price')
+print(total)
+
+# Shares holding greater than 100
+for holding in _portfoilo:
+    if holding.get('shares') > 100:
         print(holding)
 
+# Prices of shares with greater than $100
 for holding in _portfoilo:
-    if float(holding.get('price')) > 100:
+    if holding.get('price') > 100:
         print(holding)
+
+# Finding min and max price of all the stocks
+prices = []
+for holding in _portfoilo:
+    prices.append(holding.get('price'))
+
+
+print(min(prices))
+print(max(prices))
