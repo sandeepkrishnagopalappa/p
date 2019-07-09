@@ -24,6 +24,15 @@ def outer(some_function):   # Passing function as a parameter to other function
 outer(greet)    # Prints Hello world
 
 
+def print_after(seconds, func):     # Waits for 5 seconds and prints Hello world
+    import time
+    time.sleep(seconds)
+    func()
+
+
+print_after(5, greet)
+
+
 def outer_function():
     def inner_function():
         print('Hello')

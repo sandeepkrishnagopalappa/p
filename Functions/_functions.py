@@ -64,6 +64,14 @@ def sum_two_numbers(a: int, b: int) -> int:
 
 # ================================================================================================
 # Variable number of Arguments
+def func(a, *args):
+    print(a, args)
+
+
+def func(a, **kwargs):
+    print(a, kwargs)
+
+
 def anyargs(*args, **kwargs):
     print(args)     # Tuple
     print(kwargs)   # Dictionary

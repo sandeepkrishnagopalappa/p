@@ -10,8 +10,8 @@ class Employee:
     def __init__(self, fname, lname, pay):
         self.fname = fname.title()
         self.lname = lname.title()
-        self.pay = pay
-        self.email = fname.title() + '.' + lname.title() + '@company.com'
+        self.pay = int(pay)
+        self.email = f'{self.fname}.{self.lname}@company.com'
         Employee.no_emps += 1
 
     def full_name(self):
@@ -28,6 +28,11 @@ class Employee:
     def get_company_name(cls):
         return Employee.company_name
 
+    @classmethod    # Class Methods can be used as alternate constructors
+    def emp_from_string(cls, s):
+        fname, lname, pay = s.split(',')
+        return cls(fname, lname, pay)
+
     @staticmethod
     def just_function_inside_class():
         print('Hello world')
@@ -37,6 +42,9 @@ e1 = Employee('robert', 'hunter', 90000)
 e2 = Employee('laura', 'turner', 80000)
 e3 = Employee('lee', 'martin', 70000)
 e4 = Employee('amy', 'masters', 60000)
+
+
+e = Employee.emp_from_string('steve, jobs, 9000')   # Alternate method of emp instance
 
 print(e1.full_name())   # Prints the full name of the employee. self argument is passed automatically
 print(Employee.full_name(e1))   # Prints full name of the employee. self argument should be passed explicitly.
