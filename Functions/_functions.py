@@ -68,7 +68,7 @@ def func(a, *args):
     print(a, args)
 
 
-def func(a, **kwargs):
+def func2(a, **kwargs):
     print(a, kwargs)
 
 

@@ -114,36 +114,3 @@ def click_element(element_name):
 @wait
 def enter_text(element_name, text):
     print(f'editing {text} in {element_name} ')
-
-
-# Function Decorator
-# def _wait(orignal_function):
-#     def wrapper(*args, **kwargs):
-#         timeout = kwargs.get('timeout', orignal_function.__defaults__[0])
-#         print(f'Waiting for element visibility for {timeout} seconds')
-#         return orignal_function(*args, **kwargs)
-#     return wrapper
-
-
-# class FrameworkUtility:
-#     def __init__(self, driver):
-#         self.driver = driver
-#
-#     @_wait
-#     def click_element(self, webelement, timeout=60):
-#         print(f'Clicked on element {webelement}')
-#
-#     @_wait
-#     def enter_text(self, webelement, value, timeout=60):
-#         print(f'Entered text {value} in {webelement}')
-#
-#     @_wait
-#     def select_item(self, webelement, item, timeout=60):
-#         print(f'Selected item {item} from {webelement} list box')
-#
-#
-# f = FrameworkUtility('driver')
-# f.click_element('Submit')
-# f.click_element('Login', timeout=100)
-# f.select_item('City', 'Bangalore', timeout=20)
-# f.enter_text('Username', 'user1')
