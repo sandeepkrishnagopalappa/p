@@ -42,3 +42,52 @@ password = ''
 for _ in range(8):
     password = password + random.choice(random_string)
 print(password)
+
+# Generating Random Password
+
+
+def random_password(*, upper=1, lower=1, digits=1, special=1, length=8):
+    UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    LOWERCASE = UPPERCASE.lower()
+    DIGITS = "0123456789"
+    SPECIAL = "!@#$%^&*()"
+    ALL = UPPERCASE + LOWERCASE + DIGITS + SPECIAL
+
+    password = [
+        *(random.choice(UPPERCASE) for _ in range(upper)),
+        *(random.choice(LOWERCASE) for _ in range(lower)),
+        *(random.choice(DIGITS) for _ in range(digits)),
+        *(random.choice(SPECIAL) for _ in range(special)),
+        *(random.choice(ALL) for _ in range(length - upper - lower - digits - special))
+    ]
+    return password
+
+
+p = random_password(upper=1, lower=3, digits=1, special=1, length=8)
+print(''.join(p))
+
+
+def random_password2(*, upper=1, lower=1, digits=1, special=1, length=8):
+    UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    LOWERCASE = UPPERCASE.lower()
+    DIGITS = "0123456789"
+    SPECIAL = "!@#$%^&*()"
+    ALL = UPPERCASE + LOWERCASE + DIGITS + SPECIAL
+
+    password = ''
+
+    for _ in range(upper):
+        password += random.choice(UPPERCASE)
+    for _ in range(lower):
+        password += random.choice(LOWERCASE)
+    for _ in range(digits):
+        password += random.choice(DIGITS)
+    for _ in range(special):
+        password += random.choice(SPECIAL)
+    for _ in range(length - upper - lower - digits - special):
+        password += random.choice(ALL)
+
+    return password
+
+
+print(random_password2(upper=1, lower=3, digits=1, special=1, length=8))
