@@ -57,3 +57,8 @@ with open('read.txt') as f:
     for line in reversed(list(f)):
         print(line, end='')
 
+# Finding the length of each line in the text file
+with open('read.txt') as f:
+    for line in f:
+        print(len(line))
+

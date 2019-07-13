@@ -33,7 +33,7 @@ with open('portfolio.csv', 'r') as f:
         try:
             total += float(row[2])
         except ValueError as err:
-            print('Line:', lineno, ':', err, ':', row[2])
+            print('Line:', lineno, ':', err)
             continue
 
 print('Total value of stock is :', total)
