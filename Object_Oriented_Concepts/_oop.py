@@ -96,6 +96,9 @@ mg2.print_emp()
 # Prints all the instance attributes of an object instance
 print(mg1.__dict__)
 
+# Prints all the Class attributes of Holding Class
+print(Manager.__dict__)
+
 
 # ================================================================
 # Default Parameter is evaluated only once
