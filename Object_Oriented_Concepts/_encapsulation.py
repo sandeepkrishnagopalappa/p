@@ -80,7 +80,7 @@ p1.first_name = 'Bill'
 
 print(p1.first_name)
 
-del p1.first_name
+# del p1.first_name
 
 # Using Descriptors
 
@@ -111,11 +111,15 @@ class TypeString(TypeCheck):
         instance.__dict__[self.attribute_name] = value
 
 
+class TypeInteger(TypeCheck):
+    pass
+
+
 class Employee(object):
 
     firstname = TypeString('firstname', str)
     lastname = TypeString('lastname', str)
-    age = TypeCheck('age', int)
+    age = TypeInteger('age', int)
 
     def __init__(self, firstname, lastname, age):
         self.firstname = firstname
@@ -123,6 +127,6 @@ class Employee(object):
         self.age = age
 
 
-e1 = Employee('Steve', 'Jobs', 40)
+e1 = Employee('Steve', 'Jobs', '40')
 e2 = Employee('Bill', 'Gates', 41)
 
