@@ -81,6 +81,34 @@ def show():
 show()
 
 
+# Logger Decorator
+def logging(origfunc):
+    def wrapper(*args, **kwargs):
+        print('Calling function '+origfunc.__name__)
+        return origfunc(*args, **kwargs)
+    return wrapper
+
+
+@logging
+def add(a, b):
+    print(a + b)
+
+
+@logging
+def sub(a, b):
+    print(a - b)
+
+
+@logging
+def mul(a, b):
+    print(a * b)
+
+
+add(1, 2)
+sub(2, 1)
+mul(2, 2)
+
+
 # =======================================================
 # Calculates the execution time of the function
 def timer(orig_func):
