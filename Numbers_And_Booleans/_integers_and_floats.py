@@ -11,6 +11,12 @@ print(abs(-8))      # Prints 8
 print(round(3.75))  # Prints 4
 print(round(3.75, 1))   # Prints 3.8
 
+import math
+p = 3.9
+
+print(round(p))     # Prints 4
+print(math.trunc(p))    # Prints 3  uses __trunc__ magic method
+
 # formatting numbers
 
 x = 1.2345

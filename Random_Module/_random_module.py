@@ -32,6 +32,9 @@ print(values)
 random.shuffle(values)
 print(values)
 
+suits = ['hearts', 'clubs', 'diamonds', 'spades']
+random.shuffle(suits)
+
 
 # Generating 8 Character random password
 random_string = '''

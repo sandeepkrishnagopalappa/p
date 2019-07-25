@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Decorators/_decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decorators/_decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Numbers_And_Booleans/_integers_and_floats.py" beforeDir="false" afterPath="$PROJECT_DIR$/Numbers_And_Booleans/_integers_and_floats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Random_Module/_random_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/Random_Module/_random_module.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,10 +18,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Decorators/_decorators.py">
+        <entry file="file://$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="111" selection-start-line="111" selection-end-line="111" />
+            <state relative-caret-position="-114">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,7 +103,6 @@
         <option value="$PROJECT_DIR$/RegularExpressions/_regular_expressions.py" />
         <option value="$PROJECT_DIR$/Comprehensions/testing.py" />
         <option value="$PROJECT_DIR$/Comprehensions/read.txt" />
-        <option value="$PROJECT_DIR$/Numbers_And_Booleans/_integers_and_floats.py" />
         <option value="$PROJECT_DIR$/Date_Time_Module/_datetime.py" />
         <option value="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py" />
         <option value="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" />
@@ -114,7 +118,6 @@
         <option value="$PROJECT_DIR$/Working_With_CSV_Files/portfolio.csv" />
         <option value="$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py" />
         <option value="$PROJECT_DIR$/Functions/_functions.py" />
-        <option value="$PROJECT_DIR$/Random_Module/_random_module.py" />
         <option value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" />
         <option value="$PROJECT_DIR$/Handling_Files/_file_handling.py" />
         <option value="$PROJECT_DIR$/Handling_Files/write.txt" />
@@ -124,6 +127,8 @@
         <option value="$PROJECT_DIR$/Object_Oriented_Concepts/_encapsulation.py" />
         <option value="$PROJECT_DIR$/Object_Oriented_Concepts/_defencive_programming.py" />
         <option value="$PROJECT_DIR$/Decorators/_decorators.py" />
+        <option value="$PROJECT_DIR$/Numbers_And_Booleans/_integers_and_floats.py" />
+        <option value="$PROJECT_DIR$/Random_Module/_random_module.py" />
       </list>
     </option>
   </component>
@@ -157,7 +162,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,12 +172,13 @@
             <path>
               <item name="python_tutorials" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_tutorials" type="462c0819:PsiDirectoryNode" />
-              <item name="Decorators" type="462c0819:PsiDirectoryNode" />
+              <item name="Python_Coding_Exercise" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,12 +380,12 @@
     <list>
       <item itemvalue="Python.TC01" />
       <item itemvalue="Python._dictionary" />
+      <item itemvalue="Python._defencive_programming" />
       <item itemvalue="Python._encapsulation" />
       <item itemvalue="Python._exception_handling" />
       <item itemvalue="Python._file_handling" />
       <item itemvalue="Python._strings" />
       <item itemvalue="Python tests.pytest in _decorators.py" />
-      <item itemvalue="Python._defencive_programming" />
     </list>
     <recent_temporary>
       <list>
@@ -451,7 +456,7 @@
     <frame x="57" y="17" width="1223" height="782" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49663526" visible="true" weight="0.23666666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49663526" visible="true" weight="0.23666666" />
       <window_info id="Structure" order="1" sideWeight="0.50336474" side_tool="true" weight="0.19416666" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -524,13 +529,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Working_With_JSON/json_dump.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Working_With_JSON/json.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -627,13 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Itertools_Module/_itertools_module.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -650,13 +641,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Numbers_And_Booleans/_booleans.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Numbers_And_Booleans/_integers_and_floats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OS_Module/_OS_module.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -738,13 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Random_Module/_random_module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1653">
-          <caret line="87" column="38" lean-forward="true" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Strings_Lists_And_Slicing/_slicing_lists_strings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1083">
@@ -800,13 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Object_Oriented_Concepts/_encapsulation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
@@ -830,8 +800,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Decorators/_decorators.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
+        <state relative-caret-position="2109">
           <caret line="111" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1995">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-1247971763/math.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="394" column="4" selection-start-line="394" selection-start-column="4" selection-end-line="394" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Random_Module/_random_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1767">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Numbers_And_Booleans/_integers_and_floats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
