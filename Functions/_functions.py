@@ -4,6 +4,12 @@ def greet():
     """greet function prints hello world to the console"""
     print('Hello world')
 
+# If the first statement of a Module, class or function defnition is a string,
+# that string becomes a documentation string associated object
+
+
+print(greet.__doc__)
+
 
 # Function with argument
 def show(name):

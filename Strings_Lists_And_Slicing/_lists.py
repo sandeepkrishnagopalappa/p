@@ -30,12 +30,11 @@ names.pop(3)    # Removes the item in the 3rd index of the List
 del names[0]    # Deletes 0th item in the list
 # del names       # Deletes the entire list
 
-# Making copy of the list
+# Making copy of the list (Shallow Copy!!!)
 a = [1, 2, 3, 4, 5]
 b = a.copy()
   # OR
 b = a[:]
-print(a)
 
 # Sorting List's
 names.sort()    # Sorts the List in Alphabetical Order

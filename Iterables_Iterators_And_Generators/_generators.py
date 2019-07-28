@@ -131,6 +131,18 @@ for d in actual_lines(my_dict):
 # =========================================================
 
 
+def grep(file_object, text_to_search):
+    for line in file_object:
+        if text_to_search in line:
+            yield line
+
+
+with open('words.txt') as f:
+    g = grep(f, 'three')
+    for match in g:
+        print(match, end='')
+
+
 # Removing Duplicates form the sequence
 def dedupe(iterable):
     seen = set()
