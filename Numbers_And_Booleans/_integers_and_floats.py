@@ -6,10 +6,12 @@
 # Floor Division:    3 // 2
 # Exponent:         3 ** 2
 # Modulus:          3 % 2
+# divmod(x, y)      divmod(4, 2)
 
 print(abs(-8))      # Prints 8
 print(round(3.75))  # Prints 4
 print(round(3.75, 1))   # Prints 3.8
+print(divmod(4, 2))     # Returns (x // y, x % y)
 
 import math
 p = 3.9
