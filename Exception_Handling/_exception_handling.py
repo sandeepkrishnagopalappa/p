@@ -69,3 +69,17 @@ finally:        # Finally Block Runs regardless of what happens in try and excep
     print('Running finally')    # Always executes no matter what happens in try/except/else block
 
 print('Hello world')    # Never executes if there is any exception in try block
+
+
+# Defining Custom Exceptions
+class NetworkError(Exception):
+    pass
+
+
+class DeviceError(Exception):
+    pass
+
+
+raise DeviceError('Device Not Responding')
+
+raise NetworkError("Can not find the Host")
