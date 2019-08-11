@@ -1,8 +1,13 @@
 import datetime
 import time
 
-
+# A class defines a set of attributes associated with a collection of objects known as
+# instances.These attributes typically include functions, which are known as methods, vari-
+# ables, which are known as class variables, and computed attributes, which are known as
+# properties.
 # Object oriented programing
+
+
 class Employee:
     no_emps = 0     # Class Variable
     company_name = 'Apple.Inc'

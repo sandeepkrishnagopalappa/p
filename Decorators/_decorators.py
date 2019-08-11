@@ -1,4 +1,6 @@
 import time
+from functools import wraps
+from inspect import signature
 
 # Decoretors:
 
@@ -142,3 +144,75 @@ def click_element(element_name):
 @wait
 def enter_text(element_name, text):
     print(f'editing {text} in {element_name} ')
+
+
+# Preserve metadata such as the name, doc string, annotations, and calling signature are lost
+# Logger Decorator
+def logging(origfunc):
+    @wraps(origfunc)
+    def wrapper(*args, **kwargs):
+        print('Calling function '+origfunc.__name__)
+        return origfunc(*args, **kwargs)
+    return wrapper
+
+
+@logging
+def add(a, b):
+    """Adds two Numbers"""
+    print(a + b)
+
+
+print(add.__name__)     # Prints add
+print(add.__doc__)      # Prints the doc string of the original function
+
+# An important feature of the @wraps decorator is that it makes the wrapped function
+# available to you in the __wrapped__ attribute. For example, if you want to access the
+# wrapped function directly, you could do this
+
+add = add.__wrapped__
+add(1, 3)
+
+# OR
+add.__wrapped__(1, 2)
+
+# Gaining direct access to the unwrapped function behind a decorator can be useful for
+# debugging, introspection, and other operations involving functions. However, this
+# recipe only works if the implementation of a decorator properly copies metadata using
+# @wraps from the functools module
+
+
+def typeassert(*ty_args, **ty_kwargs):
+    def decorate(func):
+        # Map function argument names to supplied types
+        sig = signature(func)
+        bound_types = sig.bind_partial(*ty_args, **ty_kwargs).arguments
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            bound_values = sig.bind(*args, **kwargs)
+            # Enforce type assertions across supplied arguments
+            for name, value in bound_values.arguments.items():
+                if name in bound_types:
+                    if not isinstance(value, bound_types[name]):
+                        raise TypeError()
+            return func(*args, **kwargs)
+        return wrapper
+    return decorate
+
+
+# Class Decorators
+def logger(cls):
+    # cls is class
+    for key, value in cls.__dict__.items():
+        if callable(value):
+            setattr(cls, key, logging(value))
+    return cls
+
+
+@logger     # Applies to all methods of the class
+class Spam(object):
+
+    def demo1(self):
+        pass
+
+    def demo2(self):
+        pass

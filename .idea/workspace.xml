@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="" />
+    <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorators/_decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decorators/_decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +79,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python._file_handling">
+  <component name="RunManager" selected="Python tests.pytest in _decorators.py">
     <configuration name="TC01" type="PythonConfigurationType" factoryName="Python">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -270,38 +275,6 @@
       <updated>1539582084199</updated>
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="pytest_in_test_case_01_py - 2018.12.22 at 19h 55m 18s.xml">
-      <configuration name="pytest in test_case_01.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_pytestpackage_tests_test_case_01_Test_validate_Login_test_01 - 2018.12.22 at 20h 27m 07s.xml">
-      <configuration name="pytest for pytestpackage.tests.test_case_01.Test_validate_Login.test_01" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_case_01_py - 2018.12.23 at 10h 24m 04s.xml">
-      <configuration name="pytest in test_case_01.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_case_01_py - 2018.12.23 at 10h 33m 19s.xml">
-      <configuration name="pytest in test_case_01.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_case_01_Test_validate_Login_test_01 - 2018.12.23 at 12h 36m 25s.xml">
-      <configuration name="pytest for test_case_01.Test_validate_Login.test_01" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_case_01_Test_validate_Login_test_01 - 2018.12.23 at 12h 37m 14s.xml">
-      <configuration name="pytest for test_case_01.Test_validate_Login.test_01" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in__decorators_py - 2019.07.06 at 15h 46m 50s.xml">
-      <configuration name="pytest in _decorators.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in__decorators_py - 2019.07.06 at 16h 31m 10s.xml">
-      <configuration name="pytest in _decorators.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in__decorators_py - 2019.07.06 at 16h 32m 17s.xml">
-      <configuration name="pytest in _decorators.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in__decorators_py - 2019.07.22 at 20h 41m 37s.xml">
-      <configuration name="pytest in _decorators.py" configurationId="tests" />
-    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
