@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Decorators/_decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decorators/_decorators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_encapsulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_encapsulation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in _decorators.py">
+  <component name="RunManager" selected="Python._encapsulation">
     <configuration name="TC01" type="PythonConfigurationType" factoryName="Python">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -254,9 +253,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python._encapsulation" />
         <item itemvalue="Python._file_handling" />
         <item itemvalue="Python._defencive_programming" />
-        <item itemvalue="Python._encapsulation" />
         <item itemvalue="Python._exception_handling" />
         <item itemvalue="Python._strings" />
       </list>

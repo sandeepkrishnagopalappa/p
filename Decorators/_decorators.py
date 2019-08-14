@@ -181,6 +181,28 @@ add.__wrapped__(1, 2)
 # @wraps from the functools module
 
 
+# Decorator with arguments
+def debug(debug_mode=True):
+    def decorate(func):
+        def wrapper(*args, **kwargs):
+            if not debug_mode:
+                return func(*args, **kwargs)
+            print('Executing method '+func.__name__ + ' in debug mode')
+            return func(*args, **kwargs)
+        return wrapper
+    return decorate
+
+
+@debug(debug_mode=False)    # The function is executed directly
+def add(x, y):
+    print(x + y)
+
+
+@debug(debug_mode=True)  # The function is executed with debug message
+def sub(x, y):
+    print(x - y)
+
+
 def typeassert(*ty_args, **ty_kwargs):
     def decorate(func):
         # Map function argument names to supplied types
@@ -216,3 +238,5 @@ class Spam(object):
 
     def demo2(self):
         pass
+
+# Class decorators does not work on @classmethod and @staticmethod

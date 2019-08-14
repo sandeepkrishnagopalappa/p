@@ -127,6 +127,6 @@ class Employee(object):
         self.age = age
 
 
-e1 = Employee('Steve', 'Jobs', '40')
+e1 = Employee('Steve', 'Jobs', 40)
 e2 = Employee('Bill', 'Gates', 41)
 
