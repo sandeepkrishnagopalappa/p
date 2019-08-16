@@ -1,5 +1,5 @@
 import time
-from functools import wraps
+from functools import wraps, partial
 from inspect import signature
 
 # Decoretors:
@@ -182,7 +182,7 @@ add.__wrapped__(1, 2)
 
 
 # Decorator with arguments
-def debug(debug_mode=True):
+def debug(debug_mode):
     def decorate(func):
         def wrapper(*args, **kwargs):
             if not debug_mode:
@@ -193,14 +193,40 @@ def debug(debug_mode=True):
     return decorate
 
 
-@debug(debug_mode=False)    # The function is executed directly
+@debug(False)    # The function is executed directly
 def add(x, y):
     print(x + y)
 
 
-@debug(debug_mode=True)  # The function is executed with debug message
+@debug(True)  # The function is executed with debug message
 def sub(x, y):
     print(x - y)
+
+
+# Decorators with Default arguments
+def logging(func=None, *, message='Hello'):
+    if func is None:
+        return partial(logging, message=message)
+
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        print(message)
+        func(*args, **kwargs)
+    return wrapper
+
+
+@logging        # add = logging(add)
+def add(x, y):
+    print(x + y)
+
+
+@logging(message='Sub')     # add = logging(message='sub')(sub(x, y))
+def sub(x, y):
+    print(x - y)
+
+
+add(1, 2)
+sub(1, 2)
 
 
 def typeassert(*ty_args, **ty_kwargs):

@@ -86,7 +86,10 @@ def anyargs(*args, **kwargs):
 anyargs(1, 2, 3, fname='steve', lname='jobs')
 
 
-def test_key(name, *, _age):    # after * all the arguments should be keyword args only
+# Keyword ONLY Arguments. This is available only from Python3
+# After *, all the arguments that are passed should be through
+# Keyword ONLY
+def test_key(name, *, _age):
     print(name, _age)
 
 
