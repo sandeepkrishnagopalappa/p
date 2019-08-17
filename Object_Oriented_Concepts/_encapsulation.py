@@ -82,44 +82,51 @@ print(p1.first_name)
 
 # del p1.first_name
 
-# Using Descriptors
 
+# Imlementation of properties Using Descriptors
+class Descriptor(object):
 
-class TypeCheck(object):
-
-    def __init__(self, attribute_name, expected_type):
+    def __init__(self, attribute_name):
         self.attribute_name = attribute_name
-        self.expected_value = expected_type
-
-    def __get__(self, instance, cls):
-        return instance.__dict__[self.attribute_name]
 
     def __set__(self, instance, value):
-        if not isinstance(value, self.expected_value):
-            raise TypeError(f'{self.attribute_name} should be of {self.expected_value}')
         instance.__dict__[self.attribute_name] = value
 
 
-class TypeString(TypeCheck):
-    def __init__(self, attribute_name, expected_type):
-        super().__init__(attribute_name, expected_type)
+class TypeCheck(Descriptor):
+    typ = None
 
     def __set__(self, instance, value):
-        super().__set__(instance, value)    # Type Check for String
-        if len(value) > 10:
-            raise ValueError(f'{self.attribute_name} should be less than 10 characters')
-        instance.__dict__[self.attribute_name] = value
+        if not isinstance(value, self.__class__.typ):
+            raise TypeError(f'Exected {self.__class__.typ}')
 
 
-class TypeInteger(TypeCheck):
-    pass
+class String(TypeCheck):
+    typ = str
+
+    def __set__(self, instance, value):
+        super().__set__(instance, value)    # Check if the value is of type str
+        if len(value) > 10:     # Check if the value does not exceed 10 characters
+            raise ValueError('Cannot be more than 10 characters')
+
+
+class Integer(TypeCheck):
+    typ = int
+
+    def __set__(self, instance, value):
+        super().__set__(instance, value)    # Check if the value is of type int
+        if value < 0:   # Check if the value in non-negative
+            raise ValueError('Age cannot be negative value')
+
+
+class Float(TypeCheck):
+    typ = float
 
 
 class Employee(object):
-
-    firstname = TypeString('firstname', str)
-    lastname = TypeString('lastname', str)
-    age = TypeInteger('age', int)
+    firstname = String('firstname')
+    lastname = String('lastname')
+    age = Integer('age')
 
     def __init__(self, firstname, lastname, age):
         self.firstname = firstname
@@ -129,4 +136,3 @@ class Employee(object):
 
 e1 = Employee('Steve', 'Jobs', 40)
 e2 = Employee('Bill', 'Gates', 41)
-
