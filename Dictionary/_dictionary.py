@@ -150,3 +150,13 @@ c = {key: a[key] for key in a.keys() - {'z', 'w'}} # prints c is {'x': 1, 'y': 2
 
 print([value for value in set(a.values()) - {1}])   # Prints [2, 3]
 
+# OrderedDict
+from collections import OrderedDict
+# Ordered Dictonary Maintains Order
+d = OrderedDict()
+d['apple'] = 'A'
+d['google'] = 'G'
+d['yahoo'] = 'Y'
+
+for kye, value in d.items():
+    print(key, value)

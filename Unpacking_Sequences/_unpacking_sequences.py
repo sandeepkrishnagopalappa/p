@@ -56,3 +56,7 @@ def add(items):
 
 print(add([1]))
 print(add([1, 2, 3, 4, 5]))
+
+# Ignoring certain values while unpacking
+data = ['IBM', 50, 91.1, (2019, 7, 17)]
+name, *_, (year, *_) = data
