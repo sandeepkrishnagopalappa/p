@@ -98,7 +98,7 @@ class TypeCheck(Descriptor):
 
     def __set__(self, instance, value):
         if not isinstance(value, self.__class__.typ):
-            raise TypeError(f'Exected {self.__class__.typ}')
+            raise TypeError(f'Expected {self.__class__.typ}')
 
 
 class String(TypeCheck):

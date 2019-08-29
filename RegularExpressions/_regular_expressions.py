@@ -32,8 +32,9 @@ import re
 # {, 3} - Match expression 0 to 3 times
 
 def search_pattern(_search_pattern, _search_string):
-    _pattern = re.compile(_search_pattern)
-    _matches = _pattern.findall(_search_string)
+    # _pattern = re.compile(_search_pattern)
+    # _matches = _pattern.findall(_search_string)
+    _matches = re.findall(_search_pattern, _search_string)
     return _matches
 
 

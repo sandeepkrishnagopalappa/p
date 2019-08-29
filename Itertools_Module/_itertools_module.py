@@ -82,6 +82,26 @@ my_slice = itertools.islice(names, 2, 5)
 for item in my_slice:
     print(item)
 
+for item in itertools.islice(names, 2, None):
+    print(item)
+# None is used to indicate everything beyond index 2 (item[2:])
+
+for item in itertools.islice(names, None, 3):
+    print(item)
+# start upto index 3 but not including index 3 (item[:3])
+
+
+# islice is usually used to take slice of data produced by an iterator
+def count(number):
+    while True:
+        yield number
+        number += 1
+
+
+i = count(0)
+for item in itertools.islice(i, 5, 10):
+    print(item)
+
 
 # Reading first 5 lines of the file
 with open('read.txt') as f:
