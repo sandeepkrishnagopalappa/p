@@ -107,7 +107,7 @@ for item in itertools.islice(i, 5, 10):
 with open('read.txt') as f:
     lines = f.readlines()
     from itertools import islice
-    first_five_lines = islice(lines, 5)
+    first_five_lines = islice(lines, None, 5)
     for line in first_five_lines:
         print(line, end='')
 # ================================================================

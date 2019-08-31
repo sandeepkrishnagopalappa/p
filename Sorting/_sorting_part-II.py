@@ -70,3 +70,12 @@ print(heapq.nsmallest(2, [(emp.salary, emp.full_name()) for emp in li_emp]))
 # Sorting using attgetter
 from operator import attrgetter
 print(sorted(li_emp, key=attrgetter('salary')))
+
+# Merging and sorting two different lists
+a = [1, 3, 5, 7]
+b = [2, 4, 6, 8]
+
+c = heapq.merge(a, b)
+
+for item in c:
+    print(item)
