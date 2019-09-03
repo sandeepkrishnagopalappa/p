@@ -1,5 +1,5 @@
 import heapq
-from operator import itemgetter
+from operator import itemgetter, attrgetter
 
 # Custom Sorting
 names = ['apple', 'google', 'yahoo', 'amazon', 'facebook', 'instagram', 'microsoft']
@@ -68,7 +68,6 @@ print(heapq.nlargest(2, [(emp.salary, emp.full_name()) for emp in li_emp]))
 print(heapq.nsmallest(2, [(emp.salary, emp.full_name()) for emp in li_emp]))
 
 # Sorting using attgetter
-from operator import attrgetter
 print(sorted(li_emp, key=attrgetter('salary')))
 
 # Merging and sorting two different lists

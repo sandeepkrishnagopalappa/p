@@ -1,3 +1,4 @@
+import math
 # Arithmetic Operators
 # Addition:         3 + 2
 # Subtraction:      3 - 2
@@ -13,9 +14,7 @@ print(round(3.75))  # Prints 4
 print(round(3.75, 1))   # Prints 3.8
 print(divmod(4, 2))     # Returns (x // y, x % y)
 
-import math
 p = 3.9
-
 print(round(p))     # Prints 4
 print(math.trunc(p))    # Prints 3  uses __trunc__ magic method
 

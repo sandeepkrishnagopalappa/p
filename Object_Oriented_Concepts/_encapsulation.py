@@ -99,6 +99,7 @@ class TypeCheck(Descriptor):
     def __set__(self, instance, value):
         if not isinstance(value, self.__class__.typ):
             raise TypeError(f'Expected {self.__class__.typ}')
+        super().__set__(instance, value)
 
 
 class String(TypeCheck):
@@ -108,6 +109,7 @@ class String(TypeCheck):
         super().__set__(instance, value)    # Check if the value is of type str
         if len(value) > 10:     # Check if the value does not exceed 10 characters
             raise ValueError('Cannot be more than 10 characters')
+        super().__set__(instance, value)
 
 
 class Integer(TypeCheck):
@@ -117,6 +119,7 @@ class Integer(TypeCheck):
         super().__set__(instance, value)    # Check if the value is of type int
         if value < 0:   # Check if the value in non-negative
             raise ValueError('Age cannot be negative value')
+        super().__set__(instance, value)
 
 
 class Float(TypeCheck):

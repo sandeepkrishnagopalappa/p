@@ -46,9 +46,8 @@ for _ in range(8):
     password = password + random.choice(random_string)
 print(password)
 
+
 # Generating Random Password
-
-
 def random_password(*, upper=1, lower=1, digits=1, special=1, length=8):
     UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     LOWERCASE = UPPERCASE.lower()

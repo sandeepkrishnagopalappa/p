@@ -82,7 +82,7 @@ greeting = 'Hello'
 name = 'Steve'
 print(greeting, name)
 
-print('Python '+str(2019))      # 2019 should be convered to String if using + operator
+print('Python '+str(2019))      # 2019 should be converted to String if using + operator
 print('Python' + ' 2019')
 print('Python', 2019)       # Comma is used for concatinating two string of different datatypes
 

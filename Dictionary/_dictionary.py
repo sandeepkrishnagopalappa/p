@@ -1,3 +1,4 @@
+from collections import OrderedDict
 # PYTHON DICTIONARIES
 
 # Creating an empty Dictionary
@@ -137,7 +138,7 @@ print(a.items() & b.items())   # prints { ('y', 2) }
 
 
 # Make a new dictionary with certain keys removed
-c = {key: a[key] for key in a.keys() - {'z', 'w'}} # prints c is {'x': 1, 'y': 2}
+c = {key: a[key] for key in a.keys() - {'z', 'w'}}  # prints c is {'x': 1, 'y': 2}
 
 # The values() method of a dictionary does not support the set opearations described
 # in above example. this is due to the fact that unlike keys, the items
@@ -151,12 +152,11 @@ c = {key: a[key] for key in a.keys() - {'z', 'w'}} # prints c is {'x': 1, 'y': 2
 print([value for value in set(a.values()) - {1}])   # Prints [2, 3]
 
 # OrderedDict
-from collections import OrderedDict
 # Ordered Dictonary Maintains Order
 d = OrderedDict()
 d['apple'] = 'A'
 d['google'] = 'G'
 d['yahoo'] = 'Y'
 
-for kye, value in d.items():
+for key, value in d.items():
     print(key, value)
