@@ -17,6 +17,13 @@ print(message)
 message = 'Welcome to Pythons"s world'
 print(message)
 
+# Both single and double quotes in single sting
+message = """ Hello world! "Hi" and 'Bye' """
+print(message)
+
+message = ''' Hello world! "Hi" and 'Bye' '''
+print(message)
+
 # We can use Escape Charater as well
 message = 'Welcome to Python\'s world'
 print(message)

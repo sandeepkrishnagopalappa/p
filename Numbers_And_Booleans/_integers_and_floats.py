@@ -4,7 +4,7 @@ import math
 # Subtraction:      3 - 2
 # Multiplication:   3 * 2
 # Division:          3 / 2
-# Floor Division:    3 // 2
+# Floor Division:    3 // 2 gives the nearest integer which is not greater than the result
 # Exponent:         3 ** 2
 # Modulus:          3 % 2
 # divmod(x, y)      divmod(4, 2)
