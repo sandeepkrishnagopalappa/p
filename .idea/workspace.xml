@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Numbers_And_Booleans/_integers_and_floats.py" beforeDir="false" afterPath="$PROJECT_DIR$/Numbers_And_Booleans/_integers_and_floats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Itertools_Module/_itertools_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/Itertools_Module/_itertools_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_slicing_lists_strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_slicing_lists_strings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Working_With_JSON/_working_with_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/Working_With_JSON/_working_with_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Variable_Scope/_variable_scope.py" beforeDir="false" afterPath="$PROJECT_DIR$/Variable_Scope/_variable_scope.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python._strings">
+  <component name="RunManager" selected="Python._itertools_module">
     <configuration name="TC01" type="PythonConfigurationType" factoryName="Python">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -248,9 +250,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python._itertools_module" />
         <item itemvalue="Python._strings" />
         <item itemvalue="Python._working_with_json" />
-        <item itemvalue="Python._itertools_module" />
         <item itemvalue="Python tests.pytest in _functions.py" />
         <item itemvalue="Python._comprehensions" />
       </list>

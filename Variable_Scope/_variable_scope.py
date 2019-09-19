@@ -13,3 +13,13 @@ def test(z):
 test('local z')
 
 # print(x)
+
+
+# Enclosing Scope
+def logger():
+    message = 'Hello'   # Local Variable for func logger and enclosing for wrapper
+
+    def wrapper():
+        message = 'World'   # Local for wrapper
+        print(message)
+    return wrapper

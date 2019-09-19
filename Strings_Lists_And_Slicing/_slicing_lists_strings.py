@@ -9,6 +9,10 @@ print(names[2:5])   # Prints all the items from 2nd index upto but not including
 print(names[:4])    # Prints all items from 0th index and upto 4th index, but not including 4th index.
 print(names[2:])    # Prints all items from 2nd index till the end of the List.
 
+# Expression inside square brackets
+print(names[1 + 3])  # Prints 4th item of the list
+print(names[1 - 3])  # Prints 5th item of the list
+
 # Slicing using negative indexing
 print(names[-1])    # Prints the last index item of the list
 print(names[-7])    # Prints the 0th index item of the list

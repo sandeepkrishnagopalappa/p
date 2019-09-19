@@ -109,3 +109,21 @@ with open('read.txt', 'r') as f:
     for line in lines:
         print(line, end='')
 # ================================================================
+
+portfolio = [{'name': 'AA', 'shares': 100, 'date': '26/07/2010'},
+             {'name': 'IBM', 'shares': 90, 'date': '26/08/2010'},
+             {'name': 'FB', 'shares': 240, 'date': '26/09/2010'},
+             {'name': 'FB', 'shares': 210, 'date': '26/06/2010'}
+             ]
+
+# Groupby Date
+for name, item in itertools.groupby(portfolio, key=lambda item: item['date']):
+    print(name)
+    for it in item:
+        print(it)
+
+# Groupby Shares Name
+for name, item in itertools.groupby(portfolio, key=lambda item: item['name']):
+    print(name)
+    for it in item:
+        print(it)

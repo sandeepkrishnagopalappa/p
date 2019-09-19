@@ -28,6 +28,9 @@ names.pop()     # By default this will remove the last item in the List
 names.pop(3)    # Removes the item in the 3rd index of the List
 
 del names[0]    # Deletes 0th item in the list
+# del names[3:6]  # Deletes 3rd, 4th and 5th items in the list
+# del names[::2]  # Deletes alternate items in the list
+# del names   # Deletes the reference to the list "names"
 # del names       # Deletes the entire list
 
 # Making copy of the list (Shallow Copy!!!)

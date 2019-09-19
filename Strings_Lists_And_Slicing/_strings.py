@@ -135,3 +135,9 @@ for portfolio in portfolios:
     shares = portfolio.get('shares')
     price = portfolio.get('price')
     print(f'{name:>8} {shares:>8} {price:>8.2f}')
+
+# Prints basic bar graph of stars
+numbers = [10, 20, 30, 40, 45, 30, 25, 40]
+
+for index, number in enumerate(numbers):
+    print(f'{index} {number:>3} {"*"* number:>10}')
