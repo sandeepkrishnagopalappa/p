@@ -1,4 +1,5 @@
 from collections import OrderedDict
+from collections import defaultdict
 # PYTHON DICTIONARIES
 
 # Creating an empty Dictionary
@@ -160,3 +161,14 @@ d['yahoo'] = 'Y'
 
 for key, value in d.items():
     print(key, value)
+
+
+profile = defaultdict(list)     # One to Many Mapping
+
+profile['language'].append('Java')
+profile['language'].append('Python')
+
+count = defaultdict(int)
+
+count['apple'] += 1  # Creates the key 'apple' and increments it by 1
+

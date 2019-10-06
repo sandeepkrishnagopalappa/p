@@ -1,8 +1,36 @@
+import csv
+
+x = 10
+
+x.__add__(10)
+
+x.__mul__(10)
+
+x.__sub__(10)
+
+names = ['apple', 'google', 'yahoo']
+
+names.__getitem__(0)
+
+names.__setitem__(1, 'facebook')
+
+
 class Employee:
+    employees = []
+
     def __init__(self, fname, lname, salary):
         self.fname = fname.title()
         self.lname = lname.title()
         self.salary = salary
+
+    @classmethod
+    def from_csv(cls):
+        with open('employee.csv', 'r') as f:
+            rows = csv.reader(f)
+            for row in rows:
+                e = Employee(row[0], row[1], row[2])
+                cls.employees.append(e)
+        return cls.employees
 
     def full_name(self):
         return f'{self.fname.title()} {self.lname.title()}'
@@ -31,6 +59,8 @@ e3 = Employee('steve', 'slater', 70000)
 e4 = Employee('amy', 'masters', 60000)
 
 emp_list = [e1, e2, e3, e4]
+
+e = Employee.from_csv()
 
 # __repr__ is called
 for emp in emp_list:
