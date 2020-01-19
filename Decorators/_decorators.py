@@ -1,6 +1,7 @@
 import time
 from functools import wraps, partial
 from inspect import signature
+from collections import defaultdict
 
 # Decoretors:
 
@@ -266,3 +267,17 @@ class Spam(object):
         pass
 
 # Class decorators does not work on @classmethod and @staticmethod
+
+# Write a Decorator that records the number of calls made on a function
+
+
+def record(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        wrapper.count += 1
+        if not ((args, kwargs)) in wrapper.cache[func.__name__]:
+            wrapper.cache[func.__name__].append((*args, kwargs))
+        return func(*args, **kwargs)
+    wrapper.count = 0
+    wrapper.cache = defaultdict(list)
+    return wrapper
