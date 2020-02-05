@@ -42,6 +42,14 @@ class Employee:
     def just_function_inside_class():
         print('Hello world')
 
+# One use if cls is in Inheritance:
+
+
+class NewEmployee(Employee):
+    pass
+
+
+n = NewEmployee.emp_from_string('steve,jobs,1000')
 
 e1 = Employee('robert', 'hunter', 90000)
 e2 = Employee('laura', 'turner', 80000)
@@ -53,6 +61,10 @@ e = Employee.emp_from_string('steve, jobs, 9000')   # Alternate method of emp in
 
 print(e1.full_name())   # Prints the full name of the employee. self argument is passed automatically
 print(Employee.full_name(e1))   # Prints full name of the employee. self argument should be passed explicitly.
+
+getattr(e, 'fname')     # Same as e.fname
+getattr(e, 'lname')     # Same as e.lname
+setattr(e, 'fname', 'Steve')    # Same as e.fname = 'Steve'
 
 
 class Developer(Employee):
