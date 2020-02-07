@@ -61,16 +61,10 @@ class Hdfc(Bank):
         print('Printing HDFC Bank Statement')
 
 
-def bank_transactions(bank, transaction_name):
-    if transaction_name.lower() == 'deposit':
-        bank.deposit()
-    elif transaction_name.lower() == 'withdraw':
-        bank.withdraw()
-    else:
-        bank.statement()
-
+def bank_transactions(transaction_name, *args, **kwargs):
+    transaction_name(*args, **kwargs)
 
 b = Hdfc(1000)
-bank_transactions(b, 'deposit')
+bank_transactions(b.deposit, 1000)
 
 

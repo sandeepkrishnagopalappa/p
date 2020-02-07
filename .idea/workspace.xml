@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_defencive_programming.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_defencive_programming.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +71,7 @@
       <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Mutable_And_Immutable" />
     </key>
   </component>
-  <component name="RunManager" selected="Python._oop">
+  <component name="RunManager" selected="Python._python_coding_problems">
     <configuration name="TC01" type="PythonConfigurationType" factoryName="Python">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -197,7 +198,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_strings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="_python_coding_problems" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -205,11 +206,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Strings_Lists_And_Slicing" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Coding_Exercise" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -239,17 +240,17 @@
       <item itemvalue="Python._itertools_module" />
       <item itemvalue="Python._magic_dunder_methods" />
       <item itemvalue="Python._memory_optimization" />
-      <item itemvalue="Python._strings" />
-      <item itemvalue="Python tests.pytest in _decorators.py" />
       <item itemvalue="Python._oop" />
+      <item itemvalue="Python tests.pytest in _decorators.py" />
+      <item itemvalue="Python._python_coding_problems" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python._python_coding_problems" />
         <item itemvalue="Python._oop" />
         <item itemvalue="Python._memory_optimization" />
         <item itemvalue="Python._magic_dunder_methods" />
         <item itemvalue="Python._itertools_module" />
-        <item itemvalue="Python._strings" />
       </list>
     </recent_temporary>
   </component>
@@ -305,22 +306,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1206" height="186" key="GridCell.Tab.0.bottom" timestamp="1580914982158">
+    <state width="1206" height="186" key="GridCell.Tab.0.bottom" timestamp="1581082221953">
       <screen x="51" y="27" width="1229" height="772" />
     </state>
-    <state width="1206" height="186" key="GridCell.Tab.0.bottom/51.27.1229.772@51.27.1229.772" timestamp="1580914982158" />
-    <state width="1206" height="186" key="GridCell.Tab.0.center" timestamp="1580914982157">
+    <state width="1206" height="186" key="GridCell.Tab.0.bottom/51.27.1229.772@51.27.1229.772" timestamp="1581082221953" />
+    <state width="1206" height="186" key="GridCell.Tab.0.center" timestamp="1581082221951">
       <screen x="51" y="27" width="1229" height="772" />
     </state>
-    <state width="1206" height="186" key="GridCell.Tab.0.center/51.27.1229.772@51.27.1229.772" timestamp="1580914982157" />
-    <state width="1206" height="186" key="GridCell.Tab.0.left" timestamp="1580914982157">
+    <state width="1206" height="186" key="GridCell.Tab.0.center/51.27.1229.772@51.27.1229.772" timestamp="1581082221951" />
+    <state width="1206" height="186" key="GridCell.Tab.0.left" timestamp="1581082221950">
       <screen x="51" y="27" width="1229" height="772" />
     </state>
-    <state width="1206" height="186" key="GridCell.Tab.0.left/51.27.1229.772@51.27.1229.772" timestamp="1580914982157" />
-    <state width="1206" height="186" key="GridCell.Tab.0.right" timestamp="1580914982157">
+    <state width="1206" height="186" key="GridCell.Tab.0.left/51.27.1229.772@51.27.1229.772" timestamp="1581082221950" />
+    <state width="1206" height="186" key="GridCell.Tab.0.right" timestamp="1581082221952">
       <screen x="51" y="27" width="1229" height="772" />
     </state>
-    <state width="1206" height="186" key="GridCell.Tab.0.right/51.27.1229.772@51.27.1229.772" timestamp="1580914982157" />
+    <state width="1206" height="186" key="GridCell.Tab.0.right/51.27.1229.772@51.27.1229.772" timestamp="1581082221952" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
