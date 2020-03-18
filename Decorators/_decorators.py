@@ -268,9 +268,8 @@ class Spam(object):
 
 # Class decorators does not work on @classmethod and @staticmethod
 
-# Write a Decorator that records the number of calls made on a function
 
-
+# Write a Func Decorator that records the number of calls made on a function
 def record(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
@@ -281,3 +280,14 @@ def record(func):
     wrapper.count = 0
     wrapper.cache = defaultdict(list)
     return wrapper
+
+
+# Class Decorator
+class Record:
+    def __init__(self, func):
+        self.func = func
+        self._count = 0
+
+    def __call__(self, *args, **kwargs):
+        self._count += 1
+        return self.func(*args, **kwargs)
