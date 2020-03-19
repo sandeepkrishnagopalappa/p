@@ -32,3 +32,9 @@ c1.speak()
 
 c2 = Child2('Steve', 'Hop')
 c2.speak()
+
+print(Child2.__mro__)   # Prints Method Resolution Order for Class Child2
+
+from inspect import getmro
+
+print(getmro(Child2))   # Prints Method Resolution Order for Class Child2
