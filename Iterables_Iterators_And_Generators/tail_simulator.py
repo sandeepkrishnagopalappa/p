@@ -1,21 +1,46 @@
 import random
+import csv
 import time
-stocks = [
-    {"name": "AA", "price": 14.64, "change": -0.12, "high": 15.02, "low": 14.30},
-    {"name": "IBM", "price": 109.34, "change": +0.89, "high": 109.48, "low": 108.20},
-    {"name": "MSFT", "price": 150.26, "change": +1.2, "high": 150.89, "low": 150.14},
-    {"name": "DXC", "price": 13.67, "change": -1.3, "high": 13.76, "low": 13.56},
-    {"name": "HP", "price": 16.69, "change": +0.1, "high": 16.96, "low": 16.39},
-    {"name": "GOOG", "price": 1115.94, "change": +2.3, "high": 1116.94, "low": 1114.94},
-    {"name": "GE", "price": 37.30, "change": -0.02, "high": 38.12, "low": 36.30},
-    {"name": "INTC", "price": 21.85, "change": +0.02, "high": 22.85, "low": 20.85},
-    {"name": "AIG", "price": 71.50, "change": -0.03, "high": 72.50, "low": 70.50},
-    {"name": "CAT", "price": 78.88, "change": +0.36, "high": 79.88, "low": 77.88},
-]
+with open('/home/sandeep/Desktop/stocks.csv') as f:
+    records = []
+    rows = csv.reader(f)
+    headers = next(rows)
+    for row in rows:
+        records.append({header: item for header, item in zip(headers, row)})
 while True:
-    for item in stocks:
+    for item in records:
         f = open('/home/sandeep/Desktop/test.log', 'a')
-        f.write(f'{item["name"]}, {item["price"]}, {item["change"]}, {item["high"]}, {item["low"]}')
+        data = ','.join(list(item.values()))
+        f.write(data)
         f.write('\n')
         time.sleep(random.randint(1, 5))
         f.close()
+
+# Simulating Unix tail and grep commands
+def _tail():
+    with open('/home/sandeep/Desktop/test.log', 'r') as f:
+        f.seek(0, 2)
+        while True:
+            line = f.readline()
+            if not line:
+                time.sleep(0.1)
+                continue
+            yield line
+
+
+print(f'{"name":>8} {"change":>8}')
+for line in _tail():
+   record = line.split(',')
+   if float(record[4]) < 0:
+       print(f'{record[0]: >8} {float(record[4]): >8.2f}')
+
+
+def _grep(names, line):
+    row = line.strip().split(',')
+    if row[0] in names:
+        yield row
+
+
+for line in _tail():
+    for match in _grep({'IBM', 'AA', 'CAT', 'MSFT'}, line):
+        print(line)
