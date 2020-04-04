@@ -99,20 +99,13 @@ for num in nums:
 class MyItr:
     """Iterator for looping over a sequence in forward direction."""
     def __init__(self, iterable):
-        self.index = 0
-        self.data = iterable
+        self.data = iter(iterable)
 
     def __iter__(self):
         return self
 
     def __next__(self):
-
-        if self.index > len(self.data)-1:
-            raise StopIteration
-        else:
-            item = self.data[self.index]
-            self.index += 1
-            return item
+        return next(self.data)
 
 
 num = MyItr([1, 2, 3, 4, 5])
@@ -170,3 +163,19 @@ rev_line = Reverse(text)
 
 for line in rev_line:
     print(line, end='')
+
+
+class Countdown:
+    def __init__(self, start):
+        self.start = start
+
+    def __iter__(self):
+        value = 0
+        while value < self.start:
+            yield value
+            value += 1
+
+    def __reversed__(self):
+        while self.start > 0:
+            yield self.start
+            self.start -= 1

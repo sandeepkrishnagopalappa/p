@@ -84,52 +84,77 @@ print(p1.first_name)
 
 
 # Imlementation of properties Using Descriptors
-class Descriptor(object):
+class Descriptor:
+    def __init__(self, value):
+        self.value = value
 
-    def __init__(self, attribute_name):
-        self.attribute_name = attribute_name
-
-    def __set__(self, instance, value):
-        instance.__dict__[self.attribute_name] = value
-
+    def __set__(self, instance, newvalue):
+        instance.__dict__[self.value] = newvalue
 
 class TypeCheck(Descriptor):
-    typ = None
+    expected_type = None
+    def __set__(self, instance, newvalue):
+        if not isinstance(newvalue, self.expected_type):
+            raise TypeError(f'Expected Type should be {self.expected_type}')
+        super().__set__(instance, newvalue)
 
-    def __set__(self, instance, value):
-        if not isinstance(value, self.__class__.typ):
-            raise TypeError(f'Expected {self.__class__.typ}')
-        super().__set__(instance, value)
+class Integer(TypeCheck):
+    expected_type= int
 
 
 class String(TypeCheck):
-    typ = str
-
-    def __set__(self, instance, value):
-        super().__set__(instance, value)    # Check if the value is of type str
-        if len(value) > 10:     # Check if the value does not exceed 10 characters
-            raise ValueError('Cannot be more than 10 characters')
-        super().__set__(instance, value)
-
-
-class Integer(TypeCheck):
-    typ = int
-
-    def __set__(self, instance, value):
-        super().__set__(instance, value)    # Check if the value is of type int
-        if value < 0:   # Check if the value in non-negative
-            raise ValueError('Age cannot be negative value')
-        super().__set__(instance, value)
+    expected_type = str
 
 
 class Float(TypeCheck):
-    typ = float
+    expected_type = float
+
+
+class Positive(Descriptor):
+    def __set__(self, instance, newvalue):
+        if newvalue < 0:
+            raise ValueError('Cant be Negative')
+        super().__set__(instance, newvalue)
+
+class Sized(Descriptor):
+    def __init__(self, value, *, maxlen, **kwargs):
+        self.maxlen = maxlen
+        super().__init__(value, **kwargs)
+
+    def __set__(self, instance, value):
+        if len(value) > self.maxlen:
+            raise ValueError('Can not be more than 10 chars')
+        super().__set__(instance, value)
+
+class Regx(Descriptor):
+    def __init__(self, value, *, pat):
+        self.pat = pat
+        super().__init__(value)
+
+    def __set__(self, instance, value):
+        import re
+        matches = re.compile(self.pat)
+        print(matches)
+        super().__set__(instance, value)
+
+
+class PositiveInteger(Integer, Positive):
+    pass
+
+class PositiveFloat(Float, Positive):
+    pass
+
+class SizedString(String, Sized):
+    pass
+
+class SizedRegxString(SizedString, Regx):
+    pass
 
 
 class Employee(object):
-    firstname = String('firstname')
-    lastname = String('lastname')
-    age = Integer('age')
+    firstname = SizedRegxString("firstname", maxlen=10, pat='[A-Z]+')
+    lastname = SizedRegxString("lastname", maxlen=10, pat='[A-Z]+')
+    age = PositiveInteger('age')
 
     def __init__(self, firstname, lastname, age):
         self.firstname = firstname
