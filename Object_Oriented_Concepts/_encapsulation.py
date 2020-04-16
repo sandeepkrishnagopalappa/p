@@ -164,3 +164,30 @@ class Employee(object):
 
 e1 = Employee('Steve', 'Jobs', 40)
 e2 = Employee('Bill', 'Gates', 41)
+
+
+class Descriptor:
+    def __init__(self, name, exp_type):
+        self.name = name
+        self.exp_type = exp_type
+
+    def __get__(self, instance, value):
+        if not isinstance(value, self.exp_type):
+            raise TypeError
+        instance.__dict__[self.name] = value
+
+
+def TypeCheck(**kwargs):
+    def decorate(cls):
+        for name, exp_type in kwargs.items():
+            setattr(cls, name, Descriptor(name, exp_type))
+        return cls
+    return decorate
+
+# Decorated Class
+@TypeCheck(fname=str, lname=str, pay=int)
+class Employee:
+    def __init__(self, fname, lname, pay):
+        self.fname = fname
+        self.lname = lname
+        self.pay = pay

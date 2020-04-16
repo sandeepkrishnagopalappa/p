@@ -291,3 +291,15 @@ class Record:
     def __call__(self, *args, **kwargs):
         self._count += 1
         return self.func(*args, **kwargs)
+
+# Class Decorator with Arguments
+class log:
+    def __init__(self, *args, **kwargs):
+        self.args = args
+        self.kwargs = kwargs
+
+    def __call__(self, func):
+        def wrapper(*args, **kwargs):
+            print('Calling')
+            return func(*args, **kwargs)
+        return wrapper
