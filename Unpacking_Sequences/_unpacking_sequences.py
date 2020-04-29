@@ -60,3 +60,17 @@ print(add([1, 2, 3, 4, 5]))
 # Ignoring certain values while unpacking
 data = ['IBM', 50, 91.1, (2019, 7, 17)]
 name, *_, (year, *_) = data
+
+
+def spam(*args, **kwargs):
+    for a in args:
+        print(a)
+    for k in kwargs:
+        print(k)
+
+
+names = ['apple', 'yahoo', 'google', 'facebook', 'walmart']
+
+p = {'x': 1, 'y': 2, 'z': 3}
+
+spam(*names, **p)   # *names unpacks the list and **p unpacks the dict
