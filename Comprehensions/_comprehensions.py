@@ -86,6 +86,10 @@ sequence = [1, 2, 1, 1, 1, 2, 3, 4, 2, 2]
 seq = [item for index, item in enumerate(sequence) if index == 0 or item != sequence[index - 1]]
 print(seq)  # Prints [1, 2, 1, 2, 3, 4, 2]
 
+colors = ['black', 'white']
+sizes = ['S', 'M', 'L']
+tshirts = [(color, size) for color in colors for size in sizes]
+
 # Dictionary Comprehension
 sentence = '''Python is an easy to learn, powerful programming language. 
 It has efficient high-level data structures and a simple but effective approach to object-oriented programming.
@@ -149,6 +153,22 @@ population = ['38,001,000',
 pairs = {city: population for city, population in zip(cities, population)}
 
 print(pairs)
+
+# Dial Codes
+DIAL_CODES = [
+    (86, 'China'),
+    (91, 'India'),
+    (1, 'United States'),
+    (62, 'Indonesia'),
+    (55, 'Brazil'),
+    (92, 'Pakistan'),
+    (880, 'Bangladesh'),
+    (234, 'Nigeria'),
+    (7, 'Russia'),
+    (81, 'Japan')
+    ]
+
+country_codes = {code: country for code, country in DIAL_CODES}
 
 # Building a dictionary whose price value is more than 200
 prices = {
