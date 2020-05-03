@@ -160,3 +160,13 @@ print(myinfo('steve'))      # Prints(steve, 10)
 age = 20
 print(myinfo('steve'))      # Prints (steve, 10)
 # Default arguments are evaluated only ONCE
+
+
+def fun(a, L=[]):
+    """ L=[] in the function declaration makes Python essentially do this:
+    > This function has a parameter named L its default argument is [],
+        let's set this particular [] aside and use it anytime there's no parameter passed for L.
+    > Every time the function is called, create a variable L, and assign it either
+        the passed parameter or the value we set aside earlier """
+    L.append(a)
+    return L
