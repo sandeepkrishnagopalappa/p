@@ -64,6 +64,34 @@ li_emp = [emp1, emp2, emp3]
 
 print(sorted(li_emp, key=lambda emp: emp.salary))
 
+
+# or Implement __lt__ or __gt__ methods in the class
+class Employee:
+    def __init__(self, fname, lname, salary):
+        self.fname = fname
+        self.lname = lname
+        self.salary = salary
+
+    def __repr__(self):
+        return f'({self.fname}, {self.lname}, {self.salary})'
+
+    def full_name(self):
+        return self.fname + ' '+self.lname
+
+    def email(self):
+        return f'{self.fname}.{self.lname}@company.com'
+
+
+emp1 = Employee('steve', 'jobs', 90000)
+emp2 = Employee('bill', 'gates', 80000)
+emp3 = Employee('joseph', 'trev', 70000)
+
+li_emp = [emp1, emp2, emp3]
+
+print(sorted(li_emp))
+# Prints
+# [(joseph, trev, 70000), (bill, gates, 80000), (steve, jobs, 90000)]
+
 print(heapq.nlargest(2, [(emp.salary, emp.full_name()) for emp in li_emp]))
 print(heapq.nsmallest(2, [(emp.salary, emp.full_name()) for emp in li_emp]))
 
