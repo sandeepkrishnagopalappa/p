@@ -223,3 +223,9 @@ class EasyDict:
 
     def __getitem__(self, item):
         return self.__dict__[item]
+
+# Write a program that produces the following output
+sentence = "hi how are you"
+# Should produce the o/p as "ih woh era uoy"
+
+' '.join([word[::-1] for word in sentence.split()])
