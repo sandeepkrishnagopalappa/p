@@ -229,6 +229,19 @@ def sub(x, y):
 add(1, 2)
 sub(1, 2)
 
+# Decorator to check the data type of a function
+def validate(**tys):
+    def decorate(func):
+        def wrapper(*args, **kwargs):
+            _types = list(tys.values())
+            _args = list(args)
+            for _type, _arg in zip(_types, _args):
+                if not isinstance(_arg, _type):
+                    raise TypeError(_arg ,"Must be a type of ", _type)
+            return func(*args, **kwargs)
+        return wrapper
+    return decorate
+
 
 def typeassert(*ty_args, **ty_kwargs):
     def decorate(func):
