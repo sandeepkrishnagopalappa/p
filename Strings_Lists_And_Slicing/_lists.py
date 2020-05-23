@@ -1,6 +1,11 @@
 from itertools import zip_longest
 
 # PYTHON LISTS
+# Lists are Mutable
+# Elements in the Lists are Ordered
+# Lists are not Hashable
+# Lists can hold duplicate elements
+
 # Creating an empty List
 my_list = []
 my_list = list()    # Using list constructor

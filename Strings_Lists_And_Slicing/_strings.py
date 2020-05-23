@@ -47,6 +47,23 @@ print(multi_line_string)
 # =========================================================
 my_message = 'Hello World'
 
+# Print statement Buffers the output if end parameter is other than \n
+print('Hello', end='')
+print('World', end='')
+print('Welcome', end='')
+
+
+import time
+def count_items(items):
+    print('Counting ', end='')
+    num = 0
+    for item in items:
+        print('.', end='')
+        num += 1
+        time.sleep(1)
+    print(f'\nTotal Number of Items {num}')
+
+
 # String Functions
 print(len(my_message))      # Prints the Length of the String. Index starts from Zero
 print(my_message.upper())   # Prints the String in Upper Case

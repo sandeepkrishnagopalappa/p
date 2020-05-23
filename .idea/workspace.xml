@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Decorators/_decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decorators/_decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_sets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,8 +235,8 @@
     </configuration>
     <list>
       <item itemvalue="Python.TC01" />
-      <item itemvalue="Python._defencive_programming" />
       <item itemvalue="Python._dictionary" />
+      <item itemvalue="Python._defencive_programming" />
       <item itemvalue="Python._memory_optimization" />
       <item itemvalue="Python._oop" />
       <item itemvalue="Python._payroll" />
