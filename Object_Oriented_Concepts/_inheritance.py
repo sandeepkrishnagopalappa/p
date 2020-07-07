@@ -1,3 +1,6 @@
+from inspect import getmro
+
+
 class Parent:
     def __init__(self, name):
         print('Parent.name')
@@ -22,7 +25,7 @@ class Child(Parent):
 
 
 class Child2(Parent):
-    def __init__(self, name, play):
+    def __init__(self, name, play):     # Adding extra attribute to the Child class
         super().__init__(name)
         self.play = play
 
@@ -34,7 +37,4 @@ c2 = Child2('Steve', 'Hop')
 c2.speak()
 
 print(Child2.__mro__)   # Prints Method Resolution Order for Class Child2
-
-from inspect import getmro
-
 print(getmro(Child2))   # Prints Method Resolution Order for Class Child2

@@ -1,4 +1,5 @@
 import csv
+from collections import defaultdict
 
 # Reading CSV Files
 with open('portfolio.csv', 'r') as csv_file:
@@ -37,11 +38,15 @@ with open('company.csv', 'w') as csv_file:
 
 # Reading csv file into a data structure
 _portfoilo = []
+types = [str, int, float]
+# converted = [func(val) for func, val in zip(types, row)]
+# name, shares, price = converted
 with open('portfolio.csv', 'r') as csv_file:
     csv_reader = csv.reader(csv_file)
     next(csv_reader)
     for row in csv_reader:
-        record = {'name': row[0],
+        record = {
+                  'name': row[0],
                   'shares': int(row[1]),
                   'price': float(row[2])
                   }
@@ -74,3 +79,20 @@ for holding in _portfoilo:
 
 print(min(prices))
 print(max(prices))
+
+
+# Reading CSV rows as columns
+cols = defaultdict(list)
+
+
+def read_columns(filename):
+    with open(filename) as f:
+        rows = csv.reader(f)
+        headers = next(rows)
+        for row in rows:
+            for header, r in zip(headers, row):
+                cols[header].append(r)
+    return cols
+
+
+print(read_columns('portfolio.csv'))
