@@ -20,12 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Working_With_CSV_Files/_csv_reading_objects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Practice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance_practical_example.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py" beforeDir="false" afterPath="$PROJECT_DIR$/Working_With_CSV_Files/_csv_read_write.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Working_With_CSV_Files/_csv_reading_objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_csv_reading_objects.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,19 +72,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Object_Oriented_Concepts" />
+      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Exception_Handling" />
+      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Variable_Scope" />
+      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Random_Module" />
+      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Magic_Methods_Dunders" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Itertools_Module" />
       <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Exception_Handling" />
       <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Iterables_Iterators_And_Generators" />
       <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Comprehensions" />
       <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Exception_Handling" />
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Variable_Scope" />
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Random_Module" />
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Magic_Methods_Dunders" />
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Mutable_And_Immutable" />
     </key>
   </component>
   <component name="RunManager" selected="Python._payroll">

@@ -1,40 +1,44 @@
-from inspect import getmro
-
-
 class Parent:
-    def __init__(self, name):
-        print('Parent.name')
-        self.name = name
+    def __init__(self, value):
+        self.value = value
 
-    def speak(self):
-        print('Parent.Speak')
+    def apple(self):
+        print('Parent.Apple', self.value)
 
-    def sing(self):
-        print('parent.sing')
-        self.speak()
+    def google(self):
+        print('Parent.Google')
+        self.apple()
 
 
-class Child(Parent):
-    def __init__(self, name):
-        super().__init__(name)
-        print('Child.name')
-
-    def speak(self):        # Overriding parent class speak method
-        print('child.speak')    # Adding extra functionality to speak method
-        super().speak()     # Invoking parent class (original) speak method
+class Child1(Parent):
+    def yahoo(self):        # Completely Independent Method
+        print('Child1.Yahoo')
 
 
 class Child2(Parent):
-    def __init__(self, name, play):     # Adding extra attribute to the Child class
-        super().__init__(name)
-        self.play = play
+    def apple(self):
+        print('Child2.Apple', self.value)
 
 
-c1 = Child('Steve')
-c1.speak()
+class Child3(Parent):
+    def apple(self):        # Overriding Parent class Method but reusing the original method in Parent
+        print('Child2.Apple')
+        super().apple()
 
-c2 = Child2('Steve', 'Hop')
-c2.speak()
 
-print(Child2.__mro__)   # Prints Method Resolution Order for Class Child2
-print(getmro(Child2))   # Prints Method Resolution Order for Class Child2
+class Child4(Parent):
+    def __init__(self, value, extra):   # Adding a new Attribute
+        self.extra_value = extra
+        super().__init__(value)
+
+
+class Parent2:
+    def facebook(self):
+        print('Parent2.Facebook')
+
+
+class Child5(Parent, Parent2):  # Child Inheriting from more than one parent
+    pass
+
+
+

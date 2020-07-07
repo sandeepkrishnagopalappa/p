@@ -2,15 +2,13 @@ import csv
 
 
 class Portfolio:
-    value = 100
-
     def __init__(self, name, shares, price):
         self.name = name
         self.shares = shares
         self.price = price
 
 
-filename = 'portfolio.csv'
+filename = '../Working_With_CSV_Files/portfolio.csv'
 types = [str, int, float]
 records = []
 
