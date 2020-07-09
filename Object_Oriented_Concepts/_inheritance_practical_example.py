@@ -1,5 +1,5 @@
 import csv
-
+from abc import ABC, abstractmethod
 
 class Holding:
     value = 100
@@ -37,7 +37,15 @@ def print_table(objects, colnames, formatter):
         formatter.rows(row)
 
 
-class TextTableFormatter:
+class TableFormatter:       # Acts as a design specification
+    def headings(self, headers):
+        raise NotImplementedError
+
+    def rows(self, row):
+        raise NotImplementedError
+
+
+class TextTableFormatter(TableFormatter):
     def headings(self, headers):
         for header in headers:
             print(f'{header:>10}', end='')
@@ -49,12 +57,26 @@ class TextTableFormatter:
         print()
 
 
-class CSVTableFormatter:
+class CSVTableFormatter(TableFormatter):
     def headings(self, headers):
         print(','.join(headers))
 
     def rows(self, row):
         print(','.join(row))
+
+
+class HTMLTableFormatter(TableFormatter):
+    def headings(self, headers):
+        print('<tr>', end='')
+        for header in headers:
+            print(f'<th>{header}</th>', end='')
+        print('</tr>')
+
+    def rows(self, row):
+        print('<tr>', end='')
+        for item in row:
+            print(f'<td>{item}</td>', end='')
+        print('<tr>')
 
 
 class Quoted:

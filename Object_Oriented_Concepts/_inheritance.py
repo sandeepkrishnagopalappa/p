@@ -16,7 +16,7 @@ class Child1(Parent):
 
 
 class Child2(Parent):
-    def apple(self):
+    def apple(self):        # Overriding Parent class Method
         print('Child2.Apple', self.value)
 
 
