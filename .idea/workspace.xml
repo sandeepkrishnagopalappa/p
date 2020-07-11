@@ -21,11 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Magic_Methods_Dunders/_magic_dunder_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_magic_dunder_methods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Magic_Methods_Dunders/employee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/employee.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_defencive_programming.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance_practical_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance_practical_example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_multiple_inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_advanced_multiple_inheritance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Strings_Lists_And_Slicing/_strings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +67,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -312,25 +310,25 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1259" height="180" key="GridCell.Tab.0.bottom" timestamp="1594471228644">
+    <state width="1259" height="180" key="GridCell.Tab.0.bottom" timestamp="1594471403392">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
-    <state width="1259" height="180" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1594471228644" />
+    <state width="1259" height="180" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1594471403392" />
     <state width="1206" height="231" key="GridCell.Tab.0.bottom/51.27.1229.772@51.27.1229.772" timestamp="1588519654020" />
-    <state width="1259" height="180" key="GridCell.Tab.0.center" timestamp="1594471228643">
+    <state width="1259" height="180" key="GridCell.Tab.0.center" timestamp="1594471403392">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
-    <state width="1259" height="180" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1594471228643" />
+    <state width="1259" height="180" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1594471403392" />
     <state width="1206" height="231" key="GridCell.Tab.0.center/51.27.1229.772@51.27.1229.772" timestamp="1588519654019" />
-    <state width="1259" height="180" key="GridCell.Tab.0.left" timestamp="1594471228642">
+    <state width="1259" height="180" key="GridCell.Tab.0.left" timestamp="1594471403391">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
-    <state width="1259" height="180" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1594471228642" />
+    <state width="1259" height="180" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1594471403391" />
     <state width="1206" height="231" key="GridCell.Tab.0.left/51.27.1229.772@51.27.1229.772" timestamp="1588519654019" />
-    <state width="1259" height="180" key="GridCell.Tab.0.right" timestamp="1594471228643">
+    <state width="1259" height="180" key="GridCell.Tab.0.right" timestamp="1594471403392">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
-    <state width="1259" height="180" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1594471228643" />
+    <state width="1259" height="180" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1594471403392" />
     <state width="1206" height="231" key="GridCell.Tab.0.right/51.27.1229.772@51.27.1229.772" timestamp="1588519654019" />
     <state width="1259" height="224" key="GridCell.Tab.1.bottom" timestamp="1594438652776">
       <screen x="0" y="23" width="1280" height="730" />
@@ -355,13 +353,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Object_Oriented_Concepts/_magic_dunder_methods.py</url>
-          <line>46</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">

@@ -5,6 +5,7 @@ from itertools import zip_longest
 # Elements in the Lists are Ordered
 # Lists are not Hashable
 # Lists can hold duplicate elements
+# Lists can be indexed by integers starting zero
 
 # Creating an empty List
 my_list = []

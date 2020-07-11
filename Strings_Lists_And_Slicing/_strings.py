@@ -1,6 +1,4 @@
-from fnmatch import fnmatch
 # Working with Strings or Textaul Data
-
 # All Variables should in Lower Case. If there are more than one word in the Variable,
 # then we separate with under scores. And this is PYTHON CONVENTION
 # =================================================================
@@ -51,18 +49,6 @@ my_message = 'Hello World'
 print('Hello', end='')
 print('World', end='')
 print('Welcome', end='')
-
-
-import time
-def count_items(items):
-    print('Counting ', end='')
-    num = 0
-    for item in items:
-        print('.', end='')
-        num += 1
-        time.sleep(1)
-    print(f'\nTotal Number of Items {num}')
-
 
 # String Functions
 print(len(my_message))      # Prints the Length of the String. Index starts from Zero
@@ -116,22 +102,6 @@ print(greeting+', '+name)
 # Repeats the string 5 times
 print('Hello ' * 5)
 
-names = ['Dat1.csv', 'Dat2.csv', 'config.ini', 'foo.py']
-dat_files = [name for name in names if fnmatch(name, 'Dat*.csv')]
-print(dat_files)
-
-
-addresses = ['5412 N CLARK ST',
-             '1060 W ADDISON ST',
-             '1039 W GRANVILLE AVE',
-             '2122 N CLARK ST',
-             '4802 N BROADWAY',
-        ]
-
-print([add for add in addresses if fnmatch(add, '* ST')])
-
-# String formatting using f strings
-
 fname = 'Steve'
 lname = 'Jobs'
 
@@ -153,8 +123,6 @@ for portfolio in portfolios:
     price = portfolio.get('price')
     print(f'{name:>8} {shares:>8} {price:>8.2f}')
 
-# Prints basic bar graph of stars
-numbers = [10, 20, 30, 40, 45, 30, 25, 40]
-
-for index, number in enumerate(numbers):
-    print(f'{index} {number:>3} {"*"* number:>10}')
+# String Conversions
+x = 26
+print(str(x))   # prints '26'
