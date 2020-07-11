@@ -1,6 +1,7 @@
 import csv
 from abc import ABC, abstractmethod
 
+
 class Holding:
     value = 100
 

@@ -20,10 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_multiple_inheritance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Magic_Methods_Dunders/_magic_dunder_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_magic_dunder_methods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Magic_Methods_Dunders/employee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/employee.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_defencive_programming.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance_practical_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance_practical_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_multiple_inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_advanced_multiple_inheritance.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +89,7 @@
       <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice" />
     </key>
   </component>
-  <component name="RunManager" selected="Python._payroll">
+  <component name="RunManager" selected="Python._magic_dunder_methods">
     <configuration name="TC01" type="PythonConfigurationType" factoryName="Python">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,7 +153,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_memory_optimization" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="_magic_dunder_methods" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -159,11 +161,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Memory_Optimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Magic_Methods_Dunders" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Memory_Optimization/_memory_optimization.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Object_Oriented_Concepts/_magic_dunder_methods.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -255,19 +257,19 @@
       <item itemvalue="Python.TC01" />
       <item itemvalue="Python._dictionary" />
       <item itemvalue="Python._defencive_programming" />
-      <item itemvalue="Python._memory_optimization" />
       <item itemvalue="Python._oop" />
       <item itemvalue="Python._payroll" />
       <item itemvalue="Python._python_coding_problems" />
       <item itemvalue="Python tests.pytest in _decorators.py" />
+      <item itemvalue="Python._magic_dunder_methods" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python._magic_dunder_methods" />
         <item itemvalue="Python._payroll" />
         <item itemvalue="Python._defencive_programming" />
         <item itemvalue="Python._python_coding_problems" />
         <item itemvalue="Python._oop" />
-        <item itemvalue="Python._memory_optimization" />
       </list>
     </recent_temporary>
   </component>
@@ -310,41 +312,56 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1206" height="231" key="GridCell.Tab.0.bottom" timestamp="1588519654020">
-      <screen x="51" y="27" width="1229" height="772" />
+    <state width="1259" height="180" key="GridCell.Tab.0.bottom" timestamp="1594471228644">
+      <screen x="0" y="23" width="1280" height="730" />
     </state>
+    <state width="1259" height="180" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1594471228644" />
     <state width="1206" height="231" key="GridCell.Tab.0.bottom/51.27.1229.772@51.27.1229.772" timestamp="1588519654020" />
-    <state width="1206" height="231" key="GridCell.Tab.0.center" timestamp="1588519654019">
-      <screen x="51" y="27" width="1229" height="772" />
+    <state width="1259" height="180" key="GridCell.Tab.0.center" timestamp="1594471228643">
+      <screen x="0" y="23" width="1280" height="730" />
     </state>
+    <state width="1259" height="180" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1594471228643" />
     <state width="1206" height="231" key="GridCell.Tab.0.center/51.27.1229.772@51.27.1229.772" timestamp="1588519654019" />
-    <state width="1206" height="231" key="GridCell.Tab.0.left" timestamp="1588519654019">
-      <screen x="51" y="27" width="1229" height="772" />
+    <state width="1259" height="180" key="GridCell.Tab.0.left" timestamp="1594471228642">
+      <screen x="0" y="23" width="1280" height="730" />
     </state>
+    <state width="1259" height="180" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1594471228642" />
     <state width="1206" height="231" key="GridCell.Tab.0.left/51.27.1229.772@51.27.1229.772" timestamp="1588519654019" />
-    <state width="1206" height="231" key="GridCell.Tab.0.right" timestamp="1588519654019">
-      <screen x="51" y="27" width="1229" height="772" />
+    <state width="1259" height="180" key="GridCell.Tab.0.right" timestamp="1594471228643">
+      <screen x="0" y="23" width="1280" height="730" />
     </state>
+    <state width="1259" height="180" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1594471228643" />
     <state width="1206" height="231" key="GridCell.Tab.0.right/51.27.1229.772@51.27.1229.772" timestamp="1588519654019" />
-    <state width="1206" height="231" key="GridCell.Tab.1.bottom" timestamp="1588519654021">
-      <screen x="51" y="27" width="1229" height="772" />
+    <state width="1259" height="224" key="GridCell.Tab.1.bottom" timestamp="1594438652776">
+      <screen x="0" y="23" width="1280" height="730" />
     </state>
+    <state width="1259" height="224" key="GridCell.Tab.1.bottom/0.23.1280.730@0.23.1280.730" timestamp="1594438652776" />
     <state width="1206" height="231" key="GridCell.Tab.1.bottom/51.27.1229.772@51.27.1229.772" timestamp="1588519654021" />
-    <state width="1206" height="231" key="GridCell.Tab.1.center" timestamp="1588519654020">
-      <screen x="51" y="27" width="1229" height="772" />
+    <state width="1259" height="224" key="GridCell.Tab.1.center" timestamp="1594438652775">
+      <screen x="0" y="23" width="1280" height="730" />
     </state>
+    <state width="1259" height="224" key="GridCell.Tab.1.center/0.23.1280.730@0.23.1280.730" timestamp="1594438652775" />
     <state width="1206" height="231" key="GridCell.Tab.1.center/51.27.1229.772@51.27.1229.772" timestamp="1588519654020" />
-    <state width="1206" height="231" key="GridCell.Tab.1.left" timestamp="1588519654020">
-      <screen x="51" y="27" width="1229" height="772" />
+    <state width="1259" height="224" key="GridCell.Tab.1.left" timestamp="1594438652775">
+      <screen x="0" y="23" width="1280" height="730" />
     </state>
+    <state width="1259" height="224" key="GridCell.Tab.1.left/0.23.1280.730@0.23.1280.730" timestamp="1594438652775" />
     <state width="1206" height="231" key="GridCell.Tab.1.left/51.27.1229.772@51.27.1229.772" timestamp="1588519654020" />
-    <state width="1206" height="231" key="GridCell.Tab.1.right" timestamp="1588519654021">
-      <screen x="51" y="27" width="1229" height="772" />
+    <state width="1259" height="224" key="GridCell.Tab.1.right" timestamp="1594438652776">
+      <screen x="0" y="23" width="1280" height="730" />
     </state>
+    <state width="1259" height="224" key="GridCell.Tab.1.right/0.23.1280.730@0.23.1280.730" timestamp="1594438652776" />
     <state width="1206" height="231" key="GridCell.Tab.1.right/51.27.1229.772@51.27.1229.772" timestamp="1588519654021" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Object_Oriented_Concepts/_magic_dunder_methods.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
