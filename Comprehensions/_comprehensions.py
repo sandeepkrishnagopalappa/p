@@ -170,6 +170,16 @@ DIAL_CODES = [
 
 country_codes = {code: country for code, country in DIAL_CODES}
 
+# Building a dictionary with type and data mapping
+data = [1, 1.2, 'hello', len, True, (1, 2, 3), {9, 8, 6}, ['apple', 'ibm', 'yahoo']]
+print({type(item): data for item in data})
+
+# Type Conversion of Data
+data = ['IBM', 100, 91.2]
+types = [str, int, float]
+
+converted = [func(item) for func, item in zip(types, data)]
+
 # Building a dictionary whose price value is more than 200
 prices = {
     'ACME': 45.23,
