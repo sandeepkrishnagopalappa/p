@@ -1,3 +1,7 @@
+import datetime
+import time
+
+
 # Simple Function with no arguments
 def greet():
     # Doc String
@@ -170,3 +174,14 @@ def fun(a, L=[]):
         the passed parameter or the value we set aside earlier """
     L.append(a)
     return L
+
+
+def func(employees=[], dt=datetime.datetime.now()):
+    print(employees, dt)
+    time.sleep(1)
+
+
+func()
+func([1, 2])
+func()
+# ================================================================

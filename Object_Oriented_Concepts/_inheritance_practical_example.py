@@ -2,17 +2,15 @@ import csv
 from abc import ABC, abstractmethod
 
 
-class Holding:
-    value = 100
-
-    def __init__(self, name, shares, price):
-        self.name = name
-        self.shares = shares
-        self.price = price
+class Covid:
+    def __init__(self, country, cases, per_million):
+        self.country = country
+        self.cases = cases
+        self.per_million = per_million
 
 
-filename = '/Users/Sandeep/Documents/Python_Practice/data.csv'
-types = [str, int, float]
+filename = '_covid_data.csv'
+types = [str, str, int, float]
 records = []
 
 
@@ -22,8 +20,8 @@ def read_csv(filename, types):
         headers = next(rows)  # Skipping headers
         for row in rows:
             converted = [func(val) for func, val in zip(types, row)]
-            name, shares, price = converted
-            records.append(Holding(name, shares, price))
+            country, _date, cases, per_million = converted
+            records.append(Covid(country, cases, per_million))
     return records
 
 
@@ -38,7 +36,7 @@ def print_table(objects, colnames, formatter):
         formatter.rows(row)
 
 
-class TableFormatter:       # Acts as a design specification
+class TableFormatter:  # Acts as a design specification
     def headings(self, headers):
         raise NotImplementedError
 
@@ -47,14 +45,17 @@ class TableFormatter:       # Acts as a design specification
 
 
 class TextTableFormatter(TableFormatter):
+    def __init__(self, width=10):
+        self.width = width
+
     def headings(self, headers):
         for header in headers:
-            print(f'{header:>10}', end='')
+            print(f'{header:>{self.width}}', end='')
         print()
 
     def rows(self, row):
         for item in row:
-            print(f'{item:>10}', end='')
+            print(f'{item:>{self.width}}', end='')
         print()
 
 
@@ -66,7 +67,7 @@ class CSVTableFormatter(TableFormatter):
         print(','.join(row))
 
 
-class HTMLTableFormatter(TableFormatter):
+class HTMLFormatter(TableFormatter):
     def headings(self, headers):
         print('<tr>', end='')
         for header in headers:
@@ -90,6 +91,8 @@ class QuotedFormatter(Quoted, TextTableFormatter):
     pass
 
 
-text_formatter = TextTableFormatter()
-csv_formatter = CSVTableFormatter()
-print_table(data, ['price', 'shares', 'name'], text_formatter)
+text = TextTableFormatter(20)
+_csv = CSVTableFormatter()
+a = QuotedFormatter()
+html = HTMLFormatter()
+print_table(data, ['Country', 'Cases', 'Per_million'], text)

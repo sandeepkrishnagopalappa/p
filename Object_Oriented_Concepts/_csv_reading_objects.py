@@ -1,26 +1,26 @@
 import csv
 
 
-class Portfolio:
-    def __init__(self, name, shares, price):
-        self.name = name
-        self.shares = shares
-        self.price = price
+class Covid:
+    def __init__(self, country, cases, per_million):
+        self.country = country
+        self.cases = cases
+        self.per_million = per_million
 
 
-filename = '../Working_With_CSV_Files/portfolio.csv'
-types = [str, int, float]
+filename = '_covid_data.csv'
+types = [str, str, int, float]
 records = []
 
 
 def read_csv(filename, types):
     with open(filename) as f:
         rows = csv.reader(f)
-        headers = next(rows)  # Skipping headers
+        headers = next(rows)    # Skipping headers
         for row in rows:
             converted = [func(val) for func, val in zip(types, row)]
-            name, shares, price = converted
-            records.append(Portfolio(name, shares, price))
+            country, _date, cases, per_million = converted
+            records.append(Covid(country, cases, per_million))
     return records
 
 
@@ -38,4 +38,4 @@ def print_table(objects, colnames):
         print()
 
 
-print_table(data, ['price', 'shares', 'name'])
+print_table(data, ['Country', 'Cases', 'Per_Million'])

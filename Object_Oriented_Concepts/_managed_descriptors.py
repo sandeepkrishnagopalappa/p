@@ -1,86 +1,67 @@
-class A:
-    def __init__(self):
-        self._internal = 0  # An internal/private attribute
-        self.public = 1   # A Public attribute
-
-    def public_method(self):
-        print('Public method')
-        return self._internal
-
-    def _private_method(self):
-        print('Internal Method')
-
-
-class B:
-
-    def __init__(self):
-        super().__init__()
-        self.__internal = 1     # Double underscores are used to hide internal attributes
-        # of the class when the class gets inherited
-
-    def public_method(self):
-        return self.__internal
-
-
-class C(B):
-
-    def __init__(self):
-        super().__init__()
-        self.__internal = 2     # Does not override B.__internal
-
-    def public_method(self):
-        return self.__internal
-
-
-b = B()
-c = C()
-
-print(b.public_method())
-print(c.public_method())
-
-
-# ====================================================================================
-
-# Setters and Getters
-
-class Person:
-
-    def __init__(self, first_name, last_name, age):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.age = age
-
-        # By setting self.first_name , the set operation uses the setter method to set the
-        # first_name attribute as opposed to bypassing it by accessing self._first_name
+class Employee:
+    def __init__(self, fname, lname, pay):
+        self.fname = fname
+        self.lname = lname
+        self.pay = pay
 
     @property
-    def first_name(self):
-        return self._first_name
+    def pay(self):
+        return self._pay
 
-    @first_name.setter
-    def first_name(self, value):
-        if not isinstance(value, str):
-            raise TypeError('First Name must be String')
-        if len(value) > 12:
-            raise ValueError('First Name must be less than 13 characters')
-        self._first_name = value
+    @pay.setter
+    def pay(self, value):
+        if not isinstance(value, int):
+            raise TypeError('Pay Must be an Integer')
+        self._pay = value
 
-    # Deleter function (optional)
-    @first_name.deleter
-    def first_name(self):
-        raise AttributeError("Can't delete attribute")
+    def pay_raise(self, percent):
+        hike = self.pay * percent
+        self.pay += hike
 
 
-p1 = Person('Steve', 'Jobs', 30)
+e = Employee('Steve', 'Jobs', 9000)
+
+# Under the Covers, property descreptors works as below.
+p = e.__class__.__dict__['pay']     # Dictionary Look up happens
+
+hasattr(p, '__get__')   # Checks if the Property object has an attribute '__get__'
+
+p.__get__(e)    # If hasattr returns True, then python will fire __get__ method on the Property Object
+
+hasattr(p, '__set__')   # Checks if the Property object has an attribute '__set__'
+
+p.__set__(e, 9500)     # If hasattr returns True, then python will fire __set__ method on the Property Object
+
+# So Basically Descreptors are Objects that impletements __get__, __set__ and __del__ methods.
+# The DOT operator is Mapped to __get__ and __set__ methods
 
 
-print(p1.first_name)
+class Integer:
+    def __init__(self, name):
+        self.name = name
 
-p1.first_name = 'Bill'
+    def __set__(self, instance, value):
+        if not isinstance(value, int):
+            raise TypeError
+        instance.__dict__[self.name] = value
 
-print(p1.first_name)
 
-# del p1.first_name
+class Employee:
+    pay = Integer('pay')
+
+    def __init__(self, fname, lname, pay):
+        self.fname = fname
+        self.lname = lname
+        self.pay = pay
+
+
+class Point:
+    a = Integer('a')
+    b = Integer('b')
+
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
 
 
 # Imlementation of properties Using Descriptors
@@ -91,15 +72,18 @@ class Descriptor:
     def __set__(self, instance, newvalue):
         instance.__dict__[self.value] = newvalue
 
+
 class TypeCheck(Descriptor):
     expected_type = None
+
     def __set__(self, instance, newvalue):
         if not isinstance(newvalue, self.expected_type):
             raise TypeError(f'Expected Type should be {self.expected_type}')
         super().__set__(instance, newvalue)
 
+
 class Integer(TypeCheck):
-    expected_type= int
+    expected_type = int
 
 
 class String(TypeCheck):
@@ -116,6 +100,7 @@ class Positive(Descriptor):
             raise ValueError('Cant be Negative')
         super().__set__(instance, newvalue)
 
+
 class Sized(Descriptor):
     def __init__(self, value, *, maxlen, **kwargs):
         self.maxlen = maxlen
@@ -125,6 +110,7 @@ class Sized(Descriptor):
         if len(value) > self.maxlen:
             raise ValueError('Can not be more than 10 chars')
         super().__set__(instance, value)
+
 
 class Regx(Descriptor):
     def __init__(self, value, *, pat):
@@ -141,11 +127,14 @@ class Regx(Descriptor):
 class PositiveInteger(Integer, Positive):
     pass
 
+
 class PositiveFloat(Float, Positive):
     pass
 
+
 class SizedString(String, Sized):
     pass
+
 
 class SizedRegxString(SizedString, Regx):
     pass
@@ -183,6 +172,7 @@ def TypeCheck(**kwargs):
             setattr(cls, name, Descriptor(name, exp_type))
         return cls
     return decorate
+
 
 # Decorated Class
 @TypeCheck(fname=str, lname=str, pay=int)
