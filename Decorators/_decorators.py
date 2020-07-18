@@ -1,6 +1,5 @@
 import time
 from functools import wraps, partial
-from inspect import signature
 from collections import defaultdict
 
 # Decoretors:
@@ -21,7 +20,7 @@ def greet():
 
 
 def outer(some_function):   # Passing function as a parameter to other function
-    some_function()
+    return some_function()
 
 
 outer(greet)    # Prints Hello world
@@ -30,7 +29,7 @@ outer(greet)    # Prints Hello world
 def print_after(seconds, func):     # Waits for 5 seconds and prints Hello world
     import time
     time.sleep(seconds)
-    func()
+    return func()
 
 
 print_after(5, greet)
@@ -229,51 +228,6 @@ def sub(x, y):
 add(1, 2)
 sub(1, 2)
 
-# Decorator to check the data type of a function arguments
-def validate(**tys):
-    def decorate(func):
-        def wrapper(*args, **kwargs):
-            _types = list(tys.values())
-            _args = list(args)
-            for _type, _arg in zip(_types, _args):
-                if not isinstance(_arg, _type):
-                    raise TypeError(_arg ,"Must be a type of ", _type)
-            return func(*args, **kwargs)
-        return wrapper
-    return decorate
-
-# Imporved Version
-def check(_types, _values):
-    for _type, _value in zip(_types, _values):
-        if not isinstance(_value, _type):
-            raise TypeError
-
-def validate(**tys):
-    def decorate(func):
-        def wrapper(*args, **kwargs):
-            _tys = list(tys.values())
-            check(_tys, args)
-            return func(*args, **kwargs)
-        return wrapper
-    return decorate
-
-def typeassert(*ty_args, **ty_kwargs):
-    def decorate(func):
-        # Map function argument names to supplied types
-        sig = signature(func)
-        bound_types = sig.bind_partial(*ty_args, **ty_kwargs).arguments
-        @wraps(func)
-        def wrapper(*args, **kwargs):
-            bound_values = sig.bind(*args, **kwargs)
-            # Enforce type assertions across supplied arguments
-            for name, value in bound_values.arguments.items():
-                if name in bound_types:
-                    if not isinstance(value, bound_types[name]):
-                        raise TypeError()
-            return func(*args, **kwargs)
-        return wrapper
-    return decorate
-
 
 # Class Decorators
 def logger(cls):
@@ -293,15 +247,14 @@ class Spam(object):
     def demo2(self):
         pass
 
+
 # Class decorators does not work on @classmethod and @staticmethod
-
-
 # Write a Func Decorator that records the number of calls made on a function
 def record(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
         wrapper.count += 1
-        if not ((args, kwargs)) in wrapper.cache[func.__name__]:
+        if not (args, kwargs) in wrapper.cache[func.__name__]:
             wrapper.cache[func.__name__].append((*args, kwargs))
         return func(*args, **kwargs)
     wrapper.count = 0
@@ -319,6 +272,7 @@ class Record:
         self._count += 1
         return self.func(*args, **kwargs)
 
+
 # Class Decorator with Arguments
 class log:
     def __init__(self, *args, **kwargs):
@@ -327,6 +281,74 @@ class log:
 
     def __call__(self, func):
         def wrapper(*args, **kwargs):
-            print('Calling')
+            print('Calling ',self.args)
+            print(self.kwargs)
             return func(*args, **kwargs)
         return wrapper
+
+
+# Returning property object
+def typed_property(name, expected_type):
+    private_name = '_'+name
+
+    def fget(self):
+        print('Running Getter')
+        return getattr(self, private_name)
+
+    def fset(self, value):
+        print('Running Setter')
+        if not isinstance(value, expected_type):
+            raise TypeError('Expected ', expected_type)
+        return setattr(self, private_name, value)
+
+    return property(fget, fset)
+
+
+# Using property decorator
+def typed_property(name, expected_type):
+    private_name = '_'+name
+
+    @property
+    def prop(self):
+        print('Running Getter')
+        return getattr(self, private_name)
+
+    @prop.setter
+    def prop(self, value):
+        print('Running Setter')
+        if not isinstance(value, expected_type):
+            raise TypeError('Expected ', expected_type)
+        return setattr(self, private_name, value)
+
+    return prop
+
+
+# Decorator to check the data type of a function arguments
+def validate(**tys):
+    def decorate(func):
+        def wrapper(*args, **kwargs):
+            _types = list(tys.values())
+            _args = list(args)
+            for _type, _arg in zip(_types, _args):
+                if not isinstance(_arg, _type):
+                    raise TypeError(_arg ,"Must be a type of ", _type)
+            return func(*args, **kwargs)
+        return wrapper
+    return decorate
+
+
+# Imporved Version
+def check(_types, _values):
+    for _type, _value in zip(_types, _values):
+        if not isinstance(_value, _type):
+            raise TypeError
+
+
+def validate(**tys):
+    def decorate(func):
+        def wrapper(*args, **kwargs):
+            _tys = list(tys.values())
+            check(_tys, args)
+            return func(*args, **kwargs)
+        return wrapper
+    return decorate

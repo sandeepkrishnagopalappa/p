@@ -20,19 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_covid_data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_dictionaries_objects.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_encapsulation_attr_access.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_managed_descriptors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_restricting_invalid_attribute.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Decorators/_functions_as_normal_objects.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_csv_reading_objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_csv_reading_objects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_encapsulation_attr_access_descreptors.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance_practical_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance_practical_example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_oop.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_payroll.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorators/_decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decorators/_decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_magic_dunder_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_magic_methods.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +177,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_magic_dunder_methods" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="_magic_methods" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -197,7 +189,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Object_Oriented_Concepts/_magic_dunder_methods.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Object_Oriented_Concepts/_magic_methods.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -266,18 +258,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.TC01" />
-      <item itemvalue="Python._dictionary" />
       <item itemvalue="Python._defencive_programming" />
+      <item itemvalue="Python._dictionary" />
+      <item itemvalue="Python._lists" />
+      <item itemvalue="Python._magic_methods" />
       <item itemvalue="Python._payroll" />
       <item itemvalue="Python._python_coding_problems" />
-      <item itemvalue="Python._magic_dunder_methods" />
-      <item itemvalue="Python._lists" />
       <item itemvalue="Python tests.pytest in _decorators.py" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python._lists" />
-        <item itemvalue="Python._magic_dunder_methods" />
+        <item itemvalue="Python._magic_methods" />
         <item itemvalue="Python._payroll" />
         <item itemvalue="Python._defencive_programming" />
         <item itemvalue="Python._python_coding_problems" />

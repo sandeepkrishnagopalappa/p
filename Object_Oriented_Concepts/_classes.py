@@ -21,7 +21,6 @@ class Player:
     def attack(self, pts):
         self.health -= pts
 
-
 class Employee:
     no_emps = 0     # Class Variable
     company_name = 'Apple.Inc'
