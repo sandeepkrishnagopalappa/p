@@ -73,15 +73,17 @@ def sum_two_numbers(a: int, b: int) -> int:
 
 
 # ================================================================================================
-# Variable number of Arguments
+# Positional variable arguments (*args)
 def func(a, *args):
     print(a, args)
 
 
+# Keyword variable arguments (**kwargs)
 def func2(a, **kwargs):
     print(a, kwargs)
 
 
+# Combining both
 def anyargs(*args, **kwargs):
     print(args)     # Tuple
     print(kwargs)   # Dictionary

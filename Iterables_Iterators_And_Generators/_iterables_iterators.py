@@ -13,20 +13,25 @@
 
 # Iterators are Lazy Iterables. i.e. they dont determine what their next item is until you ask them for it
 
-my_list = iter([1, 2, 3, 4])
-print(type(my_list))    # Iterator object
+# Iterator Protocol
+# Let's Consider a for Statement
 
-my_set = iter({1, 1, 1, 2, 3, 4, 5})
-print(type(my_set))     # Iterator object
+# for item in obj:
+    # Statements
 
-my_dict = iter({'fname': 'test', 'lname': 'user'})
-print(type(my_dict))    # Iterator object
+# What happens under the Covers?
+#     _iter = obj.__iter__()  # Get iterator object
+#     while True:
+#         try:
+#             x = _iter.__next__()  # Get next item
+#         except StopIteration:  # No more items
+#             break
+        # statements ...
 
-my_string = iter('hello world')
-print(type(my_string))      # Iterator object
-
-my_tuple = iter((0, 1, 2, 3, 4, 5))
-print(type(my_tuple))   # Iterator object
+# All the objects that work with the for-loop implement this low-level iteration protocol.
+x = [1, 2, 3]
+it = x.__iter__()
+print(it.__next__())    # Manually Iterate over
 
 
 # Creating Custom iterators. The standard 'for' loop in Python, uses below logic for looping
@@ -39,13 +44,6 @@ def print_each(iterable):
             break   # All elements in the iterable are exhausted
         else:
             print(item)
-
-
-print_each(my_list)
-print_each(my_set)
-print_each(my_string)
-print_each(my_dict)
-print_each(my_tuple)
 
 
 # if you’re using next() manually,
@@ -61,13 +59,6 @@ def print_each2(iterable):
 def print_each(iterable):
     for item in iterable:     # This for loop is equivallent to the above custom iterator logic
         print(item)
-
-
-print_each(my_list)
-print_each(my_set)
-print_each(my_string)
-print_each(my_dict)
-print_each(my_tuple)
 
 
 # Custom Iterator Class

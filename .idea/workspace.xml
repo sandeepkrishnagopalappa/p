@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Decorators/_functions_as_normal_objects.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Functions/_anonymous_functions_lambda.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorators/_decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decorators/_decorators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_magic_dunder_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_magic_methods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,12 +257,12 @@
     </configuration>
     <list>
       <item itemvalue="Python.TC01" />
-      <item itemvalue="Python._defencive_programming" />
       <item itemvalue="Python._dictionary" />
-      <item itemvalue="Python._lists" />
-      <item itemvalue="Python._magic_methods" />
+      <item itemvalue="Python._defencive_programming" />
       <item itemvalue="Python._payroll" />
       <item itemvalue="Python._python_coding_problems" />
+      <item itemvalue="Python._lists" />
+      <item itemvalue="Python._magic_methods" />
       <item itemvalue="Python tests.pytest in _decorators.py" />
     </list>
     <recent_temporary>
