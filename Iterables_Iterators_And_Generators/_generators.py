@@ -194,3 +194,27 @@ def get_values(d_item):
 
 
 print(list(dedupe(a, key=get_values)))
+
+
+# Setting up Pipelines
+def getlines(filename):
+    with open(filename, 'r') as f:
+        for line in f:
+            if line:
+                yield line
+
+
+def _grep(pattern, g_lines):
+    for line in g_lines:
+        if pattern in line:
+            yield line
+
+
+def _split(g_grep):
+    for line in g_grep:
+        yield line.split(' ')
+
+
+f = getlines('sample.txt')
+g = grep('python', f)
+s = _split(g)
