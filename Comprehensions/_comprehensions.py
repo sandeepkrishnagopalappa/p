@@ -175,7 +175,7 @@ data = [1, 1.2, 'hello', len, True, (1, 2, 3), {9, 8, 6}, ['apple', 'ibm', 'yaho
 print({type(item): data for item in data})
 
 # Type Conversion of Data
-data = ['IBM', 100, 91.2]
+data = ['IBM', '100', '91.2']
 types = [str, int, float]
 
 converted = [func(item) for func, item in zip(types, data)]

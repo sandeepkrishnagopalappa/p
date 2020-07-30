@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/sample.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,12 +255,12 @@
     </configuration>
     <list>
       <item itemvalue="Python.TC01" />
-      <item itemvalue="Python._dictionary" />
       <item itemvalue="Python._defencive_programming" />
-      <item itemvalue="Python._payroll" />
-      <item itemvalue="Python._python_coding_problems" />
+      <item itemvalue="Python._dictionary" />
       <item itemvalue="Python._lists" />
       <item itemvalue="Python._magic_methods" />
+      <item itemvalue="Python._payroll" />
+      <item itemvalue="Python._python_coding_problems" />
       <item itemvalue="Python tests.pytest in _decorators.py" />
     </list>
     <recent_temporary>
