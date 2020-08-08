@@ -85,3 +85,6 @@ max_10 = sorted(total_cases.items(), key=lambda item: int(item[-1]))[-10:]
 # Country with highest Number of cases
 mx = max(total_cases.items(), key=lambda item: int(item[-1]))
 mi = min(total_cases.items(), key=lambda item: int(item[-1]))
+
+# List all the country names which has less than 1000 cases
+less_10K = {country: cases for country, cases in total_cases.items() if cases < 1000}
