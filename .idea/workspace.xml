@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Memory_Optimization/_covid_data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Memory_Optimization/_different_ways_of_data_representation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Memory_Optimization/covid-data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_covid_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_covid_data.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +92,7 @@
       <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Random_Module" />
     </key>
   </component>
-  <component name="RunManager" selected="Python._lists">
+  <component name="RunManager" selected="Python._different_ways_of_data_representation">
     <configuration name="TC01" type="PythonConfigurationType" factoryName="Python">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -145,6 +148,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Container_Objects/_dictionary.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="_different_ways_of_data_representation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Memory_Optimization" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Memory_Optimization/_different_ways_of_data_representation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -216,27 +240,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_python_coding_problems" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Practice" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Coding_Exercise" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest in _decorators.py" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -255,21 +258,21 @@
     </configuration>
     <list>
       <item itemvalue="Python.TC01" />
-      <item itemvalue="Python._defencive_programming" />
       <item itemvalue="Python._dictionary" />
+      <item itemvalue="Python._defencive_programming" />
       <item itemvalue="Python._lists" />
       <item itemvalue="Python._magic_methods" />
       <item itemvalue="Python._payroll" />
-      <item itemvalue="Python._python_coding_problems" />
       <item itemvalue="Python tests.pytest in _decorators.py" />
+      <item itemvalue="Python._different_ways_of_data_representation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python._different_ways_of_data_representation" />
         <item itemvalue="Python._lists" />
         <item itemvalue="Python._magic_methods" />
         <item itemvalue="Python._payroll" />
         <item itemvalue="Python._defencive_programming" />
-        <item itemvalue="Python._python_coding_problems" />
       </list>
     </recent_temporary>
   </component>
@@ -315,46 +318,50 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1259" height="224" key="GridCell.Tab.0.bottom" timestamp="1594529587792">
+    <state width="1259" height="220" key="GridCell.Tab.0.bottom" timestamp="1596865736986">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1594529587792" />
+    <state width="1259" height="220" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1596865736986" />
     <state width="1206" height="231" key="GridCell.Tab.0.bottom/51.27.1229.772@51.27.1229.772" timestamp="1588519654020" />
-    <state width="1259" height="224" key="GridCell.Tab.0.center" timestamp="1594529587792">
+    <state width="1259" height="220" key="GridCell.Tab.0.center" timestamp="1596865736985">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1594529587792" />
+    <state width="1259" height="220" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1596865736985" />
     <state width="1206" height="231" key="GridCell.Tab.0.center/51.27.1229.772@51.27.1229.772" timestamp="1588519654019" />
-    <state width="1259" height="224" key="GridCell.Tab.0.left" timestamp="1594529587791">
+    <state width="1259" height="220" key="GridCell.Tab.0.left" timestamp="1596865736985">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1594529587791" />
+    <state width="1259" height="220" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1596865736985" />
     <state width="1206" height="231" key="GridCell.Tab.0.left/51.27.1229.772@51.27.1229.772" timestamp="1588519654019" />
-    <state width="1259" height="224" key="GridCell.Tab.0.right" timestamp="1594529587792">
+    <state width="1259" height="220" key="GridCell.Tab.0.right" timestamp="1596865736986">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1594529587792" />
+    <state width="1259" height="220" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1596865736986" />
     <state width="1206" height="231" key="GridCell.Tab.0.right/51.27.1229.772@51.27.1229.772" timestamp="1588519654019" />
-    <state width="1259" height="224" key="GridCell.Tab.1.bottom" timestamp="1594529587794">
+    <state width="1259" height="224" key="GridCell.Tab.1.bottom" timestamp="1596865638409">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.1.bottom/0.23.1280.730@0.23.1280.730" timestamp="1594529587794" />
+    <state width="1259" height="224" key="GridCell.Tab.1.bottom/0.23.1280.730@0.23.1280.730" timestamp="1596865638409" />
     <state width="1206" height="231" key="GridCell.Tab.1.bottom/51.27.1229.772@51.27.1229.772" timestamp="1588519654021" />
-    <state width="1259" height="224" key="GridCell.Tab.1.center" timestamp="1594529587793">
+    <state width="1259" height="224" key="GridCell.Tab.1.center" timestamp="1596865638408">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.1.center/0.23.1280.730@0.23.1280.730" timestamp="1594529587793" />
+    <state width="1259" height="224" key="GridCell.Tab.1.center/0.23.1280.730@0.23.1280.730" timestamp="1596865638408" />
     <state width="1206" height="231" key="GridCell.Tab.1.center/51.27.1229.772@51.27.1229.772" timestamp="1588519654020" />
-    <state width="1259" height="224" key="GridCell.Tab.1.left" timestamp="1594529587793">
+    <state width="1259" height="224" key="GridCell.Tab.1.left" timestamp="1596865638407">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.1.left/0.23.1280.730@0.23.1280.730" timestamp="1594529587793" />
+    <state width="1259" height="224" key="GridCell.Tab.1.left/0.23.1280.730@0.23.1280.730" timestamp="1596865638407" />
     <state width="1206" height="231" key="GridCell.Tab.1.left/51.27.1229.772@51.27.1229.772" timestamp="1588519654020" />
-    <state width="1259" height="224" key="GridCell.Tab.1.right" timestamp="1594529587793">
+    <state width="1259" height="224" key="GridCell.Tab.1.right" timestamp="1596865638408">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.1.right/0.23.1280.730@0.23.1280.730" timestamp="1594529587793" />
+    <state width="1259" height="224" key="GridCell.Tab.1.right/0.23.1280.730@0.23.1280.730" timestamp="1596865638408" />
     <state width="1206" height="231" key="GridCell.Tab.1.right/51.27.1229.772@51.27.1229.772" timestamp="1588519654021" />
+    <state x="138" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596865239617">
+      <screen x="0" y="23" width="1280" height="730" />
+    </state>
+    <state x="138" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.730@0.23.1280.730" timestamp="1596865239617" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
