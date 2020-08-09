@@ -17,16 +17,16 @@ def memory(func):
 
 # Makes List of tuples
 def make_tuple(row):
-    return tuple((row[1], row[2], int(row[4]), row[7]))
+    return tuple((row[2], row[3], int(row[5]), row[8]))
 
 
 # Make Dictionary
 def make_dict(row):
     return {
-        'country': row[1],
-        '_date': row[2],
-        'cases': int(row[4]),
-        'per_mil': row[7]
+        'country': row[2],
+        '_date': row[3],
+        'cases': int(float(row[5])),
+        'per_mil': row[8]
     }
 
 
@@ -35,7 +35,7 @@ class Covid:
     def __init__(self, country, _date, cases, per_mil):
         self.country = country
         self._date = _date
-        self.cases = int(cases)
+        self.cases = int(float(cases))
         self.per_mil = float(per_mil)
 
 
@@ -53,7 +53,7 @@ class Covid:
 
 
 def make_instance(row):
-    return Covid(row[1], row[2], int(row[4]), row[7])
+    return Covid(row[2], row[3], int(float(row[5])), row[8])
 
 
 @memory
@@ -63,7 +63,11 @@ def read_csv(filename, record_type):
         rows = csv.reader(f)
         headers = next(rows)    # Skipping Headers
         for row in rows:
-            records.append(record_type(row))
+            try:
+                records.append(record_type(row))
+            except ValueError:
+                print('Bad Record')
+                continue
     return records
 
 
