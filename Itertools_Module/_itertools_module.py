@@ -127,3 +127,14 @@ for name, item in itertools.groupby(portfolio, key=lambda item: item['name']):
     print(name)
     for it in item:
         print(it)
+
+# Iterating through varying records
+prices = [
+    ['GOOG', 490.1, 485.25, 487.5],
+    ['IBM', 91.5],
+    ['HPE', 13.75, 12.1, 13.25, 14.2, 13.5],
+    ['GE', 52.5, 51.2]
+]
+
+for name, *values in prices:
+    print(name, values)

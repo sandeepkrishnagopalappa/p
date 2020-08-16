@@ -71,7 +71,7 @@ def read_csv(filename, record_type):
     return records
 
 
-fname = '/Users/sandeep/Documents/python_tutorials/Memory_Optimization/covid-data.csv'
+fname = './covid-data.csv'
 
 data = read_csv(fname, make_dict)
 
