@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_magic_methods_covid_data_analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Itertools_Module/_itertools_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/Itertools_Module/_itertools_module.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Memory_Optimization/_different_ways_of_data_representation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Memory_Optimization/_different_ways_of_data_representation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,8 +255,8 @@
     </configuration>
     <list>
       <item itemvalue="Python.TC01" />
-      <item itemvalue="Python._defencive_programming" />
       <item itemvalue="Python._dictionary" />
+      <item itemvalue="Python._defencive_programming" />
       <item itemvalue="Python._different_ways_of_data_representation" />
       <item itemvalue="Python._lists" />
       <item itemvalue="Python._magic_methods" />
