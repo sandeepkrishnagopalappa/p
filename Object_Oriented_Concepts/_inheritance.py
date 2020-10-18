@@ -46,33 +46,6 @@ c = Child5(10)
 print(c.__class__.__mro__)
 
 
-class Employee:
-    def __init__(self, name, pay):
-        self.name = name
-        self.pay = pay
-
-    def pay_raise(self, percent):
-        return self.pay * percent
-
-
-class PythonProgrammer(Employee):
-    def pay_raise(self, percent):
-        regular_pay_raise = super().pay_raise(percent)
-        return regular_pay_raise * 0.2
-
-
-class DataAnalyst(Employee):
-    def pay_raise(self, percent):
-        regular_pay_raise = super().pay_raise(percent)
-        return regular_pay_raise * 0.3
-
-
-class AISpecialist(Employee):
-    def pay_raise(self, percent):
-        regular_pay_raise = super().pay_raise(percent)
-        return regular_pay_raise * 0.4
-
-
 # Calculating Payroll of different Employees
 class Employee:
     def __init__(self, _id, name):
@@ -102,7 +75,6 @@ class HourlyEmployee(Employee):
 class CommisionedEmployee(WeeklyEmployee):
     def __init__(self, _id, name, weekly_salary, commision):
         self.commision = commision
-        self.weekly_salary = weekly_salary
         super().__init__(_id, name, weekly_salary)
 
     def calculate_pay(self):
@@ -121,5 +93,3 @@ e1 = HourlyEmployee('1', 'steve', 40, 20)
 e2 = WeeklyEmployee('2', 'Bill', 1250)
 e3 = CommisionedEmployee('3', 'John', 1250, 100)
 calculate_payroll([e1, e2, e3])
-
-
