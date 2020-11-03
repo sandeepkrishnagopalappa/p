@@ -319,3 +319,16 @@ countries = {"India": ["Bangalore", "Chennai", "Delhi", "Kolkata"],
 
 l = [(country, city) for country, cities in countries.items() for city in cities]
 
+
+# list of Dicts from shoe data
+def make_dict(line):
+    data = line.strip().split('\t')
+    return {"brand": data[0], "color": data[1], "size": data[2]}
+
+
+s = [make_dict(line) for line in open('shoe-data.txt')]
+
+for item in s:
+    print(item)
+
+
