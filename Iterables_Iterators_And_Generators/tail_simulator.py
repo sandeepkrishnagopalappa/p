@@ -15,5 +15,3 @@ while True:
         f.write('\n')
         time.sleep(random.randint(1, 5))
         f.close()
-
-

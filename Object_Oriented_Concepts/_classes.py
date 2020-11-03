@@ -118,3 +118,45 @@ mg2 = Manager('Steve', 'Jobs', 80000, (dev3, dev4))
 # mg2.add_employee([dev3, dev4])
 mg2.print_emp()
 # ================================================================
+
+
+class Covid:
+    def __init__(self):
+        self.records = []
+
+    def add_case(self, country, _date, cases):
+        self.records.append({"country": country, "_date": _date, "cases": int(cases)})
+
+    @classmethod
+    def from_csv(cls):
+        c = cls()
+        with open('_covid_data.csv', 'r') as f:
+            rows = csv.reader(f)
+            headers = next(rows)    # Skipping Headers
+            for row in rows:
+                c.add_case(row[0], row[1], row[2])
+        return c
+
+    def total_cases(self):
+        total = 0.00
+        for record in self.records:
+            total += record['cases']
+        return total
+
+    def cases_by_country(self):
+        from collections import defaultdict
+        d = defaultdict(int)
+        for record in self.records:
+            d[record['country']] += record['cases']
+        return d
+
+
+import csv
+with open('_covid_data.csv', 'r') as f:
+    rows = csv.reader(f)
+    headers = next(rows)    # Skipping Headers
+    c = Covid()
+    for row in rows:
+        c.add_case(row[0], row[1], row[2])
+    print(c.total_cases())
+    print(c.cases_by_country())

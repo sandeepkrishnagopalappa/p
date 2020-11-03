@@ -20,11 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/grepping.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/test.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comprehensions/access-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comprehensions/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comprehensions/linux-etc-passwd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comprehensions/nums.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comprehensions/wcfile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comprehensions/words" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Container_Objects/_dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/Container_Objects/_dictionary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Container_Objects/speed_comparision_list_tuple_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/Container_Objects/speed_comparision_list_tuple_set.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/tail_simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/tail_simulator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_classes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,17 +80,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Iterables_Iterators_And_Generators" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Comprehensions" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Iterables_Iterators_And_Generators" />
-      <recent name="$PROJECT_DIR$/Itertools_Module" />
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Exception_Handling" />
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Iterables_Iterators_And_Generators" />
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Comprehensions" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Container_Objects" />
       <recent name="$PROJECT_DIR$/Object_Oriented_Concepts" />
@@ -91,8 +91,15 @@
       <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Variable_Scope" />
       <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Random_Module" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Comprehensions" />
+      <recent name="$PROJECT_DIR$/Iterables_Iterators_And_Generators" />
+      <recent name="$PROJECT_DIR$/Itertools_Module" />
+      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Exception_Handling" />
+      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Iterables_Iterators_And_Generators" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python._grep">
+  <component name="RunManager" selected="Python tests.pytest in speed_comparision_list_tuple_set.py">
     <configuration name="TC01" type="PythonConfigurationType" factoryName="Python">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -198,27 +205,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_magic_methods" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Practice" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Magic_Methods_Dunders" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Object_Oriented_Concepts/_magic_methods.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="tail_simulator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -256,23 +242,39 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in speed_comparision_list_tuple_set.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Container_Objects" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Container_Objects/speed_comparision_list_tuple_set.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.TC01" />
       <item itemvalue="Python._dictionary" />
       <item itemvalue="Python._different_ways_of_data_representation" />
       <item itemvalue="Python._grep" />
       <item itemvalue="Python._lists" />
-      <item itemvalue="Python._magic_methods" />
       <item itemvalue="Python.tail_simulator" />
       <item itemvalue="Python tests.pytest in _decorators.py" />
+      <item itemvalue="Python tests.pytest in speed_comparision_list_tuple_set.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in speed_comparision_list_tuple_set.py" />
         <item itemvalue="Python._grep" />
         <item itemvalue="Python.tail_simulator" />
         <item itemvalue="Python._different_ways_of_data_representation" />
         <item itemvalue="Python._lists" />
-        <item itemvalue="Python._magic_methods" />
       </list>
     </recent_temporary>
   </component>
@@ -313,22 +315,22 @@
       <screen x="0" y="23" width="1280" height="730" />
     </state>
     <state width="823" height="466" key="DebuggerActiveHint/0.23.1280.730@0.23.1280.730" timestamp="1596946034934" />
-    <state width="1259" height="224" key="GridCell.Tab.0.bottom" timestamp="1602153908420">
+    <state width="1259" height="251" key="GridCell.Tab.0.bottom" timestamp="1604311429553">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1602153908420" />
-    <state width="1259" height="224" key="GridCell.Tab.0.center" timestamp="1602153908420">
+    <state width="1259" height="251" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1604311429553" />
+    <state width="1259" height="251" key="GridCell.Tab.0.center" timestamp="1604311429552">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1602153908420" />
-    <state width="1259" height="224" key="GridCell.Tab.0.left" timestamp="1602153908419">
+    <state width="1259" height="251" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1604311429552" />
+    <state width="1259" height="251" key="GridCell.Tab.0.left" timestamp="1604311429551">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1602153908419" />
-    <state width="1259" height="224" key="GridCell.Tab.0.right" timestamp="1602153908420">
+    <state width="1259" height="251" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1604311429551" />
+    <state width="1259" height="251" key="GridCell.Tab.0.right" timestamp="1604311429552">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1602153908420" />
+    <state width="1259" height="251" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1604311429552" />
     <state width="1259" height="224" key="GridCell.Tab.1.bottom" timestamp="1602153908421">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
@@ -345,6 +347,10 @@
       <screen x="0" y="23" width="1280" height="730" />
     </state>
     <state width="1259" height="224" key="GridCell.Tab.1.right/0.23.1280.730@0.23.1280.730" timestamp="1602153908421" />
+    <state x="18" y="23" key="SettingsEditor" timestamp="1604311289368">
+      <screen x="0" y="23" width="1280" height="730" />
+    </state>
+    <state x="18" y="23" key="SettingsEditor/0.23.1280.730@0.23.1280.730" timestamp="1604311289368" />
     <state x="138" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596865239617">
       <screen x="0" y="23" width="1280" height="730" />
     </state>

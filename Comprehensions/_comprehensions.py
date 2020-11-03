@@ -1,6 +1,8 @@
 import heapq
 import string
 import math
+from collections import Counter
+from collections import defaultdict
 
 '''
 Comprehensions in Python is a way to build an iterable object in one expression without the need of traditional
@@ -14,14 +16,22 @@ nums = [1, 2, 3, 4, 5]
 list_evens = [num ** 2 for num in nums]
 print(list_evens)
 
+# Convert to upper case
+sentence = "This is bunch of words"
+cap = [word.upper() for word in sentence.split()]
+
 # Returns a list containing all vowels in the given string
 my_string = 'Hello world'
-person_names = ['Laura', 'Steve', 'Bill', 'James', 'Bob', 'Greig', 'Scott', 'Alex', 'Ive']
+person_names = ['laura', 'steve', 'bill', 'james', 'bob', 'greig', 'scott', 'alex', 'ive']
 
 
 # Names starting with Vowels
 def get_vowel_names(iterable):
     return [name for name in iterable if name[0].lower() in ['a', 'e', 'i', 'o', 'u']]
+
+
+# Names starting with consonents
+names = [name for name in person_names if not name.startswith(('a', 'e', 'i', 'o', 'u'))]
 
 
 # Names starting with Vowels
@@ -59,6 +69,19 @@ numbers = sorted(numbers)
 dedup = [number for index, number in enumerate(numbers) if index == 0 or number != numbers[index-1]]
 print(dedup)
 
+# List comprehension to sum the factorial of numbers from 1-5
+a = [1, 2, 3, 4, 5]
+
+
+def fact(n):
+    if n <= 1:
+        return 1
+    else:
+        return n * fact(n-1)
+
+
+s = sum([fact(number) for number in a])
+
 # Prints the names if the first char of the item starts with any letter in the first half of the alphabet character
 names = ['apple', 'yahoo', 'google', 'facebook', 'dropbox', 'instagram', 'twitter', 'microsoft', 'next']
 first_half_alphabets = string.ascii_lowercase[:13]
@@ -90,7 +113,51 @@ colors = ['black', 'white']
 sizes = ['S', 'M', 'L']
 tshirts = [(color, size) for color in colors for size in sizes]
 
+# Getting user names from password.txt
+l = [line.split(":")[0] .strip() for line in open('linux-etc-passwd.txt') if not line.strip().startswith("#")]
+
+# Getting only ip addresses from web server log. Also, find out how may times
+# Each IP address is appears in the list and create a dictionary.
+ip = [line.split()[0] for line in open("access-log.txt")]
+
+# Using Normal Dict
+dd = {}
+
+for item in ip:
+    if item in dd:
+        dd[item] += 1
+    else:
+        dd[item] = 1
+print(dd)
+
+# using Default Dict
+d = defaultdict(int)
+for item in ip:
+    d[item] += 1
+print(d)
+
+# Using Counter object
+c = Counter()
+for item in ip:
+    c[item] += 1
+
+print(c)
+
 # Dictionary Comprehension
+# Building a dict of word and length pair
+words = "This is a bunch of words"
+d = {word: len(word) for word in words.split()}
+
+# Flipping keys and values of the dictionary using dict comprehension
+d = {'a': 1, 'b': 2, 'c': 3}
+
+f = {value: key for key, value in d.items()}
+
+# Searching for a word in the file
+s = {word.strip() for word in open("words")}
+sentence = "Hello there. this is bunch of words Aaronical and resnub"
+w = {word: word in s for word in sentence.split()}
+
 sentence = '''Python is an easy to learn, powerful programming language. 
 It has efficient high-level data structures and a simple but effective approach to object-oriented programming.
 Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language 
@@ -224,3 +291,31 @@ print(rest)     # Prints all elements between 1st and last element
 nums = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4]
 s = {num ** 2 for num in nums}
 print(s)
+
+# Getting Unique IP's from the web server log.
+ip = {line.split(':')[0] for line in open('access-log.txt')}
+
+# Getting Unique shell from the password.txt file
+l = {line.split(":")[-1].rstrip()
+     for line in open('linux-etc-passwd.txt')
+     if line.strip() and not line.startswith("#")
+     }
+
+for item in l:
+    print(item)
+
+# Nested Comprehensions
+n = [(x, y) for x in range(5) for y in range(5)]
+
+countries = {"India": ["Bangalore", "Chennai", "Delhi", "Kolkata"],
+             "USA": ["Dallas", "New York", "Chicago"],
+             "China": ["Bejing", "Shaingai"]
+             }
+
+# Get the list of Country and City in a tuple
+# [("India", "Bangalore"),("India", "Chennai"),("India", "Delhi"),
+# ("India", "Kolkata"),("USA", "Dallas"), ("USA", "New York"),
+# ("USA", "Chicago"), ("China", "Bejing"), ("China", "Shaingai")]
+
+l = [(country, city) for country, cities in countries.items() for city in cities]
+
