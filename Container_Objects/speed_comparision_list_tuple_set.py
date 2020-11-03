@@ -33,15 +33,15 @@ def test_set():
 
 # Speed Test - Membership
 @_time
-def check_membership_list(item, _list):
+def test_membership_list(item, _list):
     print(item in _list)
 
 
 @_time
-def check_membership_tuple(item, _tuple):
+def test_membership_tuple(item, _tuple):
     print(item in _tuple)
 
 
 @_time
-def check_membership_set(item, _set):
+def test_membership_set(item, _set):
     print(item in _set)

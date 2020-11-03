@@ -172,6 +172,22 @@ count = defaultdict(int)
 
 count['apple'] += 1  # Creates the key 'apple' and increments it by 1
 
+cities = [('India', 'Bangalore'),
+          ('India', 'Chennai'),
+          ('India', 'Delhi'),
+          ('India', 'Kolkata'),
+          ('USA', 'Dallas'),
+          ('USA', 'New York'),
+          ('USA', 'Chicago'),
+          ('China', 'Bejing'),
+          ('China', 'Shaingai')
+          ]
+
+dd = defaultdict(list)
+for item in cities:
+    country, city = item
+    dd[country].append(city)
+
 # Composite Keys
 # Dictionary key must be of Immutable Type. e.g
 # Dict keys should always be Hashable. (All immutable objects are Hashable)
