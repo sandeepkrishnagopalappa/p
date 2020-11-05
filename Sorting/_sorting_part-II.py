@@ -30,7 +30,7 @@ print(sorted(portfolio, key=itemgetter('name', 'shares')))
 
 data = [
     {'fname': 'Brian', 'uid': 1003, 'lname': 'Jones'},
-    {'fname': 'David', 'uid': 1002, 'lname': 'Beazley'},
+    {'fname': 'Brain', 'uid': 1002, 'lname': 'Bones'},
     {'fname': 'John', 'uid': 1001, 'lname': 'Cleese'},
     {'fname': 'Big', 'uid': 1004, 'lname': 'Jones'},
 ]
