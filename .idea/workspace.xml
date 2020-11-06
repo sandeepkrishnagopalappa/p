@@ -21,8 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container_Objects/speed_comparision_list_tuple_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/Container_Objects/speed_comparision_list_tuple_set.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorting/_sorting_part-II.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sorting/_sorting_part-II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Container_Objects/speed_comparision_list_tuple_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/Container_Objects/membership_speed_comparision_list_tuple_set.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +89,7 @@
       <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Iterables_Iterators_And_Generators" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in speed_comparision_list_tuple_set.py">
+  <component name="RunManager" selected="Python tests.pytest in membership_speed_comparision_list_tuple_set.py">
     <configuration name="TC01" type="PythonConfigurationType" factoryName="Python">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -233,7 +232,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in speed_comparision_list_tuple_set.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in membership_speed_comparision_list_tuple_set.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -245,7 +244,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Container_Objects/speed_comparision_list_tuple_set.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Container_Objects/membership_speed_comparision_list_tuple_set.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -257,11 +256,11 @@
       <item itemvalue="Python._lists" />
       <item itemvalue="Python.tail_simulator" />
       <item itemvalue="Python tests.pytest in _decorators.py" />
-      <item itemvalue="Python tests.pytest in speed_comparision_list_tuple_set.py" />
+      <item itemvalue="Python tests.pytest in membership_speed_comparision_list_tuple_set.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in speed_comparision_list_tuple_set.py" />
+        <item itemvalue="Python tests.pytest in membership_speed_comparision_list_tuple_set.py" />
         <item itemvalue="Python._grep" />
         <item itemvalue="Python.tail_simulator" />
         <item itemvalue="Python._different_ways_of_data_representation" />
