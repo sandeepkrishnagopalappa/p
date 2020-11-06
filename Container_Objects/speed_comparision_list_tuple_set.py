@@ -3,45 +3,38 @@ import time
 
 def _time(func):
     def wrapper(*args, **kwargs):
-        start_time = time.time()
-        func(*args, **kwargs)
-        end_time = time.time()
-        print('Execution Time ',func.__name__, end_time-start_time)
+        start = time.time()
+        result = func(*args, **kwargs)
+        end = time.time()
+        print(end-start)
+        return result
     return wrapper
+
+
+l = list(range(1000000))
 
 
 @_time
 def test_list():
-    l = []
-    for i in range(50000):
-        l.append(i)
+    999999 in l
 
 
-@_time
-def test_tuple():
-    t = tuple()
-    for i in range(50000):
-        t += (i,)
+s = set(range(1000000))
 
 
 @_time
 def test_set():
-    s = set()
-    for i in range(50000):
-        s.add(i)
+    999999 in s
 
 
-# Speed Test - Membership
-@_time
-def test_membership_list(item, _list):
-    print(item in _list)
+t = tuple(range(1000000))
 
 
 @_time
-def test_membership_tuple(item, _tuple):
-    print(item in _tuple)
+def test_tuple():
+    999999 in t
 
 
-@_time
-def test_membership_set(item, _set):
-    print(item in _set)
+test_list()
+test_set()
+test_tuple()
