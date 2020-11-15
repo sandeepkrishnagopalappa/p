@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_classes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -251,8 +250,8 @@
     </configuration>
     <list>
       <item itemvalue="Python.TC01" />
-      <item itemvalue="Python._classes" />
       <item itemvalue="Python._dictionary" />
+      <item itemvalue="Python._classes" />
       <item itemvalue="Python._different_ways_of_data_representation" />
       <item itemvalue="Python._grep" />
       <item itemvalue="Python.tail_simulator" />

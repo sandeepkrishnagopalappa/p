@@ -1,4 +1,5 @@
 from itertools import count
+from datetime import datetime
 
 
 class Parent:
@@ -97,8 +98,6 @@ e2 = WeeklyEmployee('2', 'Bill', 1250)
 e3 = CommisionedEmployee('3', 'John', 1250, 100)
 calculate_payroll([e1, e2, e3])
 
-from itertools import count
-
 
 class BankAccount:
     c = count(start=1)  # To Generate Account Numbers
@@ -111,16 +110,21 @@ class BankAccount:
         self.amount = float(amount)
         self._account_no = str(next(self.c)).zfill(9)
         BankAccount.__accounts.append(self)
+        self._transactions = []
 
     def deposit(self, amount):
         self.amount += float(amount)
+        self._transactions.append(f'{datetime.now()} Deposited Amount: {amount}')
 
     def withdraw(self, amount):
         if amount <= self.amount:
             self.amount -= amount
+            self._transactions.append(f'{datetime.now()} Withdrawn Amount: {amount}')
 
     def statement(self):
-        print(f"Available Account Balance: {self.amount}")
+        for line in self._transactions:
+            print(line)
+        print(f"Total Account Balance: {self.amount}")
 
     def roi(self):
         self.amount = self.amount + self.amount * (self.interest_rate / 100)
@@ -133,6 +137,18 @@ class SavingsAccount(BankAccount):
         if amount > 10000:
             raise ValueError('Can not withdrwa more than 10000 per day')
         super().withdraw(amount)
+
+
+class SalaryAccount(BankAccount):
+    def __init__(self, fname, lname, amount):
+        self._count = 0
+        super().__init__(fname, lname, amount)
+
+    def deposit(self, amount):  # Add A/C opening Bonus of 1000rs
+        self._count += 1
+        if self._count == 1:
+            self.amount += 1000
+        super().deposit(amount)
 
 
 class SeniorCitizenAccount(BankAccount):
@@ -157,23 +173,11 @@ class SukanyaSamrudhiAccount(BankAccount):
         raise Exception("Can not withdraw")
 
 
-class SalaryAccount(BankAccount):
-    def __init__(self, fname, lname, amount):
-        self._count = 0
-        super().__init__(fname, lname, amount)
-
-    def deposit(self, amount):  # Add A/C opening Bonus of 1000rs
-        self._count += 1
-        if self._count == 1:
-            self.amount += 1000
-        super().deposit(amount)
-
-
-class LongTermSavings:
+class LongTermDeposit:
     def withdraw(self, amount):
-        self.amount -= 500  # Penalty for withdrawing from PensionAccount
+        self.amount -= 200  # Penalty for withdrawing from PensionAccount
         super().withdraw(amount)
 
 
-class RetirementAccount(LongTermSavings, BankAccount):
+class RetirementAccount(LongTermDeposit, BankAccount):
     pass
