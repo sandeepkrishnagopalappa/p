@@ -1,11 +1,10 @@
 import datetime
 import time
 
-# A class defines a set of attributes associated with a collection of objects known as
-# instances.These attributes typically include functions, which are known as methods, vari-
-# ables, which are known as class variables, and computed attributes, which are known as
-# properties.
-# Object oriented programing
+# A class is collection/set of functions that carry out various operations on
+# "Instances"
+
+# Instances are the actual objects/data that your function manipulate on.
 
 
 class Player:
@@ -119,7 +118,6 @@ mg2 = Manager('Steve', 'Jobs', 80000, (dev3, dev4))
 mg2.print_emp()
 # ================================================================
 
-
 class Covid:
     def __init__(self):
         self.records = []
@@ -138,10 +136,7 @@ class Covid:
         return c
 
     def total_cases(self):
-        total = 0.00
-        for record in self.records:
-            total += record['cases']
-        return total
+        return sum([record['cases'] for record in self.records])
 
     def cases_by_country(self):
         from collections import defaultdict
