@@ -98,6 +98,22 @@ e2 = WeeklyEmployee('2', 'Bill', 1250)
 e3 = CommisionedEmployee('3', 'John', 1250, 100)
 calculate_payroll([e1, e2, e3])
 
+from itertools import count
+from datetime import datetime
+
+
+# Custom Exceptions for Bank Transactions!!
+class TransactionDeclined(Exception):
+    pass
+
+
+class InsufficientBalance(Exception):
+    pass
+
+
+class MaxWithdrawLimtExceeded(Exception):
+    pass
+
 
 class BankAccount:
     c = count(start=1)  # To Generate Account Numbers
@@ -111,6 +127,7 @@ class BankAccount:
         self._account_no = str(next(self.c)).zfill(9)
         BankAccount.__accounts.append(self)
         self._transactions = []
+        self._transactions.append(f"{datetime.now()} ***Initial Deposit*** {self.amount}")
 
     def deposit(self, amount):
         self.amount += float(amount)
@@ -120,6 +137,8 @@ class BankAccount:
         if amount <= self.amount:
             self.amount -= amount
             self._transactions.append(f'{datetime.now()} Withdrawn Amount: {amount}')
+        else:
+            raise InsufficientBalance()
 
     def statement(self):
         for line in self._transactions:
@@ -135,13 +154,14 @@ class SavingsAccount(BankAccount):
 
     def withdraw(self, amount):
         if amount > 10000:
-            raise ValueError('Can not withdrwa more than 10000 per day')
+            raise MaxWithdrawLimtExceeded('Can not withdrawn more than 10000 per day')
         super().withdraw(amount)
 
 
 class SalaryAccount(BankAccount):
     def __init__(self, fname, lname, amount):
         self._count = 0
+        self._draft_amount = 0
         super().__init__(fname, lname, amount)
 
     def deposit(self, amount):  # Add A/C opening Bonus of 1000rs
@@ -150,13 +170,18 @@ class SalaryAccount(BankAccount):
             self.amount += 1000
         super().deposit(amount)
 
+    def overdraft(self, amount):
+        self.amount += amount
+        self._draft_amount += amount
+        self._transactions.append(f'{datetime.now()} ***Overdraft Amount Credited*** {amount}')
+
 
 class SeniorCitizenAccount(BankAccount):
     interest_rate = 5.5
 
     def withdraw(self, amount):
         if amount > 20000:
-            raise ValueError('Can not withdrwa more than 20000 per day')
+            raise MaxWithdrawLimtExceeded('Can not withdraw more than 20000 per day')
         super().withdraw(amount)
 
 
@@ -170,14 +195,14 @@ class SukanyaSamrudhiAccount(BankAccount):
 
     # Completely overriding the parent class method "withdraw"
     def withdraw(self, amount):
-        raise Exception("Can not withdraw")
+        raise TransactionDeclined("Can not withdraw")
 
 
-class LongTermDeposit:
+class PenaltyAccount:
     def withdraw(self, amount):
         self.amount -= 200  # Penalty for withdrawing from PensionAccount
         super().withdraw(amount)
 
 
-class RetirementAccount(LongTermDeposit, BankAccount):
+class RetirementAccount(PenaltyAccount, BankAccount):
     pass
