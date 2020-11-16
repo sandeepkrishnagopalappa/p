@@ -98,9 +98,6 @@ e2 = WeeklyEmployee('2', 'Bill', 1250)
 e3 = CommisionedEmployee('3', 'John', 1250, 100)
 calculate_payroll([e1, e2, e3])
 
-from itertools import count
-from datetime import datetime
-
 
 # Custom Exceptions for Bank Transactions!!
 class TransactionDeclined(Exception):
@@ -159,10 +156,10 @@ class SavingsAccount(BankAccount):
 
 
 class SalaryAccount(BankAccount):
-    def __init__(self, fname, lname, amount):
+    def __init__(self, fname, lname):
         self._count = 0
         self._draft_amount = 0
-        super().__init__(fname, lname, amount)
+        super().__init__(fname, lname, 0.00)
 
     def deposit(self, amount):  # Add A/C opening Bonus of 1000rs
         self._count += 1
@@ -171,9 +168,12 @@ class SalaryAccount(BankAccount):
         super().deposit(amount)
 
     def overdraft(self, amount):
-        self.amount += amount
-        self._draft_amount += amount
-        self._transactions.append(f'{datetime.now()} ***Overdraft Amount Credited*** {amount}')
+        if amount <= 10000:
+            self.amount += amount
+            self._draft_amount += amount
+            self._transactions.append(f'{datetime.now()} ***Overdraft Amount Credited*** {amount}')
+        else:
+            raise Exception
 
 
 class SeniorCitizenAccount(BankAccount):
