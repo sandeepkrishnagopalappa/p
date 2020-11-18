@@ -104,18 +104,21 @@ print(max(dict_temp))
 print(min(dict_temp))
 
 # Count number of words in a sentence
-sentence = ''' look into my eyes look into my eyes the eyes the eyes the eyes not around the eyes look around
-the eyes look into my eyes under
-'''
+sentence = 'hello world hello world welcome to python'
+
 words = sentence.split()
 
-words_count = {}
+word_count = {}
 
 for word in words:
-    word_count = words.count(word)
-    words_count.update({word: word_count})
+    if word in word_count:
+        word_count[word] += 1
+    else:
+        word_count[word] = 1
 
-print(words_count)
+print(word_count)
+
+print(word_count)
 
 # Nested Dictionary
 prices = {'IBM': {'current': 90.1, 'low': 88.3, 'high': 92.7}}
