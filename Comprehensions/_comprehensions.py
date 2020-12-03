@@ -143,6 +143,10 @@ for item in ip:
 
 print(c)
 
+# Using Else in Comprehension
+data = ['hello', 123, 1.2, 'world', True, 'python']
+d = [item[::-1] if isinstance(data, str) else item for item in data ]
+
 # Dictionary Comprehension
 # Building a dict of word and length pair
 words = "This is a bunch of words"
@@ -303,6 +307,9 @@ l = {line.split(":")[-1].rstrip()
 
 for item in l:
     print(item)
+
+# Getting Unique Info/Error messages from sample.log file
+messages = {line.split()[2] for line in open("sample.log") if line.strip()}
 
 # Nested Comprehensions
 n = [(x, y) for x in range(5) for y in range(5)]

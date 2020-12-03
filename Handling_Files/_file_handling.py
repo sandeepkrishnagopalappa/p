@@ -68,3 +68,56 @@ with open('read.txt') as f:
     for line in f:
         print(len(line))
 
+
+# Exercises:
+# 1. Extracting IP addresses from log file
+with open('access-log.txt') as f:
+    ip = []
+    for line in f:
+        line = line.strip()
+        if line:
+            parts = line.split()
+            ip.append(parts[0])
+
+print('Total IP"s:', len(ip))
+
+for item in ip:
+    print(item)
+
+# Using List Comprehension
+ip = [line.split()[0] for line in open('access-log.txt') if line.strip()]
+
+for item in ip:
+    print(item)
+
+# Using Set Comprehension
+unique_ip = {line.split()[0] for line in open('access-log.txt', 'r') if line.strip()}
+
+print(len(unique_ip))
+
+out_file = open('ip_list.txt', 'w')
+for item in unique_ip:
+    print(item)
+out_file.close()
+
+# Extracting Messages from sample.log
+with open('sample.log') as log:
+    for line in log:
+        line = line.strip()
+        if line:
+            parts = line.split()
+            print(parts[2])
+
+# Getting Unique Messages
+unique_messages = {line.split()[2] for line in open("sample.log") if line.strip()}
+print(unique_messages)
+# Counting Number of Messages
+from collections import defaultdict
+messages = defaultdict(int)
+with open('sample.log') as log:
+    for line in log:
+        line = line.strip()
+        if line:
+            parts = line.split()
+            messages[parts[2]] += 1
+print(messages)

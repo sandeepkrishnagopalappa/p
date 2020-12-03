@@ -1,7 +1,7 @@
 # Sets are Python's builtin data type which has the following characterstics
 #    1. Sets are unordered
 #    2. Elements inside the sets are unique
-#    3. Sets are mutable, but elements inside the set must be hasable
+#    3. Sets are mutable, but elements inside the set must be hashable
 #    4. Sets cannot be indexed or sliced
 
 # Hashable Objects:
