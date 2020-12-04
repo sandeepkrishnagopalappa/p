@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Comprehensions/sample.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Handling_Files/sample.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Handling_Files/access-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Handling_Files/employees.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Handling_Files/football.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container_Objects/_sets.py" beforeDir="false" afterPath="$PROJECT_DIR$/Container_Objects/_sets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Handling_Files/_file_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/Handling_Files/_file_handling.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

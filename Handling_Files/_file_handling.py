@@ -121,3 +121,31 @@ with open('sample.log') as log:
             parts = line.split()
             messages[parts[2]] += 1
 print(messages)
+
+# Using Counter Object
+from collections import Counter
+message_list = [line.strip().split()[2] for line in open('sample.log') if line.strip()]
+c = Counter(message_list)
+print(c)
+
+# Reading Countries from football.txt
+with open('football.txt') as log:
+    headers = next(log) # Skipping Header
+    for line in log:
+        if line.strip():
+            print(line.split()[1])
+
+# Using List Comprehension
+countries = [line.strip().split()[1] for line in open("football.txt") if line.strip()]
+
+print(len(countries))
+
+# Getting Unique Countries using set() constructor
+unique_countries = set(countries)
+
+print(len(unique_countries))
+
+# Getting Unique Countries using Set Comprehension
+set_countries = {line.strip().split()[1] for line in open("football.txt") if line.strip()}
+
+print(len(set_countries))
