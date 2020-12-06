@@ -1,20 +1,28 @@
 import re
 
-# Searching and Matching Text
-
+# ============ Characters ===================
 # . - Matches any character except new line
-# \d - Digit [0-9]
-# \D - Not a Digit [^0-9]
-# \w - Word Character [a-zA-Z0-9_]
-# \W - Not a word character [^a-zA-Z0-9_]
-# \s - White Space (space, tab, new line)
-# \S - Not White Space
+# \. - Mathes a dot.
+# \\ - Matches backslash
+# \* - Matches astrick
 
+# ============ Character set ===================
+# [abcd] - any character which matches either 'a' or 'b' or 'c' or 'd'
+# [^abcd] - any character but not 'a' or 'b' or 'c' or 'd'
+# [a-z] - any character between 'a' through 'z'
 
-# Anchors
-# ^ - Start of the String   (^ inside square brackets is inversion or NOT)
-# $ - End of the String
-# \b -  Word Boundry
+# =========== Special Sequences ================
+# \w - Word character. Same as [a-zA-Z0-9_]. Matches alphanumeric and underscore.
+# \W - Non-Word Character. Same as [^a-zA-Z0-9_]. Matches anything but word characters.
+# \d - Matches a digit. Same as [0-9]
+# \D - Matches a Non-Digit. Same as [^0-9]
+# \s - Matches only whitespace.
+# \S - Matches only Non-Whitespace.
+
+# ========== Anchors ======================
+# ^ - Start of String
+# $ - End of String
+# \b - Word boudary
 # \B - Not a word Boundry
 # [] - Matches characters in square brackets
 # [^ ] - Matches characters Not in square brackets
@@ -31,11 +39,17 @@ import re
 # {3, } - Match expression 3 or more times
 # {, 3} - Match expression 0 to 3 times
 
+# =========== Grouping ====================
+# ("A"| "B" | "C") - Either "A" or "B" or "C"
+
+
 def search_pattern(_search_pattern, _search_string):
-    # _pattern = re.compile(_search_pattern)
-    # _matches = _pattern.findall(_search_string)
     _matches = re.findall(_search_pattern, _search_string)
     return _matches
+
+
+greeting = "Hello world welcome to regular expressions in python"
+matches = re.findall("python", greeting)
 
 
 # ===================================================
@@ -52,7 +66,7 @@ for word in words:
 # Regular Expression - File extensions
 # ===================================================
 match_file_extension = r'\.[a-zA-Z]+$'
-files = ['archive.zip', 'image.jpeg', 'index.xhtml', 'archive.tar.gz']
+files = ['archive.zip', 'image.jpeg', 'index.xhtml', 'archive.tar.gz', 'python.py']
 for file in files:
     print(file, '-->', end='')
     matches = search_pattern(match_file_extension, file)

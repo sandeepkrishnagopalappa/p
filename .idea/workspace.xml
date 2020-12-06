@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Handling_Files/access-log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Handling_Files/employees.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Handling_Files/football.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RegularExpressions/airline.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RegularExpressions/errors.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RegularExpressions/memory.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Handling_Files/_file_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/Handling_Files/_file_handling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegularExpressions/_regular_expressions.py" beforeDir="false" afterPath="$PROJECT_DIR$/RegularExpressions/_regular_expressions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,10 +304,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="823" height="466" key="DebuggerActiveHint" timestamp="1596946034934">
-      <screen x="0" y="23" width="1280" height="730" />
+    <state x="315" y="191" key="#Log_Highlighting_(ideolog)" timestamp="1607175658046">
+      <screen x="0" y="25" width="1280" height="722" />
     </state>
-    <state width="823" height="466" key="DebuggerActiveHint/0.23.1280.730@0.23.1280.730" timestamp="1596946034934" />
+    <state x="315" y="191" key="#Log_Highlighting_(ideolog)/0.25.1280.722@0.25.1280.722" timestamp="1607175658046" />
     <state width="1259" height="251" key="GridCell.Tab.0.bottom" timestamp="1604755944232">
       <screen x="0" y="23" width="1280" height="730" />
     </state>
@@ -344,10 +344,6 @@
       <screen x="0" y="23" width="1280" height="730" />
     </state>
     <state x="18" y="23" key="SettingsEditor/0.23.1280.730@0.23.1280.730" timestamp="1604311289368" />
-    <state x="138" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596865239617">
-      <screen x="0" y="23" width="1280" height="730" />
-    </state>
-    <state x="138" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1280.730@0.23.1280.730" timestamp="1596865239617" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
