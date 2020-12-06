@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RegularExpressions/airline.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RegularExpressions/errors.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RegularExpressions/memory.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RegularExpressions/email.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegularExpressions/_regular_expressions.py" beforeDir="false" afterPath="$PROJECT_DIR$/RegularExpressions/_regular_expressions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
