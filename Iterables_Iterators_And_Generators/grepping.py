@@ -3,7 +3,7 @@ import time
 
 # Simulating Unix tail and grep commands
 def _tail():
-    with open('/documents/sandeep/Desktop/test.log', 'r') as f:
+    with open('/documents/sandeep/Desktop/airline_live.log', 'r') as f:
         f.seek(0, 2)
         while True:
             line = f.readline()
