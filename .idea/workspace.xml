@@ -20,18 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Handling_Files/airline.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Handling_Files/errors.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Handling_Files/memory.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/airline.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/airline_live.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/errors.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/memory.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/stocks_prices_live.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/grepping.py" beforeDir="false" afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/grepping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/tail_simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/log_file_live.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorators/_decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decorators/_decorators.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,13 +250,13 @@
     </configuration>
     <list>
       <item itemvalue="Python.TC01" />
-      <item itemvalue="Python._dictionary" />
       <item itemvalue="Python._classes" />
+      <item itemvalue="Python._dictionary" />
       <item itemvalue="Python._different_ways_of_data_representation" />
+      <item itemvalue="Python.log_file_live" />
+      <item itemvalue="Python.stocks_prices_live" />
       <item itemvalue="Python tests.pytest in _decorators.py" />
       <item itemvalue="Python tests.pytest in membership_speed_comparision_list_tuple_set.py" />
-      <item itemvalue="Python.stocks_prices_live" />
-      <item itemvalue="Python.log_file_live" />
     </list>
     <recent_temporary>
       <list>
@@ -315,26 +305,26 @@
       <screen x="0" y="25" width="1280" height="722" />
     </state>
     <state x="315" y="191" key="#Log_Highlighting_(ideolog)/0.25.1280.722@0.25.1280.722" timestamp="1607175658046" />
-    <state width="1259" height="206" key="GridCell.Tab.0.bottom" timestamp="1607859858031">
+    <state width="1259" height="206" key="GridCell.Tab.0.bottom" timestamp="1607872437600">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
     <state width="1259" height="251" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1604755944232" />
-    <state width="1259" height="206" key="GridCell.Tab.0.bottom/0.25.1280.722@0.25.1280.722" timestamp="1607859858031" />
-    <state width="1259" height="206" key="GridCell.Tab.0.center" timestamp="1607859858031">
+    <state width="1259" height="206" key="GridCell.Tab.0.bottom/0.25.1280.722@0.25.1280.722" timestamp="1607872437600" />
+    <state width="1259" height="206" key="GridCell.Tab.0.center" timestamp="1607872437599">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
     <state width="1259" height="251" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1604755944231" />
-    <state width="1259" height="206" key="GridCell.Tab.0.center/0.25.1280.722@0.25.1280.722" timestamp="1607859858031" />
-    <state width="1259" height="206" key="GridCell.Tab.0.left" timestamp="1607859858030">
+    <state width="1259" height="206" key="GridCell.Tab.0.center/0.25.1280.722@0.25.1280.722" timestamp="1607872437599" />
+    <state width="1259" height="206" key="GridCell.Tab.0.left" timestamp="1607872437599">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
     <state width="1259" height="251" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1604755944230" />
-    <state width="1259" height="206" key="GridCell.Tab.0.left/0.25.1280.722@0.25.1280.722" timestamp="1607859858030" />
-    <state width="1259" height="206" key="GridCell.Tab.0.right" timestamp="1607859858031">
+    <state width="1259" height="206" key="GridCell.Tab.0.left/0.25.1280.722@0.25.1280.722" timestamp="1607872437599" />
+    <state width="1259" height="206" key="GridCell.Tab.0.right" timestamp="1607872437600">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
     <state width="1259" height="251" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1604755944231" />
-    <state width="1259" height="206" key="GridCell.Tab.0.right/0.25.1280.722@0.25.1280.722" timestamp="1607859858031" />
+    <state width="1259" height="206" key="GridCell.Tab.0.right/0.25.1280.722@0.25.1280.722" timestamp="1607872437600" />
     <state width="1259" height="220" key="GridCell.Tab.1.bottom" timestamp="1607256946339">
       <screen x="0" y="25" width="1280" height="722" />
     </state>

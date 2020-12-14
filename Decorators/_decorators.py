@@ -1,8 +1,10 @@
 import time
 from functools import wraps, partial
-from collections import defaultdict
+import time
+import csv
+import tracemalloc
 
-# Decoretors:
+# Decorators:
 
 # A Decorator is a function that creates a wrapper around another function
 # The wrapper is a new function that works exactly like a original function
@@ -15,251 +17,134 @@ and returns another function without altering the source code of original functi
 '''
 
 
-def greet():
-    print('Hello world')
-
-
-def outer(some_function):   # Passing function as a parameter to other function
-    return some_function()
-
-
-outer(greet)    # Prints Hello world
-
-
-def print_after(seconds, func):     # Waits for 5 seconds and prints Hello world
-    import time
-    time.sleep(seconds)
-    return func()
-
-
-print_after(5, greet)
-
-
-def outer_function():
-    def inner_function():
-        print('Hello')
-    return inner_function()     # executes the inner function
-
-
-outer_function()
-
-
-def outer_function():
-    def inner_function():
-        print('Hello')
-    return inner_function     # Returns reference to the inner function waiting to be executed
-
-
-f = outer_function()
-f()
-
-
-def outer(orig_func):
-    # orig_func is the function to be wrapper
-    def inner():
-        print('Executing before original function')
-        orig_func()
-        print('Executing after original function')
-    return inner
-
-
-f = outer(greet)
-f()
-
-
-# =======================================================
-def decorated_function(orig_function):
-    def wrapper_function():
-        print('Executed Before orig Function')
-        return orig_function()
-    return wrapper_function
-
-
-@decorated_function
-def show():
-    print('Executing Show')
-
-
-show()
-
-
-# Logger Decorator
-def logging(origfunc):
-    def wrapper(*args, **kwargs):
-        print('Calling function '+origfunc.__name__)
-        return origfunc(*args, **kwargs)
-    return wrapper
-
-
-@logging
-def add(a, b):
-    print(a + b)
-
-
-@logging
-def sub(a, b):
-    print(a - b)
-
-
-@logging
-def mul(a, b):
-    print(a * b)
-
-
-add(1, 2)
-sub(2, 1)
-mul(2, 2)
-
-
-# =======================================================
-# Calculates the execution time of the function
-def timer(orig_func):
-    def wrapper_func():
-        start = time.time()
-        orig_func()
-        end = time.time()
-        return end - start
-    return wrapper_func
-
-
-@timer
-def test():
-    print('Running test method')
-    time.sleep(2.1)
-    print('Hello world')
-    
-
-def wait(orig_function):
-    def wrapper(*args):
-        print(f'Waiting for element for 60 seconds')
-        return orig_function(*args)
-    return wrapper
-
-
-@wait
-def click_element(element_name):
-    print(f'Clicked on element {element_name}')
-
-
-@wait
-def enter_text(element_name, text):
-    print(f'editing {text} in {element_name} ')
-
-
-# Preserve metadata such as the name, doc string, annotations, and calling signature are lost
-# Logger Decorator
-def logging(origfunc):
-    @wraps(origfunc)
-    def wrapper(*args, **kwargs):
-        print('Calling function '+origfunc.__name__)
-        return origfunc(*args, **kwargs)
-    return wrapper
-
-
-@logging
-def add(a, b):
-    """Adds two Numbers"""
-    print(a + b)
-
-
-print(add.__name__)     # Prints add
-print(add.__doc__)      # Prints the doc string of the original function
-
-# An important feature of the @wraps decorator is that it makes the wrapped function
-# available to you in the __wrapped__ attribute. For example, if you want to access the
-# wrapped function directly, you could do this
-
-add = add.__wrapped__
-add(1, 3)
-
-# OR
-add.__wrapped__(1, 2)
-
-# Gaining direct access to the unwrapped function behind a decorator can be useful for
-# debugging, introspection, and other operations involving functions. However, this
-# recipe only works if the implementation of a decorator properly copies metadata using
-# @wraps from the functools module
-
-
-# Decorator with arguments
-def debug(debug_mode):
-    def decorate(func):
+# Log Decorator
+def logging(msg="Hello World", debug=True):
+    def log(func):
         def wrapper(*args, **kwargs):
-            if not debug_mode:
-                return func(*args, **kwargs)
-            print('Executing method '+func.__name__ + ' in debug mode')
+            if debug:
+                print(msg, func.__name__)
             return func(*args, **kwargs)
         return wrapper
-    return decorate
+    return log
 
 
-@debug(False)    # The function is executed directly
-def add(x, y):
-    print(x + y)
+# Delay Decorator
+def _delay(_time_delay):
+    def delay(func):
+        def wrapper(*args, **kwargs):
+            time.sleep(_time_delay)
+            return func(*args, **kwargs)
+        return wrapper
+    return delay
 
 
-@debug(True)  # The function is executed with debug message
-def sub(x, y):
-    print(x - y)
+# Repeats the function 'n' times
+def _repeat(n):
+    def repeat(func):
+        def wrapper(*args, **kwargs):
+            for _ in range(n):
+                result = func(*args, **kwargs)
+            return result
+        return wrapper
+    return repeat
 
 
-# Decorators with Default arguments
-def logging(func=None, *, message='Hello'):
-    if func is None:
-        return partial(logging, message=message)
-
-    @wraps(func)
+# Time Decorator
+def _time(func):
     def wrapper(*args, **kwargs):
-        print(message)
-        func(*args, **kwargs)
+        start = time.time()
+        result = func(*args, **kwargs)
+        end = time.time()
+        print(f'Exe Time for {func.__name__} : {end-start}')
+        return result
     return wrapper
 
 
-@logging        # add = logging(add)
-def add(x, y):
-    print(x + y)
+# Positive Decorator
+def positive(func):
+    def wrapper(*args, **kwargs):
+        result = func(*args, **kwargs)
+        return abs(result)
+    return wrapper
 
 
-@logging(message='Sub')     # add = logging(message='sub')(sub(x, y))
-def sub(x, y):
-    print(x - y)
+# Memory Decorator
+def _memory(func):
+    def wrapper(*args, **kwargs):
+        tracemalloc.start()
+        result = func(*args, **kwargs)
+        print(f"Memory Usage: {tracemalloc.get_traced_memory()}")
+        tracemalloc.stop()
+        return result
+    return wrapper
 
 
-add(1, 2)
-sub(1, 2)
-
-
-# Class Decorators
-def logger(cls):
-    # cls is class
-    for key, value in cls.__dict__.items():
-        if callable(value):
-            setattr(cls, key, logging(value))
-    return cls
-
-
-@logger     # Applies to all methods of the class
-class Spam(object):
-
-    def demo1(self):
-        pass
-
-    def demo2(self):
-        pass
-
-
-# Class decorators does not work on @classmethod and @staticmethod
-# Write a Func Decorator that records the number of calls made on a function
-def record(func):
-    @wraps(func)
+# Counting Number of Function Calls.
+def func_count(func):
     def wrapper(*args, **kwargs):
         wrapper.count += 1
-        if not (args, kwargs) in wrapper.cache[func.__name__]:
-            wrapper.cache[func.__name__].append((*args, kwargs))
         return func(*args, **kwargs)
     wrapper.count = 0
-    wrapper.cache = defaultdict(list)
     return wrapper
+
+
+def type_check(exp_types, actual_values):
+    for _type, _value in zip(exp_types, actual_values):
+        if not isinstance(_value, _type):
+            raise TypeError
+
+
+# Decorator to Type Check.
+def validate(**typs):
+    def _validate(func):
+        def wrapper(*args, **kwargs):
+            _expected_types = list(typs.values())
+            _actual_values = list(args)
+            type_check(_expected_types, _actual_values)
+            return func(*args, **kwargs)
+        return wrapper
+    return _validate
+
+
+@_memory
+def read_csv():
+    with open('data/covid_data.csv') as f:
+        records =[]
+        rows = csv.reader(f)
+        headers = next(rows)
+        for row in rows:
+            records.append((row[2], row[3], row[5]))
+        return records
+
+
+@_memory
+def test_list():
+    a = []
+    for i in range(1000000):
+        a.append(i)
+    return a
+
+
+@_memory
+def test_tuple():
+    a = tuple(list(range(1000000)))
+    return a
+
+
+@validate(a=int, b=int)
+def add(a, b):
+    print("Executing Add")
+    return a+b
+
+
+@validate(a=int, b=int)
+def sub(a, b):
+    return a-b
+
+
+@validate(name=str, age=int, pay=float)
+def greet(name, age, pay):
+    print(f"Hello {name} You are {age} years of age and you have {pay}")
 
 
 # Class Decorator
@@ -271,84 +156,3 @@ class Record:
     def __call__(self, *args, **kwargs):
         self._count += 1
         return self.func(*args, **kwargs)
-
-
-# Class Decorator with Arguments
-class log:
-    def __init__(self, *args, **kwargs):
-        self.args = args
-        self.kwargs = kwargs
-
-    def __call__(self, func):
-        def wrapper(*args, **kwargs):
-            print('Calling ',self.args)
-            print(self.kwargs)
-            return func(*args, **kwargs)
-        return wrapper
-
-
-# Returning property object
-def typed_property(name, expected_type):
-    private_name = '_'+name
-
-    def fget(self):
-        print('Running Getter')
-        return getattr(self, private_name)
-
-    def fset(self, value):
-        print('Running Setter')
-        if not isinstance(value, expected_type):
-            raise TypeError('Expected ', expected_type)
-        return setattr(self, private_name, value)
-
-    return property(fget, fset)
-
-
-# Using property decorator
-def typed_property(name, expected_type):
-    private_name = '_'+name
-
-    @property
-    def prop(self):
-        print('Running Getter')
-        return getattr(self, private_name)
-
-    @prop.setter
-    def prop(self, value):
-        print('Running Setter')
-        if not isinstance(value, expected_type):
-            raise TypeError('Expected ', expected_type)
-        return setattr(self, private_name, value)
-
-    return prop
-
-
-# Decorator to check the data type of a function arguments
-def validate(**tys):
-    def decorate(func):
-        def wrapper(*args, **kwargs):
-            _types = list(tys.values())
-            _args = list(args)
-            for _type, _arg in zip(_types, _args):
-                if not isinstance(_arg, _type):
-                    raise TypeError(_arg ,"Must be a type of ", _type)
-            return func(*args, **kwargs)
-        return wrapper
-    return decorate
-
-
-# Imporved Version
-def check(_types, _values):
-    for _type, _value in zip(_types, _values):
-        if not isinstance(_value, _type):
-            raise TypeError
-
-
-def validate(**tys):
-    def decorate(func):
-        def wrapper(*args, **kwargs):
-            _tys = list(tys.values())
-            check(_tys, args)
-            return func(*args, **kwargs)
-        return wrapper
-    return decorate
