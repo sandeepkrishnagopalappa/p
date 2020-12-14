@@ -1,3 +1,5 @@
+from collections import Counter
+from collections import defaultdict
 # File Objects
 
 # r ---> Read Only, w ---> Write Only, a ---> Append, r+ ---> Read and Write
@@ -112,7 +114,6 @@ with open('sample.log') as log:
 unique_messages = {line.split()[2] for line in open("sample.log") if line.strip()}
 print(unique_messages)
 # Counting Number of Messages
-from collections import defaultdict
 messages = defaultdict(int)
 with open('sample.log') as log:
     for line in log:
@@ -123,14 +124,13 @@ with open('sample.log') as log:
 print(messages)
 
 # Using Counter Object
-from collections import Counter
 message_list = [line.strip().split()[2] for line in open('sample.log') if line.strip()]
 c = Counter(message_list)
 print(c)
 
 # Reading Countries from football.txt
 with open('football.txt') as log:
-    headers = next(log) # Skipping Header
+    headers = next(log)     # Skipping Header
     for line in log:
         if line.strip():
             print(line.split()[1])

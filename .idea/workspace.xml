@@ -21,7 +21,20 @@
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decorators/_decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Decorators/_decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handling_Files/_file_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/Handling_Files/_file_handling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/_generators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/_iterator_protocol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/actual_lines.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/actual_lines.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/airline.log" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/airline.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/airline_live.log" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/airline_live.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/errors.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/grepping.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/grepping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/log_file_live.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/log_file_live.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/memory.log" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/memory.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/sample.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/stocks_prices_live.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/stocks_prices_live.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/words.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,11 +263,11 @@
     </configuration>
     <list>
       <item itemvalue="Python.TC01" />
-      <item itemvalue="Python._classes" />
       <item itemvalue="Python._dictionary" />
+      <item itemvalue="Python._classes" />
       <item itemvalue="Python._different_ways_of_data_representation" />
-      <item itemvalue="Python.log_file_live" />
       <item itemvalue="Python.stocks_prices_live" />
+      <item itemvalue="Python.log_file_live" />
       <item itemvalue="Python tests.pytest in _decorators.py" />
       <item itemvalue="Python tests.pytest in membership_speed_comparision_list_tuple_set.py" />
     </list>
