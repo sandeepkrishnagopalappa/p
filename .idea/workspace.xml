@@ -20,18 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/code.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comprehensions/linux-etc-passwd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Handling_Files/linux-etc-passwd.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comprehensions/shoe-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Handling_Files/data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/_generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/_generators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/actual_lines.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/airline_live.log" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/airline_live.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/log_file_live.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/log_file_live.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/sample.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/stocks_prices_live.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/stocks_prices_live.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comprehensions/nums.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comprehensions/read.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comprehensions/wcfile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comprehensions/words" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Container_Objects/_slicing_lists_strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Container_Objects/_slicing_lists_strings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Handling_Files/_file_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/Handling_Files/_file_handling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handling_Files/football.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handling_Files/memory.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handling_Files/read.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handling_Files/to_file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handling_Files/words.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handling_Files/write.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

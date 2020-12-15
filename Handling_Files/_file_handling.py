@@ -75,21 +75,12 @@ with open('access-log.txt') as f:
             parts = line.split()
             ip.append(parts[0])
 
-print('Total IP"s:', len(ip))
-
-for item in ip:
-    print(item)
-
 # Using List Comprehension
 ip = [line.split()[0] for line in open('access-log.txt') if line.strip()]
-
-for item in ip:
-    print(item)
 
 # Using Set Comprehension
 unique_ip = {line.split()[0] for line in open('access-log.txt', 'r') if line.strip()}
 
-print(len(unique_ip))
 
 out_file = open('ip_list.txt', 'w')
 for item in unique_ip:
@@ -104,10 +95,10 @@ with open('sample.log') as log:
             parts = line.split()
             print(parts[2])
 
-# Getting Unique Messages
+# Getting Unique Messages (Set comprehension)
 unique_messages = {line.split()[2] for line in open("sample.log") if line.strip()}
-print(unique_messages)
-# Counting Number of Messages
+
+# Counting Number of INFO, WARN, TRACE Messages.
 messages = defaultdict(int)
 with open('sample.log') as log:
     for line in log:
@@ -115,7 +106,6 @@ with open('sample.log') as log:
         if line:
             parts = line.split()
             messages[parts[2]] += 1
-print(messages)
 
 # Using Counter Object
 message_list = [line.strip().split()[2] for line in open('sample.log') if line.strip()]
@@ -137,12 +127,8 @@ print(len(countries))
 # Getting Unique Countries using set() constructor
 unique_countries = set(countries)
 
-print(len(unique_countries))
-
 # Getting Unique Countries using Set Comprehension
 set_countries = {line.strip().split()[1] for line in open("football.txt") if line.strip()}
-
-print(len(set_countries))
 
 # Handling Files using Comprehensions!
 # Getting Unique IP's from the web server log.
@@ -212,6 +198,3 @@ def make_dict(line):
 
 
 s = [make_dict(line) for line in open('data.txt')]
-
-for item in s:
-    print(item)
