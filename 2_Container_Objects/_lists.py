@@ -45,7 +45,7 @@ b = a.copy()
   # OR
 b = a[:]
 
-# Sorting List's
+# 6_Sorting List's
 names.sort()    # Sorts the List in Alphabetical Order
 # sort method modifies the list inplace.
 names.sort(reverse=True)    # Sorts the List in Decending Order

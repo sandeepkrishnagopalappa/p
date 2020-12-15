@@ -4,7 +4,7 @@ import json
 profiles = {'profile': [
     {'fname': 'steve', 'lname': 'jobs'},
     {'fname': 'steve', 'lname': 'jobs'}
-]
+    ]
 }
 
 with open('profiles.json', 'w') as f:

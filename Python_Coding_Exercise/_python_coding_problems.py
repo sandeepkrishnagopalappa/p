@@ -78,7 +78,7 @@ print(uniques_only(squares))
 # ===============================================================
 
 
-# Sorting the iterable if it is unhashable
+# 6_Sorting the iterable if it is unhashable
 def uniques_only(iterable, key=lambda item: item):
     seen = set()
     for item in iterable:
@@ -96,7 +96,7 @@ d = [{'fname': 'steve', 'lname': 'jobs'},
 print(list(uniques_only(d, key=lambda dt: dt.get('fname'))))
 
 
-# Sorting names list based on lastname
+# 6_Sorting names list based on lastname
 names = ['steve jobs', 'bill gates', 'larry ellison', 'john doe']
 print(sorted(names, key=lambda name: name.split()[1]))
 

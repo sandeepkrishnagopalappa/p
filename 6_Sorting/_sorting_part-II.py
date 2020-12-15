@@ -1,13 +1,13 @@
 import heapq
 from operator import itemgetter, attrgetter
 
-# Custom Sorting
+# Custom 6_Sorting
 names = ['apple', 'google', 'yahoo', 'amazon', 'facebook', 'instagram', 'microsoft']
 
-# Sorting the list based on the number of characters of the list item
+# 6_Sorting the list based on the number of characters of the list item
 print(sorted(names, key=len))
 
-# Sorting the list based on the last character of the list item
+# 6_Sorting the list based on the last character of the list item
 print(sorted(names, key=lambda name: name[-1]))
 
 portfolio = [
@@ -23,7 +23,7 @@ print(sorted(portfolio, key=lambda d: d.get('name')))   # Sorts on the key 'name
 print(sorted(portfolio, key=lambda d: d.get('shares')))   # Sorts on the key 'shares'
 print(sorted(portfolio, key=lambda d: d.get('price')))   # Sorts on the key 'price'
 
-# Sorting using itemgetter
+# 6_Sorting using itemgetter
 print(sorted(portfolio, key=itemgetter('name')))
 
 print(sorted(portfolio, key=itemgetter('name', 'shares')))
@@ -39,7 +39,7 @@ print(sorted(data, key=itemgetter('fname', 'lname')))
 print(sorted(data, key=itemgetter('lname', 'fname')))
 
 
-# Sorting Employee Class
+# 6_Sorting Employee Class
 class Employee:
     def __init__(self, fname, lname, salary):
         self.fname = fname
@@ -95,7 +95,7 @@ print(sorted(li_emp))
 print(heapq.nlargest(2, [(emp.salary, emp.full_name()) for emp in li_emp]))
 print(heapq.nsmallest(2, [(emp.salary, emp.full_name()) for emp in li_emp]))
 
-# Sorting using attgetter
+# 6_Sorting using attgetter
 print(sorted(li_emp, key=attrgetter('salary')))
 
 # Merging and sorting two different lists

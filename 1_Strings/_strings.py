@@ -1,11 +1,11 @@
-# Working with Strings or Textaul Data
+# Working with 1_Strings or Textaul Data
 # All Variables should in Lower Case. If there are more than one word in the Variable,
 # then we separate with under scores. And this is PYTHON CONVENTION
 # =================================================================
 my_message = 'Hello World'
 print(my_message)
 
-# We can use both single and Double Quotes for the Strings.
+# We can use both single and Double Quotes for the 1_Strings.
 # If you hava single Quotes in the actual String, we can represent the original String in Double Quotes.
 # If the String actual String contains Double Quotes, we can use single Quotes to represent the String.
 
@@ -50,7 +50,7 @@ print('Hello', end='')
 print('World', end='')
 print('Welcome', end='')
 
-# String Functions
+# String 5_Functions
 print(len(my_message))      # Prints the Length of the String. Index starts from Zero
 print(my_message.upper())   # Prints the String in Upper Case
 print(my_message.lower())   # Prints the String in Lower Case
@@ -81,7 +81,7 @@ print(my_string.rstrip('='))    # prints ***************Hello world
 print(my_string.lstrip('*'))    # prints Hello world===================
 print(my_string.strip('=*'))    # Prints Hello world
 
-# Aligning the Strings
+# Aligning the 1_Strings
 filename = 'youtube.txt'
 print(filename.ljust(10))
 print(filename.rjust(10))

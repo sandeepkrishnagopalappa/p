@@ -1,14 +1,14 @@
 import math
 
 '''
-Comprehensions in Python is a way to build an iterable object in one expression without the need of traditional
+4_Comprehensions in Python is a way to build an iterable object in one expression without the need of traditional
 for loop.
 '''
-# List Comprehensions are used for building a new list
+# List 4_Comprehensions are used for building a new list
 # Square Numbers_And_Booleans in the list. Using 'for' loop
 nums = [1, 2, 3, 4, 5]
 
-# Square Numbers in the list. Using List Comprehensions
+# Square Numbers in the list. Using List 4_Comprehensions
 list_evens = [num ** 2 for num in nums]
 
 # Convert to upper case
@@ -154,7 +154,7 @@ nums = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4]
 s = {num ** 2 for num in nums}
 print(s)
 
-# Nested Comprehensions
+# Nested 4_Comprehensions
 n = [(x, y) for x in range(5) for y in range(5)]
 
 countries = {"India": ["Bangalore", "Chennai", "Delhi", "Kolkata"],

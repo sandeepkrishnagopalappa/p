@@ -20,19 +20,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Python-Topics.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~$Python-Topics.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comprehensions/nums.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comprehensions/read.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comprehensions/wcfile.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comprehensions/words" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Container_Objects/_slicing_lists_strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Container_Objects/_slicing_lists_strings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Handling_Files/_file_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/Handling_Files/_file_handling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Handling_Files/football.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Handling_Files/memory.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Handling_Files/read.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Handling_Files/to_file.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Handling_Files/words.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Handling_Files/write.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/4_Comprehensions/_comprehensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comprehensions/access-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/4_Comprehensions/access-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comprehensions/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/4_Comprehensions/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comprehensions/sample.log" beforeDir="false" afterPath="$PROJECT_DIR$/4_Comprehensions/sample.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conditional_And_Looping/_conditionals_and_looping.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_Booleans_And_Unpacking_Sequences/_conditionals_and_looping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Container_Objects/_dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_Container_Objects/_dictionary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Container_Objects/_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_Container_Objects/_lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Container_Objects/_sets.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_Container_Objects/_sets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Container_Objects/_slicing_lists_strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_Container_Objects/_slicing_lists_strings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Container_Objects/membership_speed_comparision_list_tuple_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_Container_Objects/membership_speed_comparision_list_tuple_set.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorators/_decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/8_Decorators/_decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decorators/_functions_as_normal_objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/8_Decorators/_functions_as_normal_objects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exception_Handling/_exception_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/10_Exception_Handling/_exception_handling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exception_Handling/portfolio.csv" beforeDir="false" afterPath="$PROJECT_DIR$/10_Exception_Handling/portfolio.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exception_Handling/read.txt" beforeDir="false" afterPath="$PROJECT_DIR$/10_Exception_Handling/read.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/_anonymous_functions_lambda.py" beforeDir="false" afterPath="$PROJECT_DIR$/5_Functions/_anonymous_functions_lambda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/5_Functions/_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/_generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/_generators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/_iterator_protocol.py" beforeDir="false" afterPath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/_iterator_protocol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/airline.log" beforeDir="false" afterPath="$PROJECT_DIR$/11_RegularExpressions/airline.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/airline_live.log" beforeDir="false" afterPath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/airline_live.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/code.txt" beforeDir="false" afterPath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/code.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/11_RegularExpressions/errors.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/log_file_live.py" beforeDir="false" afterPath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/log_file_live.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/stocks_prices_live.py" beforeDir="false" afterPath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/stocks_prices_live.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handling_Files/_file_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/7_Handling_Files/_file_handling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handling_Files/access-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/7_Handling_Files/access-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handling_Files/airline.log" beforeDir="false" afterPath="$PROJECT_DIR$/7_Handling_Files/airline.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handling_Files/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/7_Handling_Files/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handling_Files/employees.csv" beforeDir="false" afterPath="$PROJECT_DIR$/7_Handling_Files/employees.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handling_Files/errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/7_Handling_Files/errors.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handling_Files/from_file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/7_Handling_Files/from_file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handling_Files/linux-etc-passwd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/7_Handling_Files/linux-etc-passwd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Handling_Files/sample.log" beforeDir="false" afterPath="$PROJECT_DIR$/7_Handling_Files/sample.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Numbers_And_Booleans/_booleans.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_Booleans_And_Unpacking_Sequences/_booleans.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Numbers_And_Booleans/_integers_and_floats.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_Booleans_And_Unpacking_Sequences/_integers_and_floats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_advanced_multiple_inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_advanced_multiple_inheritance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_composition.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_composition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_covid_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_covid_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_csv_reading_objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_csv_reading_objects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_dictionaries_objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_dictionaries_objects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_encapsulation_attr_access.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_encapsulation_attr_access.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_inheritance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_inheritance_practical_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_inheritance_practical_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_magic_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_magic_methods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_magic_methods_covid_data_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_magic_methods_covid_data_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_managed_descriptors.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_managed_descriptors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/_restricting_invalid_attribute_access.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_restricting_invalid_attribute_access.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Object_Oriented_Concepts/employee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/employee.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegularExpressions/_regular_expressions.py" beforeDir="false" afterPath="$PROJECT_DIR$/11_RegularExpressions/_regular_expressions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegularExpressions/airline.log" beforeDir="false" afterPath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/airline.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegularExpressions/apache.log" beforeDir="false" afterPath="$PROJECT_DIR$/11_RegularExpressions/apache.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegularExpressions/baby_names.txt" beforeDir="false" afterPath="$PROJECT_DIR$/11_RegularExpressions/baby_names.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegularExpressions/email.log" beforeDir="false" afterPath="$PROJECT_DIR$/11_RegularExpressions/email.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegularExpressions/errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/errors.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegularExpressions/memory.log" beforeDir="false" afterPath="$PROJECT_DIR$/11_RegularExpressions/memory.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting/_sorting_part-I.py" beforeDir="false" afterPath="$PROJECT_DIR$/6_Sorting/_sorting_part-I.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorting/_sorting_part-II.py" beforeDir="false" afterPath="$PROJECT_DIR$/6_Sorting/_sorting_part-II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Strings/_strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_Strings/_strings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unpacking_Sequences/_unpacking_sequences.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_Booleans_And_Unpacking_Sequences/_unpacking_sequences.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Working_With_JSON/_working_with_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/13_Working_With_JSON/_working_with_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Working_With_JSON/json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/13_Working_With_JSON/json.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Working_With_JSON/json_dump.json" beforeDir="false" afterPath="$PROJECT_DIR$/13_Working_With_JSON/json_dump.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Working_With_JSON/profiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/13_Working_With_JSON/profiles.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,11 +143,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/3_Booleans_And_Unpacking_Sequences" />
+      <recent name="$PROJECT_DIR$/3_Unpacking_Sequences" />
       <recent name="$PROJECT_DIR$/Handling_Files" />
       <recent name="$PROJECT_DIR$/Container_Objects" />
       <recent name="$PROJECT_DIR$/Object_Oriented_Concepts" />
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Exception_Handling" />
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Variable_Scope" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Handling_Files" />
@@ -253,14 +310,14 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Decorators" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/8_Decorators" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Decorators/_decorators.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/8_Decorators/_decorators.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>

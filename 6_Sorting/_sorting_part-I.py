@@ -18,7 +18,7 @@ tup = (1, 2, 5, 3, 9, 8, 6, 7, 0)
 sorted_tup = sorted(tup)
 print('Sorted Tuple ', sorted_tup)
 
-# Sorting Dictionary
+# 6_Sorting Dictionary
 
 profile = {'fname': 'mark', 'lname': 'rob', 'language': ['java', 'python'], 'salary': 90000, 'age': 30}
 

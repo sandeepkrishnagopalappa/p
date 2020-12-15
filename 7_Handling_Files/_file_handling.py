@@ -130,7 +130,7 @@ unique_countries = set(countries)
 # Getting Unique Countries using Set Comprehension
 set_countries = {line.strip().split()[1] for line in open("football.txt") if line.strip()}
 
-# Handling Files using Comprehensions!
+# Handling Files using 4_Comprehensions!
 # Getting Unique IP's from the web server log.
 ip = {line.split(':')[0] for line in open('access-log.txt')}
 
