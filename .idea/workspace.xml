@@ -20,21 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/code.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Comprehensions/_comprehensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comprehensions/linux-etc-passwd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Handling_Files/linux-etc-passwd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comprehensions/shoe-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Handling_Files/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/_generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/_generators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/actual_lines.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/airline_live.log" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/airline_live.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/log_file_live.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/log_file_live.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/sample.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/stocks_prices_live.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/stocks_prices_live.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Handling_Files/_file_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/Handling_Files/_file_handling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/_generators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/_iterables_iterators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/_iterator_protocol.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/actual_lines.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/actual_lines.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/airline.log" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/airline.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/airline_live.log" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/airline_live.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/errors.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/grepping.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/grepping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/log_file_live.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/log_file_live.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/memory.log" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/memory.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/sample.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/stocks_prices_live.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/stocks_prices_live.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iterables_Iterators_And_Generators/words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Generators_and_Iterator_Protocol/words.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +84,13 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Handling_Files" />
+      <recent name="$PROJECT_DIR$/Container_Objects" />
+      <recent name="$PROJECT_DIR$/Object_Oriented_Concepts" />
+      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Exception_Handling" />
+      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Variable_Scope" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Handling_Files" />
       <recent name="$PROJECT_DIR$/Comprehensions" />
@@ -94,15 +98,8 @@
       <recent name="$PROJECT_DIR$/Itertools_Module" />
       <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Exception_Handling" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Container_Objects" />
-      <recent name="$PROJECT_DIR$/Object_Oriented_Concepts" />
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Exception_Handling" />
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Variable_Scope" />
-      <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Random_Module" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.log_file_live">
+  <component name="RunManager" selected="Python.log_file_live (1)">
     <configuration name="TC01" type="PythonConfigurationType" factoryName="Python">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,27 +113,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\Users\ssuryaprasad\PycharmProjects\Practice\pytest_module\test_case.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="_classes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Practice" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Object_Oriented_Concepts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Object_Oriented_Concepts/_classes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -187,6 +163,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="log_file_live (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Generators_and_Iterator_Protocol" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Generators_and_Iterator_Protocol/log_file_live.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="log_file_live" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -200,6 +197,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Iterables_Iterators_And_Generators/log_file_live.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="stocks_prices_live (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Generators_and_Iterator_Protocol" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Generators_and_Iterator_Protocol/stocks_prices_live.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -245,39 +263,23 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in membership_speed_comparision_list_tuple_set.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Practice" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Container_Objects" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Container_Objects/membership_speed_comparision_list_tuple_set.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.TC01" />
       <item itemvalue="Python._dictionary" />
-      <item itemvalue="Python._classes" />
       <item itemvalue="Python._different_ways_of_data_representation" />
       <item itemvalue="Python.stocks_prices_live" />
       <item itemvalue="Python.log_file_live" />
+      <item itemvalue="Python.stocks_prices_live (1)" />
+      <item itemvalue="Python.log_file_live (1)" />
       <item itemvalue="Python tests.pytest in _decorators.py" />
-      <item itemvalue="Python tests.pytest in membership_speed_comparision_list_tuple_set.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.log_file_live (1)" />
+        <item itemvalue="Python.stocks_prices_live (1)" />
         <item itemvalue="Python.log_file_live" />
         <item itemvalue="Python.stocks_prices_live" />
         <item itemvalue="Python._different_ways_of_data_representation" />
-        <item itemvalue="Python._classes" />
-        <item itemvalue="Python tests.pytest in membership_speed_comparision_list_tuple_set.py" />
       </list>
     </recent_temporary>
   </component>
@@ -318,26 +320,30 @@
       <screen x="0" y="25" width="1280" height="722" />
     </state>
     <state x="315" y="191" key="#Log_Highlighting_(ideolog)/0.25.1280.722@0.25.1280.722" timestamp="1607175658046" />
-    <state width="1259" height="206" key="GridCell.Tab.0.bottom" timestamp="1607872437600">
+    <state width="1003" height="246" key="GridCell.Tab.0.bottom" timestamp="1608030282888">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
     <state width="1259" height="251" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1604755944232" />
-    <state width="1259" height="206" key="GridCell.Tab.0.bottom/0.25.1280.722@0.25.1280.722" timestamp="1607872437600" />
-    <state width="1259" height="206" key="GridCell.Tab.0.center" timestamp="1607872437599">
+    <state width="1003" height="246" key="GridCell.Tab.0.bottom/0.25.1024.690@0.25.1024.690" timestamp="1608030017417" />
+    <state width="1003" height="246" key="GridCell.Tab.0.bottom/0.25.1280.722@0.25.1280.722" timestamp="1608030282888" />
+    <state width="1003" height="246" key="GridCell.Tab.0.center" timestamp="1608030282887">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
     <state width="1259" height="251" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1604755944231" />
-    <state width="1259" height="206" key="GridCell.Tab.0.center/0.25.1280.722@0.25.1280.722" timestamp="1607872437599" />
-    <state width="1259" height="206" key="GridCell.Tab.0.left" timestamp="1607872437599">
+    <state width="1003" height="246" key="GridCell.Tab.0.center/0.25.1024.690@0.25.1024.690" timestamp="1608030017416" />
+    <state width="1003" height="246" key="GridCell.Tab.0.center/0.25.1280.722@0.25.1280.722" timestamp="1608030282887" />
+    <state width="1003" height="246" key="GridCell.Tab.0.left" timestamp="1608030282887">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
     <state width="1259" height="251" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1604755944230" />
-    <state width="1259" height="206" key="GridCell.Tab.0.left/0.25.1280.722@0.25.1280.722" timestamp="1607872437599" />
-    <state width="1259" height="206" key="GridCell.Tab.0.right" timestamp="1607872437600">
+    <state width="1003" height="246" key="GridCell.Tab.0.left/0.25.1024.690@0.25.1024.690" timestamp="1608030017416" />
+    <state width="1003" height="246" key="GridCell.Tab.0.left/0.25.1280.722@0.25.1280.722" timestamp="1608030282887" />
+    <state width="1003" height="246" key="GridCell.Tab.0.right" timestamp="1608030282887">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
     <state width="1259" height="251" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1604755944231" />
-    <state width="1259" height="206" key="GridCell.Tab.0.right/0.25.1280.722@0.25.1280.722" timestamp="1607872437600" />
+    <state width="1003" height="246" key="GridCell.Tab.0.right/0.25.1024.690@0.25.1024.690" timestamp="1608030017417" />
+    <state width="1003" height="246" key="GridCell.Tab.0.right/0.25.1280.722@0.25.1280.722" timestamp="1608030282887" />
     <state width="1259" height="220" key="GridCell.Tab.1.bottom" timestamp="1607256946339">
       <screen x="0" y="25" width="1280" height="722" />
     </state>

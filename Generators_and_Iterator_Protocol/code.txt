@@ -1,0 +1,15 @@
+# This is commented line
+
+def greet(name):
+    print(f'Hello {name}')
+
+# The above function greets the user
+
+print("Hello world!")
+
+greet("Sandeep")
+
+def spam():
+    pass
+
+# This is a comment

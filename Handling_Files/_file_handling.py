@@ -49,12 +49,6 @@ with open('write.txt', 'a') as f:
     f.write('Hello world')
     f.write('\n')
 
-# Working with Multiple Files
-with open('from_file.txt', 'r') as wf:
-    with open('to_file.txt', 'w') as wt:
-        for line in wf:
-            wt.write(line)
-
 # Printing the line's with line numbers
 with open('from_file.txt') as f:
     for linenumber, line in enumerate(f, start=1):
@@ -149,3 +143,75 @@ print(len(unique_countries))
 set_countries = {line.strip().split()[1] for line in open("football.txt") if line.strip()}
 
 print(len(set_countries))
+
+# Handling Files using Comprehensions!
+# Getting Unique IP's from the web server log.
+ip = {line.split(':')[0] for line in open('access-log.txt')}
+
+# Getting user names from password.txt
+l = [line.split(":")[0] .strip() for line in open('linux-etc-passwd.txt') if not line.strip().startswith("#")]
+
+# Getting Unique shell from the password.txt file
+l = {line.split(":")[-1].rstrip()
+     for line in open('linux-etc-passwd.txt')
+     if line.strip() and not line.startswith("#")
+     }
+
+for item in l:
+    print(item)
+
+# Getting only ip addresses from web server log. Also, find out how may times
+# Each IP address is appears in the list and create a dictionary.
+ip = [line.split()[0] for line in open("access-log.txt")]
+
+# Using Normal Dict
+dd = {}
+
+for item in ip:
+    if item in dd:
+        dd[item] += 1
+    else:
+        dd[item] = 1
+print(dd)
+
+# using Default Dict
+d = defaultdict(int)
+for item in ip:
+    d[item] += 1
+print(d)
+
+# Using Counter object
+c = Counter()
+for item in ip:
+    c[item] += 1
+
+print(c)
+
+# Counts the occurance of each word in the text file and prints the most and least repeated words
+with open('read.txt', 'r') as f:
+    text = f.read()
+    d = {
+        word: text.count(word)
+        for word in text.split(' ')
+    }
+
+# Unpacking List the rest of the words between least and maximum
+least, *rest, maximum = sorted(d.items(), key=lambda name: name[-1])
+print(least)    # Prints the word with least occurance
+print(maximum)  # Prints the word with maximum occurance
+print(rest)     # Prints all elements between 1st and last element
+
+# Getting Unique Info/Error messages from sample.log file
+messages = {line.split()[2] for line in open("sample.log") if line.strip()}
+
+
+# list of Dicts from shoe data
+def make_dict(line):
+    data = line.strip().split('\t')
+    return {"brand": data[0], "color": data[1], "size": data[2]}
+
+
+s = [make_dict(line) for line in open('data.txt')]
+
+for item in s:
+    print(item)

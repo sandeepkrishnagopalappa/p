@@ -1,4 +1,5 @@
 from itertools import count
+import time
 
 '''
 A Generator is a function that returns an iterator. It generates values using the 'yield' keyword.
@@ -8,47 +9,12 @@ when called on next() function a raises StopIteration exception when there are n
 '''
 
 
-# Traditional way of getting even numbers
-def get_even_numbers(stream):
-    list_even = []
-    for num in stream:
-        if num % 2 == 0:
-            list_even.append(num)
-    return list_even
-
-
-# list_evens = get_even_numbers(count())    # Infinite Loop [0, 1, 2, 3, 4..............]
-
-
-# Using Generators (PYTHONIC approach)
-def even_numbers(stream):
-    for num in stream:
-        if num % 2 == 0:
-            yield num
-
-# Generator expression
-# even_numbers = (num for num in stream if num % 2 == 0)
-
-
-my_nums = list(range(0, 10))
-# We can iterate over the loop
-for my_num in even_numbers(my_nums):
-    print(my_num)
-
-gen_even = even_numbers(count())    # Lazy .. [0, 1, 2, 3, 4..............]
-print(next(gen_even))
-print(next(gen_even))
-print(next(gen_even))
-
-
-# Generates a range of floating point numbers
-def frange(start, stop, step):
-    while start <= stop:
-        yield start
-        start += step
-
-
-print(list(frange(0, 5, 0.5)))  # [0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0]
+# Simple Generator
+def func():
+    print('Hello')
+    yield "Hi"
+    print('World')
+    yield "Bye"
 
 
 # Countdown Generator
@@ -60,161 +26,79 @@ def countdown(start):
     print('Done!')
 
 
-print(list(countdown(10)))
+# Generates a range of floating point numbers
+def frange(start, stop, step):
+    while start <= stop:
+        yield start
+        start += step
 
 
-# Produces squares of the number (Using Generators)
-def square_numbers(stream):
-    for num in stream:
-        yield num ** 2
-
-
-nums = [1, 2, 3, 4, 5, 6, 7]
-n = square_numbers(nums)
-print(next(n), end=',')
-print(next(n), end=',')
-print(next(n), end=',')
-print(next(n))
-
-# Using for loop
-for n in square_numbers(nums):
-    print(n, end=',')
-    
-
-# Check if the Number is Prime or Not Traditional approach
-def isprime(number):
-    for i in range(2, number):
-        if number % i == 0:
-            return False
-        return True
-
-
-# Check if the Number is Prime Using Generator expression
-def isprime_gen(number):
-    return all(number % i for i in range(2, number))
-
-
-print(isprime_gen(5))
-
-
-def actual_lines(any_iterable):
-    for line in any_iterable:
-        if not line.strip():
-            continue
-        if line.startswith('#'):
-            continue
-        yield line
-# actual_lines = (line for line in lines if not line.startswith('#') and line.strip())
-# =========================================================
-
-
-# Passing a file object to Generator
-with open('words.txt') as file:
-    for line in actual_lines(file):
-        with open('actual_lines.txt', 'a') as al:
-            al.write(line)
-
-# Passing a List to Generator
-names = ['apple', 'yahoo', '#google', 'gmail', '#facebook']
-for name in actual_lines(names):
-    print(name)
-
-# Passing a string object to Generator
-my_string = 'abcd#xyz'
-for c in actual_lines(my_string):
-    print(c, end='')
-
-# Passing a dictionary object to Generator
-my_dict = {'fname': 'steve', 'lname': 'jobs', '#company': 'apple'}
-for d in actual_lines(my_dict):
-    print(d)
-# =========================================================
-
-
-def grep(file_object, text_to_search):
-    for line in file_object:
-        if text_to_search in line:
-            yield line
-
-
-with open('words.txt') as f:
-    g = grep(f, 'three')
-    for match in g:
-        print(match, end='')
-
-
-# Removing Duplicates form the sequence
-def dedupe(iterable):
-    seen = set()
+# Generator produces even numbers
+def evens(iterable):
+    print('Genertor Wakes up!!')
     for item in iterable:
-        if item not in seen:
+        if item % 2 == 0:
             yield item
-            seen.add(item)
+            print("Runing After Yield")
 
 
-names = ['apple', 'google', 'apple', 'yahoo', 'gmail', 'google']
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+e = evens(a)
+c = count()     # Create a count object
+i = evens(c)    # passing an infinite iterable to evens func
 
-# Passing a List object to the Generator
-print(list(dedupe(names)))
-
-
-my_string = 'abcdabcdefgh'
-
-# Passing a String object to the Generator
-print(list(dedupe(my_string)))
-
-# Passing a file object to the Generator
-with open('words.txt') as f:
-    for line in dedupe(f):
-        print(line, end='')
+# Generator Expression
+evens = (item for item in a if item % 2 == 0)
 
 
-# For sequences which are not hashable like dicts
-def dedupe(items, key=None):
-    seen = set()
-    for item in items:
-        val = item if key is None else key(item)
-        if val not in seen:
-            yield item
-            seen.add(val)
-
-
-a = [{'x': 1, 'y': 2}, {'x': 1, 'y': 3}, {'x': 1, 'y': 2}, {'x': 2, 'y': 4}]
-
-print(list(dedupe(a, key=lambda item: (item['x'], item['y']))))
-
-# Using itemgetter
-from operator import itemgetter
-print(list(dedupe(a, key=itemgetter('x', 'y'))))
-
-
-# OR without using Lambda expression
-def get_values(d_item):
-    return d_item['x'], d_item['y']
-
-
-print(list(dedupe(a, key=get_values)))
-
-
-# Setting up Pipelines
-def getlines(filename):
-    with open(filename, 'r') as f:
+# Generator which ignores commented lines and yields only actual lines of code
+def actual_lines():
+    with open('code.txt') as f:
         for line in f:
-            if line:
-                yield line
-
-
-def _grep(pattern, g_lines):
-    for line in g_lines:
-        if pattern in line:
+            if not line.strip():
+                continue
+            if line.startswith('#'):
+                continue
             yield line
 
 
-def _split(g_grep):
-    for line in g_grep:
-        yield line.split(' ')
+# Generator Expression!
+g_actual_lines = (line for line in open('code.txt') if not line.startswith('#') and line.strip())
 
 
-f = getlines('sample.txt')
-g = grep('python', f)
-s = _split(g)
+# Function that reads entire contents of file to a list
+def read_log():
+    with open('data/airline.log') as f:
+        return f.readlines()
+
+
+# Generator that produces one line when asked for it
+def g_read_log():
+    with open('data/errors.log') as f:
+        for line in f:
+            yield line
+
+
+# Generator that searches for a partucular pattern
+def _grep(pattern, line):
+    if pattern in line:
+        yield line
+
+
+lines = read_log()
+for line in g_read_log():
+    for match in _grep('WARN', line):
+        print(line)
+        time.sleep(1)
+
+
+# Monitering live log file using generators
+def _tail():
+    with open('/var/logs/system.log') as log:
+        log.seek(0, 2)   # Goes to End of File
+        while True:
+            line = log.readline()
+            if not line.strip():
+                time.sleep(0.1)
+                continue
+            yield line
