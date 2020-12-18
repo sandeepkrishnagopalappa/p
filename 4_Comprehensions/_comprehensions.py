@@ -1,7 +1,7 @@
 import math
 
 '''
-4_Comprehensions in Python is a way to build an iterable object in one expression without the need of traditional
+Comprehensions in Python is a way to build an iterable object in one expression without the need of traditional
 for loop.
 '''
 # List 4_Comprehensions are used for building a new list

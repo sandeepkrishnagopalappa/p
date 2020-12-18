@@ -50,7 +50,7 @@ with open('write.txt', 'a') as f:
     f.write('\n')
 
 # Printing the line's with line numbers
-with open('from_file.txt') as f:
+with open('sample.txt') as f:
     for linenumber, line in enumerate(f, start=1):
         print(linenumber, line, end='')
 
@@ -75,6 +75,9 @@ with open('access-log.txt') as f:
             parts = line.split()
             ip.append(parts[0])
 
+# Getting unique ip's from the list
+unique_ip = set(ip)
+
 # Using List Comprehension
 ip = [line.split()[0] for line in open('access-log.txt') if line.strip()]
 
@@ -86,6 +89,29 @@ out_file = open('ip_list.txt', 'w')
 for item in unique_ip:
     print(item)
 out_file.close()
+
+# Counting number of occurances of ip adresses in the log file.
+# Normal Dict
+d = {}
+for item in ip:
+    if item in d:
+        d[item] += 1
+    else:
+        d[item] = 1
+
+# Using defaultdict
+from collections import defaultdict
+d = defaultdict(int)
+
+for item in ip:
+    d[item] += 1
+
+# Using Counter Object
+from collections import Counter
+d = Counter(ip)
+
+# Sotring dictionary based on occurances of ip addresses.
+sorted_ip = sorted(d.items(), key=lambda item: item[-1])
 
 # Extracting Messages from sample.log
 with open('sample.log') as log:
@@ -130,71 +156,44 @@ unique_countries = set(countries)
 # Getting Unique Countries using Set Comprehension
 set_countries = {line.strip().split()[1] for line in open("football.txt") if line.strip()}
 
-# Handling Files using 4_Comprehensions!
+# Handling Files using Comprehensions!
 # Getting Unique IP's from the web server log.
 ip = {line.split(':')[0] for line in open('access-log.txt')}
 
-# Getting user names from password.txt
-l = [line.split(":")[0] .strip() for line in open('linux-etc-passwd.txt') if not line.strip().startswith("#")]
-
-# Getting Unique shell from the password.txt file
-l = {line.split(":")[-1].rstrip()
-     for line in open('linux-etc-passwd.txt')
-     if line.strip() and not line.startswith("#")
-     }
-
-for item in l:
-    print(item)
-
-# Getting only ip addresses from web server log. Also, find out how may times
-# Each IP address is appears in the list and create a dictionary.
-ip = [line.split()[0] for line in open("access-log.txt")]
-
-# Using Normal Dict
-dd = {}
-
-for item in ip:
-    if item in dd:
-        dd[item] += 1
-    else:
-        dd[item] = 1
-print(dd)
-
-# using Default Dict
-d = defaultdict(int)
-for item in ip:
-    d[item] += 1
-print(d)
-
-# Using Counter object
-c = Counter()
-for item in ip:
-    c[item] += 1
-
-print(c)
-
 # Counts the occurance of each word in the text file and prints the most and least repeated words
-with open('read.txt', 'r') as f:
-    text = f.read()
-    d = {
-        word: text.count(word)
-        for word in text.split(' ')
-    }
+with open('sample.txt', 'r') as f:
+    word_count = {}
+    for line in f:
+        if line.strip():
+            words = line.split()
+            for word in words:
+                if word in word_count:
+                    word_count[word] += 1
+                else:
+                    word_count[word] = 1
+print(word_count)
 
-# Unpacking List the rest of the words between least and maximum
+# Using defaultdict
+from collections import defaultdict
+word_count = defaultdict(int)
+f = open('sample.txt')
+for line in f:
+    if line.strip():
+        words = line.split()
+        for word in words:
+            word_count[word] += 1
+print(word_count)
+
+# Least and Most occurances of the word
 least, *rest, maximum = sorted(d.items(), key=lambda name: name[-1])
 print(least)    # Prints the word with least occurance
 print(maximum)  # Prints the word with maximum occurance
 print(rest)     # Prints all elements between 1st and last element
 
-# Getting Unique Info/Error messages from sample.log file
-messages = {line.split()[2] for line in open("sample.log") if line.strip()}
 
-
-# list of Dicts from shoe data
+# list of Dicts from data
 def make_dict(line):
     data = line.strip().split('\t')
     return {"brand": data[0], "color": data[1], "size": data[2]}
-
 
 s = [make_dict(line) for line in open('data.txt')]

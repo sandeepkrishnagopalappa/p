@@ -7,15 +7,12 @@ They don't take memory of a list. They are LAZY Iterables. Generators are used f
 when called on next() function a raises StopIteration exception when there are no more values to generate.
 'yield' keyword suspends or pauses the execution of the function. But 'return' statement ends the function.
 '''
-
-
 # Simple Generator
 def func():
     print('Hello')
     yield "Hi"
     print('World')
     yield "Bye"
-
 
 # Countdown Generator
 def countdown(start):
@@ -25,13 +22,11 @@ def countdown(start):
         start -= 1
     print('Done!')
 
-
 # Generates a range of floating point numbers
 def frange(start, stop, step):
     while start <= stop:
         yield start
         start += step
-
 
 # Generator produces even numbers
 def evens(iterable):
@@ -41,7 +36,6 @@ def evens(iterable):
             yield item
             print("Runing After Yield")
 
-
 a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 e = evens(a)
 c = count()     # Create a count object
@@ -49,7 +43,6 @@ i = evens(c)    # passing an infinite iterable to evens func
 
 # Generator Expression
 evens = (item for item in a if item % 2 == 0)
-
 
 # Generator which ignores commented lines and yields only actual lines of code
 def actual_lines():
@@ -71,26 +64,22 @@ def read_log():
     with open('data/airline.log') as f:
         return f.readlines()
 
-
 # Generator that produces one line when asked for it
 def g_read_log():
     with open('data/errors.log') as f:
         for line in f:
             yield line
 
-
 # Generator that searches for a partucular pattern
 def _grep(pattern, line):
     if pattern in line:
         yield line
-
 
 lines = read_log()
 for line in g_read_log():
     for match in _grep('WARN', line):
         print(line)
         time.sleep(1)
-
 
 # Monitering live log file using generators
 def _tail():

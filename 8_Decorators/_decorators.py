@@ -1,10 +1,8 @@
 import time
-from functools import wraps, partial
-import time
 import csv
 import tracemalloc
 
-# 8_Decorators:
+# Decorators:
 
 # A Decorator is a function that creates a wrapper around another function
 # The wrapper is a new function that works exactly like a original function
@@ -111,7 +109,7 @@ def read_csv():
     with open('data/covid_data.csv') as f:
         records =[]
         rows = csv.reader(f)
-        headers = next(rows)
+        headers = next(rows)    # Skip Headers
         for row in rows:
             records.append((row[2], row[3], row[5]))
         return records

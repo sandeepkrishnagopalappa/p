@@ -20,8 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/6_Sorting/_sorting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/stocks_prices_live.py" beforeDir="false" afterPath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/stocks_prices_live.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_Comprehensions/_comprehensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/4_Comprehensions/_comprehensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5_Functions/_anonymous_functions_lambda.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5_Functions/_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/5_Functions/_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6_Sorting/_sorting_part-I.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6_Sorting/_sorting_part-II.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7_Handling_Files/_file_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/7_Handling_Files/_file_handling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7_Handling_Files/_handling_csv_files/_csv_read_write.py" beforeDir="false" afterPath="$PROJECT_DIR$/7_Handling_Files/_handling_csv_files/_csv_read_write.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7_Handling_Files/errors.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7_Handling_Files/from_file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/7_Handling_Files/sample.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7_Handling_Files/linux-etc-passwd.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8_Decorators/_decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/8_Decorators/_decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/_generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/_generators.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

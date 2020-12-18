@@ -35,7 +35,6 @@ with open('company.csv', 'w') as csv_file:
     csv_writer = csv.writer(csv_file)
     csv_writer.writerows(data)  # Write rows takes a list of iterables
 
-
 # Reading csv file into a data structure
 _portfoilo = []
 types = [str, int, float]
@@ -53,7 +52,6 @@ with open('portfolio.csv', 'r') as csv_file:
         _portfoilo.append(record)
 
 print(_portfoilo)   # List of Dictionaries
-
 
 # Finding the total
 total = 0.00
@@ -76,14 +74,11 @@ prices = []
 for holding in _portfoilo:
     prices.append(holding.get('price'))
 
-
 print(min(prices))
 print(max(prices))
 
-
 # Reading CSV rows as columns
 cols = defaultdict(list)
-
 
 def read_columns(filename):
     with open(filename) as f:
@@ -93,6 +88,5 @@ def read_columns(filename):
             for header, r in zip(headers, row):
                 cols[header].append(r)
     return cols
-
 
 print(read_columns('portfolio.csv'))

@@ -1,82 +1,35 @@
 import datetime
 import time
 
-
-# Simple Function with no arguments
-def greet():
-    # Doc String
-    """greet function prints hello world to the console"""
+def func():
     print('Hello world')
 
-# If the first statement of a Module, class or function defnition is a string,
-# that string becomes a documentation string associated object
+def greeting(name):
+    print(f'Hello {name}')
 
+def greet(name, age, pay):
+    print(f'Hello {name} you are {age} years and you have {pay} pay')
 
-print(greet.__doc__)
+# Calling func by positional arguments
+greeting("Sandeep")
 
+# Calling func by keyword arguments
+greeting(name="Sandeep")
 
-# Function with argument
-def show(name):
-    print(f'Hello {name} welcome to Python!')
-
-
-show('Steve')
-
-
-# Function with return value
-def display(name):
-    return f'Hello {name} welcome to Python!'
-
-
-print(display('Steve'))
-
-
-# Function with Default arguments
-def get_gender(sex='Unknown'):
-    if sex.upper() == 'M':
-        sex = 'Male'
-    elif sex.upper() == 'F':
-        sex = 'Female'
-    print(sex)
-
-
-get_gender('m')
-get_gender('F')
-get_gender()
-
-
-def to_fahrenheit(temp):
-    return round((temp * 1.8) + 32)
-
-
-temperatures = [('Bangalore', 25), ('Chennai', 35), ('Delhi', 40), ('kolkata', 37)]
-d_temp = {city: to_fahrenheit(temperature) for city, temperature in temperatures}
-print(d_temp)
-
+# Calling func by positional and keyword arguments
+greet("Sandeep", age=26, pay=1000)
 
 # Function with Default as well as Mandatory arguments
 def hello(name, company='Unknown'):
     print(f'Hello {name} you work for {company} company')
 
+# Positional Only and Keyword Only arguments.
+def greet(name, /, *, age, pay):
+    print(f'Hello {name} you are {age} years and you have {pay} pay')
 
-hello('Steve', 'DXC')
-hello('Steve')
-hello(name='Steve', company='DXC')
-hello(company='DXC', name='Steve')
-
-
-# Function Annotations:
-# Function annotations are usually used for type hints:
-# for example, this function is expected to take two int arguments and is also expected to have an int return value:
-def sum_two_numbers(a: int, b: int) -> int:
-    return a + b
-
-
-# ================================================================================================
 # Positional variable arguments (*args)
 def func(a, *args):
     print(a, args)
-
 
 # Keyword variable arguments (**kwargs)
 def func2(a, **kwargs):
@@ -119,55 +72,43 @@ print(add(*nums))
 
 
 # Unpacking arguments
-# def display_info(name, age, salary):    # Name of the arguments should be same as the key's of the dictionary
-#     print(name, age, salary)
+def greet(name, age, pay):
+    print(f'Hello {name} you are {age} years and you have {pay} pay')
 
-def display_info(*args, **kwargs):    # Name of the arguments should be same as the key's of the dictionary
-    print(args, kwargs)
+data = ['Steve', 26, 1000]
 
+greet(data[0], data[1], data[2])
+greet(*data)    # Equivelent to greet("Steve", 26, 1000)
 
-# ** is used for unpacking a dictionary (Keyword arguments)
-d_data = [{'name': 'Mark', 'age': 26, 'salary': 10000},
-          {'name': 'Steve', 'age': 27, 'salary': 20000}]
-for d in d_data:
-    display_info(**d)
-    # display_info(d['name'], d['age'], d['salary'])
-
-
-names = ['Steve', 'Mark']
-info = {'age': 26, 'company': 'Apple'}
-
-display_info(*names, **info)
-
-
-# Attaching Informational Metadata to Function Arguments
-def add(x: int, y: int) -> int:
-    return x + y
-
+d_data = {"name": "steve", "age": 26, "pay": 1000}
+greet(d_data['name'], d_data['age'], d_data['pay'])
+greet(**d_data)     # Equivelent to greet(name="Steve", age=26, pay=1000)
 
 # Returning Multiple Values from a Function
 def myfunc():
     return 1, 2, 3
 
-
 a, b, c = myfunc()
 
+# Passing function to another function
+def _delay(_func, _time, *args, **kwargs):
+    time.sleep(_time)
+    print(args)
+    print(kwargs)
+    result = _func(*args, **kwargs)
+    return result
 
 # Default values are evaluated only once
 age = 10
-
-
 def myinfo(my_name, my_age=age):
     print(my_name, my_age)
-
 
 print(myinfo('steve', my_age=50))      # Prints (steve, 50)
 print(myinfo('steve'))      # Prints(steve, 10)
 age = 20
 print(myinfo('steve'))      # Prints (steve, 10)
+
 # Default arguments are evaluated only ONCE
-
-
 def fun(a, L=[]):
     """ L=[] in the function declaration makes Python essentially do this:
     > This function has a parameter named L its default argument is [],
