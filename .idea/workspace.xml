@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_RegularExpressions/_regular_expressions.py" beforeDir="false" afterPath="$PROJECT_DIR$/11_RegularExpressions/_regular_expressions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_RegularExpressions/baby_names.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$Python-Topics.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/stocks_prices_live.py" beforeDir="false" afterPath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/stocks_prices_live.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +89,7 @@
       <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Exception_Handling" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.log_file_live (1)">
+  <component name="RunManager" selected="Python.stocks_prices_live (2)">
     <configuration name="TC01" type="PythonConfigurationType" factoryName="Python">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,27 +124,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Container_Objects/_dictionary.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="_different_ways_of_data_representation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Practice" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Memory_Optimization" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Memory_Optimization/_different_ways_of_data_representation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -218,6 +195,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="stocks_prices_live (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/stocks_prices_live.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="stocks_prices_live" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -258,20 +256,20 @@
     <list>
       <item itemvalue="Python.TC01" />
       <item itemvalue="Python._dictionary" />
-      <item itemvalue="Python._different_ways_of_data_representation" />
       <item itemvalue="Python.stocks_prices_live" />
       <item itemvalue="Python.log_file_live" />
       <item itemvalue="Python.stocks_prices_live (1)" />
       <item itemvalue="Python.log_file_live (1)" />
+      <item itemvalue="Python.stocks_prices_live (2)" />
       <item itemvalue="Python tests.pytest in _decorators.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.stocks_prices_live (2)" />
         <item itemvalue="Python.log_file_live (1)" />
         <item itemvalue="Python.stocks_prices_live (1)" />
         <item itemvalue="Python.log_file_live" />
         <item itemvalue="Python.stocks_prices_live" />
-        <item itemvalue="Python._different_ways_of_data_representation" />
       </list>
     </recent_temporary>
   </component>
@@ -312,29 +310,29 @@
       <screen x="0" y="25" width="1280" height="722" />
     </state>
     <state x="315" y="191" key="#Log_Highlighting_(ideolog)/0.25.1280.722@0.25.1280.722" timestamp="1607175658046" />
-    <state width="1003" height="246" key="GridCell.Tab.0.bottom" timestamp="1608030282888">
-      <screen x="0" y="25" width="1280" height="722" />
+    <state width="1003" height="189" key="GridCell.Tab.0.bottom" timestamp="1608195836591">
+      <screen x="0" y="25" width="1024" height="690" />
     </state>
     <state width="1259" height="251" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1604755944232" />
-    <state width="1003" height="246" key="GridCell.Tab.0.bottom/0.25.1024.690@0.25.1024.690" timestamp="1608030017417" />
+    <state width="1003" height="189" key="GridCell.Tab.0.bottom/0.25.1024.690@0.25.1024.690" timestamp="1608195836591" />
     <state width="1003" height="246" key="GridCell.Tab.0.bottom/0.25.1280.722@0.25.1280.722" timestamp="1608030282888" />
-    <state width="1003" height="246" key="GridCell.Tab.0.center" timestamp="1608030282887">
-      <screen x="0" y="25" width="1280" height="722" />
+    <state width="1003" height="189" key="GridCell.Tab.0.center" timestamp="1608195836590">
+      <screen x="0" y="25" width="1024" height="690" />
     </state>
     <state width="1259" height="251" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1604755944231" />
-    <state width="1003" height="246" key="GridCell.Tab.0.center/0.25.1024.690@0.25.1024.690" timestamp="1608030017416" />
+    <state width="1003" height="189" key="GridCell.Tab.0.center/0.25.1024.690@0.25.1024.690" timestamp="1608195836590" />
     <state width="1003" height="246" key="GridCell.Tab.0.center/0.25.1280.722@0.25.1280.722" timestamp="1608030282887" />
-    <state width="1003" height="246" key="GridCell.Tab.0.left" timestamp="1608030282887">
-      <screen x="0" y="25" width="1280" height="722" />
+    <state width="1003" height="189" key="GridCell.Tab.0.left" timestamp="1608195836589">
+      <screen x="0" y="25" width="1024" height="690" />
     </state>
     <state width="1259" height="251" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1604755944230" />
-    <state width="1003" height="246" key="GridCell.Tab.0.left/0.25.1024.690@0.25.1024.690" timestamp="1608030017416" />
+    <state width="1003" height="189" key="GridCell.Tab.0.left/0.25.1024.690@0.25.1024.690" timestamp="1608195836589" />
     <state width="1003" height="246" key="GridCell.Tab.0.left/0.25.1280.722@0.25.1280.722" timestamp="1608030282887" />
-    <state width="1003" height="246" key="GridCell.Tab.0.right" timestamp="1608030282887">
-      <screen x="0" y="25" width="1280" height="722" />
+    <state width="1003" height="189" key="GridCell.Tab.0.right" timestamp="1608195836590">
+      <screen x="0" y="25" width="1024" height="690" />
     </state>
     <state width="1259" height="251" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1604755944231" />
-    <state width="1003" height="246" key="GridCell.Tab.0.right/0.25.1024.690@0.25.1024.690" timestamp="1608030017417" />
+    <state width="1003" height="189" key="GridCell.Tab.0.right/0.25.1024.690@0.25.1024.690" timestamp="1608195836590" />
     <state width="1003" height="246" key="GridCell.Tab.0.right/0.25.1280.722@0.25.1280.722" timestamp="1608030282887" />
     <state width="1259" height="220" key="GridCell.Tab.1.bottom" timestamp="1607256946339">
       <screen x="0" y="25" width="1280" height="722" />
