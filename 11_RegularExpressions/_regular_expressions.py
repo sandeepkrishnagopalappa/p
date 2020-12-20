@@ -208,12 +208,19 @@ for name in file_formats:
 # Regular Expression - YYYY-MM-DD date format
 # ===================================================
 _dates = ['2019-01-02', '2019-13-02', '2019-12-26', '26-08-2019', '20-19-20', '2019-12-31', '2019-12-32']
-match_date_format = r'(\d{4})-([0-1][0-2])-([0-2][0-9]|3[01])'
+match_date_format = r'(\d{4})-(?:[0-1][0-2])-(?:[0-2][0-9]|3[01])'
 
 for date in _dates:
     matches = search_pattern(match_date_format, date)
     for match in matches:
         print(match)
+
+# Extracting date from error log
+with open('data/errors.log') as f:
+    for line in f:
+        match = re.findall(match_date_format, line)
+        if match:
+            print(match)
 # ===================================================
 # Regular Expression - Website names
 _links = ['https://www.python.org',
@@ -232,11 +239,18 @@ for link in _links:
 # Regular Expression - Phone Number pattern
 # ===================================================
 phone_numbers = ['123-345-0987', '456-9832-098', '800-987-4756', '080-1029384725', '123-345-12', '900-938-0987']
-match_phone_numbers = r'\d{3}[-.]\d{3}[-.]\d{4}'
+match_phone_numbers = r'\d{3}[-]\d{3}[-]\d{4}'
 
 for phone_number in phone_numbers:
     matches = search_pattern(match_phone_numbers, phone_number)
     for match in matches:
+        print(match)
+
+# matching only 800 and 900 numbers
+pat = r"[89]00-\d{3}-\d{4}"
+for number in phone_numbers:
+    match = re.findall(pat, number)
+    if match:
         print(match)
 # ===================================================
 # Regular Expression - IP Addresses
@@ -295,3 +309,11 @@ _formats = ['00:00:00', '23:59:59', '24:00:00', '1:59:20', '12:9:10', '10:20:8']
 for _format in _formats:
     match = search_pattern(r"(?:[01]\d|2[0-3]):[0-5]\d:[0-5]\d", _format)
     print(match)
+
+_time = []
+with open('data/errors.log') as f:
+    for line in f:
+        if line.strip():
+            match = re.findall(pat, line)
+            if match:
+                _time.append(match)

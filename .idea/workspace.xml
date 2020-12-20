@@ -21,13 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_Comprehensions/_comprehensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/4_Comprehensions/_comprehensions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_Comprehensions/data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5_Functions/_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/5_Functions/_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7_Handling_Files/_file_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/7_Handling_Files/_file_handling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8_Decorators/_decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/8_Decorators/_decorators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8_Decorators/_functions_as_normal_objects.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_RegularExpressions/_regular_expressions.py" beforeDir="false" afterPath="$PROJECT_DIR$/11_RegularExpressions/_regular_expressions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,19 +74,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/7_Handling_Files/_handling_csv_files" />
-      <recent name="$PROJECT_DIR$/3_Booleans_And_Unpacking_Sequences" />
-      <recent name="$PROJECT_DIR$/3_Unpacking_Sequences" />
-      <recent name="$PROJECT_DIR$/Handling_Files" />
-      <recent name="$PROJECT_DIR$/Container_Objects" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Handling_Files" />
       <recent name="$PROJECT_DIR$/Comprehensions" />
       <recent name="$PROJECT_DIR$/Iterables_Iterators_And_Generators" />
       <recent name="$PROJECT_DIR$/Itertools_Module" />
       <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Exception_Handling" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Misc_Topics" />
+      <recent name="$PROJECT_DIR$/7_Handling_Files/_handling_csv_files" />
+      <recent name="$PROJECT_DIR$/3_Booleans_And_Unpacking_Sequences" />
+      <recent name="$PROJECT_DIR$/3_Unpacking_Sequences" />
+      <recent name="$PROJECT_DIR$/Handling_Files" />
     </key>
   </component>
   <component name="RunManager" selected="Python.stocks_prices_live (2)">
