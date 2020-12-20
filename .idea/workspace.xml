@@ -20,8 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/apple_employees.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/microsoft_employees.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_RegularExpressions/_regular_expressions.py" beforeDir="false" afterPath="$PROJECT_DIR$/11_RegularExpressions/_regular_expressions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_advanced_multiple_inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/3_advanced_multiple_inheritance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/1_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_dictionaries_objects.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_encapsulation_attr_access.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/4_encapsulation_attr_access.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/2_inheritance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_magic_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_magic_methods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_magic_methods_covid_data_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_magic_methods_covid_data_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/employee.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

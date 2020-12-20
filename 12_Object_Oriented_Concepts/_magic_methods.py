@@ -38,7 +38,7 @@ class Staff:
     @classmethod
     def from_csv(cls):
         obj = cls()
-        with open('employee.csv', 'r') as f:
+        with open('apple_employees.csv', 'r') as f:
             rows = csv.reader(f)
             headers = next(rows)    # Skipping Headers
             for row in rows:

@@ -30,7 +30,7 @@ class Data:
         self = cls()
         with open(filename, 'r') as f:
             rows = csv.reader(f)
-            headers = next(rows) # Skipping Headers
+            next(rows)  # Skipping Headers
             for row in rows:
                 self._records.append((Covid(row)))
         return self
