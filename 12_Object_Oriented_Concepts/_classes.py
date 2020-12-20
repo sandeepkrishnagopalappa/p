@@ -1,5 +1,6 @@
 import datetime
 import time
+import csv
 
 # A class is collection/set of functions that carry out various operations on
 # "Instances"
@@ -146,7 +147,6 @@ class Covid:
         return d
 
 
-import csv
 with open('_covid_data.csv', 'r') as f:
     rows = csv.reader(f)
     headers = next(rows)    # Skipping Headers

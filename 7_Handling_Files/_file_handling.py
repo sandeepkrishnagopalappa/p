@@ -100,14 +100,12 @@ for item in ip:
         d[item] = 1
 
 # Using defaultdict
-from collections import defaultdict
 d = defaultdict(int)
 
 for item in ip:
     d[item] += 1
 
 # Using Counter Object
-from collections import Counter
 d = Counter(ip)
 
 # Sotring dictionary based on occurances of ip addresses.
@@ -174,7 +172,6 @@ with open('sample.txt', 'r') as f:
 print(word_count)
 
 # Using defaultdict
-from collections import defaultdict
 word_count = defaultdict(int)
 f = open('sample.txt')
 for line in f:

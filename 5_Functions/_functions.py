@@ -90,7 +90,7 @@ def myfunc():
 
 a, b, c = myfunc()
 
-# Passing function to another function
+# Passing function to another function. Functions as "First class" objects.
 def _delay(_func, _time, *args, **kwargs):
     time.sleep(_time)
     print(args)

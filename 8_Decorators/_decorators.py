@@ -8,7 +8,7 @@ import tracemalloc
 # The wrapper is a new function that works exactly like a original function
 # except that some kind of extra processing is carried out.
 '''
-First Class 5_Functions are the one which is treated as any other object in Python like strings, lists dicts etc.
+First Class Functions are the one which is treated as any other object in Python like strings, lists dicts etc.
 You can pass a function to another function, you can return a function from another function, just like any other functions.
 A Decoretor is a function, which takes another function as an argument, adds some extra functisonality,
 and returns another function without altering the source code of original function.

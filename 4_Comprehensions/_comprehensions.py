@@ -4,23 +4,26 @@ import math
 Comprehensions in Python is a way to build an iterable object in one expression without the need of traditional
 for loop.
 '''
-# List 4_Comprehensions are used for building a new list
+# List Comprehensions are used for building a new list
 # Square Numbers_And_Booleans in the list. Using 'for' loop
 nums = [1, 2, 3, 4, 5]
 
 # Square Numbers in the list. Using List 4_Comprehensions
 list_evens = [num ** 2 for num in nums]
 
-# Convert to upper case
-sentence = "This is bunch of words"
-cap = [word.upper() for word in sentence.split()]
+# List of even numbers between range 1-50
+even_numbers = [num for num in range(1, 50) if num % 2 == 0]
 
 # Returns a list containing all vowels in the given string
 names = ['laura', 'steve', 'bill', 'james', 'bob', 'greig', 'scott', 'alex', 'ive']
 vowel_names = [name for name in names if name[0] in "aeiou"]
 
 # Names starting with consonents
-names = [name for name in names if not name.startswith(('a', 'e', 'i', 'o', 'u'))]
+names = [name for name in names if not name[0] in "aeiou"]
+
+# Convert to upper case
+sentence = "This is bunch of words"
+cap = [word.upper() for word in sentence.split()]
 
 # Raise to the power of list index
 a = [1, 2, 3, 4, 5]
@@ -30,9 +33,6 @@ i = [value ** index for index, value in enumerate(a)]
 names = ['apple', 'google', 'yahoo', 'facebook', 'yelp', 'flipkart', 'gmail', 'instagram', 'microsoft']
 str_len_pair = [(name, len(name)) for name in names]
 
-# List of even numbers between range 1-50
-even_numbers = [num for num in range(1, 50) if num % 2 == 0]
-
 # Build a list with only even with even length string
 names = ['apple', 'google', 'yahoo', 'facebook', 'yelp', 'flipkart', 'gmail', 'instagram', 'microsoft']
 even_string = [name for name in names if len(name) % 2 == 0]
@@ -40,22 +40,21 @@ even_string = [name for name in names if len(name) % 2 == 0]
 # Generating List of PI values
 pi_list = [round(math.pi, n) for n in range(1, 6)]
 
-# Removing Duplicate items from the list
-numbers = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
-numbers = sorted(numbers)
-dedup = [number for index, number in enumerate(numbers) if index == 0 or number != numbers[index-1]]
-
 # List comprehension to sum the factorial of numbers from 1-5
 a = [1, 2, 3, 4, 5]
 s = sum([math.factorial(number) for number in a])
 
 # Using "else" in Comprehension
+# Reverse the item of a list if the item is of odd length.
+names = ['apple', 'google', 'yahoo', 'facebook', 'yelp', 'flipkart', 'gmail', 'instagram', 'microsoft']
+reverse_odd_length = [name if len(name) % 2 == 0 else name[::-1] for name in names]
+
 data = ['hello', 123, 1.2, 'world', True, 'python']
 d = [item[::-1] if isinstance(data, str) else item for item in data]
 
 # Reverse the string if the string is of odd length, otherwise keep it as is.
 names = ['apple', 'google', 'yahoo', 'facebook', 'yelp', 'flipkart', 'gmail', 'instagram', 'microsoft']
-_names = [name[::-1] if len(name) % 2 == 0  else name for name in names]
+_names = [name[::-1] if len(name) % 2 == 0 else name for name in names]
 
 
 # Dictionary Comprehension
@@ -154,7 +153,7 @@ nums = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4]
 s = {num ** 2 for num in nums}
 print(s)
 
-# Nested 4_Comprehensions
+# Comprehension with 2 for loops!
 n = [(x, y) for x in range(5) for y in range(5)]
 
 countries = {"India": ["Bangalore", "Chennai", "Delhi", "Kolkata"],
