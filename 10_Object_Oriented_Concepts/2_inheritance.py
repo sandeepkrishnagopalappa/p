@@ -1,7 +1,6 @@
 from itertools import count
 from datetime import datetime
 
-
 class Parent:
     def __init__(self, value):
         self.value = value
@@ -52,34 +51,19 @@ print(c.__class__.__mro__)
 # Advanced Inheritance
 class Parent:
     def spam(self):
-        print('Parent.Spam')
+        print('Parent Spam')
 
-
-class A(Parent):
+class Child1(Parent):
     def spam(self):
-        print('A.Spam')
+        print('Child1.Spam')
         super().spam()
 
-
-class B(A):
+class Child2(Parent):
     def spam(self):
-        print('B.Spam')
+        print('Child2.Spam')
         super().spam()
 
-
-class C(B):
-    def spam(self):
-        print('C.Spam')
-        super().spam()
-
-
-class D(Parent):
-    def spam(self):
-        print('D.Spam')
-        super().spam()
-
-
-class E(A, D):
+class Child3(Child1, Child2):
     pass
 
 # Calculating Payroll of different Employees

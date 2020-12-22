@@ -12,9 +12,7 @@ class A:
 
 
 class B:
-
     def __init__(self):
-        super().__init__()
         self.__internal = 1     # Double underscores are used to hide internal attributes
         # of the class when the class gets inherited
 
@@ -23,9 +21,7 @@ class B:
 
 
 class C(B):
-
     def __init__(self):
-        super().__init__()
         self.__internal = 2     # Does not override B.__internal
 
     def public_method(self):
