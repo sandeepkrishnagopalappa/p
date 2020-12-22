@@ -11,36 +11,30 @@ class A:
         print('Internal Method')
 
 
-class B:
-    def __init__(self):
-        self.__internal = 1     # Double underscores are used to hide internal attributes
-        # of the class when the class gets inherited
+class BankAccount:
+    __interest = 4.0
 
-    def public_method(self):
-        return self.__internal
+    def deposit(self, amount):
+        print('Depositing Amount:', amount)
 
+    def withdraw(self, amount):
+        print('Withdrawing Amount:', amount)
 
-class C(B):
-    def __init__(self):
-        self.__internal = 2     # Does not override B.__internal
-
-    def public_method(self):
-        return self.__internal
+    def roi(self):
+        print("ROI is:", self.__interest)
 
 
-b = B()
-c = C()
-
-print(b.public_method())
-print(c.public_method())
+class SavingsAccount(BankAccount):
+    __interest = 4.5        # Does Not Override __interest of Parent Class
 
 
+s = SavingsAccount()
+# __interest in SavingsAccount will not override __interest of BankAccount
+s.roi()     # Prints 4.0.
 # ====================================================================================
 
 # Setters and Getters
-
 class Person:
-
     def __init__(self, first_name, last_name, age):
         self.first_name = first_name
         self.last_name = last_name
@@ -69,13 +63,9 @@ class Person:
 
 p1 = Person('Steve', 'Jobs', 30)
 
-
 print(p1.first_name)
-
 p1.first_name = 'Bill'
-
 print(p1.first_name)
-
 # del p1.first_name
 
 

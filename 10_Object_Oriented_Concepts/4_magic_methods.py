@@ -15,59 +15,51 @@ names.__getitem__(0)
 names.__setitem__(1, 'facebook')
 
 
-class Employee:
-    def __init__(self, fname, lname, salary):
-        self.fname = fname.title()
-        self.lname = lname.title()
-        self.salary = salary
-
-    def full_name(self):
-        return f'{self.fname.title()} {self.lname.title()}'
-
-    def email(self):
-        return f'{self.fname.title()}.{self.lname.title()}@company.com'
-
-    def __repr__(self):
-        return f"Employee('{self.fname.title()}', '{self.lname.title()}', '{self.salary}')"
-
-
-class Staff:
+class Company:
     def __init__(self):
-        self._employees = []
+        self._team = []
+
+    def __iter__(self):
+        return iter(self._team)
+
+    def __len__(self):
+        return len(self._team)
+
+    def __getitem__(self, index):
+        return self._team[index]
 
     @classmethod
     def from_csv(cls):
-        obj = cls()
-        with open('apple_employees.csv', 'r') as f:
+        c = cls()
+        with open('data/apple_employees.csv') as f:
             rows = csv.reader(f)
-            headers = next(rows)    # Skipping Headers
+            next(rows)
             for row in rows:
-                e = Employee(row[0], row[1], row[2])
-                obj._employees.append(e)
-        return obj
+                c._team.append((row[0], row[1], row[2], row[3]))
+        return c
 
-    def __getitem__(self, index):
-        return self._employees[index]
+    def add_emp(self, name, gender, team, pay):
+        self._team.append((name, gender, team, pay))
 
-    def __len__(self):
-        return len(self._employees)
+    # Total Cost
+    def total_cost(self):
+        total = 0.00
+        for emp in self._team:
+            total += float(emp[3])
+        return total
 
-    def __iter__(self):
-        return iter(self._employees)
+    # Total Number of male and female employees
+    def emp_count_by_gender(self):
+        from collections import defaultdict
+        _count = defaultdict(int)
+        for emp in self._team:
+            _count[emp[1]] += 1
+        return _count
 
-
-staff = Staff.from_csv()
-
-# __repr__ is called
-for emp in staff:
-    print(emp)
-
-# __len__ is called
-print(len(staff))
-
-# __iter__ is called
-for item in staff:
-    print(item)
-
-# __getitem__ is called
-print(staff[0])
+    # Count of Employees in each department
+    def emp_count_by_department(self):
+        from collections import defaultdict
+        _count = defaultdict(int)
+        for emp in self._team:
+            _count[emp[2]] += 1
+        return _count

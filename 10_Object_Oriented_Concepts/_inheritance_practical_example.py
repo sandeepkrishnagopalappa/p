@@ -1,6 +1,4 @@
 import csv
-from abc import ABC, abstractmethod
-
 
 class Covid:
     def __init__(self, country, cases, per_million):
