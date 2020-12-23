@@ -208,7 +208,7 @@ for name in file_formats:
 # Regular Expression - YYYY-MM-DD date format
 # ===================================================
 _dates = ['2019-01-02', '2019-13-02', '2019-12-26', '26-08-2019', '20-19-20', '2019-12-31', '2019-12-32']
-match_date_format = r'(\d{4})-(?:[0-1][0-2])-(?:[0-2][0-9]|3[01])'
+match_date_format = r'\d{4}-(?:[0-1][0-2])-(?:0[1-9]|1[0-9]|3[01])'
 
 for date in _dates:
     matches = search_pattern(match_date_format, date)

@@ -21,10 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10_Object_Oriented_Concepts/3_encapsulation_attr_access.py" beforeDir="false" afterPath="$PROJECT_DIR$/10_Object_Oriented_Concepts/3_encapsulation_attr_access.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10_Object_Oriented_Concepts/4_magic_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/10_Object_Oriented_Concepts/4_magic_methods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10_Object_Oriented_Concepts/5_magic_methods_covid_data_analysis.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10_Object_Oriented_Concepts/_inheritance_practical_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/10_Object_Oriented_Concepts/_inheritance_practical_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_RegularExpressions/_regular_expressions.py" beforeDir="false" afterPath="$PROJECT_DIR$/11_RegularExpressions/_regular_expressions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
