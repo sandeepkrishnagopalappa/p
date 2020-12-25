@@ -1,11 +1,24 @@
-import datetime
-import time
 import csv
 
 # A class is collection/set of functions that carry out various operations on
 # "Instances"
 
 # Instances are the actual objects/data that your function manipulate on.
+class Point:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def move(self, dx, dy):
+        self.a += dx
+        self.b += dy
+
+point1 = Point(1, 2)
+point2 = Point(10, 20)
+
+print(point1.__dict__)  # {"a": 1, "b": 2}
+print(point2.__dict__)  # {"a": 10, "b": 20}
+
 class Player:
     def __init__(self, x, y):
         self.x = x
@@ -111,7 +124,7 @@ class Covid:
         c = cls()
         with open('_covid_data.csv', 'r') as f:
             rows = csv.reader(f)
-            headers = next(rows)    # Skipping Headers
+            next(rows)    # Skipping Headers
             for row in rows:
                 c.add_case(row[0], row[1], row[2])
         return c
