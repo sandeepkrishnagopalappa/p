@@ -57,6 +57,24 @@ class Employee:
 e1 = Employee("Steve", "Jobs", 1000)
 e2 = Employee("Bill", "Gates", 2000)
 
+
+class BankAccount:
+    def __init__(self, name, amount):
+        self.name = name
+        self.amount = amount
+
+    def deposit(self, amount):
+        self.amount += amount
+
+    def withdraw(self, amount):
+        self.amount -= amount
+
+    def balance(self):
+        print(self.amount)
+
+b1 = BankAccount("steve", 1000)
+b2 = BankAccount("bill", 2000)
+
 # Company Class.
 class Company:
     def __init__(self):
