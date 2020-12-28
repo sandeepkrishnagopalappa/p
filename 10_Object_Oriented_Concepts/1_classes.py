@@ -140,11 +140,11 @@ class Covid:
     @classmethod
     def from_csv(cls):
         c = cls()
-        with open('_covid_data.csv', 'r') as f:
+        with open('covid_data.csv', 'r') as f:
             rows = csv.reader(f)
             next(rows)    # Skipping Headers
             for row in rows:
-                c.add_case(row[0], row[1], row[2])
+                c.add_case(row[2], row[3], row[5])
         return c
 
     def total_cases(self):
@@ -158,11 +158,11 @@ class Covid:
         return d
 
 
-with open('_covid_data.csv', 'r') as f:
+with open('covid_data.csv', 'r') as f:
     rows = csv.reader(f)
     headers = next(rows)    # Skipping Headers
     c = Covid()
     for row in rows:
-        c.add_case(row[0], row[1], row[2])
+        c.add_case(row[2], row[3], row[5])
     print(c.total_cases())
     print(c.cases_by_country())
