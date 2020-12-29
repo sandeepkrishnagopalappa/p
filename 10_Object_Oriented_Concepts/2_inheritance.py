@@ -184,7 +184,7 @@ class SalaryAccount(BankAccount):
         super().deposit(amount)
 
     def overdraft(self, amount):
-        if amount <= 10000:
+        if self._draft_amount <= 10000:
             self.amount += amount
             self._draft_amount += amount
             self._transactions.append(f'{datetime.now()} ***Overdraft Amount Credited*** {amount}')
