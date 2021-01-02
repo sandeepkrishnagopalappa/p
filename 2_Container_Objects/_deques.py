@@ -7,7 +7,7 @@ d = deque("hello")  # deque(['h', 'e', 'l', 'l', 'o'])
 d.append('w')   # deque(['h', 'e', 'l', 'l', 'o', 'w'])
 
 # add a new entry to the left side
-d.append('P')   # deque(['P', 'h', 'e', 'l', 'l', 'o', 'w'])
+d.appendleft('P')   # deque(['P', 'h', 'e', 'l', 'l', 'o', 'w'])
 
 # return and remove the rightmost item
 d.pop()     # deque(['P', 'h', 'e', 'l', 'l', 'o'])

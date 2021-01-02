@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/4_Comprehensions/_maps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_Comprehensions/_filter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8_Decorators/_decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/8_Decorators/_decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_Container_Objects/_deques.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_Container_Objects/_deques.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -359,6 +359,10 @@
       <screen x="0" y="23" width="1280" height="730" />
     </state>
     <state x="18" y="23" key="SettingsEditor/0.23.1280.730@0.23.1280.730" timestamp="1604311289368" />
+    <state x="431" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609590615274">
+      <screen x="0" y="25" width="1280" height="722" />
+    </state>
+    <state x="431" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1280.722@0.25.1280.722" timestamp="1609590615274" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
