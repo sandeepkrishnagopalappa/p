@@ -85,6 +85,14 @@ def func_count(func):
     wrapper.count = 0
     return wrapper
 
+# Creats a dictionary with func and the func call count
+from collections import defaultdict
+d = defaultdict(int)
+def cache(func):
+    def wrapper(*args, **kwargs):
+        d[func.__name__] += 1
+        return func(*args, **kwargs)
+    return wrapper
 
 def type_check(exp_types, actual_values):
     for _type, _value in zip(exp_types, actual_values):
