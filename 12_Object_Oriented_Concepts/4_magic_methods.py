@@ -21,34 +21,42 @@ class Point:
     def __init__(self, a, b):
         self.a = a
         self.b = b
-        self.points = (a, b)
+        self._points = (a, b)
 
     # Making Object Printable
     def __str__(self):
         return f"({self.a},{self.b})"
 
+    # Implementing length of the object
+    def __len__(self):
+        return len(self._points)
+
     # Making an object iterable
     def __iter__(self):
-        return iter([i for i in self.points])
+        return iter([i for i in self._points])
 
     # Implementing membership operator
     def __contains__(self, item):
-        return item in (self.a, self.b)
+        return item in self._points
 
     # Making an object indexable!
     def __getitem__(self, item):
-        return self.points[item]
+        return self._points[item]
 
-    # Implementing length of the object
-    def __len__(self):
-        return len(self.points)
+    # Restricting adding new attribute to the class
+    def __setattr__(self, name, value):
+        print('Setting Attribute')
+        if name not in {"a", "b", "points"}:
+            raise AttributeError(f"Cannot Add new Attribute {name}")
+        super().__setattr__(name, value)
 
     # Checks if two Point objects are equal
     def __eq__(self, other):
-        return (self.points) == (other.points)
+        return (self._points) == (other._points)
 
     def __gt__(self, other):
-        return sum(self.points) > sum(other.points)
+        return sum(self._points) > sum(other.points)
+
 
 # Implementing magic methods on Company class
 class Company:
