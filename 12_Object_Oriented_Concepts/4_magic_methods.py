@@ -43,10 +43,10 @@ class Point:
     def __getitem__(self, item):
         return self._points[item]
 
-    # Restricting adding new attribute to the class
+    # Restricting adding new attribute to the class (Making Class Immutable)
     def __setattr__(self, name, value):
         print('Setting Attribute')
-        if name not in {"a", "b", "points"}:
+        if name not in {"a", "b", "_points"}:
             raise AttributeError(f"Cannot Add new Attribute {name}")
         super().__setattr__(name, value)
 
