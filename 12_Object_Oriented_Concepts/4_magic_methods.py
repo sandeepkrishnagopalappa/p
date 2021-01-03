@@ -25,28 +25,33 @@ class Point:
 
     # String representation of Point Object
     def __str__(self):
+        print('Running __str__')
         return f"({self.a},{self.b})"
 
     # Implementing length of the Point Object
     def __len__(self):
+        print('Running __len__')
         return len(self._points)
 
     # Making an object iterable
     def __iter__(self):
+        print('Running __iter__')
         return iter(self._points)
 
     # Implementing membership operator
     def __contains__(self, item):
+        print('Running __contains__')
         return item in self._points
 
     # Making an object indexable!
     def __getitem__(self, item):
+        print('Running __getitem__')
         return self._points[item]
 
     # Restricting adding new attribute to the class (Making Class Immutable)
     # Override __setattr__ method of object class.
     def __setattr__(self, name, value):
-        print('Setting Attribute')
+        print('Running __setattr__')
         if name not in {"a", "b", "_points"}:
             raise AttributeError(f"Cannot Add new Attribute {name}")
         super().__setattr__(name, value)
@@ -54,14 +59,17 @@ class Point:
     # Restricting someone from deleting the attribute.
     # Override __delattr__ method of object class.
     def __delattr__(self, name):
+        print('Running __delattr__')
         raise AttributeError('Cannot Delete Attribute {}'.format(name))
 
     # Checks if two Point objects are equal
     def __eq__(self, other):
+        print('Running __eq__')
         return self._points == other._points
 
     # Checks if the first Point object is greater than second Point Object
     def __gt__(self, other):
+        print('Running __gt__')
         return sum(self._points) > sum(other.points)
 
     # Checks if the first Point object is less than second Point Object
