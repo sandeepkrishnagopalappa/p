@@ -10,11 +10,47 @@ x.__sub__(10)
 
 names = ['apple', 'google', 'yahoo']
 
-names.__getitem__(0)
+names.__getitem__(0)    # Same as names[0]
 
-names.__setitem__(1, 'facebook')
+names.__setitem__(1, 'facebook')    # Same as names[1] = "facebook"
+
+names.__contains__("apple")     # Same as "apple" in names
 
 
+class Point:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+        self.points = (a, b)
+
+    # Making Object Printable
+    def __str__(self):
+        return f"({self.a},{self.b})"
+
+    # Making an object iterable
+    def __iter__(self):
+        return iter([i for i in self.points])
+
+    # Implementing membership operator
+    def __contains__(self, item):
+        return item in (self.a, self.b)
+
+    # Making an object indexable!
+    def __getitem__(self, item):
+        return self.points[item]
+
+    # Implementing length of the object
+    def __len__(self):
+        return len(self.points)
+
+    # Checks if two Point objects are equal
+    def __eq__(self, other):
+        return (self.points) == (other.points)
+
+    def __gt__(self, other):
+        return sum(self.points) > sum(other.points)
+
+# Implementing magic methods on Company class
 class Company:
     def __init__(self):
         self._team = []
