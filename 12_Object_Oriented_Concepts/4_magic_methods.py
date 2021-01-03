@@ -23,17 +23,17 @@ class Point:
         self.b = b
         self._points = (a, b)
 
-    # Making Object Printable
+    # String representation of Point Object
     def __str__(self):
         return f"({self.a},{self.b})"
 
-    # Implementing length of the object
+    # Implementing length of the Point Object
     def __len__(self):
         return len(self._points)
 
     # Making an object iterable
     def __iter__(self):
-        return iter([i for i in self._points])
+        return iter(self._points)
 
     # Implementing membership operator
     def __contains__(self, item):
@@ -44,19 +44,40 @@ class Point:
         return self._points[item]
 
     # Restricting adding new attribute to the class (Making Class Immutable)
+    # Override __setattr__ method of object class.
     def __setattr__(self, name, value):
         print('Setting Attribute')
         if name not in {"a", "b", "_points"}:
             raise AttributeError(f"Cannot Add new Attribute {name}")
         super().__setattr__(name, value)
 
+    # Restricting someone from deleting the attribute.
+    # Override __delattr__ method of object class.
+    def __delattr__(self, name):
+        raise AttributeError('Cannot Delete Attribute {}'.format(name))
+
     # Checks if two Point objects are equal
     def __eq__(self, other):
-        return (self._points) == (other._points)
+        return self._points == other._points
 
+    # Checks if the first Point object is greater than second Point Object
     def __gt__(self, other):
         return sum(self._points) > sum(other.points)
 
+    # Checks if the first Point object is less than second Point Object
+    def __lt__(self, other):
+        print('Running __lt__')
+        return sum(self._points) < sum(other._points)
+
+    # Adds two Point Objects
+    def __add__(self, other):
+        print('Running __add__')
+        return sum(self._points) + sum(other._points)
+
+    # Subtracts two Point Objects
+    def __sub__(self, other):
+        print('Running __sub__')
+        return sum(self._points) - sum(other._points)
 
 # Implementing magic methods on Company class
 class Company:
