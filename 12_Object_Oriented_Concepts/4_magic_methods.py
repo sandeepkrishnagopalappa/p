@@ -1,5 +1,17 @@
 import csv
 
+names = ['apple', 'google', 'yahoo']
+
+names.__getitem__(0)    # Same as names[0]
+
+names.__setitem__(1, 'facebook')    # Same as names[1] = "facebook"
+
+names.__getattribute__("append")        # Same as names.append
+
+names.__contains__("apple")     # Same as "apple" in names
+
+names.__len__()     # Sames as len(names)
+
 x = 10
 
 x.__add__(10)
@@ -7,14 +19,6 @@ x.__add__(10)
 x.__mul__(10)
 
 x.__sub__(10)
-
-names = ['apple', 'google', 'yahoo']
-
-names.__getitem__(0)    # Same as names[0]
-
-names.__setitem__(1, 'facebook')    # Same as names[1] = "facebook"
-
-names.__contains__("apple")     # Same as "apple" in names
 
 
 class Point:
