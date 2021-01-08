@@ -90,19 +90,6 @@ for item in itertools.islice(names, None, 3):
     print(item)
 # start upto index 3 but not including index 3 (item[:3])
 
-
-# islice is usually used to take slice of data produced by an iterator
-def count(number):
-    while True:
-        yield number
-        number += 1
-
-
-i = count(0)
-for item in itertools.islice(i, 5, 10):
-    print(item)
-
-
 # Reading first 5 lines of the file
 with open('read.txt', 'r') as f:
     lines = itertools.islice(f, 5, None)
@@ -110,11 +97,20 @@ with open('read.txt', 'r') as f:
         print(line, end='')
 # ================================================================
 
-portfolio = [{'name': 'AA', 'shares': 100, 'date': '26/07/2010'},
-             {'name': 'IBM', 'shares': 90, 'date': '26/08/2010'},
-             {'name': 'FB', 'shares': 240, 'date': '26/09/2010'},
-             {'name': 'FB', 'shares': 210, 'date': '26/06/2010'}
-             ]
+# chain
+a = [1, 2, 3]
+b = [4, 5, 6]
+c = [7, 8, 9]
+
+# Merges all 3 list's and returns an iterator object
+d = itertools.chain(a, b, c)
+
+portfolio = [
+    {'name': 'AA', 'shares': 100, 'date': '26/07/2010'},
+    {'name': 'IBM', 'shares': 90, 'date': '26/08/2010'},
+    {'name': 'FB', 'shares': 240, 'date': '26/09/2010'},
+    {'name': 'FB', 'shares': 210, 'date': '26/06/2010'}
+]
 
 # Groupby Date
 for name, item in itertools.groupby(portfolio, key=lambda item: item['date']):
