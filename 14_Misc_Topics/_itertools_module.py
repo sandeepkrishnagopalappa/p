@@ -117,10 +117,13 @@ c = [7, 8, 9]
 # Merges all 3 list's and returns an iterator object
 d = itertools.chain(a, b, c)
 
+
+# GroupBy
+# ================================================================
 portfolio = [
-    {'name': 'AA', 'shares': 100, 'date': '26/07/2010'},
+    {'name': 'AA', 'shares': 100, 'date': '25/06/2010'},
     {'name': 'FB', 'shares': 110, 'date': '23/09/2010'},
-    {'name': 'IBM', 'shares': 90, 'date': '26/08/2010'},
+    {'name': 'IBM', 'shares': 90, 'date': '26/07/2010'},
     {'name': 'FB', 'shares': 240, 'date': '23/09/2010'},
     {'name': 'FB', 'shares': 210, 'date': '26/06/2010'},
     {'name': 'FB', 'shares': 109, 'date': '24/06/2010'},
@@ -143,6 +146,23 @@ for name, item in itertools.groupby(portfolio, key=lambda item: item['name']):
     print(name)
     for it in item:
         print(it)
+
+# zip_longest
+# =======================================================================
+a = [1, 2, 3]
+b = [4, 5, 6, 7, 8]
+
+z = itertools.zip_longest(a, b)
+
+print(list(z))  # Prints [(1, 4), (2, 5), (3, 6), (None, 7), (None, 8)]
+
+z = itertools.zip_longest(a, b, fillvalue="NA")
+print(list(z))  # Prints [(1, 4), (2, 5), (3, 6), (NA, 7), (NA, 8)]
+
+# takewhile
+# =======================================================================
+t = itertools.takewhile(lambda item: item in 'aeiou', 'ear')
+print(list(t))  # ['e', 'a']
 
 # Iterating through varying records
 prices = [
