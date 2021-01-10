@@ -4,13 +4,12 @@ import datetime
 my_dt = datetime.datetime(2019, 5, 26, 8)
 
 # Below code Throws exception "attribute 'year' of 'datetime.date' objects is not writable"
-try:
-    my_dt.year = 2020
-except Exception as e:
-    print(e)
+my_dt.year = 2022
 
-# Use replace to get new datetime object
-my_dt.replace(year=2020, minute=30)
+# Traceback (most recent call last):
+#   File "<pyshell#74>", line 1, in <module>
+#     td.year = 2022
+# AttributeError: attribute 'year' of 'datetime.date' objects is not writable
 
 # Converting String to Python DateTime format
 dt = '1/1/2014  12:38:00 PM'   # The Data Type of dt is String

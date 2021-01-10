@@ -29,25 +29,35 @@ for _ in range(5):
 
 # ================================================================
 # REPEAT
-counter = itertools.repeat(2)
+r_2 = itertools.repeat(2)
 
-for _ in range(5):  # Repeats the number 5 times
-    print(next(counter))
+# Prints 2 infinitely
+for item in r_2:
+    print(item)
 
-counter = itertools.repeat(2, times=5)
+r_2 = itertools.repeat(2, times=5)
 
-for item in counter:
+# Prints 2, 5 times
+for item in r_2:
+    print(item)
+
+# Prints string 'hello' 10 times
+r_hello = itertools.repeat('hello', times=10)
+for item in r_hello:
     print(item)
 
 # ================================================================
 # COMBINATION
 letters = ['a', 'b', 'c']
-
 my_comb = itertools.combinations(letters, 2)
 
 for item in my_comb:
     print(item)
 
+vowel_comb = itertools.combinations("aeiou", 2)
+
+for item in vowel_comb:
+    print(item)
 
 # ================================================================
 # PERMUTATION
@@ -73,6 +83,7 @@ my_permutation = itertools.permutations(letters, 2)
 for item in my_permutation:
     print(item)
 
+# ================================================================
 # iSlice
 
 names = ['apple', 'google', 'yahoo', 'flikpart', 'netflix', 'gmail']
@@ -97,6 +108,7 @@ with open('read.txt', 'r') as f:
         print(line, end='')
 # ================================================================
 
+# ================================================================
 # chain
 a = [1, 2, 3]
 b = [4, 5, 6]
@@ -107,17 +119,25 @@ d = itertools.chain(a, b, c)
 
 portfolio = [
     {'name': 'AA', 'shares': 100, 'date': '26/07/2010'},
+    {'name': 'FB', 'shares': 110, 'date': '23/09/2010'},
     {'name': 'IBM', 'shares': 90, 'date': '26/08/2010'},
-    {'name': 'FB', 'shares': 240, 'date': '26/09/2010'},
-    {'name': 'FB', 'shares': 210, 'date': '26/06/2010'}
+    {'name': 'FB', 'shares': 240, 'date': '23/09/2010'},
+    {'name': 'FB', 'shares': 210, 'date': '26/06/2010'},
+    {'name': 'FB', 'shares': 109, 'date': '24/06/2010'},
+    {'name': 'IBM', 'shares': 80, 'date': '24/06/2010'},
+    {'name': 'AAPL', 'shares': 110, 'date': '25/06/2010'}
 ]
 
+# Sort the list based on date
+portfolio.sort(key=lambda item: item['date'])
 # Groupby Date
 for name, item in itertools.groupby(portfolio, key=lambda item: item['date']):
     print(name)
     for it in item:
         print(it)
 
+# Sort the list based on Name
+portfolio.sort(key=lambda item: item['name'])
 # Groupby Shares Name
 for name, item in itertools.groupby(portfolio, key=lambda item: item['name']):
     print(name)
