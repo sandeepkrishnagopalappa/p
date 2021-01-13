@@ -129,26 +129,22 @@ class MaxWithdrawLimtExceeded(Exception):
 
 
 class BankAccount:
-    c = count(start=1)  # To Generate Account Numbers
-    __accounts = []  # List to keep track of all the accounts
     interest_rate = 4.0
 
     def __init__(self, fname, lname, amount):
         self.fname = fname
         self.lname = lname
-        self.amount = float(amount)
-        self._account_no = str(next(self.c)).zfill(9)
-        BankAccount.__accounts.append(self)
+        self.balance = float(amount)
         self._transactions = []
         self._transactions.append(f"{datetime.now()} ***Initial Deposit*** {self.amount}")
 
     def deposit(self, amount):
-        self.amount += float(amount)
+        self.balance += float(amount)
         self._transactions.append(f'{datetime.now()} Deposited Amount: {amount}')
 
     def withdraw(self, amount):
-        if amount <= self.amount:
-            self.amount -= amount
+        if amount <= self.balance:
+            self.balance -= amount
             self._transactions.append(f'{datetime.now()} Withdrawn Amount: {amount}')
         else:
             raise InsufficientBalance()
@@ -156,10 +152,10 @@ class BankAccount:
     def statement(self):
         for line in self._transactions:
             print(line)
-        print(f"Total Account Balance: {self.amount}")
+        print(f"Total Account Balance: {self.balance}")
 
     def roi(self):
-        self.amount = self.amount + self.amount * (self.interest_rate / 100)
+        self.balance = self.balance + self.balance * (self.interest_rate / 100)
 
 
 class SavingsAccount(BankAccount):
@@ -173,19 +169,19 @@ class SavingsAccount(BankAccount):
 
 class SalaryAccount(BankAccount):
     def __init__(self, fname, lname):
-        self._count = 0
-        self._draft_amount = 0
+        self.isFirstTime = True
+        self._draft_amount = 0.00
         super().__init__(fname, lname, 0.00)
 
     def deposit(self, amount):  # Add A/C opening Bonus of 1000rs
-        self._count += 1
-        if self._count == 1:
-            self.amount += 1000
+        if self.isFirstTime:
+            self.balance += 1000
+            self.isFirstTime = False
         super().deposit(amount)
 
     def overdraft(self, amount):
         if self._draft_amount <= 10000:
-            self.amount += amount
+            self.balance += amount
             self._draft_amount += amount
             self._transactions.append(f'{datetime.now()} ***Overdraft Amount Credited*** {amount}')
         else:
@@ -216,7 +212,7 @@ class SukanyaSamrudhiAccount(BankAccount):
 
 class PenaltyAccount:
     def withdraw(self, amount):
-        self.amount -= 200  # Penalty for withdrawing from PensionAccount
+        self.balance -= 200  # Penalty for withdrawing from PensionAccount
         super().withdraw(amount)
 
 
