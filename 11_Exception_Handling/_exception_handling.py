@@ -9,23 +9,8 @@ else:           # Else Block Runs only if there is no exception in try block
 finally:        # Finally Block Runs regardless of what happens in try and except block
     print('Running finally')
 
-
-# Handling divide by zero exception
-def divide(number):
-    try:
-        result = 1 / number
-    except ZeroDivisionError as e:  # The Scope of e is only inside except block
-        print(e)
-    except TypeError as e:
-        print(e)
-    else:
-        return result
-
-
-print(divide(0))    # Raises divide by zero exception
-print(divide(2))  # Raises Type error
-
-total = 0
+# Handling Bad records in csv file.
+total = 0.00
 with open('portfolio.csv', 'r') as f:
     next(f)     # Skip the header
     rows = csv.reader(f)
@@ -37,6 +22,23 @@ with open('portfolio.csv', 'r') as f:
             continue
 
 print('Total value of stock is :', total)
+
+# Handling Divide by Zero exception.
+def func(n1, n2):
+    try:
+        result = n1 / n2
+    except ZeroDivisionError:
+        print("Bad Record:",(n1, n2))
+    else:
+        print(result)
+    finally:
+        print('Executing Finally')
+
+numbers = [(1, 0), (3, 4), (4, 5), (1, 0), (3, 4), (3, 0)]
+
+for number in numbers:
+    n1, n2 = number
+    func(n1, n2)
 
 
 # Raising exceptions

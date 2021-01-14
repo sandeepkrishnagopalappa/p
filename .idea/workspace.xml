@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_alternate_constructor_mechanism.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/2_inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/2_inheritance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python-Topics.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Python-Topics.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_Exception_Handling/_exception_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/11_Exception_Handling/_exception_handling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python_Coding_Exercise/_python_coding_problems.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
