@@ -1,23 +1,17 @@
 """
-1. map() function is a built-in function that allows you to
-process and transform all the items in an iterable without
+1. map() function is a built-in function that allows you to process and transform all the items in an iterable without
 using an explicit for loop, a technique commonly known as mapping.
 
-2. map() maps a function with an iterable. The functions transforms
-the each item of the iterable/iterator and returns a new map object
+2. map() maps a function with an iterable. The functions transforms the each item of the iterable/iterator and returns a new map object
 which is an iterator.
 
-3. General Syntax of map() function.
-map(function, iterable[, iterable1, iterable2,..., iterableN])
+3. General Syntax of map() function. map(function, iterable[, iterable1, iterable2,..., iterableN])
 
-4. map() applies the function to each item in the iterable in the loop
-and returns a new iterator, which you can feed it to next() function.
+4. map() applies the function to each item in the iterable in the loop and returns a new iterator, which you can feed it to next() function.
 
-5. The first argument to the map function is a callable. This includes
-built-in functions, classes, methods, lambda expressions/functions.
+5. The first argument to the map function is a callable. This includes built-in functions, classes, methods, lambda expressions/functions.
 
-6. The advantage of map function is that, it returns an iterator object
-and not a list. So the memory consumption is less. Each item inside the map
+6. The advantage of map function is that, it returns an iterator object and not a list. So the memory consumption is less. Each item inside the map
 object can be obtained on-demand.
 """
 
@@ -84,3 +78,7 @@ words = ['This ', ' is', ' Python', ' Programming  ', ' Language ']
 stripped = map(str.strip, words)
 print(list(stripped))
 
+# Factorial of a numbers
+from math import factorial
+f = map(factorial, [1, 2, 3, 4])
+print(list(f))
