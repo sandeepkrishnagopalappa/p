@@ -82,3 +82,12 @@ print(list(stripped))
 from math import factorial
 f = map(factorial, [1, 2, 3, 4])
 print(list(f))
+
+# Passing a class which is callable to map function
+class Squares:
+    def __call__(self, item):
+        return item ** 2
+
+s = Squares()
+m = map(s, [1, 2, 3, 4, 5])
+print(list(m))

@@ -2,10 +2,10 @@ from itertools import count
 import time
 
 '''
-A Generator is a function that returns an iterator. It generates values using the 'yield' keyword.
-They don't take memory of a list. They are LAZY Iterables. Generators are used for saving memory.
-when called on next() function a raises StopIteration exception when there are no more values to generate.
-'yield' keyword suspends or pauses the execution of the function. But 'return' statement ends the function.
+1. A Generator is a function that returns an iterator. It generates values using the 'yield' keyword.
+2. They don't take memory of a list. They are LAZY Iterables. Generators are used for saving memory.
+3. when called on next() function a raises StopIteration exception when there are no more values to generate.
+4. 'yield' keyword suspends or pauses the execution of the function. But 'return' statement ends the function.
 '''
 # Simple Generator
 def func():
