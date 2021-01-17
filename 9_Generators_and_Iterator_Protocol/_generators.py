@@ -58,6 +58,29 @@ def actual_lines():
 # Generator Expression!
 g_actual_lines = (line for line in open('code.txt') if not line.startswith('#') and line.strip())
 
+# Generator which yeild words in a sentence
+sentence = "Hello world welcome to Python"
+def g_words(sentence):
+    words = sentence.split()
+    for word in words:
+        yield word
+
+# Write a generator function which yields a line from a log file, if the line has "EVENT" string in it
+def g_lines():
+    with open('errors.log') as f:
+        for line in f:
+            if 'EVENT' in line:
+                yield line
+
+g = g_lines()
+for line in g:
+    print(line)
+
+# Generator Expression for the above problem
+lines = (line for line in open("Data/sample.log") if "EVENT" in line)
+
+for line in lines:
+    print(line)
 
 # Function that reads entire contents of file to a list
 def read_log():
