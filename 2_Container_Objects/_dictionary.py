@@ -6,6 +6,13 @@ from collections import defaultdict
 employee = {}
 employee = dict()   # Using Constructor
 
+# Different ways of constructing a dictionary
+d = dict(Bangalore=25, Chennai=35, Delhi=30)
+d = dict([("Bangalore", 25), ("Chennai", 35), ("Delhi", 30)])
+d = dict(zip(["Bangalore", "Chennai", "Delhi"], [25, 35, 30]))
+d = dict({'Bangalore': 25, "Chennai": 35, "Delhi": 30})
+
+
 # Adding elements to an empty dictionary
 employee['name'] = 'steve'
 employee['salary'] = 60000

@@ -19,10 +19,9 @@ sorted_tup = sorted(tup)
 print('Sorted Tuple ', sorted_tup)
 
 # Sorting Dictionary
+prices = {'ACME': 45.23, 'AAPL': 612.78, 'IBM': 205.55, 'HPQ': 37.20, 'FB': 10.75 }
 
-profile = {'fname': 'mark', 'lname': 'rob', 'language': ['java', 'python'], 'salary': 90000, 'age': 30}
-
-sorted_dict = sorted(profile)
+sorted_dict = sorted(prices)
 
 print(sorted_dict)      # Sorts the keys of the dictionary in ascending order
 
