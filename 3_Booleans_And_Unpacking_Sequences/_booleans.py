@@ -23,39 +23,42 @@ and a set() with atleast one element evaluates to Bool True
 
 8. Bool True evaluates to True and False evaluates to False
 """
+# Strings
+# Case:1
+line = 'hello world welcome to python'
+print(line[10:])
 
-condition = ''
+# Case:2
+line = '         hello world welcome to python           '
+# print(line.strip()[10:])
 
-if condition:
-    print('Evaluated to True')
+# Case:3
+line = '                                           '
+print(line.strip()[10:])
+
+if len(line.strip()) > 0:
+    print(line.strip()[10:])
 else:
-    print('Evaluated to False')
+    print('String length is Zero')
 
-# and
-# or
-# not
-# is
-
-user = 'Admin'
-logged_in = True
-
-if user == 'Admin' and logged_in:
-    print('Admin page')
+if line.strip():
+    print(line.strip()[10:])
 else:
-    print('Invalid Credentials!!!')
+    print('String length is Zero')
 
-if not logged_in:
-    print('Please login')
+# Lists
+words = ['apple', 'google', 'yahoo', 'gmail']
+words = []
+
+if len(words) > 0:
+    for word in words:
+        print(word)
 else:
-    print('Welcome!')
+    print('List is Empty')
 
-a = [1, 2, 3]
-b = [1, 2, 3]
 
-print(a == b)   # Evaluates to True
-print(a is b)   # Evaluates to False    id(a) == id(b)
-
-c = a
-
-print(a == c)   # Evaluates to True
-print(a is c)   # Evaluates to True
+if words:
+    for word in words:
+        print(word)
+else:
+    print('List is Empty')
