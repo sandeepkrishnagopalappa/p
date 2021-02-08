@@ -2,69 +2,60 @@ from collections import OrderedDict
 from collections import defaultdict
 # PYTHON DICTIONARIES
 
-# Creating an empty Dictionary
-employee = {}
-employee = dict()   # Using Constructor
-
 # Different ways of constructing a dictionary
+d = {}
+d = dict()
 d = dict(Bangalore=25, Chennai=35, Delhi=30)
 d = dict([("Bangalore", 25), ("Chennai", 35), ("Delhi", 30)])
 d = dict(zip(["Bangalore", "Chennai", "Delhi"], [25, 35, 30]))
 d = dict({'Bangalore': 25, "Chennai": 35, "Delhi": 30})
 
-
-# Adding elements to an empty dictionary
-employee['name'] = 'steve'
-employee['salary'] = 60000
-
-print(employee)
-
-employee = {'name': 'steve', 'salary': 60000, 'languages': ['java', 'python']}
-
-print(len(employee))    # Prints the length of the dictionary
+print(len(d))    # Prints the length of the dictionary
 
 # Accessing elements of a dictionary
-print(employee['name'])
-print(employee['languages'])
-print(employee.get('salary'))
+print(d['Bangalore'])
+print(d.get('Bangalore'))
+
+location = {'country': 'India', 'states': ['Karnataka', 'Anrda', 'Kerala']}
+
+# Nested Dictionary
+prices = {'IBM': {'current': 90.1, 'low': 88.3, 'high': 92.7}}
+print(prices['IBM']['current'])
+print(prices['IBM']['high'])
 
 # Accessing a key that does not exist
 # print(employee['age'])      # Throws exception KeyError: 'age'
-print(employee.get('age'))      # get() method Does not throw an exception, but returns 'None'
-print(employee.get('age', 'The Key not found in the dictionary'))   # Throws exception KeyError: 'age'
+print(d.get('Noida'))      # get() method Does not throw an exception, but returns 'None'
+print(d.get('Noida', 'The Key not found in the dictionary'))   # Throws exception KeyError: 'age'
 
 # Adding / Updating the dictionary
-employee.update({'age': 35, 'phone': '111-1111'})
-employee['age'] = 45  # Upadting the dictionary key with new value
-employee = {**employee, 'address': '2200, Valley View Lane'}
-
+d.update({"Mysore": 26, "Cochin": 28})
+d['Mysore'] = 26.5  # Upadting the dictionary key with new value
 
 # Deleting the key and value
-employee.popitem()      # Returns and deletes the last key/value pair in the dictionary
-print(employee.pop('age'))    # Returns and Deletes the mentioned key from the dictionary
+d.popitem()      # Returns and deletes the last key/value pair in the dictionary
+print(d.pop('age'))    # Returns and Deletes the mentioned key from the dictionary
 # del employee['age']     # Deletes the Key 'age' and its value
 
 # Looping through Key's and Value's of the Dictionary
-employee = {'name': 'steve', 'salary': 60000, 'languages': ['java', 'python']}
+print(d.items())     # Returns a tuple of key,value pairs
 
-print(employee.items())     # Returns a tuple of key,value pairs
-
-for item in employee:      # Prints only key's of the dictionary
+for item in d:      # Prints only key's of the dictionary
     print(item)
     
-for item in employee:
-    print(employee[item])   # Prints Values of the dictionary
+for item in d:
+    print(d[item])   # Prints Values of the dictionary
 
-for key, value in employee.items():     # Tuple un-packing
+for key, value in d.items():     # Tuple un-packing
     print(key, value)
 
-for key in employee.keys():
+for key in d.keys():
     print(key)
 
-for value in employee.values():
+for value in d.values():
     print(value)
 
-for index, items in enumerate(employee.items()):
+for index, items in enumerate(d.items()):
     print(index, items)
 
 # Merging Dictionaries
@@ -112,11 +103,9 @@ print(min(dict_temp))
 
 # Count number of words in a sentence
 sentence = 'hello world hello world welcome to python'
-
 words = sentence.split()
 
 word_count = {}
-
 for word in words:
     if word in word_count:
         word_count[word] += 1
@@ -125,54 +114,7 @@ for word in words:
 
 print(word_count)
 
-print(word_count)
-
-# Nested Dictionary
-prices = {'IBM': {'current': 90.1, 'low': 88.3, 'high': 92.7}}
-print(prices['IBM']['current'])
-print(prices['IBM']['high'])
-
-# Finding Commonalities in Two Dictionaries
-a = {'x': 1, 'y': 2, 'z': 3}
-
-b = {'w': 10, 'x': 11, 'y': 2}
-
-# Find keys in common
-print(a.keys() & b.keys())     # Prints { 'x', 'y' }
-
-
-# Find keys in a that are not in b
-print(a.keys() - b.keys())  # prints { 'z' }
-
-# Find (key,value) pairs in common
-print(a.items() & b.items())   # prints { ('y', 2) }
-
-
-# Make a new dictionary with certain keys removed
-c = {key: a[key] for key in a.keys() - {'z', 'w'}}  # prints c is {'x': 1, 'y': 2}
-
-# The values() method of a dictionary does not support the set opearations described
-# in above example. this is due to the fact that unlike keys, the items
-# contained in a values view aren’t guaranteed to be unique
-
-
-# However, if you must perform such calculations, they
-# can be accomplished by simply converting the values to a set first.
-
-
-print([value for value in set(a.values()) - {1}])   # Prints [2, 3]
-
-# OrderedDict
-# Ordered Dictonary Maintains Order
-d = OrderedDict()
-d['apple'] = 'A'
-d['google'] = 'G'
-d['yahoo'] = 'Y'
-
-for key, value in d.items():
-    print(key, value)
-
-
+# defaultDict
 profile = defaultdict(list)     # One to Many Mapping
 
 profile['language'].append('Java')
@@ -206,3 +148,13 @@ holidays = {
     (15, 8): 'Independance Day',
     (25, 6): 'Yoga Day'
 }
+
+# OrderedDict
+# Ordered Dictonary Maintains Order
+d = OrderedDict()
+d['apple'] = 'A'
+d['google'] = 'G'
+d['yahoo'] = 'Y'
+
+for key, value in d.items():
+    print(key, value)

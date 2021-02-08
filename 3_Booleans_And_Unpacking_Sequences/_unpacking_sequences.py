@@ -1,9 +1,7 @@
 """
-A sequence is the one which can be indexed.
-Sequences are very common type of iterables in Python.
-String's, List's and Tuple's are sequences in python.
-Dictionaries, sets are iterables but not Sequences.
-All Sequences are Iterables. But all iterables are not sequences.
+1. A sequence is an object which can be indexed.
+2. Any object which implements __getitem__ is a sequence.
+3. All Sequences are Iterables. But all iterables are not sequences.
 """
 
 point = (4, 5)  # Unpacking Tuple

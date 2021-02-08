@@ -1,16 +1,19 @@
-# Sets are Python's builtin data type which has the following characterstics
-#    1. Sets are unordered
-#    2. Elements inside the sets are unique
-#    3. Sets are mutable, but elements inside the set must be hashable
-#    4. Sets cannot be indexed or sliced
+"""
+Sets are Python's builtin data type which has the following characterstics
+   1. Sets are unordered
+   2. Elements inside the sets are unique
+   3. Sets are mutable, but elements inside the set must be hashable
+   4. Sets cannot be indexed or sliced
 
-# Hashable Objects:
-# Hashable objects are the objects which implements __hash__ magic method and
-# hash() method can be called.
+Hashable Objects:
+Hashable objects are the objects which implements __hash__ magic method and
+hash() method can be called.
 
-# All Immutable objects are hashable, but all hashable objects are not immutable
+All Immutable objects are hashable, but all hashable objects are not immutable
 
-# Python Sets can only include hashable objects
+Python Sets can only include hashable objects
+
+"""
 
 # Operations on Set
 a = {1, 2, 3, 3, 4}
