@@ -85,22 +85,6 @@ print(dict_city_pairs)    # Prints dictionary of city and population pairs
 # {'Tokyo': '38,001,000', 'Delhi': '25,703,168', 'Shanghai': '23,740,778',
 # 'Sao Paulo': '21,066,245', 'Mumbai': '21,042,538'}
 
-# Print max and min values in dict_city_pairs
-print(max(dict_city_pairs))
-print(min(dict_city_pairs))
-
-# Prints {'Bangalore': 26, 'Delhi': 35, 'Chennai': 37, 'Kolkata': 32}
-temperatures = [('Bangalore', 26), ('Delhi', 35), ('Chennai', 37), ('Kolkata', 32)]
-dict_temp = dict(temperatures)
-print(dict_temp)
-
-# Prints default value zero if the key is not found in the dictionary
-print(dict_city_pairs.get('Bangalore', 0))
-
-# Print max and min temperatures in dict_temp
-print(max(dict_temp))
-print(min(dict_temp))
-
 # Count number of words in a sentence
 sentence = 'hello world hello world welcome to python'
 words = sentence.split()
@@ -115,14 +99,15 @@ for word in words:
 print(word_count)
 
 # defaultDict
-profile = defaultdict(list)     # One to Many Mapping
+word_count = defaultdict(int)
 
+for word in words:
+    word_count[word] += 1
+
+profile = defaultdict(list)     # One to Many Mapping
 profile['language'].append('Java')
 profile['language'].append('Python')
 
-count = defaultdict(int)
-
-count['apple'] += 1  # Creates the key 'apple' and increments it by 1
 
 cities = [('India', 'Bangalore'),
           ('India', 'Chennai'),
@@ -136,8 +121,7 @@ cities = [('India', 'Bangalore'),
           ]
 
 dd = defaultdict(list)
-for item in cities:
-    country, city = item
+for country, city in cities:
     dd[country].append(city)
 
 # Composite Keys

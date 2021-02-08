@@ -1,15 +1,19 @@
 from itertools import zip_longest
 
 # PYTHON LISTS
-# Lists are Mutable
-# Elements in the Lists are Ordered
-# Lists are not Hashable
-# Lists can hold duplicate elements
-# Lists can be indexed by integers starting zero
+"""
+1. Lists are Mutable
+2. Elements in the Lists are Ordered
+3. Lists can hold duplicate elements
+4. Lists can be indexed by integers starting zero
+"""
 
 # Creating an empty List
 my_list = []
+my_list = [1, 2, 3, 4, 5]
 my_list = list()    # Using list constructor
+my_list = list('helloworld')
+my_list = list([1, 2, 3, 4, 5])
 
 names = ['apple', 'google', 'yahoo', 'amazon', 'facebook', 'instagram', 'microsoft']
 

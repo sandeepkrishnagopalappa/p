@@ -1,13 +1,19 @@
 # Working with 1_Strings or Textaul Data
-# All Variables should in Lower Case. If there are more than one word in the Variable,
-# then we separate with under scores. And this is PYTHON CONVENTION
+"""
+All Variables should in Lower Case. If there are more than one word in the Variable,
+then we separate with under scores. And this is PYTHON CONVENTION
+"""
 # =================================================================
-my_message = 'Hello World'
-print(my_message)
+# Difference ways of constructing a string object
+word = 'Hello World'
+word = str('Hello world')
+print(word)
 
-# We can use both single and Double Quotes for the 1_Strings.
-# If you hava single Quotes in the actual String, we can represent the original String in Double Quotes.
-# If the String actual String contains Double Quotes, we can use single Quotes to represent the String.
+"""
+We can use both single and Double Quotes for the Strings.
+If you hava single Quotes in the actual String, we can represent the original String in Double Quotes.
+If the String actual String contains Double Quotes, we can use single Quotes to represent the String.
+"""
 
 message = "Welcome to Python's world"
 print(message)

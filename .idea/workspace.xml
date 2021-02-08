@@ -20,8 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/2_Container_Objects/speed_comparision_list_tuple.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_Booleans_And_Unpacking_Sequences/_booleans.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_Booleans_And_Unpacking_Sequences/_booleans.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_Strings/_strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_Strings/_strings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_Container_Objects/_dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_Container_Objects/_dictionary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_Container_Objects/_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_Container_Objects/_lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_Container_Objects/membership_speed_comparision_list_tuple_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_Container_Objects/membership_speed_comparision_list_tuple_set.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +93,7 @@
       <recent name="$PROJECT_DIR$/Handling_Files" />
     </key>
   </component>
-  <component name="RunManager" selected="Python._itertools_module">
+  <component name="RunManager" selected="Python tests.pytest in membership_speed_comparision_list_tuple_set.py">
     <configuration name="TC01" type="PythonConfigurationType" factoryName="Python">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,27 +178,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="log_file_live" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Practice" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Iterables_Iterators_And_Generators" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Iterables_Iterators_And_Generators/log_file_live.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="stocks_prices_live (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -253,23 +236,39 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in membership_speed_comparision_list_tuple_set.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2_Container_Objects" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/2_Container_Objects/membership_speed_comparision_list_tuple_set.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.TC01" />
       <item itemvalue="Python._dictionary" />
       <item itemvalue="Python._itertools_module" />
       <item itemvalue="Python.log_file_live (1)" />
-      <item itemvalue="Python.log_file_live" />
       <item itemvalue="Python.stocks_prices_live (1)" />
       <item itemvalue="Python.stocks_prices_live (2)" />
       <item itemvalue="Python tests.pytest in _decorators.py" />
+      <item itemvalue="Python tests.pytest in membership_speed_comparision_list_tuple_set.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in membership_speed_comparision_list_tuple_set.py" />
         <item itemvalue="Python._itertools_module" />
         <item itemvalue="Python.stocks_prices_live (2)" />
         <item itemvalue="Python.log_file_live (1)" />
         <item itemvalue="Python.stocks_prices_live (1)" />
-        <item itemvalue="Python.log_file_live" />
       </list>
     </recent_temporary>
   </component>
@@ -310,49 +309,45 @@
       <screen x="0" y="25" width="1280" height="722" />
     </state>
     <state x="315" y="191" key="#Log_Highlighting_(ideolog)/0.25.1280.722@0.25.1280.722" timestamp="1607175658046" />
-    <state width="1259" height="200" key="GridCell.Tab.0.bottom" timestamp="1610298466408">
+    <state width="1259" height="200" key="GridCell.Tab.0.bottom" timestamp="1612778832740">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
     <state width="1259" height="251" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1604755944232" />
     <state width="1003" height="189" key="GridCell.Tab.0.bottom/0.25.1024.690@0.25.1024.690" timestamp="1608195836591" />
-    <state width="1259" height="200" key="GridCell.Tab.0.bottom/0.25.1280.722@0.25.1280.722" timestamp="1610298466408" />
-    <state width="1259" height="200" key="GridCell.Tab.0.center" timestamp="1610298466406">
+    <state width="1259" height="200" key="GridCell.Tab.0.bottom/0.25.1280.722@0.25.1280.722" timestamp="1612778832740" />
+    <state width="1259" height="200" key="GridCell.Tab.0.center" timestamp="1612778832739">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
     <state width="1259" height="251" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1604755944231" />
     <state width="1003" height="189" key="GridCell.Tab.0.center/0.25.1024.690@0.25.1024.690" timestamp="1608195836590" />
-    <state width="1259" height="200" key="GridCell.Tab.0.center/0.25.1280.722@0.25.1280.722" timestamp="1610298466406" />
-    <state width="1259" height="200" key="GridCell.Tab.0.left" timestamp="1610298466406">
+    <state width="1259" height="200" key="GridCell.Tab.0.center/0.25.1280.722@0.25.1280.722" timestamp="1612778832739" />
+    <state width="1259" height="200" key="GridCell.Tab.0.left" timestamp="1612778832738">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
     <state width="1259" height="251" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1604755944230" />
     <state width="1003" height="189" key="GridCell.Tab.0.left/0.25.1024.690@0.25.1024.690" timestamp="1608195836589" />
-    <state width="1259" height="200" key="GridCell.Tab.0.left/0.25.1280.722@0.25.1280.722" timestamp="1610298466406" />
-    <state width="1259" height="200" key="GridCell.Tab.0.right" timestamp="1610298466407">
+    <state width="1259" height="200" key="GridCell.Tab.0.left/0.25.1280.722@0.25.1280.722" timestamp="1612778832738" />
+    <state width="1259" height="200" key="GridCell.Tab.0.right" timestamp="1612778832739">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
     <state width="1259" height="251" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1604755944231" />
     <state width="1003" height="189" key="GridCell.Tab.0.right/0.25.1024.690@0.25.1024.690" timestamp="1608195836590" />
-    <state width="1259" height="200" key="GridCell.Tab.0.right/0.25.1280.722@0.25.1280.722" timestamp="1610298466407" />
+    <state width="1259" height="200" key="GridCell.Tab.0.right/0.25.1280.722@0.25.1280.722" timestamp="1612778832739" />
     <state width="1259" height="220" key="GridCell.Tab.1.bottom" timestamp="1607256946339">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.1.bottom/0.23.1280.730@0.23.1280.730" timestamp="1602153908421" />
     <state width="1259" height="220" key="GridCell.Tab.1.bottom/0.25.1280.722@0.25.1280.722" timestamp="1607256946339" />
     <state width="1259" height="220" key="GridCell.Tab.1.center" timestamp="1607256946338">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.1.center/0.23.1280.730@0.23.1280.730" timestamp="1602153908421" />
     <state width="1259" height="220" key="GridCell.Tab.1.center/0.25.1280.722@0.25.1280.722" timestamp="1607256946338" />
     <state width="1259" height="220" key="GridCell.Tab.1.left" timestamp="1607256946338">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.1.left/0.23.1280.730@0.23.1280.730" timestamp="1602153908421" />
     <state width="1259" height="220" key="GridCell.Tab.1.left/0.25.1280.722@0.25.1280.722" timestamp="1607256946338" />
     <state width="1259" height="220" key="GridCell.Tab.1.right" timestamp="1607256946339">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
-    <state width="1259" height="224" key="GridCell.Tab.1.right/0.23.1280.730@0.23.1280.730" timestamp="1602153908421" />
     <state width="1259" height="220" key="GridCell.Tab.1.right/0.25.1280.722@0.25.1280.722" timestamp="1607256946339" />
     <state x="18" y="23" key="SettingsEditor" timestamp="1604311289368">
       <screen x="0" y="23" width="1280" height="730" />

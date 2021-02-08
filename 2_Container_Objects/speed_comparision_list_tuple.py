@@ -9,24 +9,15 @@ def _time(func):
         return result
     return wrapper
 
-l = list(range(1000000))
+@_time
+def test_tuple():
+    for i in range(1000000):
+        pass
 
 @_time
 def test_list():
-    999999 in l
-
-s = set(range(1000000))
-
-@_time
-def test_set():
-    999999 in s
-
-t = tuple(range(1000000))
-
-@_time
-def test_tuple():
-    999999 in t
+    for i in range(1000000):
+        pass
 
 test_list()
 test_tuple()
-test_set()
