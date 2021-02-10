@@ -44,8 +44,12 @@ pi_list = [round(math.pi, n) for n in range(1, 6)]
 a = [1, 2, 3, 4, 5]
 s = sum([math.factorial(number) for number in a])
 
+# Reverse the item of a list if the item is of odd length string
+names = ['apple', 'google', 'yahoo', 'facebook', 'yelp', 'flipkart', 'gmail', 'instagram', 'microsoft']
+reverse_odd_length = [name[::-1] for name in names if len(name) % 2 != 0]
+
 # Using "else" in Comprehension
-# Reverse the item of a list if the item is of odd length.
+# Reverse the item of a list if the item is of odd length string otherwise keep the item as is!.
 names = ['apple', 'google', 'yahoo', 'facebook', 'yelp', 'flipkart', 'gmail', 'instagram', 'microsoft']
 reverse_odd_length = [name if len(name) % 2 == 0 else name[::-1] for name in names]
 
@@ -67,10 +71,7 @@ d = {'a': 1, 'b': 2, 'c': 3}
 
 f = {value: key for key, value in d.items()}
 
-sentence = '''Python is an easy to learn, powerful programming language. 
-It has efficient high-level data structures and a simple but effective approach to object-oriented programming.
-Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language 
-for scripting and rapid application development in many areas on most platforms.'''
+sentence = "hello world welcome to python hello hi world welcome to python"
 dict_word_count = {word: sentence.count(word) for word in sentence.split(' ')}
 
 # Counting the number of each character in a String
@@ -129,10 +130,6 @@ dial_codes = [
     ]
 
 country_codes = {code: country for code, country in dial_codes}
-
-# Building a dictionary with type and data mapping
-data = [1, 1.2, 'hello', len, True, (1, 2, 3), {9, 8, 6}, ['apple', 'ibm', 'yahoo']]
-print({type(item): data for item in data})
 
 # Building a dictionary whose price value is more than 200
 prices = {
