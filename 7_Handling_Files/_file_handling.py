@@ -44,10 +44,6 @@ with open('read.txt') as f:
     f_contents = f.read(size_to_read)
     print(f_contents, end='')
 
-# Writing to file
-with open('write.txt', 'a') as f:
-    f.write('Hello world')
-    f.write('\n')
 
 # Printing the line's with line numbers
 with open('sample.txt') as f:
@@ -63,7 +59,6 @@ with open('read.txt') as f:
 with open('read.txt') as f:
     for line in f:
         print(len(line))
-
 
 # Exercises:
 # 1. Extracting IP addresses from log file
@@ -83,7 +78,6 @@ ip = [line.split()[0] for line in open('access-log.txt') if line.strip()]
 
 # Using Set Comprehension
 unique_ip = {line.split()[0] for line in open('access-log.txt', 'r') if line.strip()}
-
 
 out_file = open('ip_list.txt', 'w')
 for item in unique_ip:
@@ -194,3 +188,9 @@ def make_dict(line):
     return {"brand": data[0], "color": data[1], "size": data[2]}
 
 s = [make_dict(line) for line in open('data.txt')]
+
+# Writing to file
+with open('write.txt', 'a') as f:
+    f.write('Hello world')
+    f.write('\n')
+

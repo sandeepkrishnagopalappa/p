@@ -123,28 +123,13 @@ for file in files:
         print(file)
 
 filenames = ['youtube.txt', 'amazon.pdf', 'facebook.pdf', 'google.py', 'apple.doc']
-for filename in filenames:
-    if not filename.endswith('.py'):
-        continue
-    else:
-        print('Python is present!!!!')
-
 # Multiple conditions in startswith and endswith function
 for filename in filenames:
     if filename.endswith(('txt', 'pdf')):   # filename either endswith txt or pdf
         # startswith and endswith can take tuple as an argument
         print(filename)
 
-choices = ['http', 'https']
-url = 'http://www.python.org'
-print(url.startswith(tuple(choices)))
-
-
 # Converting Lists to String
 print('-'.join(names))  # Prints yahoo-netflix-microsoft-instagram-google-gmail-facebook-apple-amazon
 print('|'.join(names))  # Prints yahoo|netflix|microsoft|instagram|google|gmail|facebook|apple|amazon
 print(','.join(names))  # Prints yahoo,netflix,microsoft,instagram,google,gmail,facebook,apple,amazon
-
-# Converting String to List
-my_string = 'Hello World'
-print(list(my_string))  # Prints ['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']

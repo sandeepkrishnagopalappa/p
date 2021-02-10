@@ -23,6 +23,17 @@ greet("Sandeep", age=26, pay=1000)
 def hello(name, company='Unknown'):
     print(f'Hello {name} you work for {company} company')
 
+def greet(name, debug=False):
+    if debug:
+        print('You called greet function')
+    print(f'Hello {name}')
+
+def greet(name, reverse=False):
+    if reverse:
+        print(f'Hello {name[::-1]}')
+    else:
+        print(f'Hello {name}')
+
 # Positional Only and Keyword Only arguments.
 def greet(name, /, *, age, pay):
     print(f'Hello {name} you are {age} years and you have {pay} pay')
@@ -35,32 +46,18 @@ def func(a, *args):
 def func2(a, **kwargs):
     print(a, kwargs)
 
-
 # Combining both
 def anyargs(*args, **kwargs):
     print(args)     # Tuple
     print(kwargs)   # Dictionary
 
-
 anyargs(1, 2, 3, fname='steve', lname='jobs')
-
-
-# Keyword ONLY Arguments. This is available only from Python3
-# After *, all the arguments that are passed should be through
-# Keyword ONLY
-def test_key(name, *, _age):
-    print(name, _age)
-
-
-test_key('Steve', _age=30)
-
 
 def add(*args):
     total = 0
     for num in args:
         total = total + num
     return total
-
 
 print(add())
 print(add(1))
@@ -128,3 +125,9 @@ func()
 func([1, 2])
 func()
 # ================================================================
+
+# lambda expressions/functions
+def add(a, b):
+    return a+b
+
+add = lambda a, b: a+b
