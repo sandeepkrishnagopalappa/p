@@ -76,9 +76,6 @@ print(s.split(' '))     # Prints ['', 'This', 'is', 'a', 'string', '']
 
 info = '560100, Bangalore, KA'
 pin_code, city, state = info.split(',')
-
-print(info.split(',', maxsplit=1))     # Prints ['560100', ' Bangalore, KA']
-
 print(my_message.startswith('Hello'))
 print(my_message.endswith('World'))
 
@@ -86,12 +83,6 @@ my_string = '***************Hello world==================='
 print(my_string.rstrip('='))    # prints ***************Hello world
 print(my_string.lstrip('*'))    # prints Hello world===================
 print(my_string.strip('=*'))    # Prints Hello world
-
-# Aligning the 1_Strings
-filename = 'youtube.txt'
-print(filename.ljust(10))
-print(filename.rjust(10))
-print(filename.center(20))
 
 # String Concatination
 greeting = 'Hello'
