@@ -1,6 +1,5 @@
 from collections import OrderedDict
 from collections import defaultdict
-# PYTHON DICTIONARIES
 
 # Different ways of constructing a dictionary
 d = {}
@@ -73,27 +72,6 @@ d2 = {'age': 56, 'company': 'apple'}
 
 d3 = {**d1, **d2}
 
-# Creating Dictionary using List's
-cities = ['Tokyo',
-          'Delhi',
-          'Shanghai',
-          'Sao Paulo',
-          'Mumbai'
-          ]
-
-population = ['38,001,000',
-              '25,703,168',
-              '23,740,778',
-              '21,066,245',
-              '21,042,538'
-              ]
-
-dict_city_pairs = dict(zip(cities, population))
-
-print(dict_city_pairs)    # Prints dictionary of city and population pairs
-# {'Tokyo': '38,001,000', 'Delhi': '25,703,168', 'Shanghai': '23,740,778',
-# 'Sao Paulo': '21,066,245', 'Mumbai': '21,042,538'}
-
 # Count number of words in a sentence
 sentence = 'hello world hello world welcome to python'
 words = sentence.split()
@@ -107,11 +85,24 @@ for word in words:
 
 print(word_count)
 
-# defaultDict
+# using defaultDict
 word_count = defaultdict(int)
-
 for word in words:
     word_count[word] += 1
+
+# Counting number of characters in a string
+s = 'abracadabraca'
+char_count = {}
+for c in s:
+    if c in char_count:
+        char_count[c] += 1
+    else:
+        char_count[c] = 1
+
+# using defaultDict
+d = defaultdict(int)
+for c in s:
+    d[c] += 1
 
 profile = defaultdict(list)     # One to Many Mapping
 profile['language'].append('Java')

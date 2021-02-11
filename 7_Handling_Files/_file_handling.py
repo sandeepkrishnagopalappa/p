@@ -73,6 +73,14 @@ with open('access-log.txt') as f:
 # Getting unique ip's from the list
 unique_ip = set(ip)
 
+# Using set
+with open('access-log.txt') as f:
+    ip = set()
+    for line in f:
+        if line.strip():
+            parts = line.split()
+            ip.add(parts[0])
+
 # Using List Comprehension
 ip = [line.split()[0] for line in open('access-log.txt') if line.strip()]
 
@@ -125,25 +133,32 @@ with open('sample.log') as log:
             parts = line.split()
             messages[parts[2]] += 1
 
-# Using Counter Object
+# Using Counter object
 message_list = [line.strip().split()[2] for line in open('sample.log') if line.strip()]
 c = Counter(message_list)
 print(c)
 
 # Reading Countries from football.txt
 with open('football.txt') as log:
+    countries = []
     headers = next(log)     # Skipping Header
     for line in log:
         if line.strip():
-            print(line.split()[1])
+            parts = line.split("\t")
+            countries.append(parts[1])
 
 # Using List Comprehension
 countries = [line.strip().split()[1] for line in open("football.txt") if line.strip()]
-
 print(len(countries))
 
-# Getting Unique Countries using set() constructor
-unique_countries = set(countries)
+# Using set
+with open('football.txt') as f:
+    unique_countries = set()
+    headers = next(log)  # Skipping Header
+    for line in f:
+        if line.strip("\t"):
+            parts = line.split()
+            unique_countries.add(parts[1])
 
 # Getting Unique Countries using Set Comprehension
 set_countries = {line.strip().split()[1] for line in open("football.txt") if line.strip()}
@@ -181,6 +196,42 @@ print(least)    # Prints the word with least occurance
 print(maximum)  # Prints the word with maximum occurance
 print(rest)     # Prints all elements between 1st and last element
 
+# Counting occurances of each word in a file
+word_count = {}
+with open('sample.txt') as f:
+    for line in f:
+        if line.strip():
+            words = line.split()
+            for word in words:
+                if word in word_count:
+                    word_count[word] += 1
+                else:
+                    word_count[word] = 1
+
+# Using defaultdict
+word_count = defaultdict(int)
+with open('sample.txt') as f:
+    for line in f:
+        if line.strip():
+            words = line.split()
+            for word in words:
+                d[word] += 1
+
+# Counting total number of words present in a file
+words_count = 0
+with open('sample.txt') as f:
+    for line in f:
+        if line.strip():
+            words = line.split()
+            print(words)
+            words_count += len(words)
+
+# Finding the line no of a perticular word in a file.
+with open('sample.txt') as f:
+    for lineno, line in enumerate(f, start=1):
+        if line.strip():
+            if "Ruby" in line:
+                print(lineno, line)
 
 # list of Dicts from data
 def make_dict(line):
