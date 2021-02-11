@@ -1,4 +1,4 @@
-# Working with 1_Strings or Textaul Data
+# Working with Strings or Textaul Data
 """
 All Variables should in Lower Case. If there are more than one word in the Variable,
 then we separate with under scores. And this is PYTHON CONVENTION
@@ -102,3 +102,24 @@ print('Hello ' * 5)
 # String Conversions
 x = 26
 print(str(x))   # prints '26'
+
+# Iterating over a string
+s = 'hello world'
+
+for c in s:
+    print(c)
+
+# Iterating over a part of a string
+for c in s[:5]:
+    print(c)
+
+# Getting index and item in a string
+for index, item in enumerate(s):
+    print(index, '---->', item)
+
+# Iterating over multiple string objects using zip function
+s1 = 'hello'
+s2 = 'world'
+
+for c1, c2 in zip(s1, s2):
+    print(c1, c2)

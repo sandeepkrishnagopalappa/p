@@ -17,6 +17,7 @@ print(d['Bangalore'])
 print(d.get('Bangalore'))
 
 location = {'country': 'India', 'states': ['Karnataka', 'Anrda', 'Kerala']}
+points = {'a': 1, 'b': 2, 'c': 3}
 
 # Nested Dictionary
 prices = {'IBM': {'current': 90.1, 'low': 88.3, 'high': 92.7}}
@@ -31,6 +32,14 @@ print(d.get('Noida', 'The Key not found in the dictionary'))   # Throws exceptio
 # Adding / Updating the dictionary
 d.update({"Mysore": 26, "Cochin": 28})
 d['Mysore'] = 26.5  # Upadting the dictionary key with new value
+
+# Appending items to the list which is value of the key 'states'
+location['states'].append("Gujrat")
+location['states'].append("Maharastra")
+
+# Incrementing value of key 'a'
+points['a'] = points['a'] + 1
+points['a'] += 1
 
 # Deleting the key and value
 d.popitem()      # Returns and deletes the last key/value pair in the dictionary

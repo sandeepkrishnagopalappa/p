@@ -26,7 +26,7 @@ print(names[0])     # Prints the item present in the 0th index of the List.
 names.append('gmail')   # Adding element to the list
 names.insert(3, 'watsapp')      # Inserts the item at 3rd index.
 names.extend(['netflix', 'walmart', 'kroger'])    # Adds the new list to the existing list
-names = [*names, 'dxc']  # Adds the new list to the existing list
+names = [*names, 'signal']  # Adds the new list to the existing list
 print(names)
 
 print('gmail' in names)     # Prints True if the item is present in the list
@@ -67,6 +67,7 @@ print('yahoo' in names)    # Returns True if the item present in the List
 for item in names:
     print(item)
 
+# Iterating over a part of the list
 for item in names[:4]:
     print(item)
 
