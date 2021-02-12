@@ -47,6 +47,16 @@ def _repeat(n):
     return repeat
 
 
+# Reverse Decorator
+def reverse(func):
+    def wrapper(*args, **kwargs):
+        result = func(*args, **kwargs)
+        if isinstance(result, str):
+            return result[::-1]
+        return result
+    return wrapper
+
+
 # Time Decorator
 def _time(func):
     def wrapper(*args, **kwargs):

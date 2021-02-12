@@ -23,29 +23,6 @@ and a set() with atleast one element evaluates to Bool True
 
 8. Bool True evaluates to True and False evaluates to False
 """
-# Strings
-# Case:1
-line = 'hello world welcome to python'
-print(line[10:])
-
-# Case:2
-line = '         hello world welcome to python           '
-# print(line.strip()[10:])
-
-# Case:3
-line = '                                           '
-print(line.strip()[10:])
-
-if len(line.strip()) > 0:
-    print(line.strip()[10:])
-else:
-    print('String length is Zero')
-
-if line.strip():
-    print(line.strip()[10:])
-else:
-    print('String length is Zero')
-
 # Lists
 words = ['apple', 'google', 'yahoo', 'gmail']
 words = []
@@ -62,3 +39,18 @@ if words:
         print(word)
 else:
     print('List is Empty')
+
+# Strings
+line = "    hello world   "
+if len(line.strip()) > 0:
+    words = line.strip().split()
+else:
+    print('Got Empty String')
+
+if line.strip():
+    words = line.strip().split()
+else:
+    print('Got Empty String')
+
+
+
