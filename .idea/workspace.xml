@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_Container_Objects/_dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_Container_Objects/_dictionary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7_Handling_Files/_file_handling.py" beforeDir="false" afterPath="$PROJECT_DIR$/7_Handling_Files/_file_handling.py" afterDir="false" />
-    </list>
+    <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
