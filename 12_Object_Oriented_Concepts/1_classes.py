@@ -80,17 +80,6 @@ class Company:
     def __init__(self):
         self._team = []
 
-    # Alternate Constructor Mechanism
-    @classmethod
-    def from_csv(cls):
-        c = cls()
-        with open('data/employees.csv') as f:
-            rows = csv.reader(f)
-            next(rows)
-            for row in rows:
-                c._team.append((row[0], row[1], row[2], row[3]))
-        return c
-
     def add_emp(self, name, gender, team, pay):
         self._team.append((name, gender, team, pay))
 
@@ -136,16 +125,6 @@ class Covid:
 
     def add_case(self, country, _date, cases):
         self.records.append({"country": country, "_date": _date, "cases": int(cases)})
-
-    @classmethod
-    def from_csv(cls):
-        c = cls()
-        with open('covid_data.csv', 'r') as f:
-            rows = csv.reader(f)
-            next(rows)    # Skipping Headers
-            for row in rows:
-                c.add_case(row[2], row[3], row[5])
-        return c
 
     def total_cases(self):
         return sum([record['cases'] for record in self.records])
