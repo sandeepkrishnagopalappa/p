@@ -39,6 +39,7 @@ def greet(name, /, *, age, pay):
     print(f'Hello {name} you are {age} years and you have {pay} pay')
 
 # Positional variable arguments (*args)
+# * is used to grab arbitary excess items!
 def func(a, *args):
     print(a, args)
 

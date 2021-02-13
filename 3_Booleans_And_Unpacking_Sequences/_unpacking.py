@@ -31,6 +31,7 @@ print(d)
 print(e)
 
 # Unpacking Elements from iterables of Arbitary length
+# * is used to grab excess arguments/items
 least, *rest, maximum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(least)    # Prints first item in the list
 print(maximum)  # Prints last item in the list
@@ -42,7 +43,10 @@ print(min(rest))
 print(trailing)
 print(current)
 
+a, b, *c = range(1, 10)
+a, b, *rest = range(2)
 
 # Ignoring certain values while unpacking
+# _ is called throwaway variable in python
 data = ['IBM', 50, 91.1, (2019, 7, 17)]
 name, *_, (year, *_) = data

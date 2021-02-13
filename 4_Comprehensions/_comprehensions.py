@@ -1,8 +1,8 @@
 import math
 
 '''
-Comprehensions in Python is a way to build an iterable object in one expression without the need of traditional
-for loop.
+List comprehensions is a way to build lists from sequences or 
+any other iterable type by filtering and transforming items.
 '''
 # List Comprehensions are used for building a new list
 # Square Numbers_And_Booleans in the list. Using 'for' loop

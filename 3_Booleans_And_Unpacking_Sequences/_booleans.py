@@ -51,6 +51,3 @@ if line.strip():
     words = line.strip().split()
 else:
     print('Got Empty String')
-
-
-
