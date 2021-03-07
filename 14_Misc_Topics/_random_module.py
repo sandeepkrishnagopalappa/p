@@ -46,6 +46,13 @@ for _ in range(8):
     password = password + random.choice(random_string)
 print(password)
 
+# Generate 6 digit OTP
+def generate_otp():
+    otp = []
+    for _ in range(6):
+        otp.append(str(random.randint(0, 9)))
+    return ''.join(otp)
+
 
 def random_password(*, upper=1, lower=1, digits=1, special=1, length=8):
     UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"

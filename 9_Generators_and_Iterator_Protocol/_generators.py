@@ -7,6 +7,12 @@ import time
 3. when called on next() function a raises StopIteration exception when there are no more values to generate.
 4. 'yield' keyword suspends or pauses the execution of the function. But 'return' statement ends the function.
 '''
+# A function (Code which is after first return statement will be ignored by python)
+def func():
+    return 1
+    return 2
+    return 3
+
 # Simple Generator
 def func():
     print('Hello')
@@ -44,52 +50,68 @@ i = evens(c)    # passing an infinite iterable to evens func
 # Generator Expression
 evens = (item for item in a if item % 2 == 0)
 
-# Generator which ignores commented lines and yields only actual lines of code
-def actual_lines():
-    with open('code.txt') as f:
+# Generator which yields a log line.
+def loglines(filename):
+    with open(filename) as f:
         for line in f:
-            if not line.strip():
-                continue
-            if line.startswith('#'):
-                continue
-            yield line
+             yield line
 
+def get_events(line, event_type):
+    if event_type in line:
+        yield line
+
+for line in loglines('sample.log'):
+    for event in get_events(line, 'TRACE'):
+        print(event)
 
 # Generator Expression!
-g_actual_lines = (line for line in open('code.txt') if not line.startswith('#') and line.strip())
+loglines = (line for line in open('sample.log'))
+events = (line for line in loglines if 'TRACE' in line)
 
-# Generator which yeild words in a sentence
-sentence = "Hello world welcome to Python"
-def g_words(sentence):
-    words = sentence.split()
-    for word in words:
-        yield word
+# Analysing COVID data
+# Without using Generators!
+def read_csv(filename):
+    records = []
+    with open(filename) as f:
+        rows = csv.reader(f)
+        headers = next(rows)
+        for row in rows:
+            records.append({'country': row[1], 'date': row[3], 'cases': row[5]})
+    return records
 
-# Write a generator function which yields a line from a log file, if the line has "EVENT" string in it
-def g_lines():
-    with open('errors.log') as f:
-        for line in f:
-            if 'EVENT' in line:
-                yield line
+import csv
+# Using Generators
+def g_read_csv(filename):
+    with open(filename) as f:
+        rows = csv.reader(f)
+        headers = next(rows)
+        for row in rows:
+            yield {'country': row[2], 'date': row[3], 'cases': int(row[5])}
 
-g = g_lines()
-for line in g:
-    print(line)
+# Total Cases
+def total_cases():
+    total = 0.00
+    for row in g_read_csv('covid_data.csv'):
+        total += row['cases']
+    return total
 
-# Generator Expression for the above problem
-lines = (line for line in open("Data/sample.log") if "EVENT" in line)
+# Cases By Country
+def cases_by_country():
+    from collections import defaultdict
+    d = defaultdict(int)
+    for row in g_read_csv('covid_data.csv'):
+        d[row['country']] += row['cases']
+    return d
 
-for line in lines:
-    print(line)
-
-# Function that reads entire contents of file to a list
-def read_log():
-    with open('data/airline.log') as f:
-        return f.readlines()
+# Cases by date and Country
+def cases_by_date_country(country, _date):
+    for row in g_read_csv('covid_data.csv'):
+        if row['country'] == country and row['date'] == _date:
+            return row
 
 # Generator that produces one line when asked for it
 def g_read_log():
-    with open('data/errors.log') as f:
+    with open('errors.log') as f:
         for line in f:
             yield line
 
@@ -98,7 +120,6 @@ def _grep(pattern, line):
     if pattern in line:
         yield line
 
-lines = read_log()
 for line in g_read_log():
     for match in _grep('WARN', line):
         print(line)
@@ -106,7 +127,7 @@ for line in g_read_log():
 
 # Monitering live log file using generators
 def _tail():
-    with open('/var/logs/system.log') as log:
+    with open('/var/log/system.log') as log:
         log.seek(0, 2)   # Goes to End of File
         while True:
             line = log.readline()
@@ -114,3 +135,36 @@ def _tail():
                 time.sleep(0.1)
                 continue
             yield line
+
+# =========================================================================
+# Sending Values to the Generator
+def spam():
+    while True:
+        value = yield
+        if value == 26:
+            print('Got: ',value)
+            break
+
+# Generator that yields a line from a file
+def loglines(filename):
+    with open(filename) as f:
+        for line in f:
+            yield line
+
+def loglines(filename):
+    with open(filename) as f:
+        for line in f:
+            yield line
+
+def get_event_lines(event_type):
+    print('Running Gen')
+    while True:
+      line = yield
+      if event_type in line:
+         print(line)
+
+g = get_event_lines('TRACE')
+next(g)
+
+for line in loglines('sample.log'):
+    g.send(line)

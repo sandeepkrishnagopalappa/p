@@ -4,6 +4,12 @@ import math
 List comprehensions is a way to build lists from sequences or 
 any other iterable type by filtering and transforming items.
 '''
+
+'''
+The general syntax for a list comprehension is as follows:
+[expression for item in iterable if condition]
+'''
+
 # List Comprehensions are used for building a new list
 # Square Numbers_And_Booleans in the list. Using 'for' loop
 nums = [1, 2, 3, 4, 5]
