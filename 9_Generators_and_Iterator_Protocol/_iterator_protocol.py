@@ -61,6 +61,22 @@ def print_each(iterable):
         print(item)
 
 
+class PerfectSquare:
+    def __init__(self, limit):
+        self.limit = limit
+        self.n = 1
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.n <= self.limit:
+            square = self.n * self.n
+            self.n += 1
+            return square
+        else:
+            raise StopIteration
+
 # Custom Iterator Class
 class MyRange:
     """Iterator for looping over in forward direction"""

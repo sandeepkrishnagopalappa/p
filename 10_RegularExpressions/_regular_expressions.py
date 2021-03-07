@@ -59,17 +59,31 @@ re.findall(r'.', "hello world")
 
 re.findall(r'h.', "hello")
 
+re.findall(r'h.', "hello world hi how how are you")
+
 re.findall(r'a.b', "acb")
 
 re.findall(r'a.b', "a b")
 
+re.findall(r'a.b', "ab")
+
+re.findall(r'a.b', "a*b a?b")
+
+re.findall(r'a.b', "abcde")
+
 re.findall(r"^hello", "hello world")
 
+re.findall(r"^hello", "world hello")
+
 re.findall(r"hello$", "world hello")
+
+re.findall(r"hello$", "hello world")
 
 re.findall(r'a.a', "ana")
 
 re.findall(r'a..a', "anna")
+
+re.findall(r'a..a', "an*a")
 
 re.findall(r'a.*a', "annnnnna")
 
@@ -123,7 +137,15 @@ re.findall(r'[abcd]+', 'abcdefghijkab')
 
 re.findall(r'[^0-9]', 'Rs.100')
 
+re.findall(r'[^abcd]', 'axbyczdp')
+
 re.findall(r'\D', 'Rs.100')
+
+re.findall(r"[a-z]", 'hello HOW ARE YOU')
+
+re.findall(r"[A-Z]", 'hello HOW ARE YOU')
+
+re.findall(r"[a-zA-Z]", 'hello HOW ARE YOU')
 
 re.findall(r"\w", "hello")
 
@@ -135,11 +157,15 @@ re.findall(r'\w+', 'hello there')
 
 re.findall(r'\w+', 'hello_there')
 
+re.findall(r"\w+", "my email is sandeep_gs@spam.com")
+
 re.findall(r'\s', 'hello there    Hello')
 
 re.findall(r'\S', 'hello there    Hello')
 
 re.findall(r'\d\d\d\d\d\d', '560001')
+
+re.findall(r"\d\d\d\d\d\d", 'Pincode of Bangalore is 560001 and telephone code is 080')
 
 re.findall(r'\d{6}', '560001')
 
@@ -265,7 +291,7 @@ for ip in ips:
 # ===================================================
 # Regular Expression - Email format
 # ===================================================
-email_pattern = r'[\w.-]+@[\w]+\.com'
+email_pattern = r'[\w.-]+@[\w]+\(.com|.edu|.in|.gov)'
 emails = ['test.user@company.com',
           'test.user2@company.com',
           'test_user@company.com',
