@@ -50,6 +50,24 @@ i = evens(c)    # passing an infinite iterable to evens func
 # Generator Expression
 evens = (item for item in a if item % 2 == 0)
 
+names = ['laura', 'steve', 'bill', 'james', 'bob', 'greig', 'scott', 'alex', 'ive']
+# Generator function which yields the name starting from vowel
+def vowels():
+    for name in names:
+        if name[0] in 'aeiou':
+            yield name
+
+# Generator Expression!
+g_vowels = (name for name in names if name[0] in 'aeiou')
+
+# Build a list of tuples with string and its length pair
+names = ['apple', 'google', 'yahoo', 'facebook', 'yelp', 'flipkart', 'gmail', 'instagram', 'microsoft']
+g_pairs = ((name, len(name)) for name in names)
+
+# Reverse the item of a list if the item is of odd length string
+names = ['apple', 'google', 'yahoo', 'facebook', 'yelp', 'flipkart', 'gmail', 'instagram', 'microsoft']
+g_reverse_odd_length = (name[::-1] for name in names if len(name) % 2 != 0)
+
 # Generator which yields a log line.
 def loglines(filename):
     with open(filename) as f:
@@ -108,6 +126,11 @@ def cases_by_date_country(country, _date):
     for row in g_read_csv('covid_data.csv'):
         if row['country'] == country and row['date'] == _date:
             return row
+
+# Countries which has less than 10K cases
+def cases_less_10K():
+    total_cases = cases_by_country()
+    return {country: cases for country, cases in total_cases.items() if int(cases) < 10000}
 
 # Generator that produces one line when asked for it
 def g_read_log():

@@ -60,6 +60,39 @@ def print_each(iterable):
     for item in iterable:     # This for loop is equivallent to the above custom iterator logic
         print(item)
 
+class Spam:
+    # __iter__ method should return a object ref to the
+    # class which implements __next__ method
+    def __iter__(self):
+        return SpamIterator()
+
+class SpamIterator:
+    def __init__(self):
+        self.index = 0
+
+    def __next__(self):
+        if self.index > 5:
+            raise StopIteration
+        item = self.index
+        self.index += 1
+        return item
+
+# Spam object is now an iterable
+
+# Below Spam object is an Iterator
+class Spam:
+    def __init__(self):
+        self.index = 0
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.index > 5:
+            raise StopIteration
+        item = self.index
+        self.index += 1
+        return item
 
 class PerfectSquare:
     def __init__(self, limit):
@@ -100,34 +133,6 @@ nums = MyRange(0, 100)
 
 for num in nums:
     print(num)
-
-
-# Custom Iterator
-class MyItr:
-    """Iterator for looping over a sequence in forward direction."""
-    def __init__(self, iterable):
-        self.data = iter(iterable)
-
-    def __iter__(self):
-        return self
-
-    def __next__(self):
-        return next(self.data)
-
-
-num = MyItr([1, 2, 3, 4, 5])
-_list = MyItr(['apple', 'google', 'yahoo', 'facebook'])
-string = MyItr('spam')
-
-for n in num:
-    print(n)
-
-for l in _list:
-    print(l)
-
-for s in string:
-    print(s)
-
 
 # Reverse Iterator
 class Reverse:
