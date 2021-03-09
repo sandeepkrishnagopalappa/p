@@ -52,12 +52,19 @@ class Point:
         print('Running __getitem__')
         return self._points[item]
 
+    # If you are trying to set a -ve value, it defaults to zero
+    def __setitem__(self, key, value):
+        value = max(0, value)
+        self.__dict__[key] = value
+
     # Restricting adding new attribute to the class (Making Class Immutable)
     # Override __setattr__ method of object class.
     def __setattr__(self, name, value):
         print('Running __setattr__')
         if name not in {"a", "b", "_points"}:
             raise AttributeError(f"Cannot Add new Attribute {name}")
+        # If you are trying to set a -ve value, it defaults to zero
+        value = max(0, value)
         super().__setattr__(name, value)
 
     # Restricting someone from deleting the attribute.

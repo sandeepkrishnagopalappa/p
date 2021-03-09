@@ -1,9 +1,12 @@
 import csv
 
-# A class is collection/set of functions that carry out various operations on
-# "Instances"
+"""
+1. A class is collection/set of functions that carry out various operations on 
+"Instances"
 
-# Instances are the actual objects/data that your function manipulate on.
+2. Instances are the actual objects/data that your function manipulate on.
+
+"""
 class Point:
     def __init__(self, a, b):
         self.a = a
@@ -13,11 +16,27 @@ class Point:
         self.a += dx
         self.b += dy
 
-point1 = Point(1, 2)
-point2 = Point(10, 20)
+p1 = Point(1, 2)
+p2 = Point(10, 20)
 
-print(point1.__dict__)  # {"a": 1, "b": 2}
-print(point2.__dict__)  # {"a": 10, "b": 20}
+print(p1.__dict__)  # {"a": 1, "b": 2}
+print(p2.__dict__)  # {"a": 10, "b": 20}
+
+class Point:
+    # a and b with default values
+    def __init__(self, a=0, b=0):
+        self.a = a
+        self.b = b
+
+p1 = Point()
+p2 = Point()
+
+class Employee:
+    def __init__(self, fname, lname, pay, *args):
+        self.fname = fname
+        self.lname = lname
+        self.pay = pay
+        self.args = args
 
 class Player:
     def __init__(self, x, y):
@@ -36,8 +55,10 @@ p1 = Player(1, 2)
 p2 = Player(3, 4)
 p3 = Player(5, 6)
 
-# Internally all the instance attributes are stored in a Instance Dictionary.
-# All the methods in the class are stored in Class Dictionary
+"""
+1. Internally all the instance attributes are stored in a Instance Dictionary.
+2. All the methods in the class are stored in Class Dictionary
+"""
 
 print(p1.__dict__)
 print(p1.__class__.__dict__)
@@ -53,10 +74,8 @@ class Employee:
     def email(self):
         return f'{self.fname}.{self.lname}@company.com'
 
-
 e1 = Employee("Steve", "Jobs", 1000)
 e2 = Employee("Bill", "Gates", 2000)
-
 
 class BankAccount:
     def __init__(self, name, amount):
