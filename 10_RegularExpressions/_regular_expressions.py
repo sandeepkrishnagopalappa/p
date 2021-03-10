@@ -53,6 +53,8 @@ matches = re.findall("python", greeting)
 
 re.findall(r'hello', "hello world")
 
+re.findall('hello', 'hello world, hello world hello')
+
 re.findall('hello', "Hello world", re.IGNORECASE)
 
 re.findall(r'.', "hello world")
@@ -78,6 +80,10 @@ re.findall(r"^hello", "world hello")
 re.findall(r"hello$", "world hello")
 
 re.findall(r"hello$", "hello world")
+
+re.findall(r'hello$', 'hello world welcome to python')
+
+re.findall(r'^hello', 'hello world welcome to python')
 
 re.findall(r'a.a', "ana")
 
@@ -109,6 +115,8 @@ re.findall(r'a.*a$', 'abcada')
 
 re.findall(r'a.+a', 'ana')
 
+re.findall(r'an+a', 'annnnnnnnnnna')
+
 re.findall(r'a.+a', 'aa')
 
 re.findall(r'an?a', "ana")
@@ -120,6 +128,12 @@ re.findall(r'colou?r', "colour")
 re.findall(r'colou?r', "what color do you like")
 
 re.findall(r"[aeiou]", "hello")
+
+re.findall(r'[aeiou]', 'hello how are you doing anna')
+
+re.findall(r'aeiou', 'hello how are you doing anna')
+
+re.findall(r'aeiou', 'hello how are you doing anna, aeiou')
 
 re.findall(r'[0-9]', 'The cost of the book is Rs.100')
 
@@ -177,6 +191,8 @@ re.findall(r'\w{3,5}', 'helloworld')
 
 re.findall(r'\w{3,5}', 'helloworld')
 
+re.findall(r'\w{3,5}', 'hii hello _world')
+
 re.findall(r'\w{3,}', 'hello')
 
 re.findall(r'\w{3,}', 'hi')
@@ -190,29 +206,14 @@ re.findall(r'^\w{0,1}$', 'hi')
 re.findall(r'^\w{0,1}$', 'h')
 
 # ===================================================
-# Regular expression - VOWELS
-match_vowels = r'[aeiou]'
-words = ['hello', 'exit', 'entry', 'auspicious']
-for word in words:
-    print(word, '--> ', end='')
-    matches = search_pattern(match_vowels, word)
-    for match in matches:
-        print(match, end=',')
-    print()
-# ===================================================
 # Regular Expression - File extensions
 # ===================================================
 match_file_extension = r'\.[a-zA-Z]+$'
 files = ['archive.zip', 'image.jpeg', 'index.xhtml', 'archive.tar.gz', 'python.py']
-for file in files:
-    print(file, '-->', end='')
-    matches = search_pattern(match_file_extension, file)
-    for match in matches:
-        print(match)
-# ===================================================
+
 # Regular Expression- File Abbrevation
 # ===================================================
-match_abbreviation = r'(\b[A-Za-z]|\B[A-Z])'
+match_abbreviation = r'[A-Z]'
 file_formats = ['Graphics Interchange Format',
                 'Advanced Audio Coding',
                 'cascading style sheets',
@@ -224,53 +225,17 @@ file_formats = ['Graphics Interchange Format',
                 'Comma Seperated Values',
                 'JavaScript Object Notation'
                 ]
-for name in file_formats:
-    print(name, ' -->', end='')
-    matches = search_pattern(match_abbreviation, name)
-    for match in matches:
-        print(''.join(match).upper(), end='')
-    print()
+
 # ===================================================
 # Regular Expression - YYYY-MM-DD date format
 # ===================================================
 _dates = ['2019-01-02', '2019-13-02', '2019-12-26', '26-08-2019', '20-19-20', '2019-12-31', '2019-12-32']
 match_date_format = r'\d{4}-(?:[0-1][0-2])-(?:0[1-9]|1[0-9]|3[01])'
 
-for date in _dates:
-    matches = search_pattern(match_date_format, date)
-    for match in matches:
-        print(match)
-
-# Extracting date from error log
-with open('data/errors.log') as f:
-    for line in f:
-        match = re.findall(match_date_format, line)
-        if match:
-            print(match)
-# ===================================================
-# Regular Expression - Website names
-_links = ['https://www.python.org',
-          'https://www.google.com',
-          'https://www.facebook.com',
-          'https://www.youtube.com',
-          'http://www.amazon.com.us'
-          ]
-match_links = r'\.[a-z]+\.'
-
-for link in _links:
-    matches = search_pattern(match_links, link)
-    for match in matches:
-        print(match[1:-1])
 # ===================================================
 # Regular Expression - Phone Number pattern
-# ===================================================
 phone_numbers = ['123-345-0987', '456-9832-098', '800-987-4756', '080-1029384725', '123-345-12', '900-938-0987']
 match_phone_numbers = r'\d{3}[-]\d{3}[-]\d{4}'
-
-for phone_number in phone_numbers:
-    matches = search_pattern(match_phone_numbers, phone_number)
-    for match in matches:
-        print(match)
 
 # matching only 800 and 900 numbers
 pat = r"[89]00-\d{3}-\d{4}"
@@ -278,17 +243,11 @@ for number in phone_numbers:
     match = re.findall(pat, number)
     if match:
         print(match)
-# ===================================================
 # Regular Expression - IP Addresses
 # ===================================================
 id_address_format = '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'
 ips = ['10.1.2.3', '127.0.0.0', '199.99.9.9', '199.9.9999.9', '127-0-0-0']
 
-for ip in ips:
-    matches = search_pattern(id_address_format, ip)
-    for match in matches:
-        print(match)
-# ===================================================
 # Regular Expression - Email format
 # ===================================================
 email_pattern = r'[\w.-]+@[\w]+\(.com|.edu|.in|.gov)'
@@ -300,12 +259,6 @@ emails = ['test.user@company.com',
           'testing@company',
           'testingcompany.com'
           ]
-
-for email in emails:
-    matches = search_pattern(email_pattern, email)
-    for match in matches:
-        print(match)
-# ===================================================
 # Regular Expression - URL Pattern
 # ===================================================
 url_pattern = r'https?://[\w.]+'
@@ -316,30 +269,13 @@ urls = ['http://youtube.com',
         'ftp://test.com'
         'https://facebook.com/'
         ]
-
-for url in urls:
-    matches = search_pattern(url_pattern, url)
-    for match in matches:
-        print(match)
 # ===================================================
 # Regular Expression - PAN Number
 PAN = ["ABCDE1234X", "ABCDE12341", "ABCE1234X"]
 pat = r'[A-Z]{5}[0-9]{4}[A-Z]'
-for pan in PAN:
-    match = search_pattern(pat, pan)
-    print(match)
-# ===================================================
 
 # Regular Expression - 24hr time format
 _formats = ['00:00:00', '23:59:59', '24:00:00', '1:59:20', '12:9:10', '10:20:8']
 for _format in _formats:
     match = search_pattern(r"(?:[01]\d|2[0-3]):[0-5]\d:[0-5]\d", _format)
     print(match)
-
-_time = []
-with open('data/errors.log') as f:
-    for line in f:
-        if line.strip():
-            match = re.findall(pat, line)
-            if match:
-                _time.append(match)

@@ -38,6 +38,8 @@ class Employee:
         self.pay = pay
         self.args = args
 
+e1 = Employee('steve', 'jobs', 1000, 'python', 26, '2200 valley view lane')
+
 class Player:
     def __init__(self, x, y):
         self.x = x

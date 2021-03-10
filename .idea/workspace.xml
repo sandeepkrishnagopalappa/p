@@ -20,9 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/6_abstraction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/covid-data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10_RegularExpressions/_regular_expressions.py" beforeDir="false" afterPath="$PROJECT_DIR$/10_RegularExpressions/_regular_expressions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10_RegularExpressions/access-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10_RegularExpressions/email.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10_RegularExpressions/sample.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/1_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/1_classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/4_magic_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/4_magic_methods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/2_inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/2_inheritance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_alternate_constructor_mechanism.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/5_alternate_constructor_mechanism.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/airline.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/airline_live.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/code.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/log_file_live.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/stocks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/stocks_prices_live.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
