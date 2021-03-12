@@ -25,3 +25,11 @@ def get_vowels(name):
 
 vowels = filter(get_vowels, names)
 print(list(vowels))
+
+# Get only those lines which has TRACE.
+def logmessages(line):
+    if 'TRACE' in line:
+        return line
+
+f = open('sample.log')
+trace_lines = filter(logmessages, f)
