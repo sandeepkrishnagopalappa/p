@@ -90,6 +90,16 @@ word_count = {}
 for word in words:
     word_count[word] = word_count.get(word, 0) + 1
 
+# Using fromkeys method
+names = ['apple', 'google', 'yahoo', 'gmail', 'google', 'apple']
+_count = dict.fromkeys(names, 0)
+"""
+1. This creates a new dictionary using our colors as keys, with all values set to 0 initially.
+2. This allows us to increment each key without worrying whether it has been set.
+"""
+for name in names:
+    _count[name] += 1
+
 # using defaultDict
 word_count = defaultdict(int)
 for word in words:
