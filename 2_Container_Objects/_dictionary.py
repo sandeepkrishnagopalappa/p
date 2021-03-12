@@ -85,6 +85,11 @@ for word in words:
 
 print(word_count)
 
+# Using get method
+word_count = {}
+for word in words:
+    word_count[word] = word_count.get(word, 0) + 1
+
 # using defaultDict
 word_count = defaultdict(int)
 for word in words:

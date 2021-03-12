@@ -23,6 +23,14 @@ with open('portfolio.csv', 'r') as f:
 
 print('Total value of stock is :', total)
 
+names = ["apple", "google", "yahoo", "yahoo", "gmail", "apple", "apple", "apple"]
+_counts = {}
+for c in _counts:
+    try:
+        _counts[c] = _counts[c] + 1
+    except KeyError:
+        _counts[c] = 1
+
 # Handling Divide by Zero exception.
 def func(n1, n2):
     try:
