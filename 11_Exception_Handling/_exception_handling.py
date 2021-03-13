@@ -48,7 +48,6 @@ for number in numbers:
     n1, n2 = number
     func(n1, n2)
 
-
 # Raising exceptions
 def factorial(n):
     if isinstance(n, str):
@@ -60,36 +59,83 @@ def factorial(n):
     else:
         return n * factorial(n-1)
 
+def func():
+    try:
+        print('Executing Try Block')
+    except:
+        print("Executing Except Block")
+    # else block gets executed only when there is no exception in try block.
+    else:
+        print('Executing Else Block')
+    # finally gets executed no matter what happens in try, except and else blocks.
+    finally:
+        print('Executing Finally Block')
 
-print(factorial(5))
+def func():
+    try:
+        print('Executing Try Block')
+        raise TypeError
+    except ValueError:
+        print("Catching ValueError")
+    except TypeError:
+        print('Catching TypeError')
+    # else block gets executed only when there is no exception in try block.
+    else:
+        print('Executing Else Block')
+        raise ValueError
+    # finally gets executed no matter what happens in try, except and else blocks.
+    finally:
+        print('Executing Finally Block')
 
+def func():
+    try:
+        print('Executing Try Block')
+    except (ValueError, TypeError, ZeroDivisionError):
+        print("Catching ValueError")
+    # else block gets executed only when there is no exception in try block.
+    else:
+        print('Executing Else Block')
+        raise AttributeError
+    # finally gets executed no matter what happens in try, except and else blocks.
+    finally:
+        print('Executing Finally Block')
 
-def div(a, b):
-    return a / b
+def func():
+    try:
+       return 1
+    except:
+        return 2
+    else:
+        return 3
+    finally:
+        print('Finaly')
 
-
-try:
-    print(div(1, 0))
-    print('Running Try Block')      # Never executes if there is any exception in div function
-except FileNotFoundError as e:
-    print(e)
-else:           # Else Block Runs only if there is no exception in try block
-    print('Running Else Block')
-finally:        # Finally Block Runs regardless of what happens in try and except block
-    print('Running finally')    # Always executes no matter what happens in try/except/else block
-
-print('Hello world')    # Never executes if there is any exception in try block
-
+def func():
+    try:
+       return 1
+    except:
+        return 2
+    else:
+        return 3
+    finally:
+        return 4
 
 # Defining Custom Exceptions
+class InsufficientFunds(Exception):
+    pass
+
+class AuthError(Exception):
+    pass
+
 class NetworkError(Exception):
     pass
 
+def withdraw(amount):
+    if amount > 5000:
+        raise InsufficientFunds
 
-class DeviceError(Exception):
-    pass
-
-
-raise DeviceError('Device Not Responding')
-
-raise NetworkError("Can not find the Host")
+def login(username, password):
+    if username == 'admin' and password == 'admin123':
+        print('Login Success')
+    else:
+        raise AuthError

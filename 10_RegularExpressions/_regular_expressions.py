@@ -230,7 +230,7 @@ file_formats = ['Graphics Interchange Format',
 # Regular Expression - YYYY-MM-DD date format
 # ===================================================
 _dates = ['2019-01-02', '2019-13-02', '2019-12-26', '26-08-2019', '20-19-20', '2019-12-31', '2019-12-32']
-match_date_format = r'\d{4}-(?:[0-1][0-2])-(?:0[1-9]|1[0-9]|3[01])'
+match_date_format = r'^\d{4}-(?:[0-1][0-2])-(?:0[1-9]|1[0-9]|3[01])'
 
 # ===================================================
 # Regular Expression - Phone Number pattern
@@ -238,7 +238,7 @@ phone_numbers = ['123-345-0987', '456-9832-098', '800-987-4756', '080-1029384725
 match_phone_numbers = r'\d{3}[-]\d{3}[-]\d{4}'
 
 # matching only 800 and 900 numbers
-pat = r"[89]00-\d{3}-\d{4}"
+pat = r"^[89]00-\d{3}-\d{4}"
 for number in phone_numbers:
     match = re.findall(pat, number)
     if match:
@@ -250,7 +250,7 @@ ips = ['10.1.2.3', '127.0.0.0', '199.99.9.9', '199.9.9999.9', '127-0-0-0']
 
 # Regular Expression - Email format
 # ===================================================
-email_pattern = r'[\w.-]+@[\w]+\(.com|.edu|.in|.gov)'
+email_pattern = r'[\w-]+\.[\w-]@[\w]+\(.com|.edu|.in|.gov)'
 emails = ['test.user@company.com',
           'test.user2@company.com',
           'test_user@company.com',
@@ -272,7 +272,7 @@ urls = ['http://youtube.com',
 # ===================================================
 # Regular Expression - PAN Number
 PAN = ["ABCDE1234X", "ABCDE12341", "ABCE1234X"]
-pat = r'[A-Z]{5}[0-9]{4}[A-Z]'
+pat = r'^[A-Z]{5}[0-9]{4}[A-Z]$'
 
 # Regular Expression - 24hr time format
 _formats = ['00:00:00', '23:59:59', '24:00:00', '1:59:20', '12:9:10', '10:20:8']
