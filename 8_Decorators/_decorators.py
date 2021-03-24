@@ -161,14 +161,3 @@ def sub(a, b):
 @validate(name=str, age=int, pay=float)
 def greet(name, age, pay):
     print(f"Hello {name} You are {age} years of age and you have {pay}")
-
-
-# Class Decorator
-class Record:
-    def __init__(self, func):
-        self.func = func
-        self._count = 0
-
-    def __call__(self, *args, **kwargs):
-        self._count += 1
-        return self.func(*args, **kwargs)
