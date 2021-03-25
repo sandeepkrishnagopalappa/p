@@ -32,7 +32,7 @@ class Company:
         return _count
 
 # Analysis of employees.csv file
-with open('../apple_employees.csv') as f:
+with open('apple_employees.csv') as f:
     apple = Company()
     rows = csv.reader(f)
     headers = next(rows)

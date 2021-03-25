@@ -19,7 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="" />
+    <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes/1_simple_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes/1_simple_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes/_banking_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_banking_class_inheritance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes/_covid_analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes/_employee_payroll.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_employee_payroll_inheritance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes/_shopping_cart.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,22 +75,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Handling_Files" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes" />
-      <recent name="$PROJECT_DIR$/Misc_Topics" />
-      <recent name="$PROJECT_DIR$/7_Handling_Files/_handling_csv_files" />
-      <recent name="$PROJECT_DIR$/3_Booleans_And_Unpacking_Sequences" />
-      <recent name="$PROJECT_DIR$/3_Unpacking_Sequences" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Handling_Files" />
       <recent name="$PROJECT_DIR$/Comprehensions" />
       <recent name="$PROJECT_DIR$/Iterables_Iterators_And_Generators" />
       <recent name="$PROJECT_DIR$/Itertools_Module" />
       <recent name="C:\Users\ssuryaprasad\PycharmProjects\Practice\Exception_Handling" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/12_Object_Oriented_Concepts" />
+      <recent name="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes" />
+      <recent name="$PROJECT_DIR$/Misc_Topics" />
+      <recent name="$PROJECT_DIR$/7_Handling_Files/_handling_csv_files" />
+      <recent name="$PROJECT_DIR$/3_Booleans_And_Unpacking_Sequences" />
     </key>
   </component>
   <component name="RunManager" selected="Python tests.pytest in membership_speed_comparision_list_tuple_set.py">
@@ -298,54 +305,30 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="315" y="191" key="#Log_Highlighting_(ideolog)" timestamp="1607175658046">
-      <screen x="0" y="25" width="1280" height="722" />
-    </state>
-    <state x="315" y="191" key="#Log_Highlighting_(ideolog)/0.25.1280.722@0.25.1280.722" timestamp="1607175658046" />
     <state width="1259" height="200" key="GridCell.Tab.0.bottom" timestamp="1612785422764">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
-    <state width="1259" height="251" key="GridCell.Tab.0.bottom/0.23.1280.730@0.23.1280.730" timestamp="1604755944232" />
     <state width="1003" height="189" key="GridCell.Tab.0.bottom/0.25.1024.690@0.25.1024.690" timestamp="1608195836591" />
     <state width="1259" height="200" key="GridCell.Tab.0.bottom/0.25.1280.722@0.25.1280.722" timestamp="1612785422764" />
     <state width="1259" height="200" key="GridCell.Tab.0.center" timestamp="1612785422763">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
-    <state width="1259" height="251" key="GridCell.Tab.0.center/0.23.1280.730@0.23.1280.730" timestamp="1604755944231" />
     <state width="1003" height="189" key="GridCell.Tab.0.center/0.25.1024.690@0.25.1024.690" timestamp="1608195836590" />
     <state width="1259" height="200" key="GridCell.Tab.0.center/0.25.1280.722@0.25.1280.722" timestamp="1612785422763" />
     <state width="1259" height="200" key="GridCell.Tab.0.left" timestamp="1612785422763">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
-    <state width="1259" height="251" key="GridCell.Tab.0.left/0.23.1280.730@0.23.1280.730" timestamp="1604755944230" />
     <state width="1003" height="189" key="GridCell.Tab.0.left/0.25.1024.690@0.25.1024.690" timestamp="1608195836589" />
     <state width="1259" height="200" key="GridCell.Tab.0.left/0.25.1280.722@0.25.1280.722" timestamp="1612785422763" />
     <state width="1259" height="200" key="GridCell.Tab.0.right" timestamp="1612785422763">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
-    <state width="1259" height="251" key="GridCell.Tab.0.right/0.23.1280.730@0.23.1280.730" timestamp="1604755944231" />
     <state width="1003" height="189" key="GridCell.Tab.0.right/0.25.1024.690@0.25.1024.690" timestamp="1608195836590" />
     <state width="1259" height="200" key="GridCell.Tab.0.right/0.25.1280.722@0.25.1280.722" timestamp="1612785422763" />
-    <state width="1259" height="220" key="GridCell.Tab.1.bottom" timestamp="1607256946339">
+    <state x="149" y="25" width="982" height="722" key="SettingsEditor" timestamp="1616680458444">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
-    <state width="1259" height="220" key="GridCell.Tab.1.bottom/0.25.1280.722@0.25.1280.722" timestamp="1607256946339" />
-    <state width="1259" height="220" key="GridCell.Tab.1.center" timestamp="1607256946338">
-      <screen x="0" y="25" width="1280" height="722" />
-    </state>
-    <state width="1259" height="220" key="GridCell.Tab.1.center/0.25.1280.722@0.25.1280.722" timestamp="1607256946338" />
-    <state width="1259" height="220" key="GridCell.Tab.1.left" timestamp="1607256946338">
-      <screen x="0" y="25" width="1280" height="722" />
-    </state>
-    <state width="1259" height="220" key="GridCell.Tab.1.left/0.25.1280.722@0.25.1280.722" timestamp="1607256946338" />
-    <state width="1259" height="220" key="GridCell.Tab.1.right" timestamp="1607256946339">
-      <screen x="0" y="25" width="1280" height="722" />
-    </state>
-    <state width="1259" height="220" key="GridCell.Tab.1.right/0.25.1280.722@0.25.1280.722" timestamp="1607256946339" />
-    <state x="18" y="23" key="SettingsEditor" timestamp="1604311289368">
-      <screen x="0" y="23" width="1280" height="730" />
-    </state>
-    <state x="18" y="23" key="SettingsEditor/0.23.1280.730@0.23.1280.730" timestamp="1604311289368" />
+    <state x="149" y="25" width="982" height="722" key="SettingsEditor/0.25.1280.722@0.25.1280.722" timestamp="1616680458444" />
     <state x="431" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609590615274">
       <screen x="0" y="25" width="1280" height="722" />
     </state>
