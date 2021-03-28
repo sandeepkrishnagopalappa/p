@@ -21,11 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes/1_simple_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes/1_simple_classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes/_banking_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_banking_class_inheritance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes/_covid_analysis.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes/_employee_payroll.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_employee_payroll_inheritance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/_classes/_shopping_cart.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_Object_Oriented_Concepts/1_simple_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_Object_Oriented_Concepts/1_simple_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/_generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/_generators.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

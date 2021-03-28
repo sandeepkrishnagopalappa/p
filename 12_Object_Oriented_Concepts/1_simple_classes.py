@@ -78,6 +78,7 @@ e2 = Employee("Bill", "Gates", 2000)
 
 class BankAccount:
 
+    # Class Variable
     interest_rate = 0.04
 
     def __init__(self, name, balance=0):
@@ -93,6 +94,12 @@ class BankAccount:
     def withdraw(self, amount):
         self.balance -= amount
         self.transactions.append(f'Amount withdrawn: {amount}')
+
+    def transfer(self, to_account, amount):
+        if self.balance >= amount:
+            to_account.deposit(amount)
+            self.balance -= amount
+            self.transactions.append(f'NEFT to BankAccount {to_account}')
 
     def statement(self):
         for item in self.transactions:
@@ -124,9 +131,12 @@ class Covid:
             d[record['country']] += record['cases']
         return d
 
+    def countries(self):
+        return {record['country'] for record in self.records}
+
 # Shopping Cart
 class ShoppingCart:
-
+    # Class Variables
     products = {'iPhone': 5, 'iMac': 3, 'iWatch': 2, 'iPad': 4}
     prices = {'iPhone': 800, 'iMac': 2500, 'iWatch': 3000, 'iPad': 3500}
 

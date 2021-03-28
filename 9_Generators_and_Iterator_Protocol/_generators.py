@@ -132,6 +132,9 @@ def cases_less_10K():
     total_cases = cases_by_country()
     return {country: cases for country, cases in total_cases.items() if int(cases) < 10000}
 
+# List of all the countries affected by COVID. (Set Comprehension)
+countries = { row['country']  for row in g_read_csv("covid_data.csv")}
+
 # Generator that produces one line when asked for it
 def g_read_log():
     with open('errors.log') as f:
