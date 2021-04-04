@@ -98,3 +98,27 @@ print(datetime.date.strftime(td, '%d %b, %Y'))      # Prints 08 Jan, 2019
 print(datetime.date.strftime(td, '%Y %b, %d'))      # Prints 2019 Jan, 08
 
 print(datetime.date.strftime(td, '%A %B %d, %Y'))      # Tuesday June 18, 2019
+
+from datetime import date, timedelta
+
+class WeekDay:
+    # Class Variables
+    MONDAY = 0
+    TUESDAY = 1
+    WEDNESDAY = 2
+    THURSDAY = 3
+    FRIDAY = 4
+    SATURDAY = 5
+    SUNDAY = 6
+
+class NextDate:
+    def __init__(self, weekday):
+        self.weekday = weekday
+
+    def next_date(self):
+        td = date.today()
+        td_week_day = td.weekday()
+        _next_day = self.weekday - td_week_day
+        if _next_day <= 0:
+            _next_day += 7
+        return td + timedelta(_next_day)

@@ -50,3 +50,8 @@ a, b, *rest = range(2)
 # _ is called throwaway variable in python
 data = ['IBM', 50, 91.1, (2019, 7, 17)]
 name, *_, (year, *_) = data
+
+temperatures = {"Bangalore": (26, 32), "Chennai": (29, 35), "Delhi": (31, 36)}
+
+for city, (_min, _max) in temperatures.items():
+    print(city, _min, _max)
