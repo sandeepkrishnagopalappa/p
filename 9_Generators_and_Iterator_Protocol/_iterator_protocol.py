@@ -46,26 +46,6 @@ def print_each(iterable):
             print(item)
 
 
-# if you’re using next() manually,
-# you can also instruct it to return a terminating value, such as None
-def print_each2(iterable):
-    while True:
-        my_line = next(iterable, None)
-        if line is None:
-            break
-        print(my_line)
-
-
-def print_each(iterable):
-    for item in iterable:     # This for loop is equivallent to the above custom iterator logic
-        print(item)
-
-class Spam:
-    # __iter__ method should return a object ref to the
-    # class which implements __next__ method
-    def __iter__(self):
-        return SpamIterator()
-
 class SpamIterator:
     def __init__(self):
         self.index = 0
@@ -78,8 +58,14 @@ class SpamIterator:
         return item
 
 # Spam object is now an iterable
+class Spam:
+    # __iter__ method should return a object ref to the
+    # class which implements __next__ method
+    def __iter__(self):
+        return SpamIterator()
 
-# Below Spam object is an Iterator
+
+# Below Spam object is both iterable and Iterator
 class Spam:
     def __init__(self):
         self.index = 0
@@ -93,6 +79,7 @@ class Spam:
         item = self.index
         self.index += 1
         return item
+
 
 class PerfectSquare:
     def __init__(self, limit):

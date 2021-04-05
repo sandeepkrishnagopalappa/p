@@ -21,8 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_Misc_Topics/_working_with_datetime.py" beforeDir="false" afterPath="$PROJECT_DIR$/14_Misc_Topics/_working_with_datetime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3_Booleans_And_Unpacking_Sequences/_unpacking.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_Booleans_And_Unpacking_Sequences/_unpacking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/_iterator_protocol.py" beforeDir="false" afterPath="$PROJECT_DIR$/9_Generators_and_Iterator_Protocol/_iterator_protocol.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
