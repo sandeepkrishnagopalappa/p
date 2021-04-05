@@ -57,7 +57,7 @@ class Point:
         value = max(0, value)
         self.__dict__[key] = value
 
-    # Restricting adding new attribute to the class (Making Class Immutable)
+    # Restricting adding new attribute to the class
     # Override __setattr__ method of object class.
     def __setattr__(self, name, value):
         print('Running __setattr__')
@@ -97,6 +97,20 @@ class Point:
     def __sub__(self, other):
         print('Running __sub__')
         return sum(self._points) - sum(other._points)
+
+# Making an Immutable Class
+class Point:
+    def __init__(self, x, y):
+        super().__setattr__("x", x)
+        super().__setattr__("y", y)
+
+    def __setattr__(self, attr, value):
+        print('Calling __setattr__')
+        raise TypeError
+
+    def __delattr__(self, *args):
+        print("Calling __delattr__")
+        raise TypeError
 
 # Implementing magic methods on Company class
 class Company:
