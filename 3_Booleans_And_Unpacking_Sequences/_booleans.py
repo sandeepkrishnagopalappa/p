@@ -25,8 +25,8 @@ and a set() with atleast one element evaluates to Bool True
 """
 # Lists
 words = ['apple', 'google', 'yahoo', 'gmail']
-words = []
 
+# Iterate over the list only if the list has atleast 1 item.
 if len(words) > 0:
     for word in words:
         print(word)
