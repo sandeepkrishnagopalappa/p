@@ -23,3 +23,22 @@ def logger():
         message = 'World'   # Local for wrapper
         print(message)
     return wrapper
+
+
+# global variable
+message = "Hello world"
+
+def func():
+    # Declaring that the variable that you are referring to is global variable
+    global message
+    message = "Hello Universe"
+    print(message)
+
+def spam():
+    # Local Variable "message"!
+    print(message)
+    message = "Hello Universe"
+    print(message)
+
+def demo():
+    print(message)

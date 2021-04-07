@@ -51,6 +51,7 @@ a, b, *rest = range(2)
 data = ['IBM', 50, 91.1, (2019, 7, 17)]
 name, *_, (year, *_) = data
 
+# Deep Unpacking
 temperatures = {"Bangalore": (26, 32), "Chennai": (29, 35), "Delhi": (31, 36)}
 
 for city, (_min, _max) in temperatures.items():
