@@ -56,7 +56,7 @@ print('Hello', end='')
 print('World', end='')
 print('Welcome', end='')
 
-# String 5_Functions
+# String Functions
 print(len(my_message))      # Prints the Length of the String. Index starts from Zero
 print(my_message.upper())   # Prints the String in Upper Case
 print(my_message.lower())   # Prints the String in Lower Case
@@ -109,10 +109,6 @@ s = 'hello world'
 for c in s:
     print(c)
 
-# Iterating over a part of a string
-for c in s[:5]:
-    print(c)
-
 # Getting index and item in a string
 for index, item in enumerate(s):
     print(index, '---->', item)
@@ -123,3 +119,28 @@ s2 = 'world'
 
 for c1, c2 in zip(s1, s2):
     print(c1, c2)
+
+# String formatting.
+name = "Steve"
+age = 26
+print("Hello {} you are {} years of age".format(name, age))
+
+# using "f" strings
+print(f"Hello {name} you are {age} years of age")
+
+# Producing Structured Output
+fname = "Steve"
+lname = "Jobs"
+pay = 2000
+
+# Right Justification
+print(f"{fname:>10} {lname:>10} {pay:>10}")
+
+# Left Justification
+print(f"{fname:>5} {lname:>5} {pay:>10}")
+
+# Center Justification
+print(f'{fname:>10} {lname:>10} {pay:>10}')
+
+# Printing the Headers
+print(f'{"fname":>10} {"lname":>10} {"pay":>10}')
