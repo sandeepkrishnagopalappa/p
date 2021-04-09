@@ -1,4 +1,4 @@
-# Working with Strings or Textaul Data
+# Working with Strings.
 """
 All Variables should in Lower Case. If there are more than one word in the Variable,
 then we separate with under scores. And this is PYTHON CONVENTION
@@ -56,6 +56,18 @@ print('Hello', end='')
 print('World', end='')
 print('Welcome', end='')
 
+# ========================================================
+# type is an inbuilt function, which returns the datatype of the
+# variable or an object
+print(type(my_message))
+# my_message is of type str and its value is "Hello world"
+# my_message is an instance of class str
+# my_message is a string object with value "Hello world"
+
+# dir is an inbuilt function, which returns a list of attributes
+# that are attached to the object
+print(dir(my_message))
+
 # String Functions
 print(len(my_message))      # Prints the Length of the String. Index starts from Zero
 print(my_message.upper())   # Prints the String in Upper Case
@@ -70,9 +82,6 @@ print(my_message.split())   # Splits the string based on white space and returns
 
 s = 'This is my string'
 print(s.split('s'))
-
-s = ' This is my string '   # There is a leading and trailing space
-print(s.split(' '))     # Prints ['', 'This', 'is', 'a', 'string', '']
 
 info = '560100, Bangalore, KA'
 pin_code, city, state = info.split(',')
@@ -104,9 +113,9 @@ x = 26
 print(str(x))   # prints '26'
 
 # Iterating over a string
-s = 'hello world'
+message = 'hello world'
 
-for c in s:
+for c in message:
     print(c)
 
 # Getting index and item in a string
@@ -144,3 +153,37 @@ print(f'{fname:>10} {lname:>10} {pay:>10}')
 
 # Printing the Headers
 print(f'{"fname":>10} {"lname":>10} {"pay":>10}')
+
+# String Slicing
+# my_message[start:stop:step]
+my_message = 'Hello World'
+
+#  H    e     l     l    o       W   o   r   l   d
+#  0    1     2     3    4   5   6   7   8   9   10
+# -11  -10   -9    -8   -7  -6  -5  -4  -3  -2   -1
+
+print(my_message[0])        # Prints the character present at the 0th index
+print(my_message[10])       # Prints the character present at the 10th index
+print(my_message[0:5])      # Prints Hello. Upto 5th character, but NOT INCLUDING the 5th
+print(my_message[:5])       # Prints Hello.
+print(my_message[6:])       # Prints World
+
+# Negative Indexing
+print(my_message[-1])      # Prints 'd'
+print(my_message[-11])     # Prints 'H'
+print(my_message[-4:])     # Prints 'World'
+print(my_message[0:-6])    # Prints 'Hello'
+print(my_message[2:-3])    # Prints 'llo Wo'
+
+# Step
+print(my_message[::2])      # Prints Every Alternate Characters
+print(my_message[::-2])     # Prints Every Alternate Characters in reverse order
+print(my_message[::-1])     # Prints the string in reversed order
+
+# Print extension of the filename
+name = 'Youtube.txt'
+print(name[-3:])
+
+# Printing only protocol in url
+url = 'https://google.com'
+print(url[:5])

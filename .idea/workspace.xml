@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68a4eae3-f5e0-42ba-aeeb-f7e674e5175d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/14_Misc_Topics/_json.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/is_python_compiled.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_Strings/_strings.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_Strings/_strings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_Container_Objects/_lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_Container_Objects/_lists.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_Container_Objects/_slicing_lists_strings.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Handling_Files" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
