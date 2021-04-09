@@ -1,6 +1,4 @@
-
 # Conditional statement
-
 _month = 'January'
 
 if _month == 'January':
