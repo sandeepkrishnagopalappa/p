@@ -6,6 +6,7 @@ from itertools import zip_longest
 2. Elements in the Lists are Ordered
 3. Lists can hold duplicate elements
 4. Lists can be indexed by integers starting zero
+5. Lists are heterogeneous in nature. (They can point to any kind of objects)
 """
 
 # Creating an empty List
@@ -25,9 +26,15 @@ print(names[0])     # Prints the item present in the 0th index of the List.
 # Adding elements to the List
 names.append('gmail')   # Adding element to the list
 names.insert(3, 'watsapp')      # Inserts the item at 3rd index.
-names.extend(['netflix', 'walmart', 'kroger'])    # Adds the new list to the existing list
-names = [*names, 'signal']  # Adds the new list to the existing list
-print(names)
+
+# Extends the exisitng list with the items of the new list
+names.extend(['netflix', 'walmart', 'kroger'])
+
+a = ["apple", "google", "yahoo"]
+b = ["gmail", "flipkart", "facebook"]
+# Merging two different lists
+c = a + b
+c = [*a, *b]
 
 print('gmail' in names)     # Prints True if the item is present in the list
 
@@ -63,17 +70,33 @@ names.index('google')       # Returns the index of the item in the List
 
 print('yahoo' in names)    # Returns True if the item present in the List
 
-# Iterating through the List
+# Iterating through the List (pythonic approach)
 for item in names:
     print(item)
+
+# Prints the item and its corresponding index in the list (Pythonic approach)
+for index, item in enumerate(names):    # enumerate returns a tuple of index, item pair
+    print(index, item)
+
+# Using range function (not preferred method)
+for index in range(0, len(names)):
+    print(names[index])
+
+# Printing Index and Item using range function (not preferred method)
+for index in range(0, len(names)):
+    print(index, names[index])
+
+# Printing alternate items of the list (Pythonic approach)
+for name in names[::2]:
+    print(name)
+
+# Printing alternate items of the list using range function (not preferred method)
+for index in range(0, len(names), 2):
+    print(names[index])
 
 # Iterating over a part of the list
 for item in names[:4]:
     print(item)
-
-# Prints the item and its corresponding index in the list
-for index, item in enumerate(names):    # enumerate returns a tuple of index, item pair
-    print(index, item)
 
 for index, item in enumerate(names, start=1):   # Index starts from 1
     print(index, item)
@@ -172,9 +195,4 @@ print(names)
 files = ['youtube.txt', 'yahoo.pdf', 'microsoft.doc', 'apple.xls', 'amazon.xml']
 for file in files:
     print(file[-3:])
-
-# Inserting new elements to the list
-nums = [1, 2, 3, 4]
-nums = nums[:2] + [99, 98, 97] + nums[2:]
-print(nums)
 # =========================================================================================

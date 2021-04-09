@@ -60,13 +60,23 @@ print('Welcome', end='')
 # type is an inbuilt function, which returns the datatype of the
 # variable or an object
 print(type(my_message))
-# my_message is of type str and its value is "Hello world"
-# my_message is an instance of class str
-# my_message is a string object with value "Hello world"
+"""
+1. my_message is of type str and its value is "Hello world"
+2. my_message is an instance of class str
+3. my_message is a string object with value "Hello world"
+"""
 
-# dir is an inbuilt function, which returns a list of attributes
-# that are attached to the object
+"""
+dir is an inbuilt function, which returns a list of attributes 
+that are attached to the object.
+"""
 print(dir(my_message))
+
+"""
+we can get information about a function using in-built function help()
+e.g. help("hello".upper)
+help("hello".split)
+"""
 
 # String Functions
 print(len(my_message))      # Prints the Length of the String. Index starts from Zero
@@ -118,9 +128,29 @@ message = 'hello world'
 for c in message:
     print(c)
 
-# Getting index and item in a string
+# Getting index and item in a string (pythonic style)
 for index, item in enumerate(s):
     print(index, '---->', item)
+
+# Iterating over string using range function. (not pythonic style)
+for index in range(0, len(message)):
+    print(message[index])
+
+# Printing Index and Character using range function (not preferred method)
+for index in range(0, len(message)):
+    print(index, message[index])
+
+# Printing alternate characters of the string (Pythonic approach)
+for c in message[::2]:
+    print(c)
+
+# Printing alterate characters of the string using range function (not preferred method)
+for index in range(0, len(message), 2):
+    print(message[index])
+
+# Iterating over a part of a string
+for c in message[:4]:
+    print(c)
 
 # Iterating over multiple string objects using zip function
 s1 = 'hello'
@@ -133,6 +163,8 @@ for c1, c2 in zip(s1, s2):
 name = "Steve"
 age = 26
 print("Hello {} you are {} years of age".format(name, age))
+
+print("Hello {1} you are {0} years of age".format(name, age))
 
 # using "f" strings
 print(f"Hello {name} you are {age} years of age")
