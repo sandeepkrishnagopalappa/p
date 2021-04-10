@@ -11,7 +11,7 @@ print(word)
 
 """
 We can use both single and Double Quotes for the Strings.
-If you hava single Quotes in the actual String, we can represent the original String in Double Quotes.
+If you have single Quotes in the actual String, we can represent the original String in Double Quotes.
 If the String actual String contains Double Quotes, we can use single Quotes to represent the String.
 """
 
@@ -87,6 +87,7 @@ print(my_message.count('Hello'))    # Prints number of occurances of the word 'H
 print(my_message.find('l'))     # Prints the index of first occurance of the letter 'l'
 print(my_message.find('World'))     # Prints the index of first occurance of the word 'World'
 print(my_message.find('Universe'))      # Prints -1.
+print("today is beautiful day".rfind("day"))    # Prints 20
 print(my_message.replace('World', 'Universe'))  # Prints 'Hello Universe'
 print(my_message.split())   # Splits the string based on white space and returns a list
 
