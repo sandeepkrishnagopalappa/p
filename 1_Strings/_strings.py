@@ -8,6 +8,7 @@ then we separate with under scores. And this is PYTHON CONVENTION
 word = 'Hello World'
 word = str('Hello world')
 print(word)
+word = ""   # Zero Length string or an empty string
 
 """
 We can use both single and Double Quotes for the Strings.
@@ -103,6 +104,9 @@ my_string = '***************Hello world==================='
 print(my_string.rstrip('='))    # prints ***************Hello world
 print(my_string.lstrip('*'))    # prints Hello world===================
 print(my_string.strip('=*'))    # Prints Hello world
+
+# len is an inbuilt method in python and its not an attribute of str class!
+print(len(my_message))  # Prints the length of the string.
 
 # String Concatination
 greeting = 'Hello'

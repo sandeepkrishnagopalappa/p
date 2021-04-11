@@ -89,6 +89,7 @@ def myfunc():
 a, b, c = myfunc()
 
 # Function Annotations
+# Annotations are only type hints. But it does not enforce type check!
 def add(a: int, b: int) -> int:
     return a + b
 

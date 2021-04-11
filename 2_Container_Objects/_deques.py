@@ -1,5 +1,7 @@
 from collections import deque
 
+""" list-like container with fast appends and pops on either end """
+
 # Make a new deque object with a string
 d = deque("hello")  # deque(['h', 'e', 'l', 'l', 'o'])
 

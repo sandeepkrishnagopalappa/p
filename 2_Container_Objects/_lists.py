@@ -9,7 +9,7 @@ from itertools import zip_longest
 5. Lists are heterogeneous in nature. (They can point to any kind of objects)
 """
 
-# Creating an empty List
+# Creating an List
 my_list = []
 my_list = [1, 2, 3, 4, 5]
 my_list = list()    # Using list constructor
