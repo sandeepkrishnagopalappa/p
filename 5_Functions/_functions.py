@@ -88,6 +88,20 @@ def myfunc():
 
 a, b, c = myfunc()
 
+# Function Annotations
+def add(a: int, b: int) -> int:
+    return a + b
+
+def greetings(name: str, age: int, pay: float, isMarried: bool) -> None:
+    print(f"Hello {name} You are {age} years old and your is {pay}")
+    if isMarried:
+        print('Congratulations')
+    else:
+        print('You are free')
+
+def greet(name: str = "Spider") -> None:
+    print(f'Hello {name}')
+
 # Passing function to another function. Functions as "First class" objects.
 def _delay(_func, _time, *args, **kwargs):
     time.sleep(_time)
